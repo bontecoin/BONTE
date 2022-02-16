@@ -1,0 +1,6 @@
+usr/local/bin/altecoin-qt usr/bin
+share/pixmaps/altecoin32.xpm usr/share/pixmaps
+share/pixmaps/altecoin16.xpm usr/share/pixmaps
+share/pixmaps/altecoin128.png usr/share/pixmaps
+debian/altecoin-qt.desktop usr/share/applications
+debian/altecoin-qt.protocol usr/share/kde4/services/

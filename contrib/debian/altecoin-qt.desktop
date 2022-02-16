@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Altecoin Core
+Comment=Altecoin P2P Cryptocurrency
+Exec=altecoin-qt %u
+Terminal=false
+Type=Application
+Icon=altecoin128
+MimeType=x-scheme-handler/altecoin;
+Categories=Office;Finance;
+StartupWMClass=Altecoin-qt
+Name[en_US]=altecoin-qt.desktop

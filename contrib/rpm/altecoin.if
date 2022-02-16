@@ -1,0 +1,157 @@
+
+## <summary>policy for altecoin</summary>
+
+
+########################################
+## <summary>
+##	Transition to altecoin.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`altecoin_domtrans',`
+	gen_require(`
+		type altecoin_t, altecoin_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, altecoin_exec_t, altecoin_t)
+')
+
+
+########################################
+## <summary>
+##	Execute altecoin server in the altecoin domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`altecoin_initrc_domtrans',`
+	gen_require(`
+		type altecoin_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, altecoin_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search altecoin lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`altecoin_search_lib',`
+	gen_require(`
+		type altecoin_var_lib_t;
+	')
+
+	allow $1 altecoin_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read altecoin lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`altecoin_read_lib_files',`
+	gen_require(`
+		type altecoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage altecoin lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`altecoin_manage_lib_files',`
+	gen_require(`
+		type altecoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage altecoin lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`altecoin_manage_lib_dirs',`
+	gen_require(`
+		type altecoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a altecoin environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`altecoin_admin',`
+	gen_require(`
+		type altecoin_t;
+		type altecoin_initrc_exec_t;
+		type altecoin_var_lib_t;
+	')
+
+	allow $1 altecoin_t:process { ptrace signal_perms };
+	ps_process_pattern($1, altecoin_t)
+
+	altecoin_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 altecoin_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, altecoin_var_lib_t)
+
+')
+
