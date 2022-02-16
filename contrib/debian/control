@@ -29,8 +29,8 @@ Build-Depends: debhelper,
  dh-systemd
 Standards-Version: 3.9.2
 Homepage: http://www.bontecoin.cc
-Vcs-Git: git://github.com/bontecoin-bonte/bontecoin.git
-Vcs-Browser: https://github.com/bontecoin-bonte/bontecoin
+Vcs-Git: git://github.com/bontecoin/BONTE.git
+Vcs-Browser: https://github.com/bontecoin/BONTE
 
 Package: bontecoind
 Architecture: any

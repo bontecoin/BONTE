@@ -68,7 +68,7 @@ apps:
     plugs: [home]
 parts:
   bontecoin-core:
-    source: https://github.com/bontecoin-bonte/bontecoin
+    source: https://github.com/bontecoin/BONTE
     source-type: git
     source-tag: master
     plugin: nil

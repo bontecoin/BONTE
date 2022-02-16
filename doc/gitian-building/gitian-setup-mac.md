@@ -49,7 +49,7 @@ git config --global user.email "MY_NAME@example.com"
 Fetching the Build Script
 --------------------------
 
-The build script we'll be using is contained in the Bontecoin github repository ([contrib/gitian-build.py](https://github.com/bontecoin-bonte/bontecoin/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the Bontecoin repository and will need to fetch this script with the following commands:
+The build script we'll be using is contained in the Bontecoin github repository ([contrib/gitian-build.py](https://https://github.com/bontecoin/BONTE/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the Bontecoin repository and will need to fetch this script with the following commands:
 
 ```bash
 curl -L -O https://raw.githubusercontent.com/bontecoin-bonte/Bontecoin/master/contrib/gitian-build.py

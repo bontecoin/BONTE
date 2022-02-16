@@ -1,8 +1,8 @@
-Bontecoin Core version *3.1.1* is now available from:  <https://github.com/bontecoin-bonte/bontecoin/releases>
+Bontecoin Core version *3.1.1* is now available from:  <https://https://github.com/bontecoin/BONTE/releases>
 
 This is a new minor version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/bontecoin-bonte/bontecoin/issues>
+Please report bugs using the issue tracker at github: <https://https://github.com/bontecoin/BONTE/issues>
 
 Non-Mandatory Update
 ==============

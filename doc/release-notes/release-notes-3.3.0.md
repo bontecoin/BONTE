@@ -1,8 +1,8 @@
-Bontecoin Core version *3.3.0* is now available from:  <https://github.com/bontecoin-bonte/bontecoin/releases>
+Bontecoin Core version *3.3.0* is now available from:  <https://https://github.com/bontecoin/BONTE/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/bontecoin-bonte/bontecoin/issues>
+Please report bugs using the issue tracker at github: <https://https://github.com/bontecoin/BONTE/issues>
 
 
 Mandatory Update
@@ -65,7 +65,7 @@ Notice text has been added to the privacy tab indicating that zBONTE minting is 
 
 The `masternode` and `mnbudget` RPC commands, which were marked as deprecated in Bontecoin Core v2.3.1 (September 19, 2017), have now been completely removed from Bontecoin Core.
 
-Several new commands were added in v2.3.1 to replace the two aforementioned commands, reference the [v2.3.1 Release Notes](https://github.com/bontecoin-bonte/Bontecoin/blob/master/doc/release-notes/release-notes-2.3.1.md#rpc-changes) for further details.
+Several new commands were added in v2.3.1 to replace the two aforementioned commands, reference the [v2.3.1 Release Notes](https://https://github.com/bontecoin/BONTE/blob/master/doc/release-notes/release-notes-2.3.1.md#rpc-changes) for further details.
 
 ### New `getblockindexstats` Command
 

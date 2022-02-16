@@ -112,7 +112,7 @@ gpg --output ${VERSION}-win-unsigned/$NAME/bontecoin-win-${VERSION%\.*}-build.as
 Uploading Signatures
 --------------------
 Make a Pull Request (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs](https://github.com/bontecoin-bonte/gitian.sigs/) repository:
+[gitian.sigs](https://github.com/bontecoin/gitian.sigs/) repository:
 
 ```bash
 git checkout -b ${VERSION}-not-codesigned

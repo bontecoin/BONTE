@@ -26,7 +26,7 @@ Drag Bontecoin-Qt to your applications folder, and then run Bontecoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Bontecoin Wiki](https://github.com/bontecoin-bonte/bontecoin/wiki)
+* See the documentation at the [Bontecoin Wiki](https://https://github.com/bontecoin/BONTE/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bontecoin Forum](http://forum.bontecoin.com/).
 * Join our Discord server [Discord Server](https://discord.bontecoin.com)

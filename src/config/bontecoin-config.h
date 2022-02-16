@@ -346,7 +346,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/bontecoin-bonte/bontecoin/issues"
+#define PACKAGE_BUGREPORT "https://https://github.com/bontecoin/BONTE/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Bontecoin Core"

@@ -1,8 +1,8 @@
-Bontecoin Core version *v4.0.1* is now available from:  <https://github.com/bontecoin-bonte/bontecoin/releases>
+Bontecoin Core version *v4.0.1* is now available from:  <https://https://github.com/bontecoin/BONTE/releases>
 
 This is a new revision version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/bontecoin-bonte/bontecoin/issues>
+Please report bugs using the issue tracker at github: <https://https://github.com/bontecoin/BONTE/issues>
 
 
 Recommended Update
@@ -85,7 +85,7 @@ Some instances of the term "account" are rather loose, and possibly technically 
 Functional Test Suite Overhaul
 ------------------------------
 
-Our Regression/Functional testing suite has undergone a substantial overhaul, particularly in regards to the cached chain that can be used to speed up testing. Full details can be found in the description of [#1218](https://github.com/bontecoin-bonte/Bontecoin/pull/1218).
+Our Regression/Functional testing suite has undergone a substantial overhaul, particularly in regards to the cached chain that can be used to speed up testing. Full details can be found in the description of [#1218](https://https://github.com/bontecoin/BONTE/pull/1218).
 
 Further Zerocoin Code Cleanup
 ------------------------------
