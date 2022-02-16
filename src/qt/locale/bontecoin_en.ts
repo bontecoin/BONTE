@@ -8012,8 +8012,8 @@ Bontecoin Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(7429 could be used only on mainnet)</source>
-        <translation type="unfinished">(7429 could be used only on mainnet)</translation>
+        <source>(3094 could be used only on mainnet)</source>
+        <translation type="unfinished">(3094 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8027,7 +8027,7 @@ Bontecoin Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 7429 for mainnet)</source>
+        <source>(must be 3094 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

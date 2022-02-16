@@ -165,7 +165,7 @@ public:
         pchMessageStart[2] = 0x55;
         pchMessageStart[3] = 0x4e;
         vAlertPubKey = ParseHex("0454501d1ac281b571c0016382898fbdd4aff6ed88243bb3299ba1b77bdff3495f9ba7027059e997ed3c04bf52d3f08fbce159ffe3ccbbc2734ddf1a21586041f6");
-        nDefaultPort = 7429;
+        nDefaultPort = 3094;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Bontecoin starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
@@ -290,7 +290,7 @@ public:
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
             "4069182906412495150821892985591491761845028084891200728449926873928072877767359714183472702618963750149718246911"
-            "6507761337985909570009733045974880842840179742910064245869181719511874612151517265463228221686998754918242243363"
+            "6507761337985909570009733045974880842840179309410064245869181719511874612151517265463228221686998754918242243363"
             "7259085141865462043576798423387184774447920739934236584823824281198163815010674810451660377306056201619676256133"
             "8441436038339044149526344321901146575444541784240209246165157233507787077498171257724679629263863563732899121548"
             "31438167899885040445364023527381951378636564391212010397122822120720357";
@@ -330,19 +330,19 @@ public:
         pchMessageStart[2] = 0x61;
         pchMessageStart[3] = 0xf3;
         vAlertPubKey = ParseHex("04c40fd4fddbc758797b0a2f713b15d65761cee77fc8518389494aa3db36d010855a3ac021154e8e91e412579962c03f720ae2eb774f613020ecb428f8e1165987");
-        nDefaultPort = 8429;
+        nDefaultPort = 3094;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
         nToCheckBlockUpgradeMajority = 5760; // 4 days
         nMinerThreads = 0;
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 1000;
         nBontecoinBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
         nBontecoinBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
         nMaturity = 15;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaxMoneyOut = 1000000000 * COIN;
         nZerocoinStartHeight = 201576;
         nZerocoinStartTime = 1501776000;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block

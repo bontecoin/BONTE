@@ -6099,7 +6099,7 @@ Bontecoin核心钱包</translation>
         <translation>您必须在配置中指定一个主节点privkey。有关帮助，请参阅文档。</translation>
     </message>
     <message>
-        <source>(7429 could be used only on mainnet)</source>
+        <source>(3094 could be used only on mainnet)</source>
         <translation>(43013只可在网上使用)</translation>
     </message>
     <message>
@@ -6111,7 +6111,7 @@ Bontecoin核心钱包</translation>
         <translation>(默认: 1)</translation>
     </message>
     <message>
-        <source>(must be 7429 for mainnet)</source>
+        <source>(must be 3094 for mainnet)</source>
         <translation>(主网必须为43013)</translation>
     </message>
     <message>

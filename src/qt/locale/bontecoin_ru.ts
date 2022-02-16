@@ -6078,8 +6078,8 @@ Bontecoin Core Wallet</source>
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(7429 could be used only on mainnet)</source>
-        <translation>(7429 можно использовать только в сети)</translation>
+        <source>(3094 could be used only on mainnet)</source>
+        <translation>(3094 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6090,8 +6090,8 @@ Bontecoin Core Wallet</source>
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 7429 for mainnet)</source>
-        <translation>(должен быть 7429 для mainet)</translation>
+        <source>(must be 3094 for mainnet)</source>
+        <translation>(должен быть 3094 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
