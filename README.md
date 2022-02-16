@@ -13,9 +13,9 @@ Bontecoin Core integration/staging repository
 • Prefix: BONTE adresses start with the letter "a"  
 • Ports: 7429 (p2p) / 7430 (rpc)
 
-• Explorer http://explorer.bontecoin.cc
+• Explorer http://explorer.bontecoin.com
 
-• Website [bontecoin.cc](http://www.bontecoin.cc)
+• Website [bontecoin.com](http://www.bontecoin.com)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252

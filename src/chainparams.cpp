@@ -256,10 +256,10 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("seed1.bontecoin.cc", "seed1.bontecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed2.bontecoin.cc", "seed2.bontecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed3.bontecoin.cc", "seed3.bontecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed4.bontecoin.cc", "seed4.bontecoin.cc"));
+        vSeeds.push_back(CDNSSeedData("seed1.bontecoin.com", "seed1.bontecoin.com"));
+		vSeeds.push_back(CDNSSeedData("seed2.bontecoin.com", "seed2.bontecoin.com"));
+		vSeeds.push_back(CDNSSeedData("seed3.bontecoin.com", "seed3.bontecoin.com"));
+		vSeeds.push_back(CDNSSeedData("seed4.bontecoin.com", "seed4.bontecoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
