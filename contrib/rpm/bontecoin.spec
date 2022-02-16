@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://bontecoin.org/
-Source0:	https://bontecoin.org/bin/bontecoin-core-%{version}/bontecoin-%{version}.tar.gz
+URL:		https://bontecoin.com/
+Source0:	https://bontecoin.com/bin/bontecoin-core-%{version}/bontecoin-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/bontecoin-bonte/bontecoin/v%{version}/contrib/debian/examples/bontecoin.conf

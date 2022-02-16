@@ -4042,7 +4042,7 @@ Bontecoin использует консенсус PoS (Proof of Stake), позв
                            zBONTE is an optional privacy-centric method of coin mixing on the
                            Bontecoin blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
                            "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4051,7 +4051,7 @@ Bontecoin использует консенсус PoS (Proof of Stake), позв
 zBONTE - это необязательная конфиденциальность, которая возможна при микшировании монет
 в блокчейне Bontecoin. По сути,ни одна транзакция не может быть отслежена
 ни в одном из обозревателей блоков. Вы можете прочитать больше о технических характеристиках в
-&lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+&lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
 "Техническом документе Bontecoin Zerocoin (zBONTE)"&lt;/a&gt;.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -4099,7 +4099,7 @@ zBONTE - это необязательная конфиденциальност�
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zBONTE in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zBONTE, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4114,7 +4114,7 @@ zBONTE - это необязательная конфиденциальност�
 Если вы не используете Bontecoin-QT или GUI, вы можете просто открыть
 свой файл bontecoin.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
 перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zBONTE в
-&lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+&lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
  "Технический документ Bontecoin Zerocoin (zBONTE)"&lt;/a&gt;.
 Если вы хотите продолжать стекинг zBONTE, ознакомьтесь с разделом" Как осуществить стекинг"
 в разделе часто задаваемых вопросов ниже.

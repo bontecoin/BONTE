@@ -358,7 +358,7 @@
 #define PACKAGE_TARNAME "bontecoin"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://bontecoin.org/"
+#define PACKAGE_URL "https://bontecoin.com/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0.0"

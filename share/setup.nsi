@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define COMPANY "Bontecoin Core project"
-!define URL https://www.bontecoin.org
+!define URL https://www.bontecoin.com
 
 # MUI Symbol Definitions
 !define MUI_ICON "/home/vm/Crypto/Bontecoin/share/pixmaps/bontecoin.ico"

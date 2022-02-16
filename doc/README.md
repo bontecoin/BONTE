@@ -3,7 +3,7 @@ Bontecoin Core
 
 Setup
 ---------------------
-[Bontecoin Core](http://bontecoin.org/wallet) is the original Bontecoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Bontecoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Bontecoin Core](http://bontecoin.com/wallet) is the original Bontecoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Bontecoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,8 +28,8 @@ Drag Bontecoin-Qt to your applications folder, and then run Bontecoin-Qt.
 
 * See the documentation at the [Bontecoin Wiki](https://github.com/bontecoin-bonte/bontecoin/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bontecoin Forum](http://forum.bontecoin.org/).
-* Join our Discord server [Discord Server](https://discord.bontecoin.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bontecoin Forum](http://forum.bontecoin.com/).
+* Join our Discord server [Discord Server](https://discord.bontecoin.com)
 
 Building
 ---------------------
@@ -56,8 +56,8 @@ The Bontecoin repo's [root README](/README.md) contains relevant information on 
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Bontecoin](http://forum.bontecoin.org/) forum.
-* Join the [Bontecoin Discord](https://discord.bontecoin.org).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Bontecoin](http://forum.bontecoin.com/) forum.
+* Join the [Bontecoin Discord](https://discord.bontecoin.com).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

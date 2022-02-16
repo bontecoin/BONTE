@@ -4046,7 +4046,7 @@ bu sayede Bontecoin sahipleri blok ödülü kazanımına katılabilmektedir
                            zBONTE is an optional privacy-centric method of coin mixing on the
                            Bontecoin blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
                            "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4056,7 +4056,7 @@ bu sayede Bontecoin sahipleri blok ödülü kazanımına katılabilmektedir
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
                            "Bontecoin Zerocoin (zBONTE) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4106,7 +4106,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zBONTE in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zBONTE, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4116,7 +4116,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            Bontecoin cüzdanınız ağa destek olmak için varsayılan olarak tüm BONTE bakiyenizin 10% 'unu zBONTE'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zBONTE stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zBONTE Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. BontecoinQT veya GUI kullanmıyorsanız, bontecoin.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Teknik Makalesi"&lt;/a&gt;.
                            zBONTE'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım" 
 kısmını okuyunuz. 
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;

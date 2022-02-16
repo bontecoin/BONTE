@@ -4048,7 +4048,7 @@ per vedere e spendere i saldi sulla rete.
                            zBONTE is an optional privacy-centric method of coin mixing on the
                            Bontecoin blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
                            "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4057,7 +4057,7 @@ per vedere e spendere i saldi sulla rete.
                            zBONTE è un metodo opzionale incentrato sulla privacy per la miscelazione delle valute sulla
 Blockchain Bontecoin. Essenzialmente, tutte le tue transazioni non potranno essere tracciate
 su un block explorer. Puoi leggere di più sugli aspetti tecnici nel
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt;
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt;
                            "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4107,7 +4107,7 @@ per diventare idoneo alla spesa.
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zBONTE in the
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zBONTE, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4124,7 +4124,7 @@ il tuo file bontecoin.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza
 e far ripartire il portafoglio per disabilitare la forgiatura automatica.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Puoi leggere di più su zBONTE nel
-                           &lt;a style='color: #b088ff' href='https://Bontecoin.org/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bontecoin.com/zpiv/'&gt; "Bontecoin Zerocoin (zBONTE) Technical Paper"&lt;/a&gt;.
                            Se desideri effettuare lo staking dei tuoi zBONTE, leggi "Come faccio ad effettuare lo staking"
 nella sezione delle FAQ di seguito.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
