@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-# Copyright (c) 2019 The Altecoin developers
+# Copyright (c) 2019 The Bontecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test RPC commands for budget proposal creation, submission, and verification."""
 
-from test_framework.test_framework import AltecoinTestFramework
+from test_framework.test_framework import BontecoinTestFramework
 from test_framework.util import *
 
 
-class BudgetProposalTest(AltecoinTestFramework):
+class BudgetProposalTest(BontecoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
 
@@ -42,12 +42,12 @@ class BudgetProposalTest(AltecoinTestFramework):
         assert_raises_rpc_error(-8, "Invalid block start", self.nodes[0].preparebudget,
                                 name, scheme + url, numcycles, nextsuperblock - budgetcycleblocks, address, cycleamount)
 
-        self.log.info("Test with invalid Altecoin address")
-        assert_raises_rpc_error(-5, "Invalid Altecoin address", self.nodes[0].preparebudget,
+        self.log.info("Test with invalid Bontecoin address")
+        assert_raises_rpc_error(-5, "Invalid Bontecoin address", self.nodes[0].preparebudget,
                                 name, scheme + url, numcycles, nextsuperblock, "DBREvBPNQguwuC4YMoCG5FoH1sA2YntvZm", cycleamount)
 
         self.log.info("Test with too low amount")
-        assert_raises_rpc_error(-8, "Invalid amount - Payment of 9.00 is less than minimum 10 ALTC allowed", self.nodes[0].preparebudget,
+        assert_raises_rpc_error(-8, "Invalid amount - Payment of 9.00 is less than minimum 10 BONTE allowed", self.nodes[0].preparebudget,
                                 name, scheme + url, numcycles, nextsuperblock, address, 9)
 
         self.log.info("Test with too high amount")

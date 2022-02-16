@@ -638,11 +638,11 @@ libbitcoin_server_a-txmempool.o: txmempool.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp serialize.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1006,7 +1006,7 @@ libbitcoin_server_a-txmempool.o: txmempool.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/ratio /usr/include/c++/7/bits/parse_numbers.h \
  /usr/include/c++/7/bits/std_mutex.h /usr/include/c++/7/thread \
  /usr/include/c++/7/mutex random.h clientversion.h \
- config/altecoin-config.h main.h chain.h chainparams.h chainparamsbase.h \
+ config/bontecoin-config.h main.h chain.h chainparams.h chainparamsbase.h \
  checkpoints.h primitives/block.h keystore.h key.h sync.h \
  /usr/include/boost/signals2/signal.hpp /usr/include/boost/function.hpp \
  /usr/include/boost/function/detail/prologue.hpp \
@@ -2687,7 +2687,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2715,7 +2715,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3581,7 +3581,7 @@ random.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 main.h:
 

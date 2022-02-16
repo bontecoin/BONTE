@@ -1,8 +1,8 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/mnmodel.h"
+#include "qt/bontecoin/mnmodel.h"
 #include "masternode-sync.h"
 #include "masternodeman.h"
 #include "activemasternode.h"

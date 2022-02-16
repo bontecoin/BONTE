@@ -1,4 +1,4 @@
-test/test_test_altecoin-sanity_tests.o: test/sanity_tests.cpp \
+test/test_test_bontecoin-sanity_tests.o: test/sanity_tests.cpp \
  /usr/include/stdc-predef.h compat/sanity.h key.h allocators.h \
  support/cleanse.h /usr/include/c++/7/stdlib.h /usr/include/c++/7/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -650,8 +650,8 @@ test/test_test_altecoin-sanity_tests.o: test/sanity_tests.cpp \
  /usr/include/c++/7/bits/codecvt.h /usr/include/c++/7/bits/unique_ptr.h \
  /usr/include/openssl/sha.h /usr/include/openssl/e_os2.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h \
- config/altecoin-config.h streams.h util.h compat.h \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h \
+ config/bontecoin-config.h streams.h util.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -772,7 +772,7 @@ test/test_test_altecoin-sanity_tests.o: test/sanity_tests.cpp \
  primitives/transaction.h amount.h libzerocoin/CoinSpend.h streams.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
@@ -2834,7 +2834,7 @@ crypto/sha512.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -2842,7 +2842,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 streams.h:
 
@@ -3158,7 +3158,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

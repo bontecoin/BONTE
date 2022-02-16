@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,14 +10,14 @@
 #include "txdb.h"
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
-#include "test/test_altecoin.h"
+#include "test/test_bontecoin.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
 
 BOOST_FIXTURE_TEST_SUITE(zerocoin_denom_tests, BasicTestingSetup)
 
-//translation from altecoin quantity to zerocoin denomination
+//translation from bontecoin quantity to zerocoin denomination
 BOOST_AUTO_TEST_CASE(amount_to_denomination_test)
 {
     std::cout << "Running amount_to_denomination_test...\n";

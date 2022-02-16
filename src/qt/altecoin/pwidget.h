@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,9 +8,9 @@
 #include <QObject>
 #include <QWidget>
 #include <QString>
-#include "qt/altecoin/prunnable.h"
+#include "qt/bontecoin/prunnable.h"
 
-class AltecoinGUI;
+class BontecoinGUI;
 class ClientModel;
 class WalletModel;
 class WorkerTask;
@@ -29,13 +29,13 @@ class PWidget : public QWidget, public Runnable, public Translator
 {
     Q_OBJECT
 public:
-    explicit PWidget(AltecoinGUI* _window = nullptr, QWidget *parent = nullptr);
+    explicit PWidget(BontecoinGUI* _window = nullptr, QWidget *parent = nullptr);
     explicit PWidget(PWidget *parent = nullptr);
 
     void setClientModel(ClientModel* model);
     void setWalletModel(WalletModel* model);
 
-    AltecoinGUI* getWindow() { return this->window; }
+    BontecoinGUI* getWindow() { return this->window; }
 
     void run(int type) override;
     void onError(QString error, int type) override;
@@ -55,7 +55,7 @@ protected slots:
     void onChangeTheme(bool isLightTheme, QString &theme);
 
 protected:
-    AltecoinGUI* window = nullptr;
+    BontecoinGUI* window = nullptr;
     ClientModel* clientModel = nullptr;
     WalletModel* walletModel = nullptr;
 

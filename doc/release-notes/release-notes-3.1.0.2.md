@@ -1,33 +1,33 @@
-Altecoin Core version *3.1.0.2* is now available from:  <https://github.com/altecoin-altc/altecoin/releases>
+Bontecoin Core version *3.1.0.2* is now available from:  <https://github.com/bontecoin-bonte/bontecoin/releases>
 
 This is a new mandatory bugfix release, specifically addressing a bug with windows OS masternode control wallets as well as a missed commit from our private repository affecting the budget amount. 
 
-### Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://github.com/altecoin-altc/Altecoin/releases/tag/v3.1.0) release as information will not be duplicated here.
+### Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://github.com/bontecoin-bonte/Bontecoin/releases/tag/v3.1.0) release as information will not be duplicated here.
 
 
-Please report bugs using the issue tracker at github: <https://github.com/altecoin-altc/altecoin/issues>
+Please report bugs using the issue tracker at github: <https://github.com/bontecoin-bonte/bontecoin/issues>
 
 Mandatory Update
 ==============
 
-Altecoin Core v3.1.0.2 is a mandatory update for all users. This release contains new consensus rules and improvements that are not backwards compatible with older versions. Users will have a grace period of one week to update their clients before enforcement of this update is enabled.
+Bontecoin Core v3.1.0.2 is a mandatory update for all users. This release contains new consensus rules and improvements that are not backwards compatible with older versions. Users will have a grace period of one week to update their clients before enforcement of this update is enabled.
 
 Users updating from a previous version after Tuesday, May 8, 2018 12:00:00 AM GMT will require a full resync of their local blockchain from either the P2P network or by way of the bootstrap.
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Altecoin-Qt (on Mac) or altecoind/altecoin-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Bontecoin-Qt (on Mac) or bontecoind/bontecoin-qt (on Linux).
 
 
 Compatibility
 ==============
 
-Altecoin Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.8+, and Windows 7 and later.
+Bontecoin Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.8+, and Windows 7 and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support), No attempt is made to prevent installing or running the software on Windows XP, you can still do so at your own risk but be aware that there are known instabilities and issues. Please do not report issues about Windows XP to the issue tracker.
 
-Altecoin Core should also work on most other Unix-like systems but is not frequently tested on them.
+Bontecoin Core should also work on most other Unix-like systems but is not frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
 
@@ -75,4 +75,4 @@ Thanks to everyone who directly contributed to this release:
 - Mrs-X
 - presstab
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-altc-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bontecoin-bonte-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

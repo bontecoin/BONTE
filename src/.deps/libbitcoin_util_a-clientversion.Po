@@ -1,5 +1,5 @@
 libbitcoin_util_a-clientversion.o: clientversion.cpp \
- /usr/include/stdc-predef.h clientversion.h config/altecoin-config.h \
+ /usr/include/stdc-predef.h clientversion.h config/bontecoin-config.h \
  /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -148,7 +148,7 @@ libbitcoin_util_a-clientversion.o: clientversion.cpp \
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 

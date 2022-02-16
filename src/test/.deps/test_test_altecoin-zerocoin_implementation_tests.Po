@@ -1,4 +1,4 @@
-test/test_test_altecoin-zerocoin_implementation_tests.o: \
+test/test_test_bontecoin-zerocoin_implementation_tests.o: \
  test/zerocoin_implementation_tests.cpp /usr/include/stdc-predef.h \
  libzerocoin/Denominations.h /usr/include/c++/7/cstdint \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -639,11 +639,11 @@ test/test_test_altecoin-zerocoin_implementation_tests.o: \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1313,7 +1313,7 @@ test/test_test_altecoin-zerocoin_implementation_tests.o: \
  clientversion.h sync.h /usr/include/db_cxx.h /usr/include/db.h \
  /usr/include/inttypes.h zpiv/zpivtracker.h zpiv/zpivmodule.h \
  zpiv/zpivwallet.h zpiv/mintpool.h zpivchain.h libzerocoin/Coin.h \
- test/test_altecoin.h /usr/include/boost/filesystem.hpp \
+ test/test_bontecoin.h /usr/include/boost/filesystem.hpp \
  /usr/include/boost/filesystem/operations.hpp \
  /usr/include/boost/detail/scoped_enum_emulation.hpp \
  /usr/include/boost/detail/bitmask.hpp /usr/include/c++/7/stack \
@@ -2807,7 +2807,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2833,7 +2833,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4451,7 +4451,7 @@ zpivchain.h:
 
 libzerocoin/Coin.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 /usr/include/boost/filesystem.hpp:
 

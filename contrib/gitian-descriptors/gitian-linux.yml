@@ -1,5 +1,5 @@
 ---
-name: "altecoin-linux-4.0"
+name: "bontecoin-linux-4.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -33,8 +33,8 @@ packages:
 - "ca-certificates"
 - "python3"
 remotes:
-- "url": "https://github.com/altecoin-altc/altecoin.git"
-  "dir": "altecoin"
+- "url": "https://github.com/bontecoin-bonte/bontecoin.git"
+  "dir": "bontecoin"
 files: []
 script: |
   set -e -o pipefail
@@ -123,7 +123,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-  cd altecoin
+  cd bontecoin
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -145,13 +145,13 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo altecoin-*.tar.gz`
+  SOURCEDIST=`echo bontecoin-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find altecoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find bontecoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   popd
 
   # Workaround for tarball not building with the bare tag version (prep)

@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef COINCONTROLALTCWIDGET_H
-#define COINCONTROLALTCWIDGET_H
+#ifndef COINCONTROLBONTEWIDGET_H
+#define COINCONTROLBONTEWIDGET_H
 
 #include <QDialog>
 
@@ -23,4 +23,4 @@ private:
     Ui::CoinControlPivWidget *ui;
 };
 
-#endif // COINCONTROLALTCWIDGET_H
+#endif // COINCONTROLBONTEWIDGET_H

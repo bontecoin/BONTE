@@ -1,4 +1,4 @@
-test/test_test_altecoin-reverselock_tests.o: test/reverselock_tests.cpp \
+test/test_test_bontecoin-reverselock_tests.o: test/reverselock_tests.cpp \
  /usr/include/stdc-predef.h reverselock.h /usr/include/boost/bind.hpp \
  /usr/include/boost/bind/bind.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \

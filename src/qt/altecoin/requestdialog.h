@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,10 +8,10 @@
 #include <QDialog>
 #include <QPixmap>
 #include "walletmodel.h"
-#include "qt/altecoin/snackbar.h"
+#include "qt/bontecoin/snackbar.h"
 
 class WalletModel;
-class AltecoinGUI;
+class BontecoinGUI;
 
 namespace Ui {
 class RequestDialog;

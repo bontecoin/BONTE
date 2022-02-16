@@ -290,7 +290,7 @@ qt/qt_libbitcoinqt_a-coincontroltreewidget.o: \
  qt/coincontroldialog.h amount.h serialize.h /usr/include/assert.h \
  /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
  /usr/include/c++/7/bits/stl_multiset.h libzerocoin/Denominations.h \
- libzerocoin/SpendType.h sporkid.h qt/altecoin/snackbar.h \
+ libzerocoin/SpendType.h sporkid.h qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
@@ -1004,7 +1004,7 @@ libzerocoin/SpendType.h:
 
 sporkid.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

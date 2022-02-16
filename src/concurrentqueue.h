@@ -1,10 +1,10 @@
 //
-// Copyright (c) 2015-2018 The Altecoin developers
+// Copyright (c) 2015-2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_CONCURRENTQUEUE_H
-#define Altecoin_CONCURRENTQUEUE_H
+#ifndef Bontecoin_CONCURRENTQUEUE_H
+#define Bontecoin_CONCURRENTQUEUE_H
 
 
 #include <mutex>
@@ -48,4 +48,4 @@ public:
     }
 };
 
-#endif //Altecoin_CONCURRENTQUEUE_H
+#endif //Bontecoin_CONCURRENTQUEUE_H

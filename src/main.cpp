@@ -4,7 +4,7 @@
 // Copyright (c) 2011-2013 The PPCoin developers
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -56,7 +56,7 @@
 
 
 #if defined(NDEBUG)
-#error "Altecoin cannot be compiled without assertions."
+#error "Bontecoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -1013,7 +1013,7 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend->getCoinSerialNumber(), nHeightTx))
-        return error("%s : zALTC spend with serial %s is already in block %d\n", __func__,
+        return error("%s : zBONTE spend with serial %s is already in block %d\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), nHeightTx);
 
     return true;
@@ -1021,11 +1021,11 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-    //Check to see if the zALTC is properly signed
+    //Check to see if the zBONTE is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         try {
             if (!spend->HasValidSignature())
-                return error("%s: V2 zALTC spend does not have a valid signature\n", __func__);
+                return error("%s: V2 zBONTE spend does not have a valid signature\n", __func__);
         } catch (const libzerocoin::InvalidSerialException& e) {
             // Check if we are in the range of the attack
             if(!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
@@ -1038,7 +1038,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend->getSpendType() != expectedType) {
-            return error("%s: trying to spend zALTC without the correct spend type. txid=%s\n", __func__,
+            return error("%s: trying to spend zBONTE without the correct spend type. txid=%s\n", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -1049,7 +1049,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     if (!spend->HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))  {
         // Up until this block our chain was not checking serials correctly..
         if (!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
-            return error("%s : zALTC spend with serial %s from tx %s is not in valid range\n", __func__,
+            return error("%s : zBONTE spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
         else
             LogPrintf("%s:: HasValidSerial :: Invalid serial detected within range in block %d\n", __func__, pindex->nHeight);
@@ -1098,7 +1098,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
             }
             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
             PublicCoinSpend publicSpend(params);
-            if (!ZALTCModule::parseCoinSpend(txin, tx, prevOut, publicSpend)){
+            if (!ZBONTEModule::parseCoinSpend(txin, tx, prevOut, publicSpend)){
                 return state.DoS(100, error("CheckZerocoinSpend(): public zerocoin spend parse failed"));
             }
             newSpend = publicSpend;
@@ -1121,7 +1121,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
         if (isPublicSpend) {
             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
             PublicCoinSpend ret(params);
-            if (!ZALTCModule::validateInput(txin, prevOut, tx, ret)){
+            if (!ZBONTEModule::validateInput(txin, prevOut, tx, ret)){
                 return state.DoS(100, error("CheckZerocoinSpend(): public zerocoin spend did not verify"));
             }
         } else
@@ -1411,7 +1411,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("%s : zALTC spend tx %s already in block %d",
+                return state.Invalid(error("%s : zBONTE spend tx %s already in block %d",
                         __func__, tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1433,7 +1433,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZALTCModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZBONTEModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainActive.Tip(), 0))
@@ -1480,7 +1480,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Check that zALTC mints (if included) are not already known
+            // Check that zBONTE mints (if included) are not already known
             for (auto& out : tx.vout) {
                 if (!out.IsZerocoinMint())
                     continue;
@@ -2027,7 +2027,7 @@ int64_t GetBlockValue(int nHeight)
     return nSubsidy;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZALTCStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBONTEStake)
 {
     return GetBlockValue(nHeight) * 0.80;
 }
@@ -2217,7 +2217,7 @@ void AddInvalidSpendsToMap(const CBlock& block)
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
                     CValidationState state;
-                    if (!ZALTCModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                    if (!ZBONTEModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                         throw std::runtime_error("Failed to parse public spend");
                     }
                     spend = &publicSpend;
@@ -2409,7 +2409,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from Altecoin
+         * note we only undo zerocoin databasing in the following statement, value to and from Bontecoin
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2423,7 +2423,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
                             libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZALTCModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
+                            if (!ZBONTEModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
                                 return error("Failed to parse public spend");
                             }
                             serial = publicSpend.getCoinSerialNumber();
@@ -2566,7 +2566,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("altecoin-scriptch");
+    RenameThread("bontecoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2599,16 +2599,16 @@ void AddWrappedSerialsInflation()
     uiInterface.ShowProgress("", 100);
 }
 
-void RecalculateZALTCMinted()
+void RecalculateZBONTEMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
-    uiInterface.ShowProgress(_("Recalculating minted ZALTC..."), 0);
+    uiInterface.ShowProgress(_("Recalculating minted ZBONTE..."), 0);
     while (true) {
         // Log Message and feedback message every 1000 blocks
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating minted ZALTC..."), percent);
+            uiInterface.ShowProgress(_("Recalculating minted ZBONTE..."), percent);
         }
 
         //overwrite possibly wrong vMintsInBlock data
@@ -2631,18 +2631,18 @@ void RecalculateZALTCMinted()
     uiInterface.ShowProgress("", 100);
 }
 
-void RecalculateZALTCSpent()
+void RecalculateZBONTESpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
-    uiInterface.ShowProgress(_("Recalculating spent ZALTC..."), 0);
+    uiInterface.ShowProgress(_("Recalculating spent ZBONTE..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating spent ZALTC..."), percent);
+            uiInterface.ShowProgress(_("Recalculating spent ZBONTE..."), percent);
         }
 
-        //Rewrite zALTC supply
+        //Rewrite zBONTE supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2651,13 +2651,13 @@ void RecalculateZALTCSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zALTC supply
+        //Add mints to zBONTE supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zALTC supply
+        //Remove spends from zBONTE supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2678,7 +2678,7 @@ void RecalculateZALTCSpent()
     uiInterface.ShowProgress("", 100);
 }
 
-bool RecalculateALTCSupply(int nHeightStart)
+bool RecalculateBONTESupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2688,12 +2688,12 @@ bool RecalculateALTCSupply(int nHeightStart)
     if (nHeightStart == Params().Zerocoin_StartHeight())
         nSupplyPrev = CAmount(5449796547496199);
 
-    uiInterface.ShowProgress(_("Recalculating ALTC supply..."), 0);
+    uiInterface.ShowProgress(_("Recalculating BONTE supply..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainActive.Height() - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating ALTC supply..."), percent);
+            uiInterface.ShowProgress(_("Recalculating BONTE supply..."), percent);
         }
 
         CBlock block;
@@ -2755,7 +2755,7 @@ bool RecalculateALTCSupply(int nHeightStart)
 
 bool ReindexAccumulators(std::list<uint256>& listMissingCheckpoints, std::string& strError)
 {
-    // Altecoin: recalculate Accumulator Checkpoints that failed to database properly
+    // Bontecoin: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty()) {
         uiInterface.ShowProgress(_("Calculating missing accumulators..."), 0);
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -2803,7 +2803,7 @@ bool ReindexAccumulators(std::list<uint256>& listMissingCheckpoints, std::string
     return true;
 }
 
-bool UpdateZALTCSupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
+bool UpdateZBONTESupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -2863,7 +2863,7 @@ bool UpdateZALTCSupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck
         LogPrint("zero", "%s coins for denomination %d pubcoin %s\n", __func__, denom, pindex->mapZerocoinSupply.at(denom));
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zALTC supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zBONTE supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == Params().Zerocoin_Block_EndFakeSerial() + 1
             && pindex->GetZerocoinSupply() < Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount()) {
         for (auto denom : libzerocoin::zerocoinDenomList) {
@@ -2988,7 +2988,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZALTCModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZBONTEModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     nValueIn += publicSpend.getDenomination() * COIN;
@@ -3006,7 +3006,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zALTC mints are not already known
+            // Check that zBONTE mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3035,7 +3035,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zALTC mints are not already known
+            // Check that zBONTE mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3086,14 +3086,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZALTCMinted();
-        RecalculateZALTCSpent();
-        RecalculateALTCSupply(Params().Zerocoin_StartHeight());
+        RecalculateZBONTEMinted();
+        RecalculateZBONTESpent();
+        RecalculateBONTESupply(Params().Zerocoin_StartHeight());
     }
 
-    //Track zALTC money supply in the block index
-    if (!UpdateZALTCSupply(block, pindex, fJustCheck))
-        return state.DoS(100, error("%s: Failed to calculate new zALTC supply for block=%s height=%d", __func__,
+    //Track zBONTE money supply in the block index
+    if (!UpdateZBONTESupply(block, pindex, fJustCheck))
+        return state.DoS(100, error("%s: Failed to calculate new zBONTE supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3156,7 +3156,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zALTC serials
+    //Record zBONTE serials
     if (pwalletMain) {
         std::set<uint256> setAddedTx;
         for (const std::pair<libzerocoin::CoinSpend, uint256>& pSpend : vSpends) {
@@ -4085,7 +4085,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
     const CTxOut& lastOut = tx.vout[outs-1];
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
         // last output can either be a mn reward or a budget payment
-        // cold staking is active much after nPublicZCSpends so GetMasternodePayment is always 3 ALTC.
+        // cold staking is active much after nPublicZCSpends so GetMasternodePayment is always 3 BONTE.
         // TODO: double check this if/when MN rewards change
         if (lastOut.nValue == 3 * COIN)
             return true;
@@ -4205,7 +4205,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // Altecoin
+        // Bontecoin
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4249,7 +4249,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         ))
             return error("%s : CheckTransaction failed", __func__);
 
-        // double check that there are no double spent zALTC spends in this block
+        // double check that there are no double spent zBONTE spends in this block
         if (tx.HasZerocoinSpendInputs()) {
             for (const CTxIn& txIn : tx.vin) {
                 bool isPublicSpend = txIn.IsZerocoinPublicSpend();
@@ -4258,7 +4258,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     if (isPublicSpend) {
                         libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZALTCModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                        if (!ZBONTEModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                             return false;
                         }
                         spend = publicSpend;
@@ -4271,7 +4271,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zALTC serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zBONTE serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4312,9 +4312,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     }
 
     if (block.nBits != nBitsRequired) {
-        // Altecoin Specific reference to the block with the wrong threshold was used.
-        if ((block.nTime == (uint32_t) Params().AltecoinBadBlockTime()) && (block.nBits == (uint32_t) Params().AltecoinBadBlocknBits())) {
-            // accept Altecoin block minted with incorrect proof of work threshold
+        // Bontecoin Specific reference to the block with the wrong threshold was used.
+        if ((block.nTime == (uint32_t) Params().BontecoinBadBlockTime()) && (block.nBits == (uint32_t) Params().BontecoinBadBlocknBits())) {
+            // accept Bontecoin block minted with incorrect proof of work threshold
             return true;
         }
 
@@ -4585,17 +4585,17 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
         // Inputs
         std::vector<CTxIn> pivInputs;
-        std::vector<CTxIn> zALTCInputs;
+        std::vector<CTxIn> zBONTEInputs;
 
         for (const CTxIn& stakeIn : stakeTxIn.vin) {
             if(stakeIn.IsZerocoinSpend()){
-                zALTCInputs.push_back(stakeIn);
+                zBONTEInputs.push_back(stakeIn);
             }else{
                 pivInputs.push_back(stakeIn);
             }
         }
-        const bool hasALTCInputs = !pivInputs.empty();
-        const bool hasZALTCInputs = !zALTCInputs.empty();
+        const bool hasBONTEInputs = !pivInputs.empty();
+        const bool hasZBONTEInputs = !zBONTEInputs.empty();
 
         // ZC started after PoS.
         // Check for serial double spent on the same block, TODO: Move this to the proper method..
@@ -4617,7 +4617,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                         if (isPublicSpend) {
                             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
-                            if (!ZALTCModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                            if (!ZBONTEModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                 return false;
                             }
                             spend = publicSpend;
@@ -4633,7 +4633,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     }
                 }
                 if(tx.IsCoinStake()) continue;
-                if(hasALTCInputs) {
+                if(hasBONTEInputs) {
                     // Check if coinstake input is double spent inside the same block
                     for (const CTxIn& pivIn : pivInputs)
                         if(pivIn.prevout == in.prevout)
@@ -4675,11 +4675,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     for (const CTxIn& in: t.vin) {
                         // If this input is a zerocoin spend, and the coinstake has zerocoin inputs
                         // then store the serials for later check
-                        if(hasZALTCInputs && in.IsZerocoinSpend())
+                        if(hasZBONTEInputs && in.IsZerocoinSpend())
                             vBlockSerials.push_back(TxInToZerocoinSpend(in).getCoinSerialNumber());
 
                         // Loop through every input of the staking tx
-                        if (hasALTCInputs) {
+                        if (hasBONTEInputs) {
                             for (const CTxIn& stakeIn : pivInputs)
                                 // check if the tx input is double spending any coinstake input
                                 if (stakeIn.prevout == in.prevout)
@@ -4699,9 +4699,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Split height
             splitHeight = prev->nHeight;
 
-            // Now that this loop if completed. Check if we have zALTC inputs.
-            if(hasZALTCInputs) {
-                for (const CTxIn& zPivInput : zALTCInputs) {
+            // Now that this loop if completed. Check if we have zBONTE inputs.
+            if(hasZBONTEInputs) {
+                for (const CTxIn& zPivInput : zBONTEInputs) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
 
                     // First check if the serials were not already spent on the forked blocks.
@@ -4764,7 +4764,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zPivInput : zALTCInputs) {
+                for (const CTxIn& zPivInput : zBONTEInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
@@ -6013,7 +6013,7 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
             return true;
         }
 
-        // Altecoin: We use certain sporks during IBD, so check to see if they are
+        // Bontecoin: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         // TODO: Move this to an instant broadcast of the sporks.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) ||

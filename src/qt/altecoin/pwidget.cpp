@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/qtutils.h"
-#include "qt/altecoin/loadingdialog.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/qtutils.h"
+#include "qt/bontecoin/loadingdialog.h"
 #include <QRunnable>
 #include <QThreadPool>
 
-PWidget::PWidget(AltecoinGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
+PWidget::PWidget(BontecoinGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
 PWidget::PWidget(PWidget* parent) : QWidget(parent), window(parent->getWindow()){init();}
 
 void PWidget::init() {

@@ -155,7 +155,7 @@ wallet/libbitcoin_wallet_a-walletdb.o: wallet/walletdb.cpp \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  /usr/include/c++/7/stdlib.h wallet/db.h clientversion.h \
- config/altecoin-config.h serialize.h streams.h allocators.h \
+ config/bontecoin-config.h serialize.h streams.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -987,7 +987,7 @@ wallet/libbitcoin_wallet_a-walletdb.o: wallet/walletdb.cpp \
  chainparams.h chainparamsbase.h checkpoints.h primitives/block.h \
  primitives/transaction.h libzerocoin/CoinSpend.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h uint256.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1601,7 +1601,7 @@ wallet/db.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 serialize.h:
 
@@ -3483,7 +3483,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

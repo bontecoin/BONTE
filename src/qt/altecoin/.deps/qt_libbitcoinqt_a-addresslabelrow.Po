@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-addresslabelrow.o: \
- qt/altecoin/addresslabelrow.cpp /usr/include/stdc-predef.h \
- qt/altecoin/addresslabelrow.h \
+qt/bontecoin/qt_libbitcoinqt_a-addresslabelrow.o: \
+ qt/bontecoin/addresslabelrow.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/addresslabelrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -253,7 +253,7 @@ qt/altecoin/qt_libbitcoinqt_a-addresslabelrow.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/forms/ui_addresslabelrow.h \
+ qt/bontecoin/forms/ui_addresslabelrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
@@ -313,7 +313,7 @@ qt/altecoin/qt_libbitcoinqt_a-addresslabelrow.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/addresslabelrow.h:
+qt/bontecoin/addresslabelrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -917,7 +917,7 @@ qt/altecoin/addresslabelrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/forms/ui_addresslabelrow.h:
+qt/bontecoin/forms/ui_addresslabelrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 

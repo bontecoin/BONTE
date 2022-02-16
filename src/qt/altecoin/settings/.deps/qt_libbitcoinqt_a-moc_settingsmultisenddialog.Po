@@ -1,7 +1,7 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisenddialog.o: \
- qt/altecoin/settings/moc_settingsmultisenddialog.cpp \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisenddialog.o: \
+ qt/bontecoin/settings/moc_settingsmultisenddialog.cpp \
  /usr/include/stdc-predef.h \
- qt/altecoin/settings/settingsmultisenddialog.h \
+ qt/bontecoin/settings/settingsmultisenddialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -258,7 +258,7 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisenddialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingsmultisenddialog.h:
+qt/bontecoin/settings/settingsmultisenddialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

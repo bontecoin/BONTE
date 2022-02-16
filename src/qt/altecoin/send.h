@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,18 +8,18 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/contactsdropdown.h"
-#include "qt/altecoin/sendmultirow.h"
-#include "qt/altecoin/sendcustomfeedialog.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/contactsdropdown.h"
+#include "qt/bontecoin/sendmultirow.h"
+#include "qt/bontecoin/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
 #include "zpivcontroldialog.h"
-#include "qt/altecoin/tooltipmenu.h"
+#include "qt/bontecoin/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 
-class AltecoinGUI;
+class BontecoinGUI;
 class ClientModel;
 class WalletModel;
 class WalletModelTransaction;
@@ -34,7 +34,7 @@ class SendWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SendWidget(AltecoinGUI* parent);
+    explicit SendWidget(BontecoinGUI* parent);
     ~SendWidget();
 
     void addEntry();
@@ -59,7 +59,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private slots:
-    void onALTCSelected(bool _isALTC);
+    void onBONTESelected(bool _isBONTE);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -87,7 +87,7 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isALTC = true;
+    bool isBONTE = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();

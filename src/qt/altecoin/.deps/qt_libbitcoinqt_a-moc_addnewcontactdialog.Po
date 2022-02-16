@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_addnewcontactdialog.o: \
- qt/altecoin/moc_addnewcontactdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/addnewcontactdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_addnewcontactdialog.o: \
+ qt/bontecoin/moc_addnewcontactdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/addnewcontactdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_addnewcontactdialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/addnewcontactdialog.h:
+qt/bontecoin/addnewcontactdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

@@ -1,13 +1,13 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/privacywidget.h"
-#include "qt/altecoin/forms/ui_privacywidget.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/privacywidget.h"
+#include "qt/bontecoin/forms/ui_privacywidget.h"
+#include "qt/bontecoin/qtutils.h"
 #include "guiutil.h"
-#include "qt/altecoin/denomgenerationdialog.h"
-#include "qt/altecoin/txviewholder.h"
+#include "qt/bontecoin/denomgenerationdialog.h"
+#include "qt/bontecoin/txviewholder.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
@@ -17,7 +17,7 @@
 #define DECORATION_SIZE 65
 #define NUM_ITEMS 3
 
-PrivacyWidget::PrivacyWidget(AltecoinGUI* parent) :
+PrivacyWidget::PrivacyWidget(BontecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::PrivacyWidget)
 {
@@ -46,63 +46,63 @@ PrivacyWidget::PrivacyWidget(AltecoinGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zALTC anonymizes your ALTC by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zBONTE anonymizes your BONTE by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zALTC or convert back to ALTC"));
+    ui->labelSubtitle2->setText(tr("Mint new zBONTE or convert back to BONTE"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
 
-    ui->lineEditAmount->setPlaceholderText("0.00 ALTC ");
+    ui->lineEditAmount->setPlaceholderText("0.00 BONTE ");
     ui->lineEditAmount->setValidator(new QRegExpValidator(QRegExp("[0-9]+")));
     initCssEditLine(ui->lineEditAmount);
 
     /* Denom */
     ui->labelTitleDenom1->setText("Denom. with value 1:");
     setCssProperty(ui->labelTitleDenom1, "text-subtitle");
-    ui->labelValueDenom1->setText("0x1 = 0 zALTC");
+    ui->labelValueDenom1->setText("0x1 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom1, "text-body2");
 
     ui->labelTitleDenom5->setText("Denom. with value 5:");
     setCssProperty(ui->labelTitleDenom5, "text-subtitle");
-    ui->labelValueDenom5->setText("0x5 = 0 zALTC");
+    ui->labelValueDenom5->setText("0x5 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom5, "text-body2");
 
     ui->labelTitleDenom10->setText("Denom. with value 10:");
     setCssProperty(ui->labelTitleDenom10, "text-subtitle");
-    ui->labelValueDenom10->setText("0x10 = 0 zALTC");
+    ui->labelValueDenom10->setText("0x10 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom10, "text-body2");
 
     ui->labelTitleDenom50->setText("Denom. with value 50:");
     setCssProperty(ui->labelTitleDenom50, "text-subtitle");
-    ui->labelValueDenom50->setText("0x50 = 0 zALTC");
+    ui->labelValueDenom50->setText("0x50 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom50, "text-body2");
 
     ui->labelTitleDenom100->setText("Denom. with value 100:");
     setCssProperty(ui->labelTitleDenom100, "text-subtitle");
-    ui->labelValueDenom100->setText("0x100 = 0 zALTC");
+    ui->labelValueDenom100->setText("0x100 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom100, "text-body2");
 
     ui->labelTitleDenom500->setText("Denom. with value 500:");
     setCssProperty(ui->labelTitleDenom500, "text-subtitle");
-    ui->labelValueDenom500->setText("0x500 = 0 zALTC");
+    ui->labelValueDenom500->setText("0x500 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom500, "text-body2");
 
     ui->labelTitleDenom1000->setText("Denom. with value 1000:");
     setCssProperty(ui->labelTitleDenom1000, "text-subtitle");
-    ui->labelValueDenom1000->setText("0x1000 = 0 zALTC");
+    ui->labelValueDenom1000->setText("0x1000 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom1000, "text-body2");
 
     ui->labelTitleDenom5000->setText("Denom. with value 5000:");
     setCssProperty(ui->labelTitleDenom5000, "text-subtitle");
-    ui->labelValueDenom5000->setText("0x5000 = 0 zALTC");
+    ui->labelValueDenom5000->setText("0x5000 = 0 zBONTE");
     setCssProperty(ui->labelValueDenom5000, "text-body2");
 
     ui->layoutDenom->setVisible(false);
 
     // List
-    ui->labelListHistory->setText(tr("Last zALTC Movements"));
+    ui->labelListHistory->setText(tr("Last zBONTE Movements"));
     setCssProperty(ui->labelListHistory, "text-title");
 
     //ui->emptyContainer->setVisible(false);
@@ -113,16 +113,16 @@ PrivacyWidget::PrivacyWidget(AltecoinGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to ALTC enabled.
+    // Only Convert to BONTE enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
-    ui->btnTotalzALTC->setTitleClassAndText("btn-title-grey", "Total 0 zALTC");
-    ui->btnTotalzALTC->setSubTitleClassAndText("text-subtitle", "Show denominations of zALTC owned.");
-    ui->btnTotalzALTC->setRightIconClass("ic-arrow");
+    ui->btnTotalzBONTE->setTitleClassAndText("btn-title-grey", "Total 0 zBONTE");
+    ui->btnTotalzBONTE->setSubTitleClassAndText("text-subtitle", "Show denominations of zBONTE owned.");
+    ui->btnTotalzBONTE->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select ALTC outputs to mint into zALTC.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select BONTE outputs to mint into zBONTE.");
 
     ui->btnDenomGeneration->setTitleClassAndText("btn-title-grey", "Denom Generation");
     ui->btnDenomGeneration->setSubTitleClassAndText("text-subtitle", "Select the denomination of the coins.");
@@ -131,10 +131,10 @@ PrivacyWidget::PrivacyWidget(AltecoinGUI* parent) :
     ui->btnRescanMints->setTitleClassAndText("btn-title-grey", "Rescan Mints");
     ui->btnRescanMints->setSubTitleClassAndText("text-subtitle", "Find mints in the blockchain.");
 
-    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zALTC");
+    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zBONTE");
     ui->btnResetZerocoin->setSubTitleClassAndText("text-subtitle", "Reset zerocoin database.");
 
-    connect(ui->btnTotalzALTC, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
+    connect(ui->btnTotalzBONTE, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
     connect(ui->btnCoinControl, SIGNAL(clicked()), this, SLOT(onCoinControlClicked()));
     connect(ui->btnDenomGeneration, SIGNAL(clicked()), this, SLOT(onDenomClicked()));
     connect(ui->btnRescanMints, SIGNAL(clicked()), this, SLOT(onRescanMintsClicked()));
@@ -197,13 +197,13 @@ void PrivacyWidget::loadWalletModel(){
 void PrivacyWidget::onMintSelected(bool isMint){
     QString btnText;
     if(isMint){
-        btnText = tr("Mint zALTC");
+        btnText = tr("Mint zBONTE");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of ALTC to mint into zALTC"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of BONTE to mint into zBONTE"));
     }else{
-        btnText = tr("Convert back to ALTC");
+        btnText = tr("Convert back to BONTE");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zALTC to convert back into ALTC"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zBONTE to convert back into BONTE"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -226,10 +226,10 @@ void PrivacyWidget::onTotalZpivClicked(){
     bool isVisible = ui->layoutDenom->isVisible();
     if(!isVisible){
         ui->layoutDenom->setVisible(true);
-        ui->btnTotalzALTC->setRightIconClass("btn-dropdown", true);
+        ui->btnTotalzBONTE->setRightIconClass("btn-dropdown", true);
     }else{
         ui->layoutDenom->setVisible(false);
-        ui->btnTotalzALTC->setRightIconClass("ic-arrow", true);
+        ui->btnTotalzBONTE->setRightIconClass("ic-arrow", true);
     }
 }
 
@@ -238,15 +238,15 @@ void PrivacyWidget::onSendClicked(){
         return;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        warn(tr("Zerocoin"), tr("zALTC is currently undergoing maintenance"));
+        warn(tr("Zerocoin"), tr("zBONTE is currently undergoing maintenance"));
         return;
     }
 
     // Only convert enabled.
     bool isConvert = true;// ui->pushLeft->isChecked();
 
-    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zALTC, true)){
-        inform(tr("You need to unlock the wallet to be able to %1 zALTC").arg(isConvert ? tr("convert") : tr("mint")));
+    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zBONTE, true)){
+        inform(tr("You need to unlock the wallet to be able to %1 zBONTE").arg(isConvert ? tr("convert") : tr("mint")));
         return;
     }
 
@@ -277,7 +277,7 @@ void PrivacyWidget::mint(CAmount value){
         inform(tr(strError.data()));
     }else{
         // Mint succeed
-        inform(tr("zALTC minted successfully"));
+        inform(tr("zBONTE minted successfully"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -299,7 +299,7 @@ void PrivacyWidget::spend(CAmount value){
         inform(receipt.GetStatusMessage().data());
     }else{
         // Spend succeed
-        inform(tr("zALTC converted back to ALTC"));
+        inform(tr("zBONTE converted back to BONTE"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -318,7 +318,7 @@ void PrivacyWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any ALTC to select."));
+            inform(tr("You don't have any BONTE to select."));
         }
     }
 }
@@ -339,7 +339,7 @@ void PrivacyWidget::onRescanMintsClicked(){
 }
 
 void PrivacyWidget::onResetZeroClicked(){
-    if (ask(tr("Reset Spent zALTC"),
+    if (ask(tr("Reset Spent zBONTE"),
         tr("Your zerocoin spends are going to be scanned from the blockchain from scratch"))
     ){
         std::string strResetMintResult = walletModel->resetSpentZerocoin();
@@ -402,7 +402,7 @@ void PrivacyWidget::updateDenomsSupply(){
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zALTC </b>";
+                        QString::number(nSumPerCoin) + " zBONTE </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -436,7 +436,7 @@ void PrivacyWidget::updateDenomsSupply(){
     }
 
     CAmount matureZerocoinBalance = walletModel->getZerocoinBalance() - walletModel->getUnconfirmedZerocoinBalance() - walletModel->getImmatureZerocoinBalance();
-    ui->btnTotalzALTC->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
+    ui->btnTotalzBONTE->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
 }
 
 void PrivacyWidget::changeTheme(bool isLightTheme, QString& theme){

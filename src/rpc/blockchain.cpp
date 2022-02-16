@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -145,7 +145,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zpivObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zALTCsupply", zpivObj));
+    result.push_back(Pair("zBONTEsupply", zpivObj));
 
     //////////
     ////////// Coin stake data ////////////////
@@ -167,7 +167,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         stakeData.push_back(Pair("BlockFromHash", stake.get()->GetIndexFrom()->GetBlockHash().GetHex()));
         stakeData.push_back(Pair("BlockFromHeight", stake.get()->GetIndexFrom()->nHeight));
         stakeData.push_back(Pair("hashProofOfStake", hashProofOfStakeRet.GetHex()));
-        stakeData.push_back(Pair("stakeModifierHeight", ((stake->IsZALTC()) ? "Not available" : std::to_string(
+        stakeData.push_back(Pair("stakeModifierHeight", ((stake->IsZBONTE()) ? "Not available" : std::to_string(
                 stake->getStakeModifierHeight()))));
         result.push_back(Pair("CoinStake", stakeData));
     }
@@ -208,17 +208,17 @@ UniValue getchecksumblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zALTCsupply\" :\n"
+            "  \"zBONTEsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zALTC denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zALTC denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zALTC denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zALTC denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zALTC denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zALTC denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zALTC denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zALTC denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zALTC denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zBONTE denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zBONTE denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zBONTE denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zBONTE denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zBONTE denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zBONTE denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zBONTE denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zBONTE denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zBONTE denominations\n"
             "  }\n"
             "}\n"
 
@@ -518,7 +518,7 @@ UniValue getrawmempool(const UniValue& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in altecoin\n"
+            "    \"fee\" : n,              (numeric) transaction fee in bontecoin\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -599,17 +599,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zALTCsupply\" :\n"
+            "  \"zBONTEsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zALTC denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zALTC denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zALTC denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zALTC denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zALTC denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zALTC denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zALTC denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zALTC denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zALTC denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zBONTE denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zBONTE denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zBONTE denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zBONTE denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zBONTE denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zBONTE denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zBONTE denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zBONTE denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zBONTE denominations\n"
             "  },\n"
             "  \"CoinStake\" :\n"
             "    \"BlockFromHash\" : \"hash\",      (string) Block hash of the coin stake input\n"
@@ -768,8 +768,8 @@ UniValue gettxout(const UniValue& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of altecoin addresses\n"
-            "     \"altecoinaddress\"            (string) altecoin address\n"
+            "     \"addresses\" : [          (array of string) array of bontecoin addresses\n"
+            "     \"bontecoinaddress\"            (string) bontecoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"
@@ -1292,7 +1292,7 @@ UniValue getaccumulatorwitness(const UniValue& params, bool fHelp)
     CZerocoinSpendReceipt receipt;
 
     if (!GenerateAccumulatorWitness(pubCoin, accumulator, witness, nMintsAdded, strFailReason)) {
-        receipt.SetStatus(_(strFailReason.c_str()), ZALTC_FAILED_ACCUMULATOR_INITIALIZATION);
+        receipt.SetStatus(_(strFailReason.c_str()), ZBONTE_FAILED_ACCUMULATOR_INITIALIZATION);
         throw JSONRPCError(RPC_DATABASE_ERROR, receipt.GetStatusMessage());
     }
 
@@ -1468,7 +1468,7 @@ UniValue getserials(const UniValue& params, bool fHelp) {
                         }
                         libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZALTCModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
+                        if (!ZBONTEModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
                             throw JSONRPCError(RPC_INTERNAL_ERROR, "public zerocoin spend parse failed");
                         }
                         serial_str = publicSpend.getCoinSerialNumber().ToString(16);
@@ -1542,9 +1542,9 @@ UniValue getblockindexstats(const UniValue& params, bool fHelp) {
                 "        \"denom_5\": xxxx           (numeric) number of PUBLIC spends of denom_5 occurred over the block range\n"
                 "         ...                    ... number of PUBLIC spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000\n"
                 "  }\n"
-                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zALTC excluded) over block range\n"
-                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zALTC mints excluded) over block range\n"
-                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zALTC mints included) over block range\n"
+                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zBONTE excluded) over block range\n"
+                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zBONTE mints excluded) over block range\n"
+                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zBONTE mints included) over block range\n"
                 "  \"feeperkb\": xxxxx               (numeric) Average fee per kb (excluding zc txes)\n"
                 "}\n"
 

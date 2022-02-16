@@ -653,11 +653,11 @@ libbitcoin_wallet_a-activemasternode.o: activemasternode.cpp \
  primitives/block.h primitives/transaction.h amount.h serialize.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1031,7 +1031,7 @@ libbitcoin_wallet_a-activemasternode.o: activemasternode.cpp \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp protocol.h \
- netbase.h config/altecoin-config.h compat.h libzerocoin/Params.h \
+ netbase.h config/bontecoin-config.h compat.h libzerocoin/Params.h \
  script/script.h script/standard.h script/interpreter.h \
  script/script_error.h /usr/include/boost/variant.hpp \
  /usr/include/boost/variant/recursive_variant.hpp \
@@ -2742,7 +2742,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2770,7 +2770,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3618,7 +3618,7 @@ protocol.h:
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

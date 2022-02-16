@@ -1,13 +1,13 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef PRIVACYWIDGET_H
 #define PRIVACYWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/txviewholder.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/txviewholder.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
 #include "coincontroldialog.h"
@@ -15,7 +15,7 @@
 #include <QLabel>
 #include <QWidget>
 
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -31,7 +31,7 @@ class PrivacyWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit PrivacyWidget(AltecoinGUI* parent);
+    explicit PrivacyWidget(BontecoinGUI* parent);
     ~PrivacyWidget();
 
     void loadWalletModel() override;

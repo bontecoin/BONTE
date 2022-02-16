@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef FURSZY_Altecoin_GUITRANSACTIONSUTILS_H
-#define FURSZY_Altecoin_GUITRANSACTIONSUTILS_H
+#ifndef FURSZY_Bontecoin_GUITRANSACTIONSUTILS_H
+#define FURSZY_Bontecoin_GUITRANSACTIONSUTILS_H
 
 #include "walletmodel.h"
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 
 
 namespace GuiTransactionsUtils {
@@ -34,4 +34,4 @@ namespace GuiTransactionsUtils {
 }
 
 
-#endif //FURSZY_Altecoin_GUITRANSACTIONSUTILS_H
+#endif //FURSZY_Bontecoin_GUITRANSACTIONSUTILS_H

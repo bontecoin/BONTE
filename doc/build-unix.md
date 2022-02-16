@@ -1,10 +1,10 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Altecoin in Unix.
+Some notes on how to build Bontecoin in Unix.
 
 Note
 ---------------------
-Always use absolute paths to configure and compile Altecoin and the dependencies,
+Always use absolute paths to configure and compile Bontecoin and the dependencies,
 For example, when specifying the path of the dependency:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -22,7 +22,7 @@ make
 make install # optional
 ```
 
-This will build altecoin-qt as well, if the dependencies are met.
+This will build bontecoin-qt as well, if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -53,7 +53,7 @@ Memory Requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Altecoin. On systems with less, gcc can be
+memory available when compiling Bontecoin. On systems with less, gcc can be
 tuned to conserve memory with additional CXXFLAGS:
 
 
@@ -75,7 +75,7 @@ Now, you can either build from self-compiled [depends](/depends/README.md) or in
     sudo apt-get install libssl-dev libgmp-dev libevent-dev libboost-all-dev
 
 **Note:** For Ubuntu versions starting with Bionic (18.04), or Debian versions starting with Stretch, use `libssl1.0-dev`
-above instead of `libssl-dev`. Altecoin does not support the use of OpenSSL 1.1, though compilation is still possible
+above instead of `libssl-dev`. Bontecoin does not support the use of OpenSSL 1.1, though compilation is still possible
 by passing `--with-incompatible-ssl` to configure (NOT RECOMMENDED!).
 
 BerkeleyDB is required for the wallet.
@@ -95,7 +95,7 @@ pass `--with-incompatible-bdb` to configure.
 
 Otherwise, you can build from self-compiled `depends` (see above).
 
-To build Altecoin without wallet, see [*Disable-wallet mode*](/doc/build-unix.md#disable-wallet-mode)
+To build Bontecoin without wallet, see [*Disable-wallet mode*](/doc/build-unix.md#disable-wallet-mode)
 
 
 Optional (see --with-miniupnpc and --enable-upnp-default):
@@ -108,7 +108,7 @@ ZMQ dependencies (provides ZMQ API):
 
 GUI dependencies:
 
-If you want to build altecoin-qt, make sure that the required packages for Qt development
+If you want to build bontecoin-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 To build without GUI pass `--without-gui`.
 
@@ -116,7 +116,7 @@ To build with Qt 5 you need the following:
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev libqt5charts5-dev qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
 
-Once these are installed, they will be found by configure and a altecoin-qt executable will be
+Once these are installed, they will be found by configure and a bontecoin-qt executable will be
 built by default.
 
 
@@ -138,7 +138,7 @@ To build with Qt 5 you need the following:
 
 Notes
 -----
-The release is built with GCC and then "strip altecoind" to strip the debug
+The release is built with GCC and then "strip bontecoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -187,7 +187,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your Altecoin installation more secure by making certain attacks impossible to
+To help make your Bontecoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -209,7 +209,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./altecoind
+    	scanelf -e ./bontecoind
 
     The output should contain:
 
@@ -217,13 +217,13 @@ Hardening enables the following features:
     ET_DYN
 
 * _Non-executable Stack_: If the stack is executable then trivial stack-based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, Altecoin should be built with a non-executable stack
+    vulnerable buffers are found. By default, Bontecoin should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./altecoind`
+    `scanelf -e ./bontecoind`
 
     The output should contain:
 	STK/REL/PTL
@@ -235,7 +235,7 @@ Disable-wallet mode
 --------------------
 **Note:** This functionality is not yet completely implemented, and compilation using the below option will currently fail.
 
-When the intention is to run only a P2P node without a wallet, Altecoin may be compiled in
+When the intention is to run only a P2P node without a wallet, Bontecoin may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet

@@ -1,4 +1,4 @@
-altecoin_cli-altecoin-cli.o: altecoin-cli.cpp \
+bontecoin_cli-bontecoin-cli.o: bontecoin-cli.cpp \
  /usr/include/stdc-predef.h chainparamsbase.h /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -122,7 +122,7 @@ altecoin_cli-altecoin-cli.o: altecoin-cli.cpp \
  /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- clientversion.h config/altecoin-config.h rpc/client.h \
+ clientversion.h config/bontecoin-config.h rpc/client.h \
  univalue/include/univalue.h /usr/include/c++/7/map \
  /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/ext/aligned_buffer.h \
@@ -1089,7 +1089,7 @@ chainparamsbase.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 rpc/client.h:
 

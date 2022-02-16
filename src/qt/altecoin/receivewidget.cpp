@@ -1,15 +1,15 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/receivewidget.h"
-#include "qt/altecoin/forms/ui_receivewidget.h"
-#include "qt/altecoin/requestdialog.h"
-#include "qt/altecoin/addnewcontactdialog.h"
-#include "qt/altecoin/qtutils.h"
-#include "qt/altecoin/myaddressrow.h"
-#include "qt/altecoin/furlistrow.h"
-#include "qt/altecoin/addressholder.h"
+#include "qt/bontecoin/receivewidget.h"
+#include "qt/bontecoin/forms/ui_receivewidget.h"
+#include "qt/bontecoin/requestdialog.h"
+#include "qt/bontecoin/addnewcontactdialog.h"
+#include "qt/bontecoin/qtutils.h"
+#include "qt/bontecoin/myaddressrow.h"
+#include "qt/bontecoin/furlistrow.h"
+#include "qt/bontecoin/addressholder.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 #include "pairresult.h"
@@ -21,7 +21,7 @@
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
 
-ReceiveWidget::ReceiveWidget(AltecoinGUI* parent) :
+ReceiveWidget::ReceiveWidget(BontecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::ReceiveWidget)
 {
@@ -42,7 +42,7 @@ ReceiveWidget::ReceiveWidget(AltecoinGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive ALTC."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive BONTE."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

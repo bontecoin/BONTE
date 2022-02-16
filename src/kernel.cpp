@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2013 The PPCoin developers
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -346,7 +346,7 @@ bool GetHashProofOfStake(const CBlockIndex* pindexPrev, CStakeInput* stake, cons
     if (fVerify) {
         LogPrint("staking", "%s : nStakeModifier=%s (nStakeModifierHeight=%s)\n"
                 "nTimeBlockFrom=%d\nssUniqueIDD=%s\n-->DATA=%s",
-            __func__, HexStr(modifier_ss), ((stake->IsZALTC()) ? "Not available" : std::to_string(stake->getStakeModifierHeight())),
+            __func__, HexStr(modifier_ss), ((stake->IsZBONTE()) ? "Not available" : std::to_string(stake->getStakeModifierHeight())),
             nTimeBlockFrom, HexStr(ssUniqueID), HexStr(ss));
     }
     return true;
@@ -418,23 +418,23 @@ bool StakeV1(const CBlockIndex* pindexPrev, CStakeInput* stakeInput, const uint3
 bool ContextualCheckZerocoinStake(int nPreviousBlockHeight, CStakeInput* stake)
 {
     if (nPreviousBlockHeight < Params().Zerocoin_Block_V2_Start())
-        return error("%s : zALTC stake block is less than allowed start height", __func__);
+        return error("%s : zBONTE stake block is less than allowed start height", __func__);
 
-    if (CZPivStake* zALTC = dynamic_cast<CZPivStake*>(stake)) {
-        CBlockIndex* pindexFrom = zALTC->GetIndexFrom();
+    if (CZPivStake* zBONTE = dynamic_cast<CZPivStake*>(stake)) {
+        CBlockIndex* pindexFrom = zBONTE->GetIndexFrom();
         if (!pindexFrom)
-            return error("%s : failed to get index associated with zALTC stake checksum", __func__);
+            return error("%s : failed to get index associated with zBONTE stake checksum", __func__);
 
         int depth = (nPreviousBlockHeight + 1) - pindexFrom->nHeight;
         if (depth < Params().Zerocoin_RequiredStakeDepth())
-            return error("%s : zALTC stake does not have required confirmation depth. Current height %d,  stakeInput height %d.", __func__, nPreviousBlockHeight, pindexFrom->nHeight);
+            return error("%s : zBONTE stake does not have required confirmation depth. Current height %d,  stakeInput height %d.", __func__, nPreviousBlockHeight, pindexFrom->nHeight);
 
         //The checksum needs to be the exact checksum from 200 blocks ago or latest checksum
         const int checkpointHeight = std::min(Params().Zerocoin_Block_Last_Checkpoint(), (nPreviousBlockHeight - Params().Zerocoin_RequiredStakeDepth()));
         uint256 nCheckpoint200 = chainActive[checkpointHeight]->nAccumulatorCheckpoint;
-        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zALTC->GetValue()));
-        if (nChecksum200 != zALTC->GetChecksum())
-            return error("%s : accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zALTC->GetChecksum(), nChecksum200);
+        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zBONTE->GetValue()));
+        if (nChecksum200 != zBONTE->GetChecksum())
+            return error("%s : accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zBONTE->GetChecksum(), nChecksum200);
     } else {
         return error("%s : dynamic_cast of stake ptr failed", __func__);
     }
@@ -459,7 +459,7 @@ bool initStakeInput(const CBlock& block, std::unique_ptr<CStakeInput>& stake, in
         stake = std::unique_ptr<CStakeInput>(new CZPivStake(spend));
 
         if (!ContextualCheckZerocoinStake(nPreviousBlockHeight, stake.get()))
-            return error("%s : staked zALTC fails context checks", __func__);
+            return error("%s : staked zBONTE fails context checks", __func__);
     } else {
         // First try finding the previous transaction in database
         uint256 hashBlock;

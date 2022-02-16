@@ -111,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie ALTC überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie BONTE überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie ALTC empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie BONTE empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -130,12 +130,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Altecoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie ALTC überweisen.</translation>
+        <source>These are your Bontecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre Bontecoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie BONTE überweisen.</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Altecoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your Bontecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre Bontecoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -371,16 +371,16 @@ for staking</source>
         <translation>ABBRECHEN</translation>
     </message>
     <message>
-        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer ALTCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>Bontecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BONTEs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer BONTEs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre ALTCs&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONTE&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre BONTEs&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -465,8 +465,8 @@ for staking</source>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "altecoin.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bontecoin.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "bontecoin.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -538,8 +538,8 @@ for staking</source>
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>0.00 ALTC</source>
-        <translation>0.00 ALTC</translation>
+        <source>0.00 BONTE</source>
+        <translation>0.00 BONTE</translation>
     </message>
     <message>
         <source>0</source>
@@ -745,8 +745,8 @@ for staking</source>
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>ALTC:</source>
-        <translation>ALTC:</translation>
+        <source>BONTE:</source>
+        <translation>BONTE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -906,12 +906,12 @@ for staking</source>
         <translation>Staking Statistiken</translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
-        <source>zALTC</source>
-        <translation>zALTC</translation>
+        <source>zBONTE</source>
+        <translation>zBONTE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -938,8 +938,8 @@ for staking</source>
         <translation>Der Link zum Verlauf des Accounts</translation>
     </message>
     <message>
-        <source>Amount of ALTC and zALTC staked.</source>
-        <translation>Wieviele ALTC und z ALTC am staken sind.</translation>
+        <source>Amount of BONTE and zBONTE staked.</source>
+        <translation>Wieviele BONTE und z BONTE am staken sind.</translation>
     </message>
     <message>
         <source>All</source>
@@ -978,8 +978,8 @@ for staking</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>How to get ALTC or zALTC</source>
-        <translation>Wie bekommt man ALTC oder zALTC</translation>
+        <source>How to get BONTE or zBONTE</source>
+        <translation>Wie bekommt man BONTE oder zBONTE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1043,7 +1043,7 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
     </message>
     <message>
         <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
-        <translation>Diese Option schaltet ihre Wallet ganz frei. Jeder der Zugriff hat, kann ALTC ausgeben bis die Wallet wieder geschlossen oder gesperrt wird.</translation>
+        <translation>Diese Option schaltet ihre Wallet ganz frei. Jeder der Zugriff hat, kann BONTE ausgeben bis die Wallet wieder geschlossen oder gesperrt wird.</translation>
     </message>
     <message>
         <source>5000</source>
@@ -1129,8 +1129,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Altecoin address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Altecoin-Adresse.</translation>
+        <source>The entered address "%1" is not a valid Bontecoin address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige Bontecoin-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1221,16 +1221,16 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Version</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Altecoin Core</source>
-        <translation>Über Altecoin Core</translation>
+        <source>About Bontecoin Core</source>
+        <translation>Über Bontecoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1280,16 +1280,16 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Altecoin Core.</source>
-        <translation>Willkommen zu Altecoin Core.</translation>
+        <source>Welcome to Bontecoin Core.</source>
+        <translation>Willkommen zu Bontecoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Altecoin Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where Bontecoin Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie Bontecoin Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Altecoin Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>Bontecoin Core will download and store a copy of the Bontecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Bontecoin Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1304,8 +1304,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>OK</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1412,16 +1412,16 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Altecoin Masternode you must dedicate 10.000 ALTC (the unit of Altecoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Um einen Altecoin Masternode zu erstellen benötigen Sie 10'000 ALTC (die Einheit von Altecoin), welche sie dem Netzwerk zur Verfügung stellen (Diese Münzen gehören Ihnen und werden Ihren Besitz nie verlassen). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Sie können den Node zu jeder Zeit deaktivieren und somit die Münzen freischalten.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bontecoin Masternode you must dedicate 10.000 BONTE (the unit of Bontecoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Um einen Bontecoin Masternode zu erstellen benötigen Sie 10'000 BONTE (die Einheit von Bontecoin), welche sie dem Netzwerk zur Verfügung stellen (Diese Münzen gehören Ihnen und werden Ihren Besitz nie verlassen). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Sie können den Node zu jeder Zeit deaktivieren und somit die Münzen freischalten.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Stellen Sie sicher, dass Sie die Anzahl Coins besitzen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALTC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 ALTC wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BONTE will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 BONTE wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1535,7 +1535,7 @@ Bitte warte einige Minuten.</translation>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the altecoin.conf file
+You will only have to paste the data in the bontecoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1544,8 +1544,8 @@ um einen Masternode auf einem externen Server laufen zu lassen,
 in die Zwischenablage zu kopieren.
 
 
-SIe müssen lediglich die Daten in das altecoin.conf-File ihres externen Servers einfügen,
-die Altecoin-wallet starten, um dann von der Kontrollwallet aus 
+SIe müssen lediglich die Daten in das bontecoin.conf-File ihres externen Servers einfügen,
+die Bontecoin-wallet starten, um dann von der Kontrollwallet aus 
 ihren Masternode zu starten.
 </translation>
     </message>
@@ -1576,8 +1576,8 @@ Sind sie sicher?</translation>
         <translation>masternode.conf File existiert nicht</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 ALTC required.</source>
-        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 ALTC werden benötigt.</translation>
+        <source>Not enough balance to create a masternode, 10,000 BONTE required.</source>
+        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 BONTE werden benötigt.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1710,8 +1710,8 @@ Sind sie sicher?</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the Altecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des Altecoin-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the Bontecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des Bontecoin-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1730,12 +1730,12 @@ Sind sie sicher?</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start Altecoin after logging in to the system.</source>
-        <translation>Altecoin automatisch nach dem Login starten.</translation>
+        <source>Automatically start Bontecoin after logging in to the system.</source>
+        <translation>Bontecoin automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Altecoin on system login</source>
-        <translation>Altecoin automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start Bontecoin on system login</source>
+        <translation>Bontecoin automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1762,58 +1762,58 @@ Sind sie sicher?</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bontecoin.</source>
         <translation>Die Sprache der Benutzeroberfläche kann hier festgelegt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/altecoin-altc/altecoin-altc-translations</source>
+https://www.transifex.com/bontecoin-bonte/bontecoin-bonte-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung bei unter:
-https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
+https://www.transifex.com/bontecoin-bonte/bontecoin-bonte-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of ALTC units to zALTC</source>
-        <translation>Aktivieren Sie die automatische Prägung von ALTC-Einheiten zu zALTC</translation>
+        <source>Enable automatic minting of BONTE units to zBONTE</source>
+        <translation>Aktivieren Sie die automatische Prägung von BONTE-Einheiten zu zBONTE</translation>
     </message>
     <message>
-        <source>Enable zALTC Automint</source>
-        <translation>Aktivieren Sie zALTC Automint</translation>
+        <source>Enable zBONTE Automint</source>
+        <translation>Aktivieren Sie zBONTE Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zALTC minting from specific addresses</source>
-        <translation>Automatisches zALTC Minting von spezifischen Adressen erlauben</translation>
+        <source>Enable automatic zBONTE minting from specific addresses</source>
+        <translation>Automatisches zBONTE Minting von spezifischen Adressen erlauben</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
-        <source>Percentage of incoming ALTC which get automatically converted to zALTC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden ALTC, welcher automatisch zu zALTC via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming BONTE which get automatically converted to zBONTE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden BONTE, welcher automatisch zu zBONTE via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zALTC</source>
-        <translation>Prozentsatz der automatisierten zALTC</translation>
+        <source>Percentage of autominted zBONTE</source>
+        <translation>Prozentsatz der automatisierten zBONTE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough ALTC for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend ALTC für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BONTE for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend BONTE für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zALTC Denomination</source>
-        <translation>Bevorzugte automatisierte zALTC Stückelung </translation>
+        <source>Preferred Automint zBONTE Denomination</source>
+        <translation>Bevorzugte automatisierte zBONTE Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Staff Split-Schwelle:</translation>
     </message>
     <message>
-        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem Altecoin Netzwerk verbinden.</translation>
+        <source>Connect to the Bontecoin network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem Bontecoin Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1949,10 +1949,10 @@ https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
     </message>
 </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1979,8 +1979,8 @@ https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
         <translation>Anwendung beenden</translation>
     </message>
     <message>
-        <source>Altecoin Core client</source>
-        <translation>Altecoin Core Client</translation>
+        <source>Bontecoin Core client</source>
+        <translation>Bontecoin Core Client</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2044,12 +2044,12 @@ Adresse: %4</translation>
         <translation>Ungültige Zahlungsaufforderungsadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start altecoin: click-to-pay handler</source>
-        <translation>Kann Altecoin nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start bontecoin: click-to-pay handler</source>
+        <translation>Kann Bontecoin nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Altecoin address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Altecoin-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Bontecoin address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Bontecoin-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2166,24 +2166,24 @@ Adresse: %4</translation>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>Mint zALTC</source>
-        <translation>zALTC prägen</translation>
+        <source>Mint zBONTE</source>
+        <translation>zBONTE prägen</translation>
     </message>
     <message>
-        <source>Enter amount of ALTC to mint into zALTC</source>
-        <translation>Gebe eine Anzahl ALTC ein, um sie in zALTC zu wechseln</translation>
+        <source>Enter amount of BONTE to mint into zBONTE</source>
+        <translation>Gebe eine Anzahl BONTE ein, um sie in zBONTE zu wechseln</translation>
     </message>
     <message>
-        <source>Convert back to ALTC</source>
-        <translation>Konvertiere zALTC zurück zu ALTC</translation>
+        <source>Convert back to BONTE</source>
+        <translation>Konvertiere zBONTE zurück zu BONTE</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zALTC is currently undergoing maintenance</source>
-        <translation>zALTC wird momentan überarbeitet</translation>
+        <source>zBONTE is currently undergoing maintenance</source>
+        <translation>zBONTE wird momentan überarbeitet</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2284,8 +2284,8 @@ Adresse: %4</translation>
         <translation>%1 Ms</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     </context>
 <context>
@@ -2359,8 +2359,8 @@ Adresse: %4</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the Altecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne Altecoin-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the Bontecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne Bontecoin-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2495,8 +2495,8 @@ Adresse: %4</translation>
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zALTC Backup Path:</source>
-        <translation>Benutzerdefinierter zALTC Sicherungspfad:</translation>
+        <source>Custom zBONTE Backup Path:</source>
+        <translation>Benutzerdefinierter zBONTE Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2575,8 +2575,8 @@ Adresse: %4</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Willkommen in der Altecoin RPC-Konsole.</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Willkommen in der Bontecoin RPC-Konsole.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2737,8 +2737,8 @@ Adresse: %4</translation>
         <translation>Empfangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive ALTC.</source>
-        <translation>QR-Code scannen oder Adresse kopieren um ALTC zu erhalten.</translation>
+        <source>Scan the QR code or copy the address to receive BONTE.</source>
+        <translation>QR-Code scannen oder Adresse kopieren um BONTE zu erhalten.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -2831,8 +2831,8 @@ Adresse: %4</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2971,8 +2971,8 @@ Adresse: %4</translation>
         <translation>Schicken</translation>
     </message>
     <message>
-        <source>You can transfer public coins (ALTC) or private coins (zALTC)</source>
-        <translation>Sie können öffentliche Coins (ALTC) oder private Coins (zALTC) transferieren</translation>
+        <source>You can transfer public coins (BONTE) or private coins (zBONTE)</source>
+        <translation>Sie können öffentliche Coins (BONTE) oder private Coins (zBONTE) transferieren</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3003,12 +3003,12 @@ Adresse: %4</translation>
         <translation>Totalbetrag zum Senden</translation>
     </message>
     <message>
-        <source>Send ALTC</source>
-        <translation>Sende ALTC</translation>
+        <source>Send BONTE</source>
+        <translation>Sende BONTE</translation>
     </message>
     <message>
-        <source>Send zALTC</source>
-        <translation>Sende zALTC</translation>
+        <source>Send zBONTE</source>
+        <translation>Sende zBONTE</translation>
     </message>
     <message>
         <source>Customize Fee</source>
@@ -3047,12 +3047,12 @@ Adresse: %4</translation>
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>zALTC is currently undergoing maintenance.</source>
-        <translation>zALTC unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zBONTE is currently undergoing maintenance.</source>
+        <translation>zBONTE unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
-        <source>Version 1 zALTC require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zALTC benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zBONTE require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zBONTE benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3268,8 +3268,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Konsole</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Willkommen in der Altecoin RPC-Konsole.</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Willkommen in der Bontecoin RPC-Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3346,33 +3346,33 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>1) What is Altecoin?</source>
-        <translation>1) Was ist Altecoin?</translation>
+        <source>1) What is Bontecoin?</source>
+        <translation>1) Was ist Bontecoin?</translation>
     </message>
     <message>
-        <source>2) Why are my ALTC unspendable?</source>
-        <translation>2) Wieso kann ich meine ALTC nicht ausgeben?</translation>
+        <source>2) Why are my BONTE unspendable?</source>
+        <translation>2) Wieso kann ich meine BONTE nicht ausgeben?</translation>
     </message>
     <message>
-        <source>3) Altecoin privacy? What is Zerocoin (zALTC)?</source>
-        <translation>3) Altecoin Privatsphäre? Was ist ein Zercoin (zALTC)?</translation>
+        <source>3) Bontecoin privacy? What is Zerocoin (zBONTE)?</source>
+        <translation>3) Bontecoin Privatsphäre? Was ist ein Zercoin (zBONTE)?</translation>
     </message>
     <message>
-        <source>4) Why are my zALTC unspendable?</source>
-        <translation>4) Wieso kann ich meine zALTC nicht ausgeben?</translation>
+        <source>4) Why are my zBONTE unspendable?</source>
+        <translation>4) Wieso kann ich meine zBONTE nicht ausgeben?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zALTC automatically?</source>
-        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zALTC gewechselt?</translation>
+    into zBONTE automatically?</source>
+        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zBONTE gewechselt?</translation>
     </message>
     <message>
-        <source>6) How do I receive ALTC/zALTC?</source>
-        <translation>6) Wie empfange ich ALTC/zALTC?</translation>
+        <source>6) How do I receive BONTE/zBONTE?</source>
+        <translation>6) Wie empfange ich BONTE/zBONTE?</translation>
     </message>
     <message>
-        <source>7) How do I stake ALTC/zALTC?</source>
-        <translation>7) Wie stake ich ALTC/zALTC?</translation>
+        <source>7) How do I stake BONTE/zBONTE?</source>
+        <translation>7) Wie stake ich BONTE/zBONTE?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3383,48 +3383,48 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>1</translation>
     </message>
     <message>
-        <source>What is Altecoin?</source>
-        <translation>Was ist Altecoin</translation>
+        <source>What is Bontecoin?</source>
+        <translation>Was ist Bontecoin</translation>
     </message>
     <message>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my ALTC unspendable?</source>
-        <translation>Wieso kann ich meine ALTC nicht ausgeben?</translation>
+        <source>Why are my BONTE unspendable?</source>
+        <translation>Wieso kann ich meine BONTE nicht ausgeben?</translation>
     </message>
     <message>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <source>Altecoin privacy? What is Zerocoin (zALTC)?</source>
-        <translation>Altecoin Privatsphäre? Was ist ein Zercoin (zALTC)?</translation>
+        <source>Bontecoin privacy? What is Zerocoin (zBONTE)?</source>
+        <translation>Bontecoin Privatsphäre? Was ist ein Zercoin (zBONTE)?</translation>
     </message>
     <message>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zALTC unspendable?</source>
-        <translation>Wieso kann ich meine zALTC nicht ausgeben?</translation>
+        <source>Why are my zBONTE unspendable?</source>
+        <translation>Wieso kann ich meine zBONTE nicht ausgeben?</translation>
     </message>
     <message>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zALTC automatically?</source>
-        <translation>Wieso hat meine Wallet automatisch das Guthaben in zALTC gewechselt?</translation>
+        <source>Why did my wallet convert the balance into zBONTE automatically?</source>
+        <translation>Wieso hat meine Wallet automatisch das Guthaben in zBONTE gewechselt?</translation>
     </message>
     <message>
-        <source>How do I receive ALTC/zALTC?</source>
-        <translation>Wie empfange ich ALTC/zALTC?</translation>
+        <source>How do I receive BONTE/zBONTE?</source>
+        <translation>Wie empfange ich BONTE/zBONTE?</translation>
     </message>
     <message>
-        <source>How do I stake ALTC/zALTC?</source>
-        <translation>Wie stake ich ALTC/zALTC?</translation>
+        <source>How do I stake BONTE/zBONTE?</source>
+        <translation>Wie stake ich BONTE/zBONTE?</translation>
     </message>
     <message>
         <source>10</source>
@@ -3814,8 +3814,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Altecoin Core is shutting down...</source>
-        <translation>Altecoin Core wird beendet...</translation>
+        <source>Bontecoin Core is shutting down...</source>
+        <translation>Bontecoin Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3836,15 +3836,15 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Formular</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3859,8 +3859,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Altecoin Core developers</source>
-        <translation>Die Altecoin Core Entwickler</translation>
+        <source>The Bontecoin Core developers</source>
+        <translation>Die Bontecoin Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4138,12 +4138,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>über/durch Verschleierung empfangen</translation>
     </message>
     <message>
-        <source>ALTC Stake</source>
-        <translation>ALTC Stake</translation>
+        <source>BONTE Stake</source>
+        <translation>BONTE Stake</translation>
     </message>
     <message>
-        <source>zALTC Stake</source>
-        <translation>zALTC Stake</translation>
+        <source>zBONTE Stake</source>
+        <translation>zBONTE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4162,24 +4162,24 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Verschleierung Erzeugung der Stückelung</translation>
     </message>
     <message>
-        <source>Converted ALTC to zALTC</source>
-        <translation>Umgewandeltes ALTC zu zALTC</translation>
+        <source>Converted BONTE to zBONTE</source>
+        <translation>Umgewandeltes BONTE zu zBONTE</translation>
     </message>
     <message>
-        <source>Spent zALTC</source>
-        <translation>Ausgegebene zALTC</translation>
+        <source>Spent zBONTE</source>
+        <translation>Ausgegebene zBONTE</translation>
     </message>
     <message>
-        <source>Received ALTC from zALTC</source>
-        <translation>Empfangene ALTC von zALTC</translation>
+        <source>Received BONTE from zBONTE</source>
+        <translation>Empfangene BONTE von zBONTE</translation>
     </message>
     <message>
-        <source>Minted Change as zALTC from zALTC Spend</source>
-        <translation>Geprägtes zALTC Wechselgeld aus zALTC Überweisung</translation>
+        <source>Minted Change as zBONTE from zBONTE Spend</source>
+        <translation>Geprägtes zBONTE Wechselgeld aus zBONTE Überweisung</translation>
     </message>
     <message>
-        <source>Converted zALTC to ALTC</source>
-        <translation>Umgewandeltes zALTC zu ALTC</translation>
+        <source>Converted zBONTE to BONTE</source>
+        <translation>Umgewandeltes zBONTE zu BONTE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4292,11 +4292,11 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>ALTCs überweisen</translation>
+        <translation>BONTEs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALTC.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 ALTC begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BONTE.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 BONTE begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4360,8 +4360,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zALTC to Spend</source>
-        <translation>Wählen Sie die zALTC aus, die Sie ausgeben möchten</translation>
+        <source>Select zBONTE to Spend</source>
+        <translation>Wählen Sie die zBONTE aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4373,7 +4373,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zALTC</translation>
+        <translation>zBONTE</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -4393,7 +4393,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4419,8 +4419,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Der berechnete Akkumulator-Checkpoint stimmt nicht mit dem vom Blockindex aufgezeichneten überein</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Altecoin Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Altecoin Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. Bontecoin Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Bontecoin Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4447,16 +4447,16 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zALTC minting (0-1, default: %u)</source>
-        <translation>Aktiviere nach jeder zALTC-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBONTE minting (0-1, default: %u)</source>
+        <translation>Aktiviere nach jeder zBONTE-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for ALTC inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für ALTC Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BONTE inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für BONTE Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zALTC inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zALTC Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zBONTE inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zBONTE Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4491,12 +4491,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in ALTC/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in BONTE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in BONTE/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in ALTC/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in BONTE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in BONTE/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4591,20 +4591,20 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Dieses Produkt beinhaltet Software, die vom OpenSSL Projekt für die Nutzung im OpenSSL Toolkit &lt;https://www.openssl.org/&gt; entwickelt wurde. Desweiteren kryptografische Software , die von Eric Young, und UPnP Software, die von Thomas Bernard, geschrieben wurde.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Altecoin Core is probably already running.</source>
-        <translation>Fehler: Port %s ist bereits belegt! Läuft bereits eine andere Altecoin Core Wallet ?</translation>
+        <source>Unable to bind to %s on this computer. Bontecoin Core is probably already running.</source>
+        <translation>Fehler: Port %s ist bereits belegt! Läuft bereits eine andere Bontecoin Core Wallet ?</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALTC.</source>
-        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 ALTC entsprechen.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BONTE.</source>
+        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 BONTE entsprechen.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALTC.</source>
-        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 ALTC entsprechen.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BONTE.</source>
+        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 BONTE entsprechen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4619,8 +4619,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Warnung: -paytxfee ist sehr hoch eingestellt! Diese Transaktionsgebühr werden Ihnen abgebucht, falls Sie die Transaktion überweisen.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Altecoin Core will not work properly.</source>
-        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Altecoin Core nicht korrekt funktionieren.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bontecoin Core will not work properly.</source>
+        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Bontecoin Core nicht korrekt funktionieren.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4747,8 +4747,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Altecoin Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Altecoin Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Bontecoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Bontecoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4827,8 +4827,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Fehler beim Laden von wallet.dat : Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
-        <translation>Fehler beim Laden der wallet.dat: Neuere Altecoin Core Version benötigt</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Bontecoin Core</source>
+        <translation>Fehler beim Laden der wallet.dat: Neuere Bontecoin Core Version benötigt</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4879,8 +4879,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in ALTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in ALTC/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in BONTE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in BONTE/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4919,8 +4919,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Altecoin Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. Altecoin Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. Bontecoin Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. Bontecoin Core schaltet ab.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4979,8 +4979,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Prozent automatisch geprägter Zerocoins (1-100, Standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the ALTC and zALTC money supply statistics</source>
-        <translation>Die Geldmengenstatistik ALTC und zALTC neu indizieren</translation>
+        <source>Reindex the BONTE and zBONTE money supply statistics</source>
+        <translation>Die Geldmengenstatistik BONTE und zBONTE neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5019,8 +5019,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
 </translation>
     </message>
     <message>
-        <source>Disable all Altecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktivieren Sie alle Altecoin-spezifischen Funktionen (Masternodes, Zerocoin, SwiftX, Budgetierung) (0-1, Standard: %u)</translation>
+        <source>Disable all Bontecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktivieren Sie alle Bontecoin-spezifischen Funktionen (Masternodes, Zerocoin, SwiftX, Budgetierung) (0-1, Standard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5055,8 +5055,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zALTC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zALTC-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBONTE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zBONTE-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5459,8 +5459,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zALTC wallet...</source>
-        <translation>Synchronisiere zALTC Wallet... </translation>
+        <source>Syncing zBONTE wallet...</source>
+        <translation>Synchronisiere zBONTE Wallet... </translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5567,8 +5567,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zALTC</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zALTC</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBONTE</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zBONTE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5583,8 +5583,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Wallet %s liegt außerhalb des Datenverzeichnisses %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Altecoin Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart Bontecoin Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte Bontecoin Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

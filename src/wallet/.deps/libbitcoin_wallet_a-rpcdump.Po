@@ -181,7 +181,7 @@ wallet/libbitcoin_wallet_a-rpcdump.o: wallet/rpcdump.cpp \
  /usr/include/c++/7/sstream /usr/include/c++/7/istream \
  /usr/include/c++/7/ostream /usr/include/c++/7/bits/ostream.tcc \
  /usr/include/c++/7/bits/istream.tcc /usr/include/c++/7/bits/sstream.tcc \
- init.h main.h config/altecoin-config.h amount.h chain.h chainparams.h \
+ init.h main.h config/bontecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h primitives/block.h \
  primitives/transaction.h amount.h libzerocoin/CoinSpend.h streams.h \
  allocators.h support/cleanse.h /usr/include/boost/thread/mutex.hpp \
@@ -653,7 +653,7 @@ wallet/libbitcoin_wallet_a-rpcdump.o: wallet/rpcdump.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1921,7 +1921,7 @@ init.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 
@@ -2967,7 +2967,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

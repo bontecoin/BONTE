@@ -1,27 +1,27 @@
-Name "Altecoin Core (-bit)"
+Name "Bontecoin Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define COMPANY "Altecoin Core project"
-!define URL https://www.altecoin.org
+!define COMPANY "Bontecoin Core project"
+!define URL https://www.bontecoin.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/vm/Crypto/Altecoin/share/pixmaps/altecoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/vm/Crypto/Bontecoin/share/pixmaps/bontecoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Bontecoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/vm/Crypto/Bontecoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Altecoin Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\altecoin-qt
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Bontecoin Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\bontecoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Bontecoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -47,18 +47,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/vm/Crypto/Altecoin/altecoin-1.0.0-win-setup.exe
+OutFile /home/vm/Crypto/Bontecoin/bontecoin-1.0.0-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Altecoin
+InstallDir $PROGRAMFILES64\Bontecoin
 !else
-InstallDir $PROGRAMFILES\Altecoin
+InstallDir $PROGRAMFILES\Bontecoin
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion 1.0.0.0
-VIAddVersionKey ProductName "Altecoin Core"
+VIAddVersionKey ProductName "Bontecoin Core"
 VIAddVersionKey ProductVersion "1.0.0"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -72,14 +72,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/vm/Crypto/Altecoin/release/altecoin-qt
-    File /oname=COPYING.txt /home/vm/Crypto/Altecoin/COPYING
-    File /oname=readme.txt /home/vm/Crypto/Altecoin/doc/README_windows.txt
+    File /home/vm/Crypto/Bontecoin/release/bontecoin-qt
+    File /oname=COPYING.txt /home/vm/Crypto/Bontecoin/COPYING
+    File /oname=readme.txt /home/vm/Crypto/Bontecoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/vm/Crypto/Altecoin/release/altecoind
-    File /home/vm/Crypto/Altecoin/release/altecoin-cli
+    File /home/vm/Crypto/Bontecoin/release/bontecoind
+    File /home/vm/Crypto/Bontecoin/release/bontecoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /home/vm/Crypto/Altecoin/doc\*.*
+    File /r /home/vm/Crypto/Bontecoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -90,8 +90,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\altecoin-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Altecoin Core (testnet, -bit).lnk" "$INSTDIR\altecoin-qt" "-testnet" "$INSTDIR\altecoin-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\bontecoin-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Bontecoin Core (testnet, -bit).lnk" "$INSTDIR\bontecoin-qt" "-testnet" "$INSTDIR\bontecoin-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -102,10 +102,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "altecoin" "URL Protocol" ""
-    WriteRegStr HKCR "altecoin" "" "URL:Altecoin"
-    WriteRegStr HKCR "altecoin\DefaultIcon" "" $INSTDIR\altecoin-qt
-    WriteRegStr HKCR "altecoin\shell\open\command" "" '"$INSTDIR\altecoin-qt" "%1"'
+    WriteRegStr HKCR "bontecoin" "URL Protocol" ""
+    WriteRegStr HKCR "bontecoin" "" "URL:Bontecoin"
+    WriteRegStr HKCR "bontecoin\DefaultIcon" "" $INSTDIR\bontecoin-qt
+    WriteRegStr HKCR "bontecoin\shell\open\command" "" '"$INSTDIR\bontecoin-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -123,7 +123,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\altecoin-qt
+    Delete /REBOOTOK $INSTDIR\bontecoin-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -135,8 +135,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Altecoin Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Altecoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Bontecoin Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Bontecoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -144,7 +144,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "altecoin"
+    DeleteRegKey HKCR "bontecoin"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

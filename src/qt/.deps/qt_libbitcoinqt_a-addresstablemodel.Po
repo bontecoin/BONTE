@@ -265,7 +265,7 @@ qt/qt_libbitcoinqt_a-addresstablemodel.o: qt/addresstablemodel.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/prunnable.h allocators.h support/cleanse.h \
+ qt/bontecoin/prunnable.h allocators.h support/cleanse.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -924,10 +924,10 @@ qt/qt_libbitcoinqt_a-addresstablemodel.o: qt/addresstablemodel.cpp \
  primitives/transaction.h libzerocoin/CoinSpend.h streams.h allocators.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -2045,7 +2045,7 @@ qt/askpassphrasedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 
@@ -3501,7 +3501,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3525,7 +3525,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

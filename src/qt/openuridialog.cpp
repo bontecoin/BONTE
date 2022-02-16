@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 
 #include "guiutil.h"
 #include "walletmodel.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 #include <QUrl>
 #include <QFile>
@@ -17,7 +17,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
 {
     ui->setupUi(this);
     this->setStyleSheet(parent->styleSheet());
-    ui->uriEdit->setPlaceholderText("altecoin:");
+    ui->uriEdit->setPlaceholderText("bontecoin:");
 
     ui->labelSubtitle->setText("URI");
     setCssProperty(ui->labelSubtitle, "text-title2-dialog");
@@ -79,8 +79,8 @@ void OpenURIDialog::on_selectFileButton_clicked()
         }
 
         QString str = QString::fromStdString(std::string(r.constData(), r.length()));
-        if (!str.startsWith("altecoin")) {
-            inform(tr("Invalid URI, not starting with \"altecoin\" prefix"));
+        if (!str.startsWith("bontecoin")) {
+            inform(tr("Invalid URI, not starting with \"bontecoin\" prefix"));
         }
         ui->uriEdit->setText(str);
     }

@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,7 +40,7 @@ uint32_t CZPivStake::GetChecksum()
     return nChecksum;
 }
 
-// The zALTC block index is the first appearance of the accumulator checksum that was used in the spend
+// The zBONTE block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
 CBlockIndex* CZPivStake::GetIndexFrom()
@@ -85,7 +85,7 @@ bool CZPivStake::GetModifier(uint64_t& nStakeModifier)
     }
 
     int64_t nTimeBlockFrom = pindex->GetBlockTime();
-    // zALTC staking is disabled long before block v7 (and checkpoint is not included in blocks since v7)
+    // zBONTE staking is disabled long before block v7 (and checkpoint is not included in blocks since v7)
     // just return false for now. !TODO: refactor/remove this method
     while (pindex && pindex->nHeight + 1 <= std::min(chainActive.Height(), Params().Zerocoin_Block_Last_Checkpoint()-1)) {
         if (pindex->GetBlockTime() - nTimeBlockFrom > 60 * 60) {
@@ -101,7 +101,7 @@ bool CZPivStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CZPivStake::GetUniqueness()
 {
-    //The unique identifier for a zALTC is a hash of the serial
+    //The unique identifier for a zBONTE is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
@@ -129,23 +129,23 @@ bool CZPivStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 
 bool CZPivStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zALTC that was staked
+    //Create an output returning the zBONTE that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZALTCOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zALTC output", __func__);
+    if (!pwallet->CreateZBONTEOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zBONTE output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zALTC", __func__);
+        return error("%s: failed to database the staked zBONTE", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZALTCOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zALTC output", __func__);
+        if (!pwallet->CreateZBONTEOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zBONTE output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -162,7 +162,7 @@ bool CZPivStake::GetTxFrom(CTransaction& tx)
 
 bool CZPivStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzALTCTracker* zpivTracker = pwallet->zpivTracker.get();
+    CzBONTETracker* zpivTracker = pwallet->zpivTracker.get();
     CMintMeta meta;
     if (!zpivTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
@@ -171,7 +171,7 @@ bool CZPivStake::MarkSpent(CWallet *pwallet, const uint256& txid)
     return true;
 }
 
-//!ALTC Stake
+//!BONTE Stake
 bool CPivStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -261,7 +261,7 @@ bool CPivStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CPivStake::GetUniqueness()
 {
-    //The unique identifier for a ALTC stake is the outpoint
+    //The unique identifier for a BONTE stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

@@ -1,7 +1,7 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
- qt/altecoin/settings/moc_settingssignmessagewidgets.cpp \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
+ qt/bontecoin/settings/moc_settingssignmessagewidgets.cpp \
  /usr/include/stdc-predef.h \
- qt/altecoin/settings/settingssignmessagewidgets.h \
+ qt/bontecoin/settings/settingssignmessagewidgets.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -254,11 +254,11 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/contactsdropdown.h \
+ qt/bontecoin/prunnable.h qt/bontecoin/contactsdropdown.h \
  qt/addresstablemodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
@@ -268,8 +268,8 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
  /usr/include/c++/7/bits/refwrap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/altecoin/contactdropdownrow.h \
- qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
+ qt/bontecoin/contactdropdownrow.h \
+ qt/bontecoin/furabstractlistitemdelegate.h qt/bontecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
@@ -297,7 +297,7 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/altecoin/addressfilterproxymodel.h \
+ qt/bontecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -311,7 +311,7 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingssignmessagewidgets.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingssignmessagewidgets.h:
+qt/bontecoin/settings/settingssignmessagewidgets.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -915,7 +915,7 @@ qt/altecoin/settings/settingssignmessagewidgets.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -925,9 +925,9 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/contactsdropdown.h:
+qt/bontecoin/contactsdropdown.h:
 
 qt/addresstablemodel.h:
 
@@ -949,11 +949,11 @@ qt/addresstablemodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/altecoin/contactdropdownrow.h:
+qt/bontecoin/contactdropdownrow.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1009,7 +1009,7 @@ qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 

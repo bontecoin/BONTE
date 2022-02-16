@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingssignmessagewidgets.h"
-#include "qt/altecoin/settings/forms/ui_settingssignmessagewidgets.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/settings/settingssignmessagewidgets.h"
+#include "qt/bontecoin/settings/forms/ui_settingssignmessagewidgets.h"
+#include "qt/bontecoin/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 
@@ -19,7 +19,7 @@
 
 #include <QClipboard>
 
-SettingsSignMessageWidgets::SettingsSignMessageWidgets(AltecoinGUI* _window, QWidget *parent) :
+SettingsSignMessageWidgets::SettingsSignMessageWidgets(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsSignMessageWidgets)
 {
@@ -39,7 +39,7 @@ SettingsSignMessageWidgets::SettingsSignMessageWidgets(AltecoinGUI* _window, QWi
     ui->labelSubtitle1->setProperty("cssClass", "text-subtitle");
 
     // Address
-    ui->labelSubtitleAddress->setText(tr("Altecoin address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Bontecoin address or contact label"));
     ui->labelSubtitleAddress->setProperty("cssClass", "text-title");
 
     ui->addressIn_SM->setPlaceholderText(tr("Enter address"));

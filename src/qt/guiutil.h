@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +32,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Altecoin Qt UI.
+/** Utility functions used by the Bontecoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -41,7 +41,7 @@ QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStrWithSeconds(const QDateTime& date);
 QString dateTimeStr(qint64 nTime);
 
-// Render Altecoin addresses in monospace font
+// Render Bontecoin addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Parse string into a CAmount value
@@ -60,7 +60,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 // Update the cursor of the widget after a text change
 void updateWidgetTextAndCursorPosition(QLineEdit* widget, const QString& str);
 
-// Parse "altecoin:" URI into recipient object, return true on successful parsing
+// Parse "bontecoin:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -126,7 +126,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 bool openDebugLogfile();
 
-// Open altecoin.conf
+// Open bontecoin.conf
 bool openConfigfile();
 
 // Open masternode.conf

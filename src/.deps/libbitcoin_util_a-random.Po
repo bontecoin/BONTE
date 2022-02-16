@@ -49,7 +49,7 @@ libbitcoin_util_a-random.o: random.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/7/bits/std_abs.h crypto/common.h \
- config/altecoin-config.h /usr/include/string.h /usr/include/strings.h \
+ config/bontecoin-config.h /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
@@ -130,7 +130,7 @@ libbitcoin_util_a-random.o: random.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- crypto/sha512.h support/cleanse.h util.h config/altecoin-config.h \
+ crypto/sha512.h support/cleanse.h util.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -901,7 +901,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/string.h:
 
@@ -1127,7 +1127,7 @@ support/cleanse.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

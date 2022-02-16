@@ -61,8 +61,8 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     /*border-right: 1px solid rgba(73, 99, 145, 0.7);*/
 }
 
-QPushButton[cssClass="img-nav-logo-altecoin"] {
-    qproperty-icon: url("://img-nav-logo-altecoin");
+QPushButton[cssClass="img-nav-logo-bontecoin"] {
+    qproperty-icon: url("://img-nav-logo-bontecoin");
     qproperty-iconSize: 49px 60px;
 }
 

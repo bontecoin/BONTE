@@ -1,5 +1,5 @@
-test/test_test_altecoin-allocator_tests.o: test/allocator_tests.cpp \
- /usr/include/stdc-predef.h util.h config/altecoin-config.h compat.h \
+test/test_test_bontecoin-allocator_tests.o: test/allocator_tests.cpp \
+ /usr/include/stdc-predef.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -755,7 +755,7 @@ test/test_test_altecoin-allocator_tests.o: test/allocator_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/is_integral.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_function.hpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h \
  serialize.h /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
  /usr/include/c++/7/bits/stl_multiset.h libzerocoin/Denominations.h \
  libzerocoin/SpendType.h sporkid.h streams.h allocators.h util.h \
@@ -767,7 +767,7 @@ test/test_test_altecoin-allocator_tests.o: test/allocator_tests.cpp \
  primitives/block.h primitives/transaction.h amount.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h \
@@ -1325,7 +1325,7 @@ test/test_test_altecoin-allocator_tests.o: test/allocator_tests.cpp \
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3049,7 +3049,7 @@ support/cleanse.h:
 
 /usr/include/boost/atomic/detail/type_traits/conditional.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -3127,7 +3127,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

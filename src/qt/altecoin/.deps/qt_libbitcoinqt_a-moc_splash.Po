@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_splash.o: qt/altecoin/moc_splash.cpp \
- /usr/include/stdc-predef.h qt/altecoin/splash.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_splash.o: qt/bontecoin/moc_splash.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/splash.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -255,7 +255,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_splash.o: qt/altecoin/moc_splash.cpp \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/splash.h:
+qt/bontecoin/splash.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

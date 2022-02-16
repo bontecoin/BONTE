@@ -325,7 +325,7 @@ qt/qt_libbitcoinqt_a-editaddressdialog.o: qt/editaddressdialog.cpp \
  amount.h serialize.h /usr/include/assert.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -1683,7 +1683,7 @@ sporkid.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

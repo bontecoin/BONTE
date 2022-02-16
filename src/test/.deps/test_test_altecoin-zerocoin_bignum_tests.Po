@@ -1,4 +1,4 @@
-test/test_test_altecoin-zerocoin_bignum_tests.o: \
+test/test_test_bontecoin-zerocoin_bignum_tests.o: \
  test/zerocoin_bignum_tests.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/test/unit_test.hpp \
  /usr/include/boost/test/test_tools.hpp /usr/include/boost/config.hpp \
@@ -772,7 +772,7 @@ test/test_test_altecoin-zerocoin_bignum_tests.o: \
  /usr/include/boost/test/tree/global_fixture.hpp \
  /usr/include/boost/config/auto_link.hpp /usr/include/c++/7/iostream \
  libzerocoin/Commitment.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
  /usr/include/c++/7/bits/stl_multiset.h libzerocoin/Denominations.h \
  libzerocoin/SpendType.h sporkid.h uint256.h version.h random.h \
@@ -918,7 +918,7 @@ test/test_test_altecoin-zerocoin_bignum_tests.o: \
  /usr/include/boost/atomic/detail/type_traits/is_function.hpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp serialize.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
- libzerocoin/Denominations.h amount.h util.h config/altecoin-config.h \
+ libzerocoin/Denominations.h amount.h util.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -2919,7 +2919,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3283,7 +3283,7 @@ amount.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

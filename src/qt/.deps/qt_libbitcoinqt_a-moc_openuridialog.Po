@@ -253,7 +253,7 @@ qt/qt_libbitcoinqt_a-moc_openuridialog.o: qt/moc_openuridialog.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/snackbar.h
+ qt/bontecoin/snackbar.h
 
 /usr/include/stdc-predef.h:
 
@@ -863,4 +863,4 @@ qt/openuridialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:

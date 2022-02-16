@@ -4,7 +4,7 @@
 // Copyright (c) 2011-2013 The PPCoin developers
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -39,7 +39,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// AltecoinMiner
+// BontecoinMiner
 //
 
 //
@@ -246,7 +246,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
                     double nTimePriority = std::pow(GetAdjustedTime() - nTimeSeen, 6);
 
-                    // zALTC spends can have very large priority, use non-overflowing safe functions
+                    // zBONTE spends can have very large priority, use non-overflowing safe functions
                     dPriority = double_safe_addition(dPriority, (nTimePriority * nConfs));
                     dPriority = double_safe_multiplication(dPriority, nTotalIn);
 
@@ -294,7 +294,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
                 int nConf = nHeight - coins->nHeight;
 
-                // zALTC spends can have very large priority, use non-overflowing safe functions
+                // zBONTE spends can have very large priority, use non-overflowing safe functions
                 dPriority = double_safe_addition(dPriority, ((double)nValueIn * nConf));
 
             }
@@ -367,7 +367,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             if (!view.HaveInputs(tx))
                 continue;
 
-            // double check that there are no double spent zALTC spends in this block or tx
+            // double check that there are no double spent zBONTE spends in this block or tx
             if (tx.HasZerocoinSpendInputs()) {
                 int nHeightTx = 0;
                 if (IsTransactionInChain(tx.GetHash(), nHeightTx))
@@ -382,7 +382,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZALTCModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                            if (!ZBONTEModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                                 throw std::runtime_error("Invalid public spend parse");
                             }
                             spend = &publicSpend;
@@ -403,7 +403,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                         vTxSerials.emplace_back(spend->getCoinSerialNumber());
                     }
                 }
-                //This zALTC serial has already been included in the block, do not add this tx.
+                //This zBONTE serial has already been included in the block, do not add this tx.
                 if (fDoubleSerial)
                     continue;
             }
@@ -494,7 +494,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 uint256 nCheckpoint;
                 uint256 hashBlockLastAccumulated = chainActive[nHeight - (nHeight % 10) - 10]->GetBlockHash();
                 if (nHeight >= pCheckpointCache.first || pCheckpointCache.second.first != hashBlockLastAccumulated) {
-                    //For the period before v2 activation, zALTC will be disabled and previous block's checkpoint is all that will be needed
+                    //For the period before v2 activation, zBONTE will be disabled and previous block's checkpoint is all that will be needed
                     pCheckpointCache.second.second = pindexPrev->nAccumulatorCheckpoint;
                     if (pindexPrev->nHeight + 1 >= Params().Zerocoin_Block_V2_Start()) {
                         AccumulatorMap mapAccumulators(Params().Zerocoin_Params(false));
@@ -526,13 +526,13 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 CBigNum bnSerial = spend.getCoinSerialNumber();
                 CKey key;
                 if (!pwallet->GetZerocoinKey(bnSerial, key)) {
-                    LogPrintf("%s: failed to find zALTC with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
+                    LogPrintf("%s: failed to find zBONTE with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
                     return NULL;
                 }
 
-                //Sign block with the zALTC key
+                //Sign block with the zBONTE key
                 if (!SignBlockWithKey(*pblock, key)) {
-                    LogPrintf("%s: Signing new block with zALTC key failed \n", __func__);
+                    LogPrintf("%s: Signing new block with zBONTE key failed \n", __func__);
                     return NULL;
                 }
             } else if (!SignBlock(*pblock, *pwallet)) {
@@ -614,7 +614,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         WaitableLock lock(g_best_block_mutex);
         if (pblock->hashPrevBlock !=  chainActive.Tip()->GetBlockHash())
-            return error("AltecoinMiner : generated block is stale");
+            return error("BontecoinMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -636,7 +636,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
             pwalletMain->zpivTracker->RemovePending(pblock->vtx[1].GetHash());
             pwalletMain->zpivTracker->ListMints(true, true, true); //update the state
         }
-        return error("AltecoinMiner : ProcessNewBlock, block not accepted");
+        return error("BontecoinMiner : ProcessNewBlock, block not accepted");
     }
 
     for (CNode* node : vNodes) {
@@ -654,9 +654,9 @@ int nMintableLastCheck = 0;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("AltecoinMiner started\n");
+    LogPrintf("BontecoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("altecoin-miner");
+    RenameThread("bontecoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -742,13 +742,13 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 CBigNum bnSerial = spend.getCoinSerialNumber();
                 CKey key;
                 if (!pwallet->GetZerocoinKey(bnSerial, key)) {
-                    LogPrintf("%s: failed to find zALTC with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
+                    LogPrintf("%s: failed to find zBONTE with serial %s, unable to sign block\n", __func__, bnSerial.GetHex());
                     continue;
                 }
 
-                //Sign block with the zALTC key
+                //Sign block with the zBONTE key
                 if (!SignBlockWithKey(*pblock, key)) {
-                    LogPrintf("%s: Signing new block with zALTC key failed \n", __func__);
+                    LogPrintf("%s: Signing new block with zBONTE key failed \n", __func__);
                     continue;
                 }
             } else if (!SignBlock(*pblock, *pwallet)) {
@@ -767,7 +767,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running AltecoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running BontecoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -856,12 +856,12 @@ void static ThreadBitcoinMiner(void* parg)
         BitcoinMiner(pwallet, false);
         boost::this_thread::interruption_point();
     } catch (const std::exception& e) {
-        LogPrintf("AltecoinMiner exception");
+        LogPrintf("BontecoinMiner exception");
     } catch (...) {
-        LogPrintf("AltecoinMiner exception");
+        LogPrintf("BontecoinMiner exception");
     }
 
-    LogPrintf("AltecoinMiner exiting\n");
+    LogPrintf("BontecoinMiner exiting\n");
 }
 
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)

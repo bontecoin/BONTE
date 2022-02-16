@@ -820,7 +820,7 @@ libbitcoin_server_a-noui.o: noui.cpp /usr/include/stdc-predef.h noui.h \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -2829,7 +2829,7 @@ guiinterface.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

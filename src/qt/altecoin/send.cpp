@@ -1,16 +1,16 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/send.h"
-#include "qt/altecoin/forms/ui_send.h"
-#include "qt/altecoin/addnewcontactdialog.h"
-#include "qt/altecoin/qtutils.h"
-#include "qt/altecoin/sendchangeaddressdialog.h"
-#include "qt/altecoin/optionbutton.h"
-#include "qt/altecoin/sendconfirmdialog.h"
-#include "qt/altecoin/myaddressrow.h"
-#include "qt/altecoin/guitransactionsutils.h"
+#include "qt/bontecoin/send.h"
+#include "qt/bontecoin/forms/ui_send.h"
+#include "qt/bontecoin/addnewcontactdialog.h"
+#include "qt/bontecoin/qtutils.h"
+#include "qt/bontecoin/sendchangeaddressdialog.h"
+#include "qt/bontecoin/optionbutton.h"
+#include "qt/bontecoin/sendconfirmdialog.h"
+#include "qt/bontecoin/myaddressrow.h"
+#include "qt/bontecoin/guitransactionsutils.h"
 #include "clientmodel.h"
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
@@ -20,7 +20,7 @@
 #include "openuridialog.h"
 #include "zpivcontroldialog.h"
 
-SendWidget::SendWidget(AltecoinGUI* parent) :
+SendWidget::SendWidget(BontecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::send),
     coinIcon(new QPushButton()),
@@ -46,11 +46,11 @@ SendWidget::SendWidget(AltecoinGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (ALTC)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (BONTE)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     /* Address */
-    ui->labelSubtitleAddress->setText(tr("Altecoin address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Bontecoin address or contact label"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
 
 
@@ -98,7 +98,7 @@ SendWidget::SendWidget(AltecoinGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 ALTC");
+    ui->labelAmountSend->setText("0.00 BONTE");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -302,7 +302,7 @@ void SendWidget::onSendClicked(){
     // this way we let users unlock by walletpassphrase or by menu
     // and make many transactions while unlocking through this dialog
     // will call relock
-    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_ALTC : AskPassphraseDialog::Context::Send_zALTC, true)){
+    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_BONTE : AskPassphraseDialog::Context::Send_zBONTE, true)){
         // Unlock wallet was cancelled
         inform(tr("Cannot send, wallet locked"));
         return;
@@ -373,7 +373,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         return false;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        emit message(tr("Spend Zerocoin"), tr("zALTC is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        emit message(tr("Spend Zerocoin"), tr("zBONTE is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -384,7 +384,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zALTC selector if applicable
+    // use mints from zBONTE selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
     if (!ZPivControlDialog::setSelectedMints.empty()) {
@@ -436,17 +436,17 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
             changeAddress
     )
             ) {
-        inform(tr("zALTC transaction sent!"));
+        inform(tr("zBONTE transaction sent!"));
         ZPivControlDialog::setSelectedMints.clear();
         clearAll();
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZALTC_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zALTC require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZBONTE_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zBONTE require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zALTC transaction
+            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zBONTE transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -456,7 +456,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        emit message("zALTC transaction failed", body, CClientUIInterface::MSG_ERROR);
+        emit message("zBONTE transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -565,7 +565,7 @@ void SendWidget::onChangeCustomFeeClicked(){
 }
 
 void SendWidget::onCoinControlClicked(){
-    if(isALTC){
+    if(isBONTE){
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -577,7 +577,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any ALTC to select."));
+            inform(tr("You don't have any BONTE to select."));
         }
     }else{
         if (walletModel->getZerocoinBalance() > 0) {
@@ -587,7 +587,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
             zPivControl->deleteLater();
         } else {
-            inform(tr("You don't have any zALTC in your balance to select."));
+            inform(tr("You don't have any zBONTE in your balance to select."));
         }
     }
 }
@@ -596,9 +596,9 @@ void SendWidget::onValueChanged() {
     refreshAmounts();
 }
 
-void SendWidget::onALTCSelected(bool _isALTC){
-    isALTC = _isALTC;
-    setCssProperty(coinIcon, _isALTC ? "coin-icon-piv" : "coin-icon-piv");
+void SendWidget::onBONTESelected(bool _isBONTE){
+    isBONTE = _isBONTE;
+    setCssProperty(coinIcon, _isBONTE ? "coin-icon-piv" : "coin-icon-piv");
     refreshView();
     updateStyle(coinIcon);
 }

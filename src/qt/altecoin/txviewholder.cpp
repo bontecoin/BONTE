@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/txviewholder.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/txviewholder.h"
+#include "qt/bontecoin/qtutils.h"
 #include "transactiontablemodel.h"
 #include <QModelIndex>
 
@@ -29,7 +29,7 @@ void TxViewHolder::init(QWidget* holder,const QModelIndex &index, bool isHovered
 
     if(type != TransactionRecord::ZerocoinMint &&
             type !=  TransactionRecord::ZerocoinSpend_Change_zPiv &&
-            type !=  TransactionRecord::StakeZALTC &&
+            type !=  TransactionRecord::StakeZBONTE &&
             type != TransactionRecord::Other){
         QString address = rIndex.data(Qt::DisplayRole).toString();
         if(address.length() > 20) {

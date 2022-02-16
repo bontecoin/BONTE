@@ -1,10 +1,10 @@
 
-## <summary>policy for altecoin</summary>
+## <summary>policy for bontecoin</summary>
 
 
 ########################################
 ## <summary>
-##	Transition to altecoin.
+##	Transition to bontecoin.
 ## </summary>
 ## <param name="domain">
 ## <summary>
@@ -12,19 +12,19 @@
 ## </summary>
 ## </param>
 #
-interface(`altecoin_domtrans',`
+interface(`bontecoin_domtrans',`
 	gen_require(`
-		type altecoin_t, altecoin_exec_t;
+		type bontecoin_t, bontecoin_exec_t;
 	')
 
 	corecmd_search_bin($1)
-	domtrans_pattern($1, altecoin_exec_t, altecoin_t)
+	domtrans_pattern($1, bontecoin_exec_t, bontecoin_t)
 ')
 
 
 ########################################
 ## <summary>
-##	Execute altecoin server in the altecoin domain.
+##	Execute bontecoin server in the bontecoin domain.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -32,18 +32,18 @@ interface(`altecoin_domtrans',`
 ##	</summary>
 ## </param>
 #
-interface(`altecoin_initrc_domtrans',`
+interface(`bontecoin_initrc_domtrans',`
 	gen_require(`
-		type altecoin_initrc_exec_t;
+		type bontecoin_initrc_exec_t;
 	')
 
-	init_labeled_script_domtrans($1, altecoin_initrc_exec_t)
+	init_labeled_script_domtrans($1, bontecoin_initrc_exec_t)
 ')
 
 
 ########################################
 ## <summary>
-##	Search altecoin lib directories.
+##	Search bontecoin lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -51,18 +51,18 @@ interface(`altecoin_initrc_domtrans',`
 ##	</summary>
 ## </param>
 #
-interface(`altecoin_search_lib',`
+interface(`bontecoin_search_lib',`
 	gen_require(`
-		type altecoin_var_lib_t;
+		type bontecoin_var_lib_t;
 	')
 
-	allow $1 altecoin_var_lib_t:dir search_dir_perms;
+	allow $1 bontecoin_var_lib_t:dir search_dir_perms;
 	files_search_var_lib($1)
 ')
 
 ########################################
 ## <summary>
-##	Read altecoin lib files.
+##	Read bontecoin lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -70,18 +70,18 @@ interface(`altecoin_search_lib',`
 ##	</summary>
 ## </param>
 #
-interface(`altecoin_read_lib_files',`
+interface(`bontecoin_read_lib_files',`
 	gen_require(`
-		type altecoin_var_lib_t;
+		type bontecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	read_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+	read_files_pattern($1, bontecoin_var_lib_t, bontecoin_var_lib_t)
 ')
 
 ########################################
 ## <summary>
-##	Manage altecoin lib files.
+##	Manage bontecoin lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -89,18 +89,18 @@ interface(`altecoin_read_lib_files',`
 ##	</summary>
 ## </param>
 #
-interface(`altecoin_manage_lib_files',`
+interface(`bontecoin_manage_lib_files',`
 	gen_require(`
-		type altecoin_var_lib_t;
+		type bontecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	manage_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+	manage_files_pattern($1, bontecoin_var_lib_t, bontecoin_var_lib_t)
 ')
 
 ########################################
 ## <summary>
-##	Manage altecoin lib directories.
+##	Manage bontecoin lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -108,20 +108,20 @@ interface(`altecoin_manage_lib_files',`
 ##	</summary>
 ## </param>
 #
-interface(`altecoin_manage_lib_dirs',`
+interface(`bontecoin_manage_lib_dirs',`
 	gen_require(`
-		type altecoin_var_lib_t;
+		type bontecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	manage_dirs_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
+	manage_dirs_pattern($1, bontecoin_var_lib_t, bontecoin_var_lib_t)
 ')
 
 
 ########################################
 ## <summary>
 ##	All of the rules required to administrate
-##	a altecoin environment
+##	a bontecoin environment
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -135,23 +135,23 @@ interface(`altecoin_manage_lib_dirs',`
 ## </param>
 ## <rolecap/>
 #
-interface(`altecoin_admin',`
+interface(`bontecoin_admin',`
 	gen_require(`
-		type altecoin_t;
-		type altecoin_initrc_exec_t;
-		type altecoin_var_lib_t;
+		type bontecoin_t;
+		type bontecoin_initrc_exec_t;
+		type bontecoin_var_lib_t;
 	')
 
-	allow $1 altecoin_t:process { ptrace signal_perms };
-	ps_process_pattern($1, altecoin_t)
+	allow $1 bontecoin_t:process { ptrace signal_perms };
+	ps_process_pattern($1, bontecoin_t)
 
-	altecoin_initrc_domtrans($1)
+	bontecoin_initrc_domtrans($1)
 	domain_system_change_exemption($1)
-	role_transition $2 altecoin_initrc_exec_t system_r;
+	role_transition $2 bontecoin_initrc_exec_t system_r;
 	allow $2 system_r;
 
 	files_search_var_lib($1)
-	admin_pattern($1, altecoin_var_lib_t)
+	admin_pattern($1, bontecoin_var_lib_t)
 
 ')
 

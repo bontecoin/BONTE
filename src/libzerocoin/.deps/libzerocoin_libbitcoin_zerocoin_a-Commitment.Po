@@ -1,7 +1,7 @@
 libzerocoin/libzerocoin_libbitcoin_zerocoin_a-Commitment.o: \
  libzerocoin/Commitment.cpp /usr/include/stdc-predef.h \
  libzerocoin/Commitment.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -196,7 +196,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

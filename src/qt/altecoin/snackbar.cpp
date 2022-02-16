@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/snackbar.h"
-#include "qt/altecoin/forms/ui_snackbar.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/snackbar.h"
+#include "qt/bontecoin/forms/ui_snackbar.h"
+#include "qt/bontecoin/qtutils.h"
 #include <QTimer>
 
 
-SnackBar::SnackBar(AltecoinGUI* _window, QWidget *parent) :
+SnackBar::SnackBar(BontecoinGUI* _window, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SnackBar),
     window(_window)

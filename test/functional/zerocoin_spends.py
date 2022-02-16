@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2019 The Altecoin developers
+# Copyright (c) 2019 The Bontecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@ Tests v2, v3 and v4 Zerocoin Spends
 from time import sleep
 
 from test_framework.authproxy import JSONRPCException
-from test_framework.test_framework import AltecoinTestFramework
+from test_framework.test_framework import BontecoinTestFramework
 from test_framework.util import (
     sync_blocks,
     assert_equal,
@@ -20,7 +20,7 @@ from test_framework.util import (
 )
 
 
-class ZerocoinSpendTest(AltecoinTestFramework):
+class ZerocoinSpendTest(BontecoinTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 3

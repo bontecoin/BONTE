@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef TOOLTIPMENU_H
 #define TOOLTIPMENU_H
 
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 #include <QWidget>
 #include <QModelIndex>
 
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -25,7 +25,7 @@ class TooltipMenu : public PWidget
     Q_OBJECT
 
 public:
-    explicit TooltipMenu(AltecoinGUI* _window, QWidget *parent = nullptr);
+    explicit TooltipMenu(BontecoinGUI* _window, QWidget *parent = nullptr);
     ~TooltipMenu() override;
 
     void setIndex(const QModelIndex &index);

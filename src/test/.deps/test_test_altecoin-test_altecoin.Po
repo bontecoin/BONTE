@@ -1,6 +1,6 @@
-test/test_test_altecoin-test_altecoin.o: test/test_altecoin.cpp \
- /usr/include/stdc-predef.h test/test_altecoin.h txdb.h leveldbwrapper.h \
- clientversion.h config/altecoin-config.h /usr/include/c++/7/string \
+test/test_test_bontecoin-test_bontecoin.o: test/test_bontecoin.cpp \
+ /usr/include/stdc-predef.h test/test_bontecoin.h txdb.h leveldbwrapper.h \
+ clientversion.h config/bontecoin-config.h /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -763,7 +763,7 @@ test/test_test_altecoin-test_altecoin.o: test/test_altecoin.cpp \
  uint256.h primitives/block.h primitives/transaction.h amount.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h \
@@ -1325,7 +1325,7 @@ test/test_test_altecoin-test_altecoin.o: test/test_altecoin.cpp \
 
 /usr/include/stdc-predef.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -1333,7 +1333,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 
@@ -3125,7 +3125,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

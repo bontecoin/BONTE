@@ -1,4 +1,4 @@
-test/test_test_altecoin-mruset_tests.o: test/mruset_tests.cpp \
+test/test_test_bontecoin-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/stdc-predef.h mruset.h /usr/include/c++/7/deque \
  /usr/include/c++/7/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -85,7 +85,7 @@ test/test_test_altecoin-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/7/bits/std_abs.h crypto/common.h \
- config/altecoin-config.h /usr/include/string.h /usr/include/strings.h \
+ config/bontecoin-config.h /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
@@ -135,7 +135,7 @@ test/test_test_altecoin-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/c++/7/bits/basic_string.tcc /usr/include/c++/7/vector \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- util.h config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ util.h config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -719,7 +719,7 @@ test/test_test_altecoin-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/boost/core/scoped_enum.hpp \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp \
- /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_altecoin.h txdb.h \
+ /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h serialize.h libzerocoin/Denominations.h \
  libzerocoin/SpendType.h sporkid.h streams.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/once.hpp \
@@ -1531,7 +1531,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/string.h:
 
@@ -1679,7 +1679,7 @@ uint256.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -2975,7 +2975,7 @@ utiltime.h:
 
 /usr/include/boost/smart_ptr/weak_ptr.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

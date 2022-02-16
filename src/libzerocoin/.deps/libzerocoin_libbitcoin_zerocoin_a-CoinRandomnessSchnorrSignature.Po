@@ -1,7 +1,7 @@
 libzerocoin/libzerocoin_libbitcoin_zerocoin_a-CoinRandomnessSchnorrSignature.o: \
  libzerocoin/CoinRandomnessSchnorrSignature.cpp \
  /usr/include/stdc-predef.h libzerocoin/CoinRandomnessSchnorrSignature.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -171,7 +171,7 @@ libzerocoin/libzerocoin_libbitcoin_zerocoin_a-CoinRandomnessSchnorrSignature.o: 
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
  libzerocoin/ZerocoinDefines.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h amount.h serialize.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -780,7 +780,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -1236,7 +1236,7 @@ serialize.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

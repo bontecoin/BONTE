@@ -1,6 +1,6 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsconsolewidget.o: \
- qt/altecoin/settings/moc_settingsconsolewidget.cpp \
- /usr/include/stdc-predef.h qt/altecoin/settings/settingsconsolewidget.h \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingsconsolewidget.o: \
+ qt/bontecoin/settings/moc_settingsconsolewidget.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/settings/settingsconsolewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -253,11 +253,11 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsconsolewidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/guiutil.h amount.h serialize.h \
+ qt/bontecoin/prunnable.h qt/guiutil.h amount.h serialize.h \
  /usr/include/assert.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
@@ -868,10 +868,10 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsconsolewidget.o: \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc net.h bloom.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
- /usr/include/byteswap.h uint256.h compat.h config/altecoin-config.h \
+ /usr/include/byteswap.h uint256.h compat.h config/bontecoin-config.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1166,7 +1166,7 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsconsolewidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingsconsolewidget.h:
+qt/bontecoin/settings/settingsconsolewidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -1770,7 +1770,7 @@ qt/altecoin/settings/settingsconsolewidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -1780,7 +1780,7 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 qt/guiutil.h:
 
@@ -3130,7 +3130,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3156,7 +3156,7 @@ uint256.h:
 
 compat.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/arpa/inet.h:
 

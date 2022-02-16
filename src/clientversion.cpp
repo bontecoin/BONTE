@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2017 The Bitcoin Core developers
-// Copyright (c) 2016-2019 The Altecoin developers
+// Copyright (c) 2016-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both altecoind and altecoin-qt, to make it harder for attackers to
+ * for both bontecoind and bontecoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Altecoin Core");
+const std::string CLIENT_NAME("Bontecoin Core");
 
 /**
  * Client version number

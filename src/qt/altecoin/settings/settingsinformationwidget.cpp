@@ -1,18 +1,18 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsinformationwidget.h"
-#include "qt/altecoin/settings/forms/ui_settingsinformationwidget.h"
+#include "qt/bontecoin/settings/settingsinformationwidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingsinformationwidget.h"
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 #include <QDir>
 
-SettingsInformationWidget::SettingsInformationWidget(AltecoinGUI* _window,QWidget *parent) :
+SettingsInformationWidget::SettingsInformationWidget(BontecoinGUI* _window,QWidget *parent) :
     PWidget(_window,parent),
     ui(new Ui::SettingsInformationWidget)
 {
@@ -114,7 +114,7 @@ SettingsInformationWidget::SettingsInformationWidget(AltecoinGUI* _window,QWidge
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open altecoin.conf with default application"));
+            inform(tr("Unable to open bontecoin.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, SIGNAL(clicked()), this, SLOT(openNetworkMonitor()));
 }

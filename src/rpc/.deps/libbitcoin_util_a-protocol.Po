@@ -570,9 +570,9 @@ rpc/libbitcoin_util_a-protocol.o: rpc/protocol.cpp \
  /usr/include/c++/7/bits/fstream.tcc univalue/include/univalue.h \
  /usr/include/c++/7/sstream /usr/include/c++/7/bits/sstream.tcc random.h \
  crypto/chacha20.h /usr/include/c++/7/stdlib.h crypto/common.h \
- config/altecoin-config.h compat/endian.h compat/byteswap.h \
+ config/bontecoin-config.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h tinyformat.h \
- /usr/include/c++/7/iostream util.h config/altecoin-config.h compat.h \
+ /usr/include/c++/7/iostream util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -2100,7 +2100,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 
@@ -2116,7 +2116,7 @@ tinyformat.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

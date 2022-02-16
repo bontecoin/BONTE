@@ -120,11 +120,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bontecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Bontecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -355,16 +355,16 @@ For Staking</translation>
         <translation>Afslut</translation>
     </message>
     <message>
-        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
-        <translation>Altecoin vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>Bontecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BONTEs from being stolen by malware infecting your computer.</source>
+        <translation>Bontecoin vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE ALTC&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONTE&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE BONTE&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -449,8 +449,8 @@ For Staking</translation>
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (altecoin.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bontecoin.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (bontecoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -522,8 +522,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>0.00 ALTC</source>
-        <translation>0.00 ALTC</translation>
+        <source>0.00 BONTE</source>
+        <translation>0.00 BONTE</translation>
     </message>
     <message>
         <source>0</source>
@@ -729,8 +729,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>ALTC:</source>
-        <translation>ALTC:</translation>
+        <source>BONTE:</source>
+        <translation>BONTE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -854,12 +854,12 @@ For Staking</translation>
         <translation>Opbevarings statistik </translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
-        <source>zALTC</source>
-        <translation>zALTC</translation>
+        <source>zBONTE</source>
+        <translation>zBONTE</translation>
     </message>
     <message>
         <source>Days</source>
@@ -878,8 +878,8 @@ For Staking</translation>
         <translation>Du kan se din konto historik</translation>
     </message>
     <message>
-        <source>Amount of ALTC and zALTC staked.</source>
-        <translation>Mængden af ALTC og zALTC opbevaret</translation>
+        <source>Amount of BONTE and zBONTE staked.</source>
+        <translation>Mængden af BONTE og zBONTE opbevaret</translation>
     </message>
     <message>
         <source>All</source>
@@ -918,8 +918,8 @@ For Staking</translation>
         <translation>Ingen transaktioner endnu</translation>
     </message>
     <message>
-        <source>How to get ALTC or zALTC</source>
-        <translation>Hvordan man får ALTC eller zALTC</translation>
+        <source>How to get BONTE or zBONTE</source>
+        <translation>Hvordan man får BONTE eller zBONTE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1037,8 +1037,8 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Altecoin address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig Altecoin adresse</translation>
+        <source>The entered address "%1" is not a valid Bontecoin address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig Bontecoin adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1101,16 +1101,16 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>version</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Altecoin Core</source>
-        <translation>om Altecoin kerne</translation>
+        <source>About Bontecoin Core</source>
+        <translation>om Bontecoin kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1160,16 +1160,16 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Altecoin Core.</source>
-        <translation>Velkommen til Altecoin kerne</translation>
+        <source>Welcome to Bontecoin Core.</source>
+        <translation>Velkommen til Bontecoin kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Altecoin kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where Bontecoin Core will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor Bontecoin kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Altecoin kernen vil nu hente og gemme en kopi af Altecoin blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>Bontecoin Core will download and store a copy of the Bontecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Bontecoin kernen vil nu hente og gemme en kopi af Bontecoin blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1184,8 +1184,8 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>Ok</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1377,8 +1377,8 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Altecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Altecoin klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the Bontecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn Bontecoin klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1397,12 +1397,12 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Altecoin after logging in to the system.</source>
-        <translation>Start Altecoin automatisk, når der logges på systemet</translation>
+        <source>Automatically start Bontecoin after logging in to the system.</source>
+        <translation>Start Bontecoin automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Altecoin on system login</source>
-        <translation>&amp;start Altecoin når der logges på systemet</translation>
+        <source>&amp;Start Bontecoin on system login</source>
+        <translation>&amp;start Bontecoin når der logges på systemet</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1429,50 +1429,50 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Altecoin klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bontecoin.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Bontecoin klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/altecoin-altc/altecoin-altc-translations</source>
+https://www.transifex.com/bontecoin-bonte/bontecoin-bonte-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
+https://www.transifex.com/bontecoin-bonte/bontecoin-bonte-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of ALTC units to zALTC</source>
-        <translation>Aktivér automatisk mintning af ALTC-enheder til zALTC</translation>
+        <source>Enable automatic minting of BONTE units to zBONTE</source>
+        <translation>Aktivér automatisk mintning af BONTE-enheder til zBONTE</translation>
     </message>
     <message>
-        <source>Enable zALTC Automint</source>
-        <translation>Aktivér zALTC Automint</translation>
+        <source>Enable zBONTE Automint</source>
+        <translation>Aktivér zBONTE Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming ALTC which get automatically converted to zALTC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende ALTC, som automatisk konverteres til zALTC via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming BONTE which get automatically converted to zBONTE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende BONTE, som automatisk konverteres til zBONTE via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zALTC</source>
-        <translation>Procentdel af automatiseret zALTC</translation>
+        <source>Percentage of autominted zBONTE</source>
+        <translation>Procentdel af automatiseret zBONTE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough ALTC for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok ALTC til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BONTE for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok BONTE til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zALTC Denomination</source>
-        <translation>Foretrukket Automint zALTC Denomination</translation>
+        <source>Preferred Automint zBONTE Denomination</source>
+        <translation>Foretrukket Automint zBONTE Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Indtastningsgrænse for indsats:</translation>
     </message>
     <message>
-        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Altecoin netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the Bontecoin network through a SOCKS5 proxy.</source>
+        <translation>Tilslut Bontecoin netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1604,10 +1604,10 @@ https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
     </message>
 </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1634,8 +1634,8 @@ https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
         <translation>Afslut applikationen</translation>
     </message>
     <message>
-        <source>Altecoin Core client</source>
-        <translation>Altecoin kerneklient</translation>
+        <source>Bontecoin Core client</source>
+        <translation>Bontecoin kerneklient</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1700,11 +1700,11 @@ Adresse: %4
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start altecoin: click-to-pay handler</source>
-        <translation>Kan ikke starte Altecoin "klik for at betale" systemet</translation>
+        <source>Cannot start bontecoin: click-to-pay handler</source>
+        <translation>Kan ikke starte Bontecoin "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Altecoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Bontecoin address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -1856,8 +1856,8 @@ Adresse: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
     </context>
 <context>
@@ -1931,8 +1931,8 @@ Adresse: %4
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Altecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Altecoin debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the Bontecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn Bontecoin debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2067,8 +2067,8 @@ Adresse: %4
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zALTC Backup Path:</source>
-        <translation>Brugerdefineret zALTC Backup-sti:</translation>
+        <source>Custom zBONTE Backup Path:</source>
+        <translation>Brugerdefineret zBONTE Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2147,8 +2147,8 @@ Adresse: %4
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Velkommen til Altecoin RPC konsollet</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Velkommen til Bontecoin RPC konsollet</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2331,8 +2331,8 @@ Adresse: %4
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2423,12 +2423,12 @@ Adresse: %4
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>zALTC is currently undergoing maintenance.</source>
-        <translation>zALTC er i øjeblikket under opretholdelse.</translation>
+        <source>zBONTE is currently undergoing maintenance.</source>
+        <translation>zBONTE er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
-        <source>Version 1 zALTC require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zALTC kræver et sikkerhedsniveau på 100 til succes.</translation>
+        <source>Version 1 zBONTE require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zBONTE kræver et sikkerhedsniveau på 100 til succes.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2572,8 +2572,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Velkommen til Altecoin RPC konsollet</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Velkommen til Bontecoin RPC konsollet</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -2938,8 +2938,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Altecoin Core is shutting down...</source>
-        <translation>Altecoin kernen lukker ned</translation>
+        <source>Bontecoin Core is shutting down...</source>
+        <translation>Bontecoin kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2960,15 +2960,15 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Formular</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin kerne</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2983,8 +2983,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Altecoin Core developers</source>
-        <translation>Altecoin "core" udviklerne</translation>
+        <source>The Bontecoin Core developers</source>
+        <translation>Bontecoin "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3254,12 +3254,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>ALTC Stake</source>
-        <translation>ALTC Stake</translation>
+        <source>BONTE Stake</source>
+        <translation>BONTE Stake</translation>
     </message>
     <message>
-        <source>zALTC Stake</source>
-        <translation>zALTC Stake</translation>
+        <source>zBONTE Stake</source>
+        <translation>zBONTE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3278,24 +3278,24 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted ALTC to zALTC</source>
-        <translation>Konverteret ALTC til zALTC</translation>
+        <source>Converted BONTE to zBONTE</source>
+        <translation>Konverteret BONTE til zBONTE</translation>
     </message>
     <message>
-        <source>Spent zALTC</source>
+        <source>Spent zBONTE</source>
         <translation>Brugt zPiv</translation>
     </message>
     <message>
-        <source>Received ALTC from zALTC</source>
+        <source>Received BONTE from zBONTE</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
-        <source>Minted Change as zALTC from zALTC Spend</source>
-        <translation>Minted Change som zALTC fra zALTC Spend</translation>
+        <source>Minted Change as zBONTE from zBONTE Spend</source>
+        <translation>Minted Change som zBONTE fra zBONTE Spend</translation>
     </message>
     <message>
-        <source>Converted zALTC to ALTC</source>
-        <translation>Konverteret ALTC til zALTC</translation>
+        <source>Converted zBONTE to BONTE</source>
+        <translation>Konverteret BONTE til zBONTE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3403,8 +3403,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALTC.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1ALTC.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BONTE.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1BONTE.</translation>
     </message>
 </context>
 <context>
@@ -3444,8 +3444,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zALTC to Spend</source>
-        <translation>Vælg zALTC for at bruge</translation>
+        <source>Select zBONTE to Spend</source>
+        <translation>Vælg zBONTE for at bruge</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3477,7 +3477,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3503,8 +3503,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Altecoin Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Altecoin core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Bontecoin Core is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. Bontecoin core kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3532,16 +3532,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zALTC minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zBONTE minting (0-1, default: %u)</source>
         <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for ALTC inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for ALTC-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for BONTE inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for BONTE-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zALTC inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zALTC-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zBONTE inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zBONTE-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3576,12 +3576,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in ALTC/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in BONTE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in BONTE/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in ALTC/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in BONTE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in BONTE/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3629,7 +3629,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Altecoin</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Bontecoin</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3676,20 +3676,20 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Altecoin Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Altecoin kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. Bontecoin Core is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. Bontecoin kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALTC.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 ALTC.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BONTE.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 BONTE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALTC.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 ALTC.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BONTE.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 BONTE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3704,8 +3704,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Altecoin Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Altecoin core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bontecoin Core will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Bontecoin core ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3832,8 +3832,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Altecoin Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Altecoin Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Bontecoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Bontecoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3912,8 +3912,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Altecoin core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Bontecoin Core</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Bontecoin core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3964,8 +3964,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in ALTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i ALTC/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in BONTE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i BONTE/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4004,8 +4004,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Altecoin Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Altecoin core lukker ned. </translation>
+        <source>Initialization sanity check failed. Bontecoin Core is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. Bontecoin core lukker ned. </translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4064,8 +4064,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the ALTC and zALTC money supply statistics</source>
-        <translation>Reindex ALTC og zALTC pengemængde statistikker</translation>
+        <source>Reindex the BONTE and zBONTE money supply statistics</source>
+        <translation>Reindex BONTE og zBONTE pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4104,8 +4104,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 </translation>
     </message>
     <message>
-        <source>Disable all Altecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Altecoin funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all Bontecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle Bontecoin funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -4140,8 +4140,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zALTC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zALTC-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBONTE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zBONTE-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4544,8 +4544,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zALTC wallet...</source>
-        <translation>Syncing zALTC wallet ..</translation>
+        <source>Syncing zBONTE wallet...</source>
+        <translation>Syncing zBONTE wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4652,8 +4652,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zALTC</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zALTC</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBONTE</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zBONTE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4668,8 +4668,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Altecoin core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart Bontecoin Core to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart Bontecoin core for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -1,7 +1,7 @@
 zpiv/libbitcoin_common_a-accumulatorcheckpoints.o: \
  zpiv/accumulatorcheckpoints.cpp /usr/include/stdc-predef.h \
  zpiv/accumulatorcheckpoints.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -181,7 +181,7 @@ zpiv/accumulatorcheckpoints.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

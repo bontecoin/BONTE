@@ -1,5 +1,5 @@
-altecoind-altecoind.o: altecoind.cpp /usr/include/stdc-predef.h \
- clientversion.h config/altecoin-config.h /usr/include/c++/7/string \
+bontecoind-bontecoind.o: bontecoind.cpp /usr/include/stdc-predef.h \
+ clientversion.h config/bontecoin-config.h /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -638,11 +638,11 @@ altecoind-altecoind.o: altecoind.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp serialize.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1246,7 +1246,7 @@ altecoind-altecoind.o: altecoind.cpp /usr/include/stdc-predef.h \
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 
@@ -2736,7 +2736,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2764,7 +2764,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

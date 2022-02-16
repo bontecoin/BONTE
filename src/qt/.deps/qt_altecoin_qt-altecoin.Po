@@ -1,6 +1,6 @@
-qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
- /usr/include/stdc-predef.h config/altecoin-config.h \
- qt/altecoin/altecoingui.h \
+qt/qt_bontecoin_qt-bontecoin.o: qt/bontecoin.cpp \
+ /usr/include/stdc-predef.h config/bontecoin-config.h \
+ qt/bontecoin/bontecoingui.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -263,14 +263,14 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsystemtrayicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
- qt/altecoin/navmenuwidget.h \
+ qt/bontecoin/navmenuwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/topbar.h qt/altecoin/lockunlock.h \
+ qt/bontecoin/prunnable.h qt/bontecoin/topbar.h qt/bontecoin/lockunlock.h \
  qt/walletmodel.h qt/askpassphrasedialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h allocators.h \
@@ -801,7 +801,7 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1354,8 +1354,8 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QProgressBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qprogressbar.h \
- qt/altecoin/dashboardwidget.h \
- qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
+ qt/bontecoin/dashboardwidget.h \
+ qt/bontecoin/furabstractlistitemdelegate.h qt/bontecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
@@ -1385,7 +1385,7 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
+ qt/bontecoin/txviewholder.h qt/bontecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h qt/bitcoinunits.h qt/transactionfilterproxy.h \
@@ -1444,23 +1444,23 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qbarset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QValueAxis \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qvalueaxis.h \
- qt/altecoin/send.h \
+ qt/bontecoin/send.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- qt/altecoin/contactsdropdown.h qt/addresstablemodel.h \
- qt/altecoin/contactdropdownrow.h qt/altecoin/addressfilterproxymodel.h \
+ qt/bontecoin/contactsdropdown.h qt/addresstablemodel.h \
+ qt/bontecoin/contactdropdownrow.h qt/bontecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
- qt/altecoin/sendmultirow.h \
+ qt/bontecoin/sendmultirow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
- qt/altecoin/sendcustomfeedialog.h qt/coincontroldialog.h \
- qt/altecoin/snackbar.h \
+ qt/bontecoin/sendcustomfeedialog.h qt/coincontroldialog.h \
+ qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu \
@@ -1471,16 +1471,16 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreeview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h \
- qt/zpivcontroldialog.h qt/altecoin/tooltipmenu.h \
- qt/altecoin/receivewidget.h \
+ qt/zpivcontroldialog.h qt/bontecoin/tooltipmenu.h \
+ qt/bontecoin/receivewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
- qt/altecoin/addresseswidget.h \
- qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/privacywidget.h \
- qt/altecoin/coldstakingwidget.h qt/altecoin/coldstakingmodel.h \
- qt/altecoin/addressholder.h qt/altecoin/myaddressrow.h qt/guiutil.h \
+ qt/bontecoin/addresseswidget.h \
+ qt/bontecoin/furabstractlistitemdelegate.h qt/bontecoin/privacywidget.h \
+ qt/bontecoin/coldstakingwidget.h qt/bontecoin/coldstakingmodel.h \
+ qt/bontecoin/addressholder.h qt/bontecoin/myaddressrow.h qt/guiutil.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView \
@@ -1510,24 +1510,24 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc \
- qt/altecoin/addressfilterproxymodel.h qt/altecoin/masternodeswidget.h \
- qt/altecoin/mnmodel.h masternode.h masternodeconfig.h \
- qt/altecoin/settings/settingswidget.h \
- qt/altecoin/settings/settingsbackupwallet.h \
- qt/altecoin/settings/settingsbittoolwidget.h \
- qt/altecoin/settings/settingssignmessagewidgets.h \
- qt/altecoin/settings/settingswalletrepairwidget.h \
- qt/altecoin/settings/settingswalletoptionswidget.h \
+ qt/bontecoin/addressfilterproxymodel.h qt/bontecoin/masternodeswidget.h \
+ qt/bontecoin/mnmodel.h masternode.h masternodeconfig.h \
+ qt/bontecoin/settings/settingswidget.h \
+ qt/bontecoin/settings/settingsbackupwallet.h \
+ qt/bontecoin/settings/settingsbittoolwidget.h \
+ qt/bontecoin/settings/settingssignmessagewidgets.h \
+ qt/bontecoin/settings/settingswalletrepairwidget.h \
+ qt/bontecoin/settings/settingswalletoptionswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h \
- qt/altecoin/settings/settingsmainoptionswidget.h \
- qt/altecoin/settings/settingsdisplayoptionswidget.h \
- qt/altecoin/settings/settingsmultisendwidget.h \
- qt/altecoin/settings/settingsinformationwidget.h qt/rpcconsole.h \
+ qt/bontecoin/settings/settingsmainoptionswidget.h \
+ qt/bontecoin/settings/settingsdisplayoptionswidget.h \
+ qt/bontecoin/settings/settingsmultisendwidget.h \
+ qt/bontecoin/settings/settingsinformationwidget.h qt/rpcconsole.h \
  qt/guiutil.h qt/peertablemodel.h net.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCompleter \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcompleter.h \
- qt/altecoin/settings/settingsconsolewidget.h qt/rpcconsole.h \
+ qt/bontecoin/settings/settingsconsolewidget.h qt/rpcconsole.h \
  qt/clientmodel.h qt/guiconstants.h qt/guiutil.h qt/intro.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h \
@@ -1537,7 +1537,7 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h qt/optionsmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h \
- qt/altecoin/splash.h qt/altecoin/welcomecontentwidget.h \
+ qt/bontecoin/splash.h qt/bontecoin/welcomecontentwidget.h \
  qt/utilitydialog.h qt/winshutdownmonitor.h qt/paymentserver.h \
  qt/paymentrequestplus.h qt/walletmodel.h init.h rpc/server.h \
  rpc/protocol.h univalue/include/univalue.h \
@@ -1560,13 +1560,13 @@ qt/qt_altecoin_qt-altecoin.o: qt/altecoin.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/altecoin.moc
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/bontecoin.moc
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
-qt/altecoin/altecoingui.h:
+qt/bontecoin/bontecoingui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
 
@@ -2190,13 +2190,13 @@ qt/altecoin/altecoingui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
 
-qt/altecoin/navmenuwidget.h:
+qt/bontecoin/navmenuwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -2206,11 +2206,11 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/topbar.h:
+qt/bontecoin/topbar.h:
 
-qt/altecoin/lockunlock.h:
+qt/bontecoin/lockunlock.h:
 
 qt/walletmodel.h:
 
@@ -3410,7 +3410,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4806,11 +4806,11 @@ wallet/wallet.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qprogressbar.h:
 
-qt/altecoin/dashboardwidget.h:
+qt/bontecoin/dashboardwidget.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -4872,9 +4872,9 @@ qt/bitcoinunits.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/altecoin/txviewholder.h:
+qt/bontecoin/txviewholder.h:
 
-qt/altecoin/txrow.h:
+qt/bontecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -4996,19 +4996,19 @@ qt/transactionfilterproxy.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCharts/qvalueaxis.h:
 
-qt/altecoin/send.h:
+qt/bontecoin/send.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h:
 
-qt/altecoin/contactsdropdown.h:
+qt/bontecoin/contactsdropdown.h:
 
 qt/addresstablemodel.h:
 
-qt/altecoin/contactdropdownrow.h:
+qt/bontecoin/contactdropdownrow.h:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView:
 
@@ -5020,7 +5020,7 @@ qt/altecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
 
-qt/altecoin/sendmultirow.h:
+qt/bontecoin/sendmultirow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction:
 
@@ -5030,11 +5030,11 @@ qt/altecoin/sendmultirow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
 
-qt/altecoin/sendcustomfeedialog.h:
+qt/bontecoin/sendcustomfeedialog.h:
 
 qt/coincontroldialog.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton:
 
@@ -5058,9 +5058,9 @@ qt/altecoin/snackbar.h:
 
 qt/zpivcontroldialog.h:
 
-qt/altecoin/tooltipmenu.h:
+qt/bontecoin/tooltipmenu.h:
 
-qt/altecoin/receivewidget.h:
+qt/bontecoin/receivewidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem:
 
@@ -5070,19 +5070,19 @@ qt/altecoin/receivewidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:
 
-qt/altecoin/addresseswidget.h:
+qt/bontecoin/addresseswidget.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/privacywidget.h:
+qt/bontecoin/privacywidget.h:
 
-qt/altecoin/coldstakingwidget.h:
+qt/bontecoin/coldstakingwidget.h:
 
-qt/altecoin/coldstakingmodel.h:
+qt/bontecoin/coldstakingmodel.h:
 
-qt/altecoin/addressholder.h:
+qt/bontecoin/addressholder.h:
 
-qt/altecoin/myaddressrow.h:
+qt/bontecoin/myaddressrow.h:
 
 qt/guiutil.h:
 
@@ -5148,39 +5148,39 @@ qt/guiutil.h:
 
 /usr/include/c++/7/bits/fstream.tcc:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
-qt/altecoin/masternodeswidget.h:
+qt/bontecoin/masternodeswidget.h:
 
-qt/altecoin/mnmodel.h:
+qt/bontecoin/mnmodel.h:
 
 masternode.h:
 
 masternodeconfig.h:
 
-qt/altecoin/settings/settingswidget.h:
+qt/bontecoin/settings/settingswidget.h:
 
-qt/altecoin/settings/settingsbackupwallet.h:
+qt/bontecoin/settings/settingsbackupwallet.h:
 
-qt/altecoin/settings/settingsbittoolwidget.h:
+qt/bontecoin/settings/settingsbittoolwidget.h:
 
-qt/altecoin/settings/settingssignmessagewidgets.h:
+qt/bontecoin/settings/settingssignmessagewidgets.h:
 
-qt/altecoin/settings/settingswalletrepairwidget.h:
+qt/bontecoin/settings/settingswalletrepairwidget.h:
 
-qt/altecoin/settings/settingswalletoptionswidget.h:
+qt/bontecoin/settings/settingswalletoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h:
 
-qt/altecoin/settings/settingsmainoptionswidget.h:
+qt/bontecoin/settings/settingsmainoptionswidget.h:
 
-qt/altecoin/settings/settingsdisplayoptionswidget.h:
+qt/bontecoin/settings/settingsdisplayoptionswidget.h:
 
-qt/altecoin/settings/settingsmultisendwidget.h:
+qt/bontecoin/settings/settingsmultisendwidget.h:
 
-qt/altecoin/settings/settingsinformationwidget.h:
+qt/bontecoin/settings/settingsinformationwidget.h:
 
 qt/rpcconsole.h:
 
@@ -5194,7 +5194,7 @@ net.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcompleter.h:
 
-qt/altecoin/settings/settingsconsolewidget.h:
+qt/bontecoin/settings/settingsconsolewidget.h:
 
 qt/rpcconsole.h:
 
@@ -5226,9 +5226,9 @@ qt/optionsmodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h:
 
-qt/altecoin/splash.h:
+qt/bontecoin/splash.h:
 
-qt/altecoin/welcomecontentwidget.h:
+qt/bontecoin/welcomecontentwidget.h:
 
 qt/utilitydialog.h:
 
@@ -5288,4 +5288,4 @@ univalue/include/univalue.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h:
 
-qt/altecoin.moc:
+qt/bontecoin.moc:

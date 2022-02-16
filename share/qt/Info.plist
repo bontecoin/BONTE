@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>1.0.0.0, Copyright © 2009-2020 The Bitcoin Core developers, 2014-2020 The Dash Core developers, 2015-2020 The Altecoin Core developers</string>
+  <string>1.0.0.0, Copyright © 2009-2020 The Bitcoin Core developers, 2014-2020 The Dash Core developers, 2015-2020 The Bontecoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>1.0.0</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Altecoin-Qt</string>
+  <string>Bontecoin-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Altecoin-Qt</string>
+  <string>Bontecoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.altecoin.Altecoin-Qt</string>
+  <string>io.bontecoin.Bontecoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.altecoin.AltecoinPayment</string>
+      <string>io.bontecoin.BontecoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>altecoin</string>
+        <string>bontecoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.altecoin.paymentrequest</string>
+      <string>io.bontecoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Altecoin payment request</string>
+      <string>Bontecoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-altecoin-payment-request</string>
+        <string>application/x-bontecoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>altecoinpaymentrequest</string>
+          <string>bontecoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.altecoin.paymentrequest</string>
+        <string>io.bontecoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

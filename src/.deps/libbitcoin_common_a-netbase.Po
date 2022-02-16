@@ -1,5 +1,5 @@
 libbitcoin_common_a-netbase.o: netbase.cpp /usr/include/stdc-predef.h \
- config/altecoin-config.h netbase.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h netbase.h compat.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
@@ -225,7 +225,7 @@ libbitcoin_common_a-netbase.o: netbase.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/bits/atomic_base.h \
  /usr/include/c++/7/bits/atomic_lockfree_defines.h \
  /usr/include/c++/7/backward/auto_ptr.h /usr/include/c++/7/mutex random.h \
- crypto/chacha20.h crypto/common.h config/altecoin-config.h \
+ crypto/chacha20.h crypto/common.h config/bontecoin-config.h \
  compat/endian.h compat/byteswap.h /usr/include/byteswap.h util.h \
  tinyformat.h /usr/include/c++/7/cassert /usr/include/c++/7/iostream \
  utiltime.h /usr/include/boost/filesystem/path.hpp \
@@ -1006,7 +1006,7 @@ libbitcoin_common_a-netbase.o: netbase.cpp /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 netbase.h:
 
@@ -1632,7 +1632,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 

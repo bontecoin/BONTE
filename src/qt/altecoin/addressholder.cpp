@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/addressholder.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/addressholder.h"
+#include "qt/bontecoin/qtutils.h"
 
 void AddressHolder::init(QWidget* holder,const QModelIndex &index, bool isHovered, bool isSelected) const {
     MyAddressRow *row = static_cast<MyAddressRow*>(holder);

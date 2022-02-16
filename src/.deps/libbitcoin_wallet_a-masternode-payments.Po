@@ -650,16 +650,16 @@ libbitcoin_wallet_a-masternode-payments.o: masternode-payments.cpp \
  /usr/include/c++/7/bits/codecvt.h /usr/include/c++/7/bits/unique_ptr.h \
  /usr/include/openssl/sha.h /usr/include/openssl/e_os2.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h main.h \
- config/altecoin-config.h amount.h chain.h chainparams.h \
+ config/bontecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h primitives/block.h \
  primitives/transaction.h amount.h libzerocoin/CoinSpend.h streams.h \
  allocators.h serialize.h utilstrencodings.h libzerocoin/Accumulator.h \
  libzerocoin/Coin.h libzerocoin/Denominations.h libzerocoin/Params.h \
- libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -2709,7 +2709,7 @@ crypto/sha512.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 
@@ -2747,7 +2747,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2775,7 +2775,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,14 +6,14 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/mnmodel.h"
-#include "qt/altecoin/tooltipmenu.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/mnmodel.h"
+#include "qt/bontecoin/tooltipmenu.h"
 #include <QTimer>
 #include <atomic>
 
-class AltecoinGUI;
+class BontecoinGUI;
 
 namespace Ui {
 class MasterNodesWidget;
@@ -29,7 +29,7 @@ class MasterNodesWidget : public PWidget
 
 public:
 
-    explicit MasterNodesWidget(AltecoinGUI *parent = nullptr);
+    explicit MasterNodesWidget(BontecoinGUI *parent = nullptr);
     ~MasterNodesWidget();
 
     void loadWalletModel() override;

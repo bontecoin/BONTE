@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +16,7 @@
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
 #include "txdb.h"
-#include "test/test_altecoin.h"
+#include "test/test_bontecoin.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
@@ -40,7 +40,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     std::string strWalletFile = "unittestwallet.dat";
     CWalletDB walletdb(strWalletFile, "cr+");
     CWallet wallet(strWalletFile);
-    CzALTCWallet *czALTCWallet = new CzALTCWallet(wallet.strWalletFile);
+    CzBONTEWallet *czBONTEWallet = new CzBONTEWallet(wallet.strWalletFile);
 
     // Get the 5 created mints.
     libzerocoin::CoinDenomination denom = libzerocoin::CoinDenomination::ZQ_FIFTY;
@@ -48,8 +48,8 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     for (unsigned int i = 0; i < TESTS_COINS_TO_ACCUMULATE; i++) {
         libzerocoin::PrivateCoin coin(ZCParams, denom, false);
         CDeterministicMint dMint;
-        czALTCWallet->GenerateDeterministicZALTC(denom, coin, dMint, true);
-        czALTCWallet->UpdateCount();
+        czBONTEWallet->GenerateDeterministicZBONTE(denom, coin, dMint, true);
+        czBONTEWallet->UpdateCount();
         vCoins.emplace_back(coin);
     }
 

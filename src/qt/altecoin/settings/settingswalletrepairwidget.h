@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +6,7 @@
 #define SETTINGSWALLETREPAIRWIDGET_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 
 namespace Ui {
 class SettingsWalletRepairWidget;
@@ -17,7 +17,7 @@ class SettingsWalletRepairWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsWalletRepairWidget(AltecoinGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsWalletRepairWidget(BontecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsWalletRepairWidget();
 
     /** Build parameter list for restart */

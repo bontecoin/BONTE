@@ -1,5 +1,5 @@
 libbitcoin_server_a-addrman.o: addrman.cpp /usr/include/stdc-predef.h \
- addrman.h netbase.h config/altecoin-config.h compat.h \
+ addrman.h netbase.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -196,7 +196,7 @@ libbitcoin_server_a-addrman.o: addrman.cpp /usr/include/stdc-predef.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h protocol.h \
  uint256.h /usr/include/c++/7/cstring version.h random.h \
  crypto/chacha20.h /usr/include/c++/7/stdlib.h crypto/common.h \
- config/altecoin-config.h compat/endian.h compat/byteswap.h \
+ config/bontecoin-config.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h sync.h threadsafety.h \
  /usr/include/c++/7/condition_variable /usr/include/c++/7/chrono \
  /usr/include/c++/7/ratio /usr/include/c++/7/ctime \
@@ -776,7 +776,7 @@ addrman.h:
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -1292,7 +1292,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 

@@ -218,13 +218,13 @@ qt/qt_libbitcoinqt_a-clientmodel.o: qt/clientmodel.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h qt/bantablemodel.h \
- net.h bloom.h libzerocoin/bignum.h config/altecoin-config.h \
+ net.h bloom.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h serialize.h compat.h \
- config/altecoin-config.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1106,7 +1106,7 @@ qt/qt_libbitcoinqt_a-clientmodel.o: qt/clientmodel.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/prunnable.h allocators.h \
+ qt/bontecoin/prunnable.h allocators.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
@@ -1873,7 +1873,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -1911,7 +1911,7 @@ serialize.h:
 
 compat.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/arpa/inet.h:
 
@@ -3867,7 +3867,7 @@ qt/askpassphrasedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

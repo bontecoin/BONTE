@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/addresslabelrow.h"
-#include "qt/altecoin/forms/ui_addresslabelrow.h"
+#include "qt/bontecoin/addresslabelrow.h"
+#include "qt/bontecoin/forms/ui_addresslabelrow.h"
 
 AddressLabelRow::AddressLabelRow(QWidget *parent) :
     QWidget(parent),

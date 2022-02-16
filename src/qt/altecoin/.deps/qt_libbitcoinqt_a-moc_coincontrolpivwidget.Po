@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
- qt/altecoin/moc_coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/coincontrolpivwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
+ qt/bontecoin/moc_coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/coincontrolpivwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/coincontrolpivwidget.h:
+qt/bontecoin/coincontrolpivwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

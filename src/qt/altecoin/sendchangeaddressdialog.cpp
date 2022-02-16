@@ -1,11 +1,11 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/sendchangeaddressdialog.h"
-#include "qt/altecoin/forms/ui_sendchangeaddressdialog.h"
+#include "qt/bontecoin/sendchangeaddressdialog.h"
+#include "qt/bontecoin/forms/ui_sendchangeaddressdialog.h"
 #include "walletmodel.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
     QDialog(parent),
@@ -21,10 +21,10 @@ SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
     ui->labelTitle->setText(tr("Custom Change Address"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
-    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" Altecoin address"));
+    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" Bontecoin address"));
     ui->labelMessage->setProperty("cssClass", "text-main-grey");
 
-    ui->lineEditAddress->setPlaceholderText("Enter Altecoin address (e.g D7VFR83SQbiezrW72hjc… ");
+    ui->lineEditAddress->setPlaceholderText("Enter Bontecoin address (e.g D7VFR83SQbiezrW72hjc… ");
     initCssEditLine(ui->lineEditAddress, true);
 
     // Buttons

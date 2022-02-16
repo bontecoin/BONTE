@@ -1,23 +1,23 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/navmenuwidget.h"
-#include "qt/altecoin/forms/ui_navmenuwidget.h"
-#include "qt/altecoin/altecoingui.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/navmenuwidget.h"
+#include "qt/bontecoin/forms/ui_navmenuwidget.h"
+#include "qt/bontecoin/bontecoingui.h"
+#include "qt/bontecoin/qtutils.h"
 #include "clientversion.h"
 #include "optionsmodel.h"
 #include <QScrollBar>
 
-NavMenuWidget::NavMenuWidget(AltecoinGUI *mainWindow, QWidget *parent) :
+NavMenuWidget::NavMenuWidget(BontecoinGUI *mainWindow, QWidget *parent) :
     PWidget(mainWindow, parent),
     ui(new Ui::NavMenuWidget)
 {
     ui->setupUi(this);
     this->setFixedWidth(100);
     setCssProperty(ui->navContainer_2, "container-nav");
-    setCssProperty(ui->imgLogo, "img-nav-logo-altecoin");
+    setCssProperty(ui->imgLogo, "img-nav-logo-bontecoin");
 
     // App version
     ui->labelVersion->setText(QString(tr("v%1")).arg(QString::fromStdString(FormatVersionFriendly())));

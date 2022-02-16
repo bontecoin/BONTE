@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/furlistrow.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/furlistrow.h"
 #include "transactiontablemodel.h"
-#include "qt/altecoin/txviewholder.h"
+#include "qt/bontecoin/txviewholder.h"
 #include "transactionfilterproxy.h"
 
 #include <atomic>
@@ -19,7 +19,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h" /* for USE_QTCHARTS */
+#include "config/bontecoin-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS
@@ -37,7 +37,7 @@ using namespace QtCharts;
 
 #endif
 
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -96,7 +96,7 @@ class DashboardWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit DashboardWidget(AltecoinGUI* _window);
+    explicit DashboardWidget(BontecoinGUI* _window);
     ~DashboardWidget();
 
     void loadWalletModel() override;

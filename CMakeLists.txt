@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Altecoin)
+project(Bontecoin)
 
 set(BDB_VER "4.8.30")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/contrib/cmake")
@@ -31,7 +31,7 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
         message(STATUS "Compiling on WSL")
         set(ENV{DISPLAY} ":0")
         set(ENV{LIBGL_ALWAYS_INDIRECT} 1)
-        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/altecoin-run)
+        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/bontecoin-run)
         message(WARNING "WSL Runtime support requires VcXsrv to be installed and running")
     else()
         message(STATUS "Compiling on Linux")
@@ -85,8 +85,8 @@ else()
     )
 endif()
 
-# run configure if altecoin_config.h doesn't exist
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/altecoin-config.h")
+# run configure if bontecoin_config.h doesn't exist
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/bontecoin-config.h")
 else()
     execute_process(
         COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/configure ${CONFIGSITE} ${BDB_CONFIGURE_FLAGS} ${BIGNUM_CONFIGURE_FLAGS} ${SSL_CONFIGURE_FLAGS}
@@ -522,13 +522,13 @@ link_directories(
         ${CMAKE_SOURCE_DIR}/src/secp256k1/.libs
         )
 
-set(altecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-cli.cpp)
+set(bontecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoin-cli.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND altecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-cli-res.rc)
+    list(APPEND bontecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoin-cli-res.rc)
 endif()
-add_executable(altecoin-cli ${altecoin-cli_SOURCES})
-add_dependencies(altecoin-cli libunivalue)
-target_link_libraries(altecoin-cli
+add_executable(bontecoin-cli ${bontecoin-cli_SOURCES})
+add_dependencies(bontecoin-cli libunivalue)
+target_link_libraries(bontecoin-cli
         CLI_A
         univalue
         UTIL_A
@@ -536,16 +536,16 @@ target_link_libraries(altecoin-cli
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(altecoin-cli ${WINDOWS_LDADD})
+    target_link_libraries(bontecoin-cli ${WINDOWS_LDADD})
 endif()
 
-set(altecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-tx.cpp)
+set(bontecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoin-tx.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND altecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-tx-res.rc)
+    list(APPEND bontecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoin-tx-res.rc)
 endif()
-add_executable(altecoin-tx ${altecoin-tx_SOURCES})
-add_dependencies(altecoin-tx libunivalue libsecp256k1)
-target_link_libraries(altecoin-tx
+add_executable(bontecoin-tx ${bontecoin-tx_SOURCES})
+add_dependencies(bontecoin-tx libunivalue libsecp256k1)
+target_link_libraries(bontecoin-tx
         univalue
         COMMON_A
         ZEROCOIN_A
@@ -555,26 +555,26 @@ target_link_libraries(altecoin-tx
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(altecoin-tx ${WINDOWS_LDADD})
+    target_link_libraries(bontecoin-tx ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(altecoin-tx ${GMP_LIBRARY})
+    target_link_libraries(bontecoin-tx ${GMP_LIBRARY})
 endif()
 
 link_directories(${CMAKE_BINARY_DIR})
 
-set(altecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoind.cpp)
+set(bontecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoind.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND altecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoind-res.rc)
+    list(APPEND bontecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/bontecoind-res.rc)
 endif()
-add_executable(altecoind ${altecoind_SOURCES} ${BitcoinHeaders})
-add_dependencies(altecoind libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_include_directories(altecoind PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
+add_executable(bontecoind ${bontecoind_SOURCES} ${BitcoinHeaders})
+add_dependencies(bontecoind libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_include_directories(bontecoind PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
         ${LIBEVENT_INCLUDE_DIR})
-target_link_libraries(altecoind
+target_link_libraries(bontecoind
         pthread
         SERVER_A
         WALLET_A
@@ -591,22 +591,22 @@ target_link_libraries(altecoind
         )
 if($ENV{target} MATCHES "Windows")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wstack-protector -fstack-protector-all -fPIE -pipe -O2 -pthread -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie --static")
-    target_link_libraries(altecoind ${WINDOWS_LDADD})
+    target_link_libraries(bontecoind ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(altecoind ${GMP_LIBRARY})
-    target_include_directories(altecoind PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(bontecoind ${GMP_LIBRARY})
+    target_include_directories(bontecoind PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(altecoind ZMQ_A ${ZMQ_LIB})
-    target_include_directories(altecoind PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(bontecoind ZMQ_A ${ZMQ_LIB})
+    target_include_directories(bontecoind PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(altecoind PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(altecoind ${MINIUPNP_LIBRARY})
-    target_include_directories(altecoind PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(bontecoind PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(bontecoind ${MINIUPNP_LIBRARY})
+    target_include_directories(bontecoind PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(altecoind -lpthread)
+target_link_libraries(bontecoind -lpthread)
 
 add_subdirectory(src/qt)

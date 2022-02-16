@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-coincontrolpivwidget.o: \
- qt/altecoin/coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/coincontrolpivwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-coincontrolpivwidget.o: \
+ qt/bontecoin/coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/coincontrolpivwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -254,7 +254,7 @@ qt/altecoin/qt_libbitcoinqt_a-coincontrolpivwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/forms/ui_coincontrolpivwidget.h \
+ qt/bontecoin/forms/ui_coincontrolpivwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
@@ -330,7 +330,7 @@ qt/altecoin/qt_libbitcoinqt_a-coincontrolpivwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/coincontrolpivwidget.h:
+qt/bontecoin/coincontrolpivwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -936,7 +936,7 @@ qt/altecoin/coincontrolpivwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/forms/ui_coincontrolpivwidget.h:
+qt/bontecoin/forms/ui_coincontrolpivwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 

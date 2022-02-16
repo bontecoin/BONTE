@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2018 The Altecoin developers
+// Copyright (c) 2015-2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_GENWIT_H
-#define Altecoin_GENWIT_H
+#ifndef Bontecoin_GENWIT_H
+#define Bontecoin_GENWIT_H
 
 
 #include <iostream>
@@ -58,4 +58,4 @@ private:
 };
 
 
-#endif //Altecoin_GENWIT_H
+#endif //Bontecoin_GENWIT_H

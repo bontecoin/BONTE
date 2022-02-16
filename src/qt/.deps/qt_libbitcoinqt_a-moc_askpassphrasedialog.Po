@@ -254,7 +254,7 @@ qt/qt_libbitcoinqt_a-moc_askpassphrasedialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/prunnable.h allocators.h support/cleanse.h \
+ qt/bontecoin/prunnable.h allocators.h support/cleanse.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -1332,7 +1332,7 @@ qt/askpassphrasedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

@@ -155,7 +155,7 @@ qt/qt_libbitcoinqt_a-moc_coincontroldialog.o: \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
- /usr/include/c++/7/stdlib.h qt/altecoin/snackbar.h \
+ /usr/include/c++/7/stdlib.h qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -712,7 +712,7 @@ sporkid.h:
 
 /usr/include/c++/7/stdlib.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

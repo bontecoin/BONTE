@@ -1,21 +1,21 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef ADDRESSESWIDGET_H
 #define ADDRESSESWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/altecoin/tooltipmenu.h"
+#include "qt/bontecoin/tooltipmenu.h"
 #include "furabstractlistitemdelegate.h"
-#include "qt/altecoin/addressfilterproxymodel.h"
+#include "qt/bontecoin/addressfilterproxymodel.h"
 
 #include <QWidget>
 
 class AddressViewDelegate;
 class TooltipMenu;
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -31,7 +31,7 @@ class AddressesWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit AddressesWidget(AltecoinGUI* parent);
+    explicit AddressesWidget(BontecoinGUI* parent);
     ~AddressesWidget();
 
     void loadWalletModel() override;

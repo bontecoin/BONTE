@@ -1,5 +1,5 @@
-test/test_test_altecoin-skiplist_tests.o: test/skiplist_tests.cpp \
- /usr/include/stdc-predef.h main.h config/altecoin-config.h amount.h \
+test/test_test_bontecoin-skiplist_tests.o: test/skiplist_tests.cpp \
+ /usr/include/stdc-predef.h main.h config/bontecoin-config.h amount.h \
  serialize.h /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -637,7 +637,7 @@ test/test_test_altecoin-skiplist_tests.o: test/skiplist_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1159,7 +1159,7 @@ test/test_test_altecoin-skiplist_tests.o: test/skiplist_tests.cpp \
  /usr/include/boost/smart_ptr/make_shared_array.hpp \
  /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
  /usr/include/boost/detail/atomic_undef_macros.hpp \
- /usr/include/boost/detail/atomic_redef_macros.hpp test/test_altecoin.h \
+ /usr/include/boost/detail/atomic_redef_macros.hpp test/test_bontecoin.h \
  txdb.h leveldbwrapper.h clientversion.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
@@ -1320,7 +1320,7 @@ test/test_test_altecoin-skiplist_tests.o: test/skiplist_tests.cpp \
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 
@@ -2804,7 +2804,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -4072,7 +4072,7 @@ concurrentqueue.h:
 
 /usr/include/boost/detail/atomic_redef_macros.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,19 +6,19 @@
 #define SETTINGSWIDGET_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/settings/settingsbackupwallet.h"
-#include "qt/altecoin/settings/settingsbittoolwidget.h"
-#include "qt/altecoin/settings/settingssignmessagewidgets.h"
-#include "qt/altecoin/settings/settingswalletrepairwidget.h"
-#include "qt/altecoin/settings/settingswalletoptionswidget.h"
-#include "qt/altecoin/settings/settingsmainoptionswidget.h"
-#include "qt/altecoin/settings/settingsdisplayoptionswidget.h"
-#include "qt/altecoin/settings/settingsmultisendwidget.h"
-#include "qt/altecoin/settings/settingsinformationwidget.h"
-#include "qt/altecoin/settings/settingsconsolewidget.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/settings/settingsbackupwallet.h"
+#include "qt/bontecoin/settings/settingsbittoolwidget.h"
+#include "qt/bontecoin/settings/settingssignmessagewidgets.h"
+#include "qt/bontecoin/settings/settingswalletrepairwidget.h"
+#include "qt/bontecoin/settings/settingswalletoptionswidget.h"
+#include "qt/bontecoin/settings/settingsmainoptionswidget.h"
+#include "qt/bontecoin/settings/settingsdisplayoptionswidget.h"
+#include "qt/bontecoin/settings/settingsmultisendwidget.h"
+#include "qt/bontecoin/settings/settingsinformationwidget.h"
+#include "qt/bontecoin/settings/settingsconsolewidget.h"
 
-class AltecoinGUI;
+class BontecoinGUI;
 
 QT_BEGIN_NAMESPACE
 class QDataWidgetMapper;
@@ -33,7 +33,7 @@ class SettingsWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsWidget(AltecoinGUI* parent);
+    explicit SettingsWidget(BontecoinGUI* parent);
     ~SettingsWidget();
 
     void loadClientModel() override;

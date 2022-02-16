@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The Altecoin developers
+// Copyright (c) 2018-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_ZALTCTRACKER_H
-#define Altecoin_ZALTCTRACKER_H
+#ifndef Bontecoin_ZBONTETRACKER_H
+#define Bontecoin_ZBONTETRACKER_H
 
 #include "zerocoin.h"
 #include "witness.h"
@@ -11,9 +11,9 @@
 #include <list>
 
 class CDeterministicMint;
-class CzALTCWallet;
+class CzBONTEWallet;
 
-class CzALTCTracker
+class CzBONTETracker
 {
 private:
     bool fInitialized;
@@ -22,9 +22,9 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzALTCTracker(std::string strWalletFile);
-    ~CzALTCTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzALTCWallet* zALTCWallet = NULL);
+    CzBONTETracker(std::string strWalletFile);
+    ~CzBONTETracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzBONTEWallet* zBONTEWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -51,4 +51,4 @@ public:
     void Clear();
 };
 
-#endif //Altecoin_ZALTCTRACKER_H
+#endif //Bontecoin_ZBONTETRACKER_H

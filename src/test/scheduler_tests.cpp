@@ -1,12 +1,12 @@
 // Copyright (c) 2012-2013 The Bitcoin Core developers
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "random.h"
 #include "scheduler.h"
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #else
 #define HAVE_WORKING_BOOST_SLEEP_FOR
 #endif

@@ -1,5 +1,5 @@
 // Copyright (c) 2015 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Altecoin developers
+// Copyright (c) 2018-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -257,7 +257,7 @@ static void http_request_cb(struct evhttp_request* req, void* arg)
 
     // Early address-based allow check
     if (!ClientAllowed(hreq->GetPeer())) {
-        hreq->WriteReply(HTTP_FORALTCDEN);
+        hreq->WriteReply(HTTP_FORBONTEDEN);
         return;
     }
 

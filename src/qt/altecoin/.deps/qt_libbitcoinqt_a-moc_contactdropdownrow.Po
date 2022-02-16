@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_contactdropdownrow.o: \
- qt/altecoin/moc_contactdropdownrow.cpp /usr/include/stdc-predef.h \
- qt/altecoin/contactdropdownrow.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_contactdropdownrow.o: \
+ qt/bontecoin/moc_contactdropdownrow.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/contactdropdownrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_contactdropdownrow.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/contactdropdownrow.h:
+qt/bontecoin/contactdropdownrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

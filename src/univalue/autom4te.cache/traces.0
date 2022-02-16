@@ -917,9 +917,9 @@ dnl not yet using an explicit LT_CONFIG_LTDL_DIR.
 m4_ifval([$1], [_LT_CONFIG_LTDL_DIR([$1])])dnl
 _$0()
 ])
-m4trace:/usr/share/aclocal/ltdl.m4:81: -1- AU_DEFUN([AC_LIALTCDL_CONVENIENCE], [_LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
+m4trace:/usr/share/aclocal/ltdl.m4:81: -1- AU_DEFUN([AC_LIBONTEDL_CONVENIENCE], [_LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
 _LTDL_CONVENIENCE])
-m4trace:/usr/share/aclocal/ltdl.m4:81: -1- AC_DEFUN([AC_LIALTCDL_CONVENIENCE], [AC_DIAGNOSE([obsolete], [The macro `AC_LIALTCDL_CONVENIENCE' is obsolete.
+m4trace:/usr/share/aclocal/ltdl.m4:81: -1- AC_DEFUN([AC_LIBONTEDL_CONVENIENCE], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBONTEDL_CONVENIENCE' is obsolete.
 You should run autoupdate.])dnl
 _LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
 _LTDL_CONVENIENCE])
@@ -932,9 +932,9 @@ dnl not yet using an explicit LT_CONFIG_LTDL_DIR.
 m4_ifval([$1], [_LT_CONFIG_LTDL_DIR([$1])])dnl
 _$0()
 ])
-m4trace:/usr/share/aclocal/ltdl.m4:137: -1- AU_DEFUN([AC_LIALTCDL_INSTALLABLE], [_LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
+m4trace:/usr/share/aclocal/ltdl.m4:137: -1- AU_DEFUN([AC_LIBONTEDL_INSTALLABLE], [_LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
 _LTDL_INSTALLABLE])
-m4trace:/usr/share/aclocal/ltdl.m4:137: -1- AC_DEFUN([AC_LIALTCDL_INSTALLABLE], [AC_DIAGNOSE([obsolete], [The macro `AC_LIALTCDL_INSTALLABLE' is obsolete.
+m4trace:/usr/share/aclocal/ltdl.m4:137: -1- AC_DEFUN([AC_LIBONTEDL_INSTALLABLE], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBONTEDL_INSTALLABLE' is obsolete.
 You should run autoupdate.])dnl
 _LT_CONFIG_LTDL_DIR([m4_default([$1], [litztdl])])
 _LTDL_INSTALLABLE])
@@ -1020,7 +1020,7 @@ case ,$with_included_ltdl,$with_ltdl_include,$with_ltdl_lib, in
 	# preinstalled litztdl we found.
 	AC_DEFINE([HAVE_LTDL], [1],
 	  [Define this if a modern litztdl is already installed])
-	LIALTCDL=-lltdl
+	LIBONTEDL=-lltdl
 	LTDLDEPS=
 	LTDLINCL=
 	;;
@@ -1028,7 +1028,7 @@ case ,$with_included_ltdl,$with_ltdl_include,$with_ltdl_lib, in
 	AC_MSG_ERROR(['--with-ltdl-include' and '--with-ltdl-lib' options must be used together])
 	;;
   *)	with_included_ltdl=no
-	LIALTCDL="-L$with_ltdl_lib -lltdl"
+	LIBONTEDL="-L$with_ltdl_lib -lltdl"
 	LTDLDEPS=
 	LTDLINCL=-I$with_ltdl_include
 	;;
@@ -1039,7 +1039,7 @@ INCLTDL=$LTDLINCL
 AC_MSG_CHECKING([where to find litztdl headers])
 AC_MSG_RESULT([$LTDLINCL])
 AC_MSG_CHECKING([where to find litztdl library])
-AC_MSG_RESULT([$LIALTCDL])
+AC_MSG_RESULT([$LIBONTEDL])
 
 _LTDL_SETUP
 

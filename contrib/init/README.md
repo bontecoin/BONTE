@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: altecoind.service
-Upstart: altecoind.conf
-OpenRC:  altecoind.openrc
-         altecoind.openrcconf
-CentOS:  altecoind.init
-macOS:    org.altecoin.altecoind.plist
+SystemD: bontecoind.service
+Upstart: bontecoind.conf
+OpenRC:  bontecoind.openrc
+         bontecoind.openrcconf
+CentOS:  bontecoind.init
+macOS:    org.bontecoin.bontecoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

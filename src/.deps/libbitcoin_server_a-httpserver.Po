@@ -127,7 +127,7 @@ libbitcoin_server_a-httpserver.o: httpserver.cpp \
  /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- compat.h config/altecoin-config.h /usr/include/arpa/inet.h \
+ compat.h config/bontecoin-config.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1363,7 +1363,7 @@ chainparamsbase.h:
 
 compat.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/arpa/inet.h:
 

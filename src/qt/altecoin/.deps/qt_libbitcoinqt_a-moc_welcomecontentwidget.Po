@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_welcomecontentwidget.o: \
- qt/altecoin/moc_welcomecontentwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/welcomecontentwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_welcomecontentwidget.o: \
+ qt/bontecoin/moc_welcomecontentwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/welcomecontentwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -263,7 +263,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_welcomecontentwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/welcomecontentwidget.h:
+qt/bontecoin/welcomecontentwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/masternodewizarddialog.h"
-#include "qt/altecoin/forms/ui_masternodewizarddialog.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/masternodewizarddialog.h"
+#include "qt/bontecoin/forms/ui_masternodewizarddialog.h"
+#include "qt/bontecoin/qtutils.h"
 #include "optionsmodel.h"
 #include "collateral.h"
 #include "pairresult.h"
 #include "activemasternode.h"
-#include "qt/altecoin/guitransactionsutils.h"
+#include "qt/bontecoin/guitransactionsutils.h"
 #include <QFile>
 #include <QIntValidator>
 #include <QHostAddress>

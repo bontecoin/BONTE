@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2019 The Altecoin developers
+# Copyright (c) 2019 The Bontecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@ Covers the 'Wrapped Serials Attack' scenario for Zerocoin Spends
 import random
 from time import sleep
 
-from test_framework.test_framework import AltecoinTestFramework
+from test_framework.test_framework import BontecoinTestFramework
 from test_framework.util import (
     sync_blocks,
     assert_equal,
@@ -19,7 +19,7 @@ from test_framework.util import (
     DecimalAmt
 )
 
-class zALTCwrappedSerialsTest(AltecoinTestFramework):
+class zBONTEwrappedSerialsTest(BontecoinTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 3
@@ -127,4 +127,4 @@ class zALTCwrappedSerialsTest(AltecoinTestFramework):
 
 
 if __name__ == '__main__':
-    zALTCwrappedSerialsTest().main()
+    zBONTEwrappedSerialsTest().main()

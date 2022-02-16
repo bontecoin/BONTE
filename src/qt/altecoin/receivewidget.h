@@ -1,20 +1,20 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef RECEIVEWIDGET_H
 #define RECEIVEWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/addressfilterproxymodel.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/addressfilterproxymodel.h"
 
 #include <QSpacerItem>
 #include <QWidget>
 #include <QPixmap>
 
-class AltecoinGUI;
+class BontecoinGUI;
 class SendCoinsRecipient;
 
 namespace Ui {
@@ -30,7 +30,7 @@ class ReceiveWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit ReceiveWidget(AltecoinGUI* parent);
+    explicit ReceiveWidget(BontecoinGUI* parent);
     ~ReceiveWidget();
 
     void loadWalletModel() override;

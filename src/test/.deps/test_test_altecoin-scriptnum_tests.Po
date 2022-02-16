@@ -1,6 +1,6 @@
-test/test_test_altecoin-scriptnum_tests.o: test/scriptnum_tests.cpp \
+test/test_test_bontecoin-scriptnum_tests.o: test/scriptnum_tests.cpp \
  /usr/include/stdc-predef.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -186,8 +186,8 @@ test/test_test_altecoin-scriptnum_tests.o: test/scriptnum_tests.cpp \
  /usr/include/c++/7/sstream /usr/include/c++/7/istream \
  /usr/include/c++/7/ostream /usr/include/c++/7/bits/ostream.tcc \
  /usr/include/c++/7/bits/istream.tcc /usr/include/c++/7/bits/sstream.tcc \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h \
- config/altecoin-config.h streams.h allocators.h support/cleanse.h \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h \
+ config/bontecoin-config.h streams.h allocators.h support/cleanse.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -1322,7 +1322,7 @@ test/test_test_altecoin-scriptnum_tests.o: test/scriptnum_tests.cpp \
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -1844,7 +1844,7 @@ crypto/sha512.h:
 
 /usr/include/c++/7/bits/sstream.tcc:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -1852,7 +1852,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 streams.h:
 

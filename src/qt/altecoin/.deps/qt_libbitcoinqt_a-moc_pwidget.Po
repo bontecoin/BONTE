@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_pwidget.o: \
- qt/altecoin/moc_pwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+qt/bontecoin/qt_libbitcoinqt_a-moc_pwidget.o: \
+ qt/bontecoin/moc_pwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
@@ -256,11 +256,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_pwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h
+ qt/bontecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -872,4 +872,4 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:

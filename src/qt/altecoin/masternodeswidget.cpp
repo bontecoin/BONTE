@@ -1,14 +1,14 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/masternodeswidget.h"
-#include "qt/altecoin/forms/ui_masternodeswidget.h"
-#include "qt/altecoin/qtutils.h"
-#include "qt/altecoin/mnrow.h"
-#include "qt/altecoin/mninfodialog.h"
+#include "qt/bontecoin/masternodeswidget.h"
+#include "qt/bontecoin/forms/ui_masternodeswidget.h"
+#include "qt/bontecoin/qtutils.h"
+#include "qt/bontecoin/mnrow.h"
+#include "qt/bontecoin/mninfodialog.h"
 
-#include "qt/altecoin/masternodewizarddialog.h"
+#include "qt/bontecoin/masternodewizarddialog.h"
 
 #include "activemasternode.h"
 #include "clientmodel.h"
@@ -23,7 +23,7 @@
 #include "walletmodel.h"
 #include "askpassphrasedialog.h"
 #include "util.h"
-#include "qt/altecoin/optionbutton.h"
+#include "qt/bontecoin/optionbutton.h"
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <fstream>
@@ -64,7 +64,7 @@ public:
     MNRow* cachedRow = nullptr;
 };
 
-MasterNodesWidget::MasterNodesWidget(AltecoinGUI *parent) :
+MasterNodesWidget::MasterNodesWidget(BontecoinGUI *parent) :
     PWidget(parent),
     ui(new Ui::MasterNodesWidget),
     isLoading(false)
@@ -318,7 +318,7 @@ void MasterNodesWidget::onInfoMNClicked() {
     if (dialog->exportMN){
         if (ask(tr("Remote Masternode Data"),
                 tr("You are just about to export the required data to run a Masternode\non a remote server to your clipboard.\n\n\n"
-                   "You will only have to paste the data in the altecoin.conf file\nof your remote server and start it, "
+                   "You will only have to paste the data in the bontecoin.conf file\nof your remote server and start it, "
                    "then start the Masternode using\nthis controller wallet (select the Masternode in the list and press \"start\").\n"
                 ))) {
             // export data
@@ -430,9 +430,9 @@ void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
         if(walletModel->getBalance() <= CollateralRequired(chainActive.Height())){
             // TODO: Convert CAmount CollateralRequired() result to qString,
-            // kind of like "...node, %i ALTC requited").arg(qYourCollateralResultVariable),
+            // kind of like "...node, %i BONTE requited").arg(qYourCollateralResultVariable),
             // to nicely print required collateral amount.
-            inform(tr("Not enough balance to create a masternode")); //, 10,000 ALTC required."));
+            inform(tr("Not enough balance to create a masternode")); //, 10,000 BONTE required."));
             return;
         }
         showHideOp(true);

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2016-2018 The Bitcoin Core developers
-# Copyright (c) 2018-2019 The Altecoin developers
+# Copyright (c) 2018-2019 The Bontecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@ import os
 
 EXCLUDE = [
     # auto generated:
-    'src/qt/altecoinstrings.cpp',
+    'src/qt/bontecoinstrings.cpp',
     'src/chainparamsseeds.h',
     # other external copyrights:
     'src/tinyformat.h',
@@ -119,7 +119,7 @@ EXPECTED_HOLDER_NAMES = [
     "The Dash developers\n",
     "The Dash Developers\n",
     "The Dash Core developers\n",
-    "The Altecoin developers\n",
+    "The Bontecoin developers\n",
     "The PPCoin developers\n",
     "The NovaCoin Developers",
     "The BlackCoin Developers\n",
@@ -356,7 +356,7 @@ def write_file_lines(filename, file_lines):
 COPYRIGHT = 'Copyright \(c\)'
 YEAR = "20[0-9][0-9]"
 YEAR_RANGE = '(%s)(-%s)?' % (YEAR, YEAR)
-HOLDER = 'The Altecoin developers'
+HOLDER = 'The Bontecoin developers'
 UPDATEABLE_LINE_COMPILED = re.compile(' '.join([COPYRIGHT, YEAR_RANGE, HOLDER]))
 
 def get_updatable_copyright_line(file_lines):
@@ -421,24 +421,24 @@ def exec_update_header_year(base_directory):
 ################################################################################
 
 UPDATE_USAGE = """
-Updates all the copyright headers of "The Altecoin developers" which were
+Updates all the copyright headers of "The Bontecoin developers" which were
 changed in a year more recent than is listed. For example:
 
-// Copyright (c) <firstYear>-<lastYear> The Altecoin developers
+// Copyright (c) <firstYear>-<lastYear> The Bontecoin developers
 
 will be updated to:
 
-// Copyright (c) <firstYear>-<lastModifiedYear> The Altecoin developers
+// Copyright (c) <firstYear>-<lastModifiedYear> The Bontecoin developers
 
 where <lastModifiedYear> is obtained from the 'git log' history.
 
 This subcommand also handles copyright headers that have only a single year. In those cases:
 
-// Copyright (c) <year> The Altecoin developers
+// Copyright (c) <year> The Bontecoin developers
 
 will be updated to:
 
-// Copyright (c) <year>-<lastModifiedYear> The Altecoin developers
+// Copyright (c) <year>-<lastModifiedYear> The Bontecoin developers
 
 where the update is appropriate.
 
@@ -446,7 +446,7 @@ Usage:
     $ ./copyright_header.py update <base_directory>
 
 Arguments:
-    <base_directory> - The base directory of a altecoin source code repository.
+    <base_directory> - The base directory of a bontecoin source code repository.
 """
 
 def print_file_action_message(filename, action):
@@ -471,7 +471,7 @@ def get_header_lines(header, start_year, end_year):
     return [line + '\n' for line in lines]
 
 CPP_HEADER = '''
-// Copyright (c) %s The Altecoin developers
+// Copyright (c) %s The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -480,7 +480,7 @@ def get_cpp_header_lines_to_insert(start_year, end_year):
     return reversed(get_header_lines(CPP_HEADER, start_year, end_year))
 
 PYTHON_HEADER = '''
-# Copyright (c) %s The Altecoin developers
+# Copyright (c) %s The Bontecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -534,7 +534,7 @@ def insert_cpp_header(filename, file_lines, start_year, end_year):
 def exec_insert_header(filename, style):
     file_lines = read_file_lines(filename)
     if file_already_has_core_copyright(file_lines):
-        sys.exit('*** %s already has a copyright by The Altecoin developers'
+        sys.exit('*** %s already has a copyright by The Bontecoin developers'
                  % (filename))
     start_year, end_year = get_git_change_year_range(filename)
     if style == 'python':
@@ -547,7 +547,7 @@ def exec_insert_header(filename, style):
 ################################################################################
 
 INSERT_USAGE = """
-Inserts a copyright header for "The Altecoin developers" at the top of the
+Inserts a copyright header for "The Bontecoin developers" at the top of the
 file in either Python or C++ style as determined by the file extension. If the
 file is a Python file and it has a '#!' starting the first line, the header is
 inserted in the line below it.
@@ -561,7 +561,7 @@ where <year_introduced> is according to the 'git log' history. If
 
 "<current_year>"
 
-If the file already has a copyright for "The Altecoin developers", the
+If the file already has a copyright for "The Bontecoin developers", the
 script will exit.
 
 Usage:

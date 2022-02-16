@@ -1,16 +1,16 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsbackupwallet.h"
-#include "qt/altecoin/settings/forms/ui_settingsbackupwallet.h"
+#include "qt/bontecoin/settings/settingsbackupwallet.h"
+#include "qt/bontecoin/settings/forms/ui_settingsbackupwallet.h"
 #include <QFile>
 #include <QGraphicsDropShadowEffect>
 #include "guiutil.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 #include "guiinterface.h"
-#include "qt/altecoin/qtutils.h"
-SettingsBackupWallet::SettingsBackupWallet(AltecoinGUI* _window, QWidget *parent) :
+#include "qt/bontecoin/qtutils.h"
+SettingsBackupWallet::SettingsBackupWallet(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)
 {

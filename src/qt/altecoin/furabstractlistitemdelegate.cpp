@@ -1,8 +1,8 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
 
 FurAbstractListItemDelegate::FurAbstractListItemDelegate(int _rowHeight, FurListRow<> *_row, QObject *parent) :
     QAbstractItemDelegate(parent), rowHeight(_rowHeight), row(_row){}

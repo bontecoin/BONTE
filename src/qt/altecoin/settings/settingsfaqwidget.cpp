@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsfaqwidget.h"
-#include "qt/altecoin/settings/forms/ui_settingsfaqwidget.h"
+#include "qt/bontecoin/settings/settingsfaqwidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingsfaqwidget.h"
 #include <QScrollBar>
 #include <QMetaObject>
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     QDialog(parent),
@@ -73,7 +73,7 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://altecoincoin.com//");
+    ui->pushButtonWebLink->setText("https://bontecoincoin.com//");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 

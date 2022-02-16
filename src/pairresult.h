@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_PAIRRESULT_H
-#define Altecoin_PAIRRESULT_H
+#ifndef Bontecoin_PAIRRESULT_H
+#define Bontecoin_PAIRRESULT_H
 
 
 class PairResult {
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //Altecoin_PAIRRESULT_H
+#endif //Bontecoin_PAIRRESULT_H

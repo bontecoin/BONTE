@@ -1,6 +1,6 @@
 libbitcoin_server_a-leveldbwrapper.o: leveldbwrapper.cpp \
  /usr/include/stdc-predef.h leveldbwrapper.h clientversion.h \
- config/altecoin-config.h /usr/include/c++/7/string \
+ config/bontecoin-config.h /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -786,7 +786,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 

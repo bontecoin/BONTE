@@ -884,7 +884,7 @@ libbitcoin_common_a-scheduler.o: scheduler.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/type_traits/has_trivial_constructor.hpp \
  /usr/include/boost/detail/atomic_undef_macros.hpp \
  /usr/include/boost/detail/atomic_redef_macros.hpp random.h \
- crypto/chacha20.h crypto/common.h config/altecoin-config.h \
+ crypto/chacha20.h crypto/common.h config/bontecoin-config.h \
  compat/endian.h compat/byteswap.h /usr/include/byteswap.h uint256.h \
  reverselock.h
 
@@ -2892,7 +2892,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 

@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
- qt/altecoin/moc_dashboardwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/dashboardwidget.h qt/altecoin/pwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
+ qt/bontecoin/moc_dashboardwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/dashboardwidget.h qt/bontecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -257,8 +257,8 @@ qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
- qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/bontecoin/prunnable.h qt/bontecoin/furabstractlistitemdelegate.h \
+ qt/bontecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -298,7 +298,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
+ qt/bontecoin/txviewholder.h qt/bontecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h uint256.h /usr/include/c++/7/cstring \
@@ -321,7 +321,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- config/altecoin-config.h \
+ config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QChartView \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qchartview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QAbstractAxis \
@@ -371,9 +371,9 @@ qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/dashboardwidget.h:
+qt/bontecoin/dashboardwidget.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -985,11 +985,11 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1087,9 +1087,9 @@ sporkid.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/altecoin/txviewholder.h:
+qt/bontecoin/txviewholder.h:
 
-qt/altecoin/txrow.h:
+qt/bontecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -1141,7 +1141,7 @@ qt/transactionfilterproxy.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCharts/QChartView:
 

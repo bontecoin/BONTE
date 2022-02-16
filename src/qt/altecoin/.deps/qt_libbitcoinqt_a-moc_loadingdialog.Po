@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_loadingdialog.o: \
- qt/altecoin/moc_loadingdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/loadingdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_loadingdialog.o: \
+ qt/bontecoin/moc_loadingdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/loadingdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -262,11 +262,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_loadingdialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
- qt/altecoin/prunnable.h
+ qt/bontecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/loadingdialog.h:
+qt/bontecoin/loadingdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -888,4 +888,4 @@ qt/altecoin/loadingdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:

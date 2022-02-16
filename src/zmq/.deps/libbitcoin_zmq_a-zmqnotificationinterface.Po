@@ -822,7 +822,7 @@ zmq/libbitcoin_zmq_a-zmqnotificationinterface.o: \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp \
  zmq/zmqpublishnotifier.h zmq/zmqabstractnotifier.h zmq/zmqconfig.h \
- config/altecoin-config.h /usr/include/zmq.h primitives/block.h \
+ config/bontecoin-config.h /usr/include/zmq.h primitives/block.h \
  primitives/transaction.h amount.h serialize.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
@@ -964,7 +964,7 @@ zmq/libbitcoin_zmq_a-zmqnotificationinterface.o: \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -3017,7 +3017,7 @@ zmq/zmqabstractnotifier.h:
 
 zmq/zmqconfig.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/zmq.h:
 
@@ -3371,7 +3371,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

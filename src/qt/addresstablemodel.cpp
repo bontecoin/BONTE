@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -452,7 +452,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from Altecoin core
+    // Update address book model from Bontecoin core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

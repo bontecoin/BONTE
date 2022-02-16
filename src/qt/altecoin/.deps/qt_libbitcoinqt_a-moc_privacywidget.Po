@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
- qt/altecoin/moc_privacywidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/privacywidget.h qt/altecoin/pwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
+ qt/bontecoin/moc_privacywidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/privacywidget.h qt/bontecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -257,8 +257,8 @@ qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
- qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/bontecoin/prunnable.h qt/bontecoin/furabstractlistitemdelegate.h \
+ qt/bontecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -290,7 +290,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
+ qt/bontecoin/txviewholder.h qt/bontecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h amount.h serialize.h /usr/include/assert.h \
@@ -315,7 +315,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/coincontroldialog.h qt/altecoin/snackbar.h \
+ qt/coincontroldialog.h qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
@@ -341,9 +341,9 @@ qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/privacywidget.h:
+qt/bontecoin/privacywidget.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -955,11 +955,11 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1027,9 +1027,9 @@ qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/altecoin/txviewholder.h:
+qt/bontecoin/txviewholder.h:
 
-qt/altecoin/txrow.h:
+qt/bontecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -1101,7 +1101,7 @@ qt/bitcoinunits.h:
 
 qt/coincontroldialog.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

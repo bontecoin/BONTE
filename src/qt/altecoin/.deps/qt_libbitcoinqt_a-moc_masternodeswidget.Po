@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
- qt/altecoin/moc_masternodeswidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/masternodeswidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
+ qt/bontecoin/moc_masternodeswidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/masternodeswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -253,12 +253,12 @@ qt/altecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
- qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/bontecoin/prunnable.h qt/bontecoin/furabstractlistitemdelegate.h \
+ qt/bontecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -290,7 +290,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/altecoin/mnmodel.h \
+ qt/bontecoin/mnmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  masternode.h base58.h chainparams.h chainparamsbase.h checkpoints.h \
  uint256.h /usr/include/assert.h /usr/include/c++/7/cstring \
@@ -762,11 +762,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1298,14 +1298,14 @@ qt/altecoin/qt_libbitcoinqt_a-moc_masternodeswidget.o: \
  /usr/include/boost/filesystem/fstream.hpp /usr/include/c++/7/fstream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
- /usr/include/c++/7/bits/fstream.tcc qt/altecoin/tooltipmenu.h \
+ /usr/include/c++/7/bits/fstream.tcc qt/bontecoin/tooltipmenu.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/masternodeswidget.h:
+qt/bontecoin/masternodeswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -1909,7 +1909,7 @@ qt/altecoin/masternodeswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -1919,11 +1919,11 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1991,7 +1991,7 @@ qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/altecoin/mnmodel.h:
+qt/bontecoin/mnmodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel:
 
@@ -3043,7 +3043,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3069,7 +3069,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4349,7 +4349,7 @@ masternodeconfig.h:
 
 /usr/include/c++/7/bits/fstream.tcc:
 
-qt/altecoin/tooltipmenu.h:
+qt/bontecoin/tooltipmenu.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer:
 

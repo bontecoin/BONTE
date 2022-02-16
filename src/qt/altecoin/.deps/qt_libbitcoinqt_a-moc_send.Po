@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
- /usr/include/stdc-predef.h qt/altecoin/send.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_send.o: qt/bontecoin/moc_send.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/send.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,11 +257,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/contactsdropdown.h \
+ qt/bontecoin/prunnable.h qt/bontecoin/contactsdropdown.h \
  qt/addresstablemodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
@@ -271,8 +271,8 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  /usr/include/c++/7/bits/refwrap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/altecoin/contactdropdownrow.h \
- qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
+ qt/bontecoin/contactdropdownrow.h \
+ qt/bontecoin/furabstractlistitemdelegate.h qt/bontecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
@@ -298,7 +298,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/altecoin/addressfilterproxymodel.h \
+ qt/bontecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -309,7 +309,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
- qt/altecoin/sendmultirow.h \
+ qt/bontecoin/sendmultirow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
@@ -838,11 +838,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1387,8 +1387,8 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  clientversion.h sync.h /usr/include/db_cxx.h /usr/include/db.h \
  /usr/include/inttypes.h zpiv/zpivtracker.h zpiv/zpivmodule.h \
  zpiv/zpivwallet.h zpiv/mintpool.h wallet/wallet.h \
- qt/altecoin/sendcustomfeedialog.h qt/coincontroldialog.h \
- qt/altecoin/snackbar.h \
+ qt/bontecoin/sendcustomfeedialog.h qt/coincontroldialog.h \
+ qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu \
@@ -1399,11 +1399,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_send.o: qt/altecoin/moc_send.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreeview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h \
- qt/zpivcontroldialog.h qt/altecoin/tooltipmenu.h
+ qt/zpivcontroldialog.h qt/bontecoin/tooltipmenu.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/send.h:
+qt/bontecoin/send.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -2017,7 +2017,7 @@ qt/altecoin/send.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -2027,9 +2027,9 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/contactsdropdown.h:
+qt/bontecoin/contactsdropdown.h:
 
 qt/addresstablemodel.h:
 
@@ -2051,11 +2051,11 @@ qt/addresstablemodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/altecoin/contactdropdownrow.h:
+qt/bontecoin/contactdropdownrow.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -2107,7 +2107,7 @@ qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 
@@ -2129,7 +2129,7 @@ qt/altecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
 
-qt/altecoin/sendmultirow.h:
+qt/bontecoin/sendmultirow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction:
 
@@ -3307,7 +3307,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3331,7 +3331,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4711,11 +4711,11 @@ zpiv/mintpool.h:
 
 wallet/wallet.h:
 
-qt/altecoin/sendcustomfeedialog.h:
+qt/bontecoin/sendcustomfeedialog.h:
 
 qt/coincontroldialog.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton:
 
@@ -4739,4 +4739,4 @@ qt/altecoin/snackbar.h:
 
 qt/zpivcontroldialog.h:
 
-qt/altecoin/tooltipmenu.h:
+qt/bontecoin/tooltipmenu.h:

@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-mnmodel.o: qt/altecoin/mnmodel.cpp \
- /usr/include/stdc-predef.h qt/altecoin/mnmodel.h \
+qt/bontecoin/qt_libbitcoinqt_a-mnmodel.o: qt/bontecoin/mnmodel.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/mnmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
@@ -691,11 +691,11 @@ qt/altecoin/qt_libbitcoinqt_a-mnmodel.o: qt/altecoin/mnmodel.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1241,7 +1241,7 @@ qt/altecoin/qt_libbitcoinqt_a-mnmodel.o: qt/altecoin/mnmodel.cpp \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/mnmodel.h:
+qt/bontecoin/mnmodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel:
 
@@ -2833,7 +2833,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2859,7 +2859,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

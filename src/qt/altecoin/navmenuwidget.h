@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,9 +6,9 @@
 #define NAVMENUWIDGET_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 
-class AltecoinGUI;
+class BontecoinGUI;
 
 namespace Ui {
 class NavMenuWidget;
@@ -19,7 +19,7 @@ class NavMenuWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit NavMenuWidget(AltecoinGUI* mainWindow, QWidget *parent = nullptr);
+    explicit NavMenuWidget(BontecoinGUI* mainWindow, QWidget *parent = nullptr);
     ~NavMenuWidget();
 
     void loadWalletModel() override;

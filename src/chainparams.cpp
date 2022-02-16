@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -166,7 +166,7 @@ public:
         pchMessageStart[3] = 0x4e;
         vAlertPubKey = ParseHex("0454501d1ac281b571c0016382898fbdd4aff6ed88243bb3299ba1b77bdff3495f9ba7027059e997ed3c04bf52d3f08fbce159ffe3ccbbc2734ddf1a21586041f6");
         nDefaultPort = 7429;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Altecoin starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Bontecoin starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
         nSubsidyHalvingInterval = 999999999;
@@ -190,8 +190,8 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
-        nAltecoinBadBlockTime = 4070908800; // Skip nBit validation of Block 259201 per PR #915
-        nAltecoinBadBlocknBits = 0x00; // Skip nBit validation of Block 259201 per PR #915
+        nBontecoinBadBlockTime = 4070908800; // Skip nBit validation of Block 259201 per PR #915
+        nBontecoinBadBlocknBits = 0x00; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = 495;
         nZerocoinStartHeight = 999999999;
         nZerocoinStartTime = 4070908800; // October 17, 2017 4:30:00 AM
@@ -256,10 +256,10 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("seed1.altecoin.cc", "seed1.altecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed2.altecoin.cc", "seed2.altecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed3.altecoin.cc", "seed3.altecoin.cc"));
-		vSeeds.push_back(CDNSSeedData("seed4.altecoin.cc", "seed4.altecoin.cc"));
+        vSeeds.push_back(CDNSSeedData("seed1.bontecoin.cc", "seed1.bontecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed2.bontecoin.cc", "seed2.bontecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed3.bontecoin.cc", "seed3.bontecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed4.bontecoin.cc", "seed4.bontecoin.cc"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
@@ -336,8 +336,8 @@ public:
         nToCheckBlockUpgradeMajority = 5760; // 4 days
         nMinerThreads = 0;
         nLastPOWBlock = 200;
-        nAltecoinBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
-        nAltecoinBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        nBontecoinBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
+        nBontecoinBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
         nMaturity = 15;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
@@ -383,15 +383,15 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet altecoin addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);  // Testnet altecoin script addresses start with 'w'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet bontecoin addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);  // Testnet bontecoin script addresses start with 'w'
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 125);     // starting with 's'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet altecoin BIP32 pubkeys start with 'DRKV'
+        // Testnet bontecoin BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet altecoin BIP32 prvkeys start with 'DRKP'
+        // Testnet bontecoin BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet altecoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet bontecoin BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

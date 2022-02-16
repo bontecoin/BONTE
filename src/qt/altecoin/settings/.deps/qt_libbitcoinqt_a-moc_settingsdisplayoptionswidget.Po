@@ -1,7 +1,7 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsdisplayoptionswidget.o: \
- qt/altecoin/settings/moc_settingsdisplayoptionswidget.cpp \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingsdisplayoptionswidget.o: \
+ qt/bontecoin/settings/moc_settingsdisplayoptionswidget.cpp \
  /usr/include/stdc-predef.h \
- qt/altecoin/settings/settingsdisplayoptionswidget.h \
+ qt/bontecoin/settings/settingsdisplayoptionswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,15 +256,15 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsdisplayoptionswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h
+ qt/bontecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingsdisplayoptionswidget.h:
+qt/bontecoin/settings/settingsdisplayoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -872,7 +872,7 @@ qt/altecoin/settings/settingsdisplayoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -882,4 +882,4 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:

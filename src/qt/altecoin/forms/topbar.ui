@@ -119,7 +119,7 @@
                <string notr="true">padding:0px;margin:0px;</string>
               </property>
               <property name="text">
-               <string>480.0685 ALTC</string>
+               <string>480.0685 BONTE</string>
               </property>
              </widget>
             </item>
@@ -398,7 +398,7 @@ border:none;</string>
                <item>
                 <widget class="QLabel" name="labelAmountPiv">
                  <property name="text">
-                  <string>480.0685 ALTC</string>
+                  <string>480.0685 BONTE</string>
                  </property>
                 </widget>
                </item>
@@ -421,7 +421,7 @@ border:none;</string>
                  <item>
                   <widget class="QLabel" name="labelPendingPiv">
                    <property name="text">
-                    <string>6.943 ALTC</string>
+                    <string>6.943 BONTE</string>
                    </property>
                   </widget>
                  </item>
@@ -455,7 +455,7 @@ border:none;</string>
                  <item>
                   <widget class="QLabel" name="labelImmaturePiv">
                    <property name="text">
-                    <string>10 ALTC</string>
+                    <string>10 BONTE</string>
                    </property>
                   </widget>
                  </item>
@@ -597,13 +597,13 @@ border:none;</string>
   <customwidget>
    <class>ExpandableButton</class>
    <extends>QWidget</extends>
-   <header>qt/altecoin/expandablebutton.h</header>
+   <header>qt/bontecoin/expandablebutton.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>PFBorderImage</class>
    <extends>QFrame</extends>
-   <header>qt/altecoin/pfborderimage.h</header>
+   <header>qt/bontecoin/pfborderimage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

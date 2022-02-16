@@ -1,11 +1,11 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SETTINGSMAINOPTIONSWIDGET_H
 #define SETTINGSMAINOPTIONSWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 
 #include <QWidget>
 
@@ -22,7 +22,7 @@ class SettingsMainOptionsWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsMainOptionsWidget(AltecoinGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsMainOptionsWidget(BontecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsMainOptionsWidget();
 
     void setMapper(QDataWidgetMapper *mapper);

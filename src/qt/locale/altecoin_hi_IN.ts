@@ -24,7 +24,7 @@
         <translation>सिक्कों को प्राप्त करने के लिए पता चुनें</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bontecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>पहले इस्तेमाल किए गए पते को चुनें</translation>
     </message>
     </context>
@@ -197,7 +197,7 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     <message>
         <source>Warning</source>
         <translation>चेतावनी</translation>
@@ -405,7 +405,7 @@
     </message>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

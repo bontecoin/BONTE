@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The Altecoin developers
+// Copyright (c) 2018-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_WITNESS_H
-#define Altecoin_WITNESS_H
+#ifndef Bontecoin_WITNESS_H
+#define Bontecoin_WITNESS_H
 
 
 #include <libzerocoin/Accumulator.h>
@@ -33,4 +33,4 @@ public:
     std::string ToString();
 };
 
-#endif //Altecoin_WITNESS_H
+#endif //Bontecoin_WITNESS_H

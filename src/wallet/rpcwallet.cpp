@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -102,7 +102,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "getnewaddress ( \"account\" )\n"
-            "\nReturns a new Altecoin address for receiving payments.\n"
+            "\nReturns a new Bontecoin address for receiving payments.\n"
             "If 'account' is specified (DEPRECATED), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
 
@@ -110,7 +110,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
             "1. \"account\"        (string, optional) DEPRECATED. The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"altecoinaddress\"    (string) The new altecoin address\n"
+            "\"bontecoinaddress\"    (string) The new bontecoin address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleRpc("getnewaddress", ""));
@@ -124,14 +124,14 @@ UniValue getnewstakingaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "getnewstakingaddress ( \"account\" )\n"
-            "\nReturns a new Altecoin cold staking address for receiving delegated cold stakes.\n"
+            "\nReturns a new Bontecoin cold staking address for receiving delegated cold stakes.\n"
 
             "\nArguments:\n"
             "1. \"account\"        (string, optional) DEPRECATED. The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
 
 
             "\nResult:\n"
-            "\"altecoinaddress\"    (string) The new altecoin address\n"
+            "\"bontecoinaddress\"    (string) The new bontecoin address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewstakingaddress", "") + HelpExampleRpc("getnewstakingaddress", ""));
@@ -161,13 +161,13 @@ UniValue delegatoradd(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid() || address.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
     const std::string strLabel = (params.size() > 1 ? params[1].get_str() : "");
 
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from Bontecoin address");
 
     return pwalletMain->SetAddressBook(keyID, strLabel, AddressBook::AddressBookPurpose::DELEGATOR);
 }
@@ -192,14 +192,14 @@ UniValue delegatorremove(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid() || address.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from Bontecoin address");
 
     if (!pwalletMain->HasAddressBook(keyID))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get Altecoin address from addressBook");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get Bontecoin address from addressBook");
 
     std::string label = "";
     {
@@ -249,7 +249,7 @@ UniValue listdelegators(const UniValue& params, bool fHelp)
             "[\n"
             "   {\n"
             "   \"label\": \"yyy\",    (string) account label\n"
-            "   \"address\": \"xxx\",  (string) Altecoin address string\n"
+            "   \"address\": \"xxx\",  (string) Bontecoin address string\n"
             "   }\n"
             "  ...\n"
             "]\n"
@@ -275,7 +275,7 @@ UniValue liststakingaddresses(const UniValue& params, bool fHelp)
             "[\n"
             "   {\n"
             "   \"label\": \"yyy\",  (string) account label\n"
-            "   \"address\": \"xxx\",  (string) Altecoin address string\n"
+            "   \"address\": \"xxx\",  (string) Bontecoin address string\n"
             "   }\n"
             "  ...\n"
             "]\n"
@@ -326,13 +326,13 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
             "getaccountaddress \"account\"\n"
-            "\nDEPRECATED. Returns the current Altecoin address for receiving payments to this account.\n"
+            "\nDEPRECATED. Returns the current Bontecoin address for receiving payments to this account.\n"
 
             "\nArguments:\n"
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"altecoinaddress\"   (string) The account altecoin address\n"
+            "\"bontecoinaddress\"   (string) The account bontecoin address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -355,7 +355,7 @@ UniValue getrawchangeaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "getrawchangeaddress\n"
-            "\nReturns a new Altecoin address, for receiving change.\n"
+            "\nReturns a new Bontecoin address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
 
             "\nResult:\n"
@@ -386,11 +386,11 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
-            "setaccount \"altecoinaddress\" \"account\"\n"
+            "setaccount \"bontecoinaddress\" \"account\"\n"
             "\nDEPRECATED. Sets the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address to be associated with an account.\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
 
             "\nExamples:\n" +
@@ -400,7 +400,7 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
 
     std::string strAccount;
@@ -427,11 +427,11 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
-            "getaccount \"altecoinaddress\"\n"
+            "getaccount \"bontecoinaddress\"\n"
             "\nDEPRECATED. Returns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address for account lookup.\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -443,7 +443,7 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
     std::string strAccount;
     std::map<CTxDestination, AddressBook::CAddressBookData>::iterator mi = pwalletMain->mapAddressBook.find(address.Get());
@@ -465,7 +465,7 @@ UniValue getaddressesbyaccount(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"altecoinaddress\"  (string) a altecoin address associated with the given account\n"
+            "  \"bontecoinaddress\"  (string) a bontecoin address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -503,7 +503,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse Altecoin address
+    // Parse Bontecoin address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -523,13 +523,13 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddress \"altecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"bontecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in ALTC to send. eg 0.1\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in BONTE to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -548,7 +548,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid() || address.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -587,7 +587,7 @@ UniValue CreateColdStakeDelegation(const UniValue& params, CWalletTx& wtxNew, CR
     CBitcoinAddress stakeAddr(params[0].get_str());
     CKeyID stakeKey;
     if (!stakeAddr.IsValid() || !stakeAddr.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin staking address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin staking address");
     if (!stakeAddr.GetKeyID(stakeKey))
         throw JSONRPCError(RPC_WALLET_ERROR, "Unable to get stake pubkey hash from stakingaddress");
 
@@ -617,7 +617,7 @@ UniValue CreateColdStakeDelegation(const UniValue& params, CWalletTx& wtxNew, CR
         // Address provided
         ownerAddr.SetString(params[2].get_str());
         if (!ownerAddr.IsValid() || ownerAddr.IsStakingAddress())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin spending address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin spending address");
         if (!ownerAddr.GetKeyID(ownerKey))
             throw JSONRPCError(RPC_WALLET_ERROR, "Unable to get spend pubkey hash from owneraddress");
         // Check that the owner address belongs to this wallet, or fForceExternalAddr is true
@@ -665,9 +665,9 @@ UniValue delegatestake(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The altecoin staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in ALTC to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The altecoin address corresponding to the key that will be able to spend the stake. \n"
+            "1. \"stakingaddress\"      (string, required) The bontecoin staking address to delegate.\n"
+            "2. \"amount\"              (numeric, required) The amount in BONTE to delegate for staking. eg 100\n"
+            "3. \"owneraddress\"        (string, optional) The bontecoin address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -709,9 +709,9 @@ UniValue rawdelegatestake(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The altecoin staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in ALTC to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The altecoin address corresponding to the key that will be able to spend the stake. \n"
+            "1. \"stakingaddress\"      (string, required) The bontecoin staking address to delegate.\n"
+            "2. \"amount\"              (numeric, required) The amount in BONTE to delegate for staking. eg 100\n"
+            "3. \"owneraddress\"        (string, optional) The bontecoin address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -745,7 +745,7 @@ UniValue rawdelegatestake(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"altecoinaddress\"        (string) altecoin address\n"
+            "           \"bontecoinaddress\"        (string) bontecoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -776,13 +776,13 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddressix \"altecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"bontecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in ALTC to send. eg 0.1\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in BONTE to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -801,7 +801,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid() || address.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -833,8 +833,8 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"altecoinaddress\",     (string) The altecoin address\n"
-            "      amount,                 (numeric) The amount in ALTC\n"
+            "      \"bontecoinaddress\",     (string) The bontecoin address\n"
+            "      amount,                 (numeric) The amount in BONTE\n"
             "      \"account\"             (string, optional) The account (DEPRECATED)\n"
             "    ]\n"
             "    ,...\n"
@@ -870,12 +870,12 @@ UniValue signmessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "signmessage \"altecoinaddress\" \"message\"\n"
+            "signmessage \"bontecoinaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address to use for the private key.\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -925,15 +925,15 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
-            "getreceivedbyaddress \"altecoinaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given altecoinaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"bontecoinaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given bontecoinaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"altecoinaddress\"  (string, required) The altecoin address for transactions.\n"
+            "1. \"bontecoinaddress\"  (string, required) The bontecoin address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in ALTC received at this address.\n"
+            "amount   (numeric) The total amount in BONTE received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -947,10 +947,10 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
-    // altecoin address
+    // bontecoin address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     if (!IsMine(*pwalletMain, scriptPubKey))
         throw JSONRPCError(RPC_WALLET_ERROR, "Address not found in wallet");
@@ -989,7 +989,7 @@ UniValue getreceivedbyaccount(const UniValue& params, bool fHelp)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in ALTC received for this account.\n"
+            "amount              (numeric) The total amount in BONTE received for this account.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default account with at least 1 confirmation\n" +
@@ -1102,7 +1102,7 @@ UniValue getbalance(const UniValue& params, bool fHelp)
             "4. includeDelegated (bool, optional, default=true) Also include balance delegated to cold stakers\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in ALTC received for this account.\n"
+            "amount              (numeric) The total amount in BONTE received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1144,7 +1144,7 @@ UniValue getcoldstakingbalance(const UniValue& params, bool fHelp)
             "1. \"account\"      (string, optional) DEPRECATED. The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in ALTC received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in BONTE received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1176,7 +1176,7 @@ UniValue getdelegatedbalance(const UniValue& params, bool fHelp)
             "1. \"account\"      (string, optional) DEPRECATED. The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in ALTC received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in BONTE received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1216,7 +1216,7 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"fromaccount\"   (string, required) The name of the account to move funds from. May be the default account using \"\".\n"
             "2. \"toaccount\"     (string, required) The name of the account to move funds to. May be the default account using \"\".\n"
-            "3. amount            (numeric, required) Quantity of ALTC to move between accounts.\n"
+            "3. amount            (numeric, required) Quantity of BONTE to move between accounts.\n"
             "4. minconf           (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"       (string, optional) An optional comment, stored in the wallet only.\n"
 
@@ -1224,9 +1224,9 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "true|false           (boolean) true if successful.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 ALTC from the default account to the account named tabby\n" +
+            "\nMove 0.01 BONTE from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 ALTC from timotei to akiko with a comment\n" +
+            "\nMove 0.01 BONTE from timotei to akiko with a comment\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 1 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 1, \"happy birthday!\""));
@@ -1280,15 +1280,15 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 7)
         throw std::runtime_error(
-            "sendfrom \"fromaccount\" \"toaltecoinaddress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
-            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a altecoin address.\n"
+            "sendfrom \"fromaccount\" \"tobontecoinaddress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
+            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a bontecoin address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"toaltecoinaddress\"  (string, required) The altecoin address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in ALTC. (transaction fee is added on top).\n"
+            "2. \"tobontecoinaddress\"  (string, required) The bontecoin address to send funds to.\n"
+            "3. amount                (numeric, required) The amount in BONTE. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -1301,7 +1301,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 ALTC from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 BONTE from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -1313,7 +1313,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
     std::string strAccount = AccountFromValue(params[0]);
     CBitcoinAddress address(params[1].get_str());
     if (!address.IsValid() || address.IsStakingAddress())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
     CAmount nAmount = AmountFromValue(params[2]);
     int nMinDepth = 1;
     if (params.size() > 3)
@@ -1355,7 +1355,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) DEPRECATED. The account to send the funds from. Should be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The altecoin address is the key, the numeric amount in ALTC is the value\n"
+            "      \"address\":amount   (numeric) The bontecoin address is the key, the numeric amount in BONTE is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1395,7 +1395,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
     for (const std::string& name_ : keys) {
         CBitcoinAddress address(name_);
         if (!address.IsValid() || address.IsStakingAddress())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Altecoin address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Bontecoin address: ")+name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ")+name_);
@@ -1441,20 +1441,20 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
         throw std::runtime_error(
             "addmultisigaddress nrequired [\"key\",...] ( \"account\" )\n"
             "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-            "Each key is a Altecoin address or hex-encoded public key.\n"
+            "Each key is a Bontecoin address or hex-encoded public key.\n"
             "If 'account' is specified (DEPRECATED), assign address to that account.\n"
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of altecoin addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of bontecoin addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) altecoin address or hex-encoded public key\n"
+            "       \"address\"  (string) bontecoin address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"account\"      (string, optional) DEPRECATED. An account to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"altecoinaddress\"  (string) A altecoin address associated with the keys.\n"
+            "\"bontecoinaddress\"  (string) A bontecoin address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -1626,7 +1626,7 @@ UniValue listreceivedbyaddress(const UniValue& params, bool fHelp)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) DEPRECATED. The account of the receiving address. The default account is \"\".\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in ALTC received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in BONTE received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "  }\n"
@@ -1853,17 +1853,17 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) DEPRECATED. The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"altecoinaddress\",    (string) The altecoin address of the transaction. Not present for \n"
+            "    \"address\":\"bontecoinaddress\",    (string) The bontecoin address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in ALTC. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in BONTE. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in ALTC. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BONTE. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -2053,12 +2053,12 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) DEPRECATED. The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"altecoinaddress\",    (string) The altecoin address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"bontecoinaddress\",    (string) The bontecoin address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in ALTC. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in BONTE. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in ALTC. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BONTE. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -2138,7 +2138,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in ALTC\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in BONTE\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -2150,9 +2150,9 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) DEPRECATED. The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"altecoinaddress\",   (string) The altecoin address involved in the transaction\n"
+            "      \"address\" : \"bontecoinaddress\",   (string) The bontecoin address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in ALTC\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in BONTE\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -2306,7 +2306,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw std::runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending ALTCs\n"
+            "This is needed prior to performing transactions related to private keys such as sending BONTEs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -2471,10 +2471,10 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending ALTCs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending BONTEs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"altecoinaddress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"bontecoinaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -2505,7 +2505,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; altecoin server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; bontecoin server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue lockunspent(const UniValue& params, bool fHelp)
@@ -2515,7 +2515,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending ALTCs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending BONTEs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2679,7 +2679,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in ALTC/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in BONTE/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -2707,18 +2707,18 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,                  (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,                      (numeric) the total ALTC balance of the wallet (cold balance excluded)\n"
-            "  \"delegated_balance\": xxxxx,              (numeric) the ALTC balance held in P2CS (cold staking) contracts\n"
-            "  \"cold_staking_balance\": xx,              (numeric) the ALTC balance held in cold staking addresses\n"
-            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in ALTC\n"
-            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in ALTC\n"
-            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in ALTC\n"
-            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in ALTC\n"
+            "  \"balance\": xxxxxxx,                      (numeric) the total BONTE balance of the wallet (cold balance excluded)\n"
+            "  \"delegated_balance\": xxxxx,              (numeric) the BONTE balance held in P2CS (cold staking) contracts\n"
+            "  \"cold_staking_balance\": xx,              (numeric) the BONTE balance held in cold staking addresses\n"
+            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in BONTE\n"
+            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in BONTE\n"
+            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in BONTE\n"
+            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in BONTE\n"
             "  \"txcount\": xxxxxxx,                      (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,                 (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,                     (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,                   (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,                      (numeric) the transaction fee configuration, set in ALTC/kB\n"
+            "  \"paytxfee\": x.xxxx,                      (numeric) the transaction fee configuration, set in BONTE/kB\n"
             "  \"automintaddresses\": status              (boolean) the status of automint addresses (true if enabled, false if disabled)\n"
             "}\n"
 
@@ -2863,7 +2863,7 @@ UniValue autocombinerewards(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || (fEnable && params.size() != 2) || params.size() > 2)
         throw std::runtime_error(
             "autocombinerewards enable ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same Altecoin address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same Bontecoin address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -3072,7 +3072,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
             "The MultiSend transaction is sent when the staked coins mature (100 confirmations)\n"
             "****************************************************************\n"
             "TO CREATE OR ADD TO THE MULTISEND VECTOR:\n"
-            "multisend <Altecoin Address> <percent>\n"
+            "multisend <Bontecoin Address> <percent>\n"
             "This will add a new address to the MultiSend vector\n"
             "Percent is a whole number 1 to 100.\n"
             "****************************************************************\n"
@@ -3091,7 +3091,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     std::string strAddress = params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid ALTC address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid BONTE address");
     if (std::stoi(params[1].get_str().c_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -3137,11 +3137,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zALTC balance.\n" +
+            "\nReturn the wallet's total zBONTE balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zALTC balance.\n"
+            "amount         (numeric) Total zBONTE balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -3165,7 +3165,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw std::runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zALTC mints in the wallet.\n" +
+            "\nList all zBONTE mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3184,7 +3184,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zALTC ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"zBONTE ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
@@ -3217,7 +3217,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zALTC ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("zBONTE ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
@@ -3294,7 +3294,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zALTC mints in the wallet.\n" +
+            "\nList all the spent zBONTE mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3326,11 +3326,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zALTC amount\n" +
+            "\nMint the specified zBONTE amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Piv to convert to zALTC\n"
+            "1. amount      (numeric, required) Enter an amount of Piv to convert to zBONTE\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -3367,7 +3367,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3381,7 +3381,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -3446,7 +3446,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 3)
         throw std::runtime_error(
             "spendzerocoin amount mintchange minimizechange ( \"address\" isPublicSpend)\n"
-            "\nSpend zALTC to a ALTC address.\n" +
+            "\nSpend zBONTE to a BONTE address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3474,8 +3474,8 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in ALTC.\n"
-            "      \"address\": \"xxx\"         (string) ALTC address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in BONTE.\n"
+            "      \"address\": \"xxx\"         (string) BONTE address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3488,20 +3488,20 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE is currently disabled due to maintenance.");
 
     CAmount nAmount = AmountFromValue(params[0]);        // Spending amount
-    const bool fMintChange = params[1].get_bool();       // Mint change to zALTC
+    const bool fMintChange = params[1].get_bool();       // Mint change to zBONTE
     const bool fMinimizeChange = params[2].get_bool();    // Minimize change
     const std::string address_str = (params.size() > 3 ? params[3].get_str() : "");
     const bool isPublicSpend = (params.size() > 4 ? params[4].get_bool() : true);
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST) {
         if (fMintChange)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zALTC minting is DISABLED (except for regtest), cannot mint change");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE minting is DISABLED (except for regtest), cannot mint change");
 
         if (!isPublicSpend)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zALTC old spend only available in regtest for tests purposes");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE old spend only available in regtest for tests purposes");
     }
 
     std::vector<CZerocoinMint> vMintsSelected;
@@ -3514,7 +3514,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw std::runtime_error(
             "spendzerocoinmints mints_list (\"address\" isPublicSpend) \n"
-            "\nSpend zALTC mints to a ALTC address.\n" +
+            "\nSpend zBONTE mints to a BONTE address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3539,8 +3539,8 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in ALTC.\n"
-            "      \"address\": \"xxx\"         (string) ALTC address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in BONTE.\n"
+            "      \"address\": \"xxx\"         (string) BONTE address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3553,7 +3553,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE is currently disabled due to maintenance.");
 
     UniValue arrMints = params[0].get_array();
     const std::string address_str = (params.size() > 1 ? params[1].get_str() : "");
@@ -3563,7 +3563,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "No zerocoin selected");
 
     if (!isPublicSpend && Params().NetworkID() != CBaseChainParams::REGTEST) {
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE old spend only available in regtest for tests purposes");
     }
 
     // check mints supplied and save serial hash (do this here so we don't fetch if any is wrong)
@@ -3597,10 +3597,10 @@ extern UniValue DoZpivSpend(const CAmount nAmount, bool fMintChange, bool fMinim
     // zerocoin mint / v2 spend is disabled. fMintChange/isPublicSpend should be false here. Double check
     if (Params().NetworkID() != CBaseChainParams::REGTEST) {
         if (fMintChange)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zALTC minting is DISABLED (except for regtest), cannot mint change");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE minting is DISABLED (except for regtest), cannot mint change");
 
         if (!isPublicSpend)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zALTC old spend only available in regtest for tests purposes");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE old spend only available in regtest for tests purposes");
     }
 
     int64_t nTimeStart = GetTimeMillis();
@@ -3613,7 +3613,7 @@ extern UniValue DoZpivSpend(const CAmount nAmount, bool fMintChange, bool fMinim
     if(address_str != "") { // Spend to supplied destination address
         address = CBitcoinAddress(address_str);
         if(!address.IsValid() || address.IsStakingAddress())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Altecoin address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Bontecoin address");
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(&address, nAmount));
     }
 
@@ -3696,7 +3696,7 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzALTCTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBONTETracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(false, false, true);
     std::vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     std::vector<CMintMeta> vMintsMissing;
@@ -3749,7 +3749,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzALTCTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBONTETracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(false, false, false);
     std::list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     std::list<CZerocoinSpend> listUnconfirmedSpends;
@@ -3854,12 +3854,12 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zALTC\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zBONTE\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
             "  {\n"
-            "    \"id\": \"serial hash\",  (string) the mint's zALTC serial hash \n"
+            "    \"id\": \"serial hash\",  (string) the mint's zBONTE serial hash \n"
             "    \"d\": n,         (numeric) the mint's zerocoin denomination \n"
             "    \"p\": \"pubcoin\", (string) The public coin\n"
             "    \"s\": \"serial\",  (string) The secret serial number\n"
@@ -3867,8 +3867,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zALTC\n"
-            "    \"k\": \"privkey\"  (string) The zALTC private key (V2+ zALTC only)\n"
+            "    \"v\": version,   (numeric) The version of the zBONTE\n"
+            "    \"k\": \"privkey\"  (string) The zBONTE private key (V2+ zBONTE only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3887,7 +3887,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzALTCTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBONTETracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
@@ -3939,7 +3939,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zALTC value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zBONTE value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -4019,7 +4019,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zALTC list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zBONTE list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -4089,7 +4089,7 @@ UniValue setzpivseed(const UniValue& params, bool fHelp)
     uint256 seed;
     seed.SetHex(params[0].get_str());
 
-    CzALTCWallet* zwallet = pwalletMain->getZWallet();
+    CzBONTEWallet* zwallet = pwalletMain->getZWallet();
     bool fSuccess = zwallet->SetMasterSeed(seed, true);
     if (fSuccess)
         zwallet->SyncWithChain();
@@ -4105,18 +4105,18 @@ UniValue getzpivseed(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "getzpivseed\n"
-            "\nCheck archived zALTC list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zBONTE list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zALTC seed.\n"
+            "\"seed\" : s,  (string) The deterministic zBONTE seed.\n"
 
             "\nExamples\n" +
             HelpExampleCli("getzpivseed", "") + HelpExampleRpc("getzpivseed", ""));
 
     EnsureWalletIsUnlocked();
 
-    CzALTCWallet* zwallet = pwalletMain->getZWallet();
+    CzBONTEWallet* zwallet = pwalletMain->getZWallet();
     uint256 seed = zwallet->GetMasterSeed();
 
     UniValue ret(UniValue::VOBJ);
@@ -4130,12 +4130,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw std::runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zALTC seed.\n" +
+            "\nShow mints that are derived from the deterministic zBONTE seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zALTC to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zALTC to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zBONTE to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zBONTE to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -4155,7 +4155,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
 
     int nCount = params[0].get_int();
     int nRange = params[1].get_int();
-    CzALTCWallet* zwallet = pwalletMain->zwalletMain;
+    CzBONTEWallet* zwallet = pwalletMain->zwalletMain;
 
     UniValue arrRet(UniValue::VARR);
     for (int i = nCount; i < nCount + nRange; i++) {
@@ -4178,13 +4178,13 @@ UniValue dzpivstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
                 "dzpivstate\n"
-                        "\nThe current state of the mintpool of the deterministic zALTC wallet.\n" +
+                        "\nThe current state of the mintpool of the deterministic zBONTE wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
 
-    CzALTCWallet* zwallet = pwalletMain->zwalletMain;
+    CzBONTEWallet* zwallet = pwalletMain->zwalletMain;
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
@@ -4195,7 +4195,7 @@ UniValue dzpivstate(const UniValue& params, bool fHelp) {
 }
 
 
-void static SearchThread(CzALTCWallet* zwallet, int nCountStart, int nCountEnd)
+void static SearchThread(CzBONTEWallet* zwallet, int nCountStart, int nCountEnd)
 {
     LogPrintf("%s: start=%d end=%d\n", __func__, nCountStart, nCountEnd);
     CWalletDB walletDB(pwalletMain->strWalletFile);
@@ -4212,7 +4212,7 @@ void static SearchThread(CzALTCWallet* zwallet, int nCountStart, int nCountEnd)
             CBigNum bnSerial;
             CBigNum bnRandomness;
             CKey key;
-            zwallet->SeedToZALTC(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
+            zwallet->SeedToZBONTE(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
 
             uint256 hashPubcoin = GetPubCoinHash(bnValue);
             zwallet->AddToMintPool(std::make_pair(hashPubcoin, i), true);
@@ -4230,12 +4230,12 @@ UniValue searchdzpiv(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 3)
         throw std::runtime_error(
             "searchdzpiv\n"
-            "\nMake an extended search for deterministically generated zALTC that have not yet been recognized by the wallet.\n" +
+            "\nMake an extended search for deterministically generated zBONTE that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zALTC to start with.\n"
-            "2. \"range\"       (numeric) How many zALTC to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zBONTE to start with.\n"
+            "2. \"range\"       (numeric) How many zBONTE to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
@@ -4253,7 +4253,7 @@ UniValue searchdzpiv(const UniValue& params, bool fHelp)
 
     int nThreads = params[2].get_int();
 
-    CzALTCWallet* zwallet = pwalletMain->zwalletMain;
+    CzBONTEWallet* zwallet = pwalletMain->zwalletMain;
 
     boost::thread_group* dzpivThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
@@ -4302,7 +4302,7 @@ UniValue createautomintaddress(const UniValue& params, bool fHelp)
                 HelpRequiringPassphrase() + "\n"
 
                 "\nResult\n"
-                "\"address\"     (string) Altecoin address for auto minting\n" +
+                "\"address\"     (string) Bontecoin address for auto minting\n" +
                 HelpExampleCli("createautomintaddress", "") +
                 HelpExampleRpc("createautomintaddress", ""));
 
@@ -4325,7 +4325,7 @@ UniValue spendrawzerocoin(const UniValue& params, bool fHelp)
             "2. \"randomnessHex\"    (string, required) A zerocoin randomness value (hex)\n"
             "3. denom                (numeric, required) A zerocoin denomination (decimal)\n"
             "4. \"priv key\"         (string, required) The private key associated with this coin (hex)\n"
-            "5. \"address\"          (string, optional) Altecoin address to spend to. If not specified, "
+            "5. \"address\"          (string, optional) Bontecoin address to spend to. If not specified, "
             "                        or empty string, spend to change address.\n"
             "6. \"mintTxId\"         (string, optional) txid of the transaction containing the mint. If not"
             "                        specified, or empty string, the blockchain will be scanned (could take a while)"
@@ -4341,12 +4341,12 @@ UniValue spendrawzerocoin(const UniValue& params, bool fHelp)
 
     const bool isPublicSpend = (params.size() > 6 ? params[6].get_bool() : true);
     if (Params().NetworkID() != CBaseChainParams::REGTEST && !isPublicSpend)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zALTC old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE old spend only available in regtest for tests purposes");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-            throw JSONRPCError(RPC_WALLET_ERROR, "zALTC is currently disabled due to maintenance.");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBONTE is currently disabled due to maintenance.");
 
     CBigNum serial;
     serial.SetHex(params[0].get_str());

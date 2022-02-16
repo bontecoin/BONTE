@@ -122,12 +122,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše Altecoin adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your Bontecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše Bontecoin adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše Altecoin adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your Bontecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše Bontecoin adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -338,16 +338,16 @@
         <translation>PONIŠTI</translation>
     </message>
     <message>
-        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
-        <translation>Altecoin se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše ALTC od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Bontecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BONTEs from being stolen by malware infecting your computer.</source>
+        <translation>Bontecoin se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BONTE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ ALTC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONTE&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ BONTE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -481,8 +481,8 @@
         <translation>PritisniTipku</translation>
     </message>
     <message>
-        <source>0.00 ALTC</source>
-        <translation>0.00 ALTC</translation>
+        <source>0.00 BONTE</source>
+        <translation>0.00 BONTE</translation>
     </message>
     <message>
         <source>0</source>
@@ -765,12 +765,12 @@
         <translation>TekstualnaOznaka</translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
-        <source>zALTC</source>
-        <translation>zALTC</translation>
+        <source>zBONTE</source>
+        <translation>zBONTE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -817,8 +817,8 @@
         <translation>Još nema transakcija</translation>
     </message>
     <message>
-        <source>How to get ALTC or zALTC</source>
-        <translation>Kako dobiti ALTC ili zALTC</translation>
+        <source>How to get BONTE or zBONTE</source>
+        <translation>Kako dobiti BONTE ili zBONTE</translation>
     </message>
     <message>
         <source>Loading chart..</source>
@@ -994,12 +994,12 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
-        <source>About Altecoin Core</source>
-        <translation>O Altecoin Core-u</translation>
+        <source>About Bontecoin Core</source>
+        <translation>O Bontecoin Core-u</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1017,8 +1017,8 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Altecoin Core.</source>
-        <translation>Dobrodošli u Altecoin Core.</translation>
+        <source>Welcome to Bontecoin Core.</source>
+        <translation>Dobrodošli u Bontecoin Core.</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1029,8 +1029,8 @@
         <translation>U redu</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1226,8 +1226,8 @@
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start Altecoin after logging in to the system.</source>
-        <translation>Automatski pokreni Altecoin nakon ulogiravanja u računalo.</translation>
+        <source>Automatically start Bontecoin after logging in to the system.</source>
+        <translation>Automatski pokreni Bontecoin nakon ulogiravanja u računalo.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1263,10 +1263,10 @@
     </message>
     </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1293,8 +1293,8 @@
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>Altecoin Core client</source>
-        <translation>Altecoin Core klijent</translation>
+        <source>Bontecoin Core client</source>
+        <translation>Bontecoin Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1387,8 +1387,8 @@
         <translation>N/A</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     </context>
 <context>
@@ -1590,8 +1590,8 @@
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>ALTC</source>
-        <translation>ALTC</translation>
+        <source>BONTE</source>
+        <translation>BONTE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2165,8 +2165,8 @@
         <translation>Često postavljena pitanja</translation>
     </message>
     <message>
-        <source>About Altecoin</source>
-        <translation>O Altecoin-u</translation>
+        <source>About Bontecoin</source>
+        <translation>O Bontecoin-u</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -2188,8 +2188,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Altecoin Core is shutting down...</source>
-        <translation>Altecoin Core se gasi...</translation>
+        <source>Bontecoin Core is shutting down...</source>
+        <translation>Bontecoin Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -2214,15 +2214,15 @@
         <translation>Učitavanje...</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Core</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2237,8 +2237,8 @@
         <translation>Dash Core developeri</translation>
     </message>
     <message>
-        <source>The Altecoin Core developers</source>
-        <translation>Altecoin Core developeri</translation>
+        <source>The Bontecoin Core developers</source>
+        <translation>Bontecoin Core developeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2271,32 +2271,32 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>480.0685 ALTC</source>
-        <translation>480.0685 ALTC</translation>
+        <source>480.0685 BONTE</source>
+        <translation>480.0685 BONTE</translation>
     </message>
     <message>
-        <source>1,000 zALTC</source>
-        <translation>1,000 zALTC</translation>
+        <source>1,000 zBONTE</source>
+        <translation>1,000 zBONTE</translation>
     </message>
     <message>
         <source>Available</source>
         <translation>Dostupno</translation>
     </message>
     <message>
-        <source>6.943 ALTC</source>
-        <translation>6.943 ALTC</translation>
+        <source>6.943 BONTE</source>
+        <translation>6.943 BONTE</translation>
     </message>
     <message>
-        <source>10 ALTC</source>
-        <translation>10 ALTC</translation>
+        <source>10 BONTE</source>
+        <translation>10 BONTE</translation>
     </message>
     <message>
-        <source>60 zALTC</source>
-        <translation>60 zALTC</translation>
+        <source>60 zBONTE</source>
+        <translation>60 zBONTE</translation>
     </message>
     <message>
-        <source>10 zALTC</source>
-        <translation>10 zALTC</translation>
+        <source>10 zBONTE</source>
+        <translation>10 zBONTE</translation>
     </message>
     <message>
         <source>Error generating address</source>
@@ -2403,8 +2403,8 @@
         <translation>Naknada:</translation>
     </message>
     <message>
-        <source>0.0001 ALTC</source>
-        <translation>0.0001 ALTC</translation>
+        <source>0.0001 BONTE</source>
+        <translation>0.0001 BONTE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2426,8 +2426,8 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>+0.000585 ALTC</source>
-        <translation>+0.000585 ALTC</translation>
+        <source>+0.000585 BONTE</source>
+        <translation>+0.000585 BONTE</translation>
     </message>
 </context>
 <context>
@@ -2479,7 +2479,7 @@
     </message>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Otkrij svoju IP adresu (zadano: 1 kada sluša i nema -externalip)</translation>
@@ -2497,8 +2497,8 @@
         <translation>Nedovoljno sredstava.</translation>
     </message>
     <message>
-        <source>Recalculating ALTC supply...</source>
-        <translation>Preračunavanje ponude ALTC-a...</translation>
+        <source>Recalculating BONTE supply...</source>
+        <translation>Preračunavanje ponude BONTE-a...</translation>
     </message>
     <message>
         <source>Loading addresses...</source>

@@ -10,7 +10,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/altecoinstrings.cpp"
+OUT_CPP="qt/bontecoinstrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -74,10 +74,10 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *altecoin_strings[] = {\n')
+f.write('static const char UNUSED *bontecoin_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("altecoin-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("bontecoin-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

@@ -1,5 +1,5 @@
-test/test_test_altecoin-util_tests.o: test/util_tests.cpp \
- /usr/include/stdc-predef.h util.h config/altecoin-config.h compat.h \
+test/test_test_bontecoin-util_tests.o: test/util_tests.cpp \
+ /usr/include/stdc-predef.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -761,7 +761,7 @@ test/test_test_altecoin-util_tests.o: test/util_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h libzerocoin/ZerocoinDefines.h key.h \
@@ -778,7 +778,7 @@ test/test_test_altecoin-util_tests.o: test/util_tests.cpp \
  /usr/include/c++/7/chrono /usr/include/c++/7/ratio \
  /usr/include/c++/7/bits/parse_numbers.h \
  /usr/include/c++/7/bits/std_mutex.h /usr/include/c++/7/thread \
- /usr/include/c++/7/mutex utilmoneystr.h amount.h test/test_altecoin.h \
+ /usr/include/c++/7/mutex utilmoneystr.h amount.h test/test_bontecoin.h \
  txdb.h leveldbwrapper.h clientversion.h streams.h util.h \
  leveldb/include/leveldb/db.h leveldb/include/leveldb/iterator.h \
  leveldb/include/leveldb/slice.h leveldb/include/leveldb/status.h \
@@ -1325,7 +1325,7 @@ test/test_test_altecoin-util_tests.o: test/util_tests.cpp \
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3085,7 +3085,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3185,7 +3185,7 @@ utilmoneystr.h:
 
 amount.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

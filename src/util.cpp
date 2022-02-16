@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #endif
 
 #include "util.h"
@@ -85,7 +85,7 @@
 #include <openssl/rand.h>
 
 
-// Altecoin only features
+// Bontecoin only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -215,8 +215,8 @@ bool LogAcceptCategory(const char* category)
             const std::vector<std::string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new std::set<std::string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "altecoin" is a composite category enabling all Altecoin-related debug output
-            if (ptrCategory->count(std::string("altecoin"))) {
+            // "bontecoin" is a composite category enabling all Bontecoin-related debug output
+            if (ptrCategory->count(std::string("bontecoin"))) {
                 ptrCategory->insert(std::string("obfuscation"));
                 ptrCategory->insert(std::string("swiftx"));
                 ptrCategory->insert(std::string("masternode"));
@@ -382,7 +382,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "altecoin";
+    const char* pszModule = "bontecoin";
 #endif
     if (pex)
         return strprintf(
@@ -403,13 +403,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Altecoin
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Altecoin
-// Mac: ~/Library/Application Support/Altecoin
-// Unix: ~/.altecoin
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Bontecoin
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Bontecoin
+// Mac: ~/Library/Application Support/Bontecoin
+// Unix: ~/.bontecoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Altecoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bontecoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -421,10 +421,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Altecoin";
+    return pathRet / "Bontecoin";
 #else
     // Unix
-    return pathRet / ".altecoin";
+    return pathRet / ".bontecoin";
 #endif
 #endif
 }
@@ -471,7 +471,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "altecoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "bontecoin.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -490,7 +490,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty altecoin.conf if it does not exist
+        // Create empty bontecoin.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -501,7 +501,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override altecoin.conf
+        // Don't overwrite existing settings so command line settings override bontecoin.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -516,7 +516,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "altecoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "bontecoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

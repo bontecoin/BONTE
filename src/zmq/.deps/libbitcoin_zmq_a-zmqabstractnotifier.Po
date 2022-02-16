@@ -1,6 +1,6 @@
 zmq/libbitcoin_zmq_a-zmqabstractnotifier.o: zmq/zmqabstractnotifier.cpp \
  /usr/include/stdc-predef.h zmq/zmqabstractnotifier.h zmq/zmqconfig.h \
- config/altecoin-config.h \
+ config/bontecoin-config.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
  /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -642,7 +642,7 @@ zmq/libbitcoin_zmq_a-zmqabstractnotifier.o: zmq/zmqabstractnotifier.cpp \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1037,7 +1037,7 @@ zmq/zmqabstractnotifier.h:
 
 zmq/zmqconfig.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
 
@@ -2537,7 +2537,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

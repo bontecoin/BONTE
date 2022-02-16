@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.altecoin.altecoind</string>
+	<string>org.bontecoin.bontecoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/altecoind</string>
+		<string>/usr/local/bin/bontecoind</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

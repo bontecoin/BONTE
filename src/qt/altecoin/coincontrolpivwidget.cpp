@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/coincontrolpivwidget.h"
-#include "qt/altecoin/forms/ui_coincontrolpivwidget.h"
+#include "qt/bontecoin/coincontrolpivwidget.h"
+#include "qt/bontecoin/forms/ui_coincontrolpivwidget.h"
 
 CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
     QDialog(parent),
@@ -27,14 +27,14 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Title
 
-    ui->labelTitle->setText("Select ALTC Outputs to Spend");
+    ui->labelTitle->setText("Select BONTE Outputs to Spend");
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
     // Label Style
 
     ui->labelTitleAfter->setProperty("cssClass", "text-main-purple");
     ui->labelTitleAmount->setProperty("cssClass", "text-main-purple");
-    ui->labelTitleAmount->setText("ALTC");
+    ui->labelTitleAmount->setText("BONTE");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleChange->setProperty("cssClass", "text-main-purple");
@@ -60,12 +60,12 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Values
 
-    ui->labelValueAfter->setText("0.00 ALTC");
+    ui->labelValueAfter->setText("0.00 BONTE");
     ui->labelValueAmount->setText("0");
     ui->labelValueBytes->setText("0");
     ui->labelValueDust->setText("No");
-    ui->labelValueChange->setText("0.00 ALTC");
-    ui->labelValueFee->setText("0.00 ALTC");
+    ui->labelValueChange->setText("0.00 BONTE");
+    ui->labelValueFee->setText("0.00 BONTE");
     ui->labelValueQuantity->setText("0");
 
     // Buttons

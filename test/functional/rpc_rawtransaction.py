@@ -12,7 +12,7 @@ Test the following RPCs:
    - getrawtransaction
 """
 
-from test_framework.test_framework import AltecoinTestFramework
+from test_framework.test_framework import BontecoinTestFramework
 from test_framework.util import *
 
 
@@ -35,7 +35,7 @@ class multidict(dict):
 
 
 # Create one-input, one-output, no-fee transaction:
-class RawTransactionsTest(AltecoinTestFramework):
+class RawTransactionsTest(BontecoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 3
@@ -80,7 +80,7 @@ class RawTransactionsTest(AltecoinTestFramework):
         address = self.nodes[0].getnewaddress()
         assert_raises_rpc_error(-3, "Expected type object", self.nodes[0].createrawtransaction, [], 'foo')
         #assert_raises_rpc_error(-8, "Data must be hexadecimal string", self.nodes[0].createrawtransaction, [], {'data': 'foo'})
-        assert_raises_rpc_error(-5, "Invalid Altecoin address", self.nodes[0].createrawtransaction, [], {'foo': 0})
+        assert_raises_rpc_error(-5, "Invalid Bontecoin address", self.nodes[0].createrawtransaction, [], {'foo': 0})
         #assert_raises_rpc_error(-3, "﻿Amount is not a number", self.nodes[0].createrawtransaction, [], {address: 'foo'})
         assert_raises_rpc_error(-3, "Invalid amount", self.nodes[0].createrawtransaction, [], {address: -1})
         assert_raises_rpc_error(-8, "Invalid parameter, duplicated address: %s" % address, self.nodes[0].createrawtransaction, [], multidict([(address, 1), (address, 1)]))

@@ -2,14 +2,14 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=Altecoin Core Daemon SNAP
+Name=Bontecoin Core Daemon SNAP
 Comment=main
-GenericName=Altecoin Digital Currency Daemon Client main network
-Exec=altecoin-core.daemon %u
+GenericName=Bontecoin Digital Currency Daemon Client main network
+Exec=bontecoin-core.daemon %u
 Terminal=true
 Type=Application
-Icon=${SNAP}/share/pixmaps/altecoin.png
+Icon=${SNAP}/share/pixmaps/bontecoin.png
 MimeType=x-scheme-handler/piv;
 Categories=X-Office;X-Finance;
-Keywords=internet;altecoin;zpiv;core;wallet;daemon;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Keywords=internet;bontecoin;zpiv;core;wallet;daemon;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
 Version=1.0

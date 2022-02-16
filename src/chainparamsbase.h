@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,8 +10,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between altecoin-cli and altecoind)
- * of a given instance of the Altecoin system.
+ * CBaseChainParams defines the base parameters (shared between bontecoin-cli and bontecoind)
+ * of a given instance of the Bontecoin system.
  */
 class CBaseChainParams
 {

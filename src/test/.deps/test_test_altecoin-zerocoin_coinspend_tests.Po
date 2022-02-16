@@ -1,4 +1,4 @@
-test/test_test_altecoin-zerocoin_coinspend_tests.o: \
+test/test_test_bontecoin-zerocoin_coinspend_tests.o: \
  test/zerocoin_coinspend_tests.cpp /usr/include/stdc-predef.h \
  libzerocoin/Denominations.h /usr/include/c++/7/cstdint \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -637,11 +637,11 @@ test/test_test_altecoin-zerocoin_coinspend_tests.o: \
  /usr/include/c++/7/bits/stl_multiset.h libzerocoin/Denominations.h \
  libzerocoin/SpendType.h sporkid.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h amount.h util.h config/altecoin-config.h \
+ libzerocoin/ZerocoinDefines.h amount.h util.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1172,7 +1172,7 @@ test/test_test_altecoin-zerocoin_coinspend_tests.o: \
  leveldbwrapper.h clientversion.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
- leveldb/include/leveldb/write_batch.h test/test_altecoin.h \
+ leveldb/include/leveldb/write_batch.h test/test_bontecoin.h \
  /usr/include/boost/filesystem.hpp \
  /usr/include/boost/filesystem/operations.hpp \
  /usr/include/boost/detail/scoped_enum_emulation.hpp \
@@ -2793,7 +2793,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2823,7 +2823,7 @@ amount.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4155,7 +4155,7 @@ leveldb/include/leveldb/options.h:
 
 leveldb/include/leveldb/write_batch.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 /usr/include/boost/filesystem.hpp:
 

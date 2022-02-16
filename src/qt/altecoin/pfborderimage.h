@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_PFBorderImage_H
-#define Altecoin_PFBorderImage_H
+#ifndef Bontecoin_PFBorderImage_H
+#define Bontecoin_PFBorderImage_H
 
 #include <QPainter>
 #include <QPixmap>
@@ -52,4 +52,4 @@ protected:
 
 };
 
-#endif //Altecoin_PFBorderImage_H
+#endif //Bontecoin_PFBorderImage_H

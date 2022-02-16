@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,10 +45,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Altecoin Core altecoin-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Bontecoin Core bontecoin-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  altecoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded altecoin transaction") + "\n" +
-                               "  altecoin-tx [options] -create [commands]   " + _("Create hex-encoded altecoin transaction") + "\n" +
+                               "  bontecoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded bontecoin transaction") + "\n" +
+                               "  bontecoin-tx [options] -create [commands]   " + _("Create hex-encoded bontecoin transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -566,7 +566,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded altecoin transaction
+            // param: hex-encoded bontecoin transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

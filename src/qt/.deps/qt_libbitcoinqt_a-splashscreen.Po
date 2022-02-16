@@ -253,7 +253,7 @@ qt/qt_libbitcoinqt_a-splashscreen.o: qt/splashscreen.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h clientversion.h \
- config/altecoin-config.h init.h qt/networkstyle.h \
+ config/bontecoin-config.h init.h qt/networkstyle.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
@@ -1106,7 +1106,7 @@ qt/qt_libbitcoinqt_a-splashscreen.o: qt/splashscreen.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h random.h crypto/chacha20.h crypto/common.h \
  compat/endian.h compat/byteswap.h /usr/include/byteswap.h \
  libzerocoin/ZerocoinDefines.h key.h pubkey.h hash.h crypto/ripemd160.h \
@@ -1892,7 +1892,7 @@ qt/splashscreen.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 init.h:
 
@@ -3792,7 +3792,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

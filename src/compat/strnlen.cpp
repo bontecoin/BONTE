@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #endif
 
 #include <cstring>

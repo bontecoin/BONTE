@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_navmenuwidget.o: \
- qt/altecoin/moc_navmenuwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/navmenuwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_navmenuwidget.o: \
+ qt/bontecoin/moc_navmenuwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/navmenuwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -253,15 +253,15 @@ qt/altecoin/qt_libbitcoinqt_a-moc_navmenuwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h
+ qt/bontecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/navmenuwidget.h:
+qt/bontecoin/navmenuwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -865,7 +865,7 @@ qt/altecoin/navmenuwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -875,4 +875,4 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:

@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,13 +6,13 @@
 #define TOPBAR_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/lockunlock.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/lockunlock.h"
 #include "amount.h"
 #include <QTimer>
 #include <QProgressBar>
 
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 class ClientModel;
 
@@ -25,7 +25,7 @@ class TopBar : public PWidget
     Q_OBJECT
 
 public:
-    explicit TopBar(AltecoinGUI* _mainWindow, QWidget *parent = nullptr);
+    explicit TopBar(BontecoinGUI* _mainWindow, QWidget *parent = nullptr);
     ~TopBar();
 
     void showTop();

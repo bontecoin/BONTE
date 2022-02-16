@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_CORE_NEW_GUI_AltecoinGUI_H
-#define Altecoin_CORE_NEW_GUI_AltecoinGUI_H
+#ifndef Bontecoin_CORE_NEW_GUI_BontecoinGUI_H
+#define Bontecoin_CORE_NEW_GUI_BontecoinGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #endif
 
 #include <QMainWindow>
@@ -14,17 +14,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/altecoin/navmenuwidget.h"
-#include "qt/altecoin/topbar.h"
-#include "qt/altecoin/dashboardwidget.h"
-#include "qt/altecoin/send.h"
-#include "qt/altecoin/receivewidget.h"
-#include "qt/altecoin/addresseswidget.h"
-#include "qt/altecoin/privacywidget.h"
-#include "qt/altecoin/coldstakingwidget.h"
-#include "qt/altecoin/masternodeswidget.h"
-#include "qt/altecoin/snackbar.h"
-#include "qt/altecoin/settings/settingswidget.h"
+#include "qt/bontecoin/navmenuwidget.h"
+#include "qt/bontecoin/topbar.h"
+#include "qt/bontecoin/dashboardwidget.h"
+#include "qt/bontecoin/send.h"
+#include "qt/bontecoin/receivewidget.h"
+#include "qt/bontecoin/addresseswidget.h"
+#include "qt/bontecoin/privacywidget.h"
+#include "qt/bontecoin/coldstakingwidget.h"
+#include "qt/bontecoin/masternodeswidget.h"
+#include "qt/bontecoin/snackbar.h"
+#include "qt/bontecoin/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 
@@ -35,18 +35,18 @@ class WalletModel;
 
 
 /**
-  Altecoin GUI main class. This class represents the main window of the Altecoin UI. It communicates with both the client and
+  Bontecoin GUI main class. This class represents the main window of the Bontecoin UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class AltecoinGUI : public QMainWindow
+class BontecoinGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const QString DEFAULT_WALLET;
 
-    explicit AltecoinGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
-    ~AltecoinGUI();
+    explicit BontecoinGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
+    ~BontecoinGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
@@ -186,4 +186,4 @@ signals:
 };
 
 
-#endif //Altecoin_CORE_NEW_GUI_AltecoinGUI_H
+#endif //Bontecoin_CORE_NEW_GUI_BontecoinGUI_H

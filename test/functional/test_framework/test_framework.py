@@ -70,13 +70,13 @@ TEST_EXIT_PASSED = 0
 TEST_EXIT_FAILED = 1
 TEST_EXIT_SKIPPED = 77
 
-TMPDIR_PREFIX = "altecoin_func_test_"
+TMPDIR_PREFIX = "bontecoin_func_test_"
 
 
-class AltecoinTestFramework():
-    """Base class for a altecoin test script.
+class BontecoinTestFramework():
+    """Base class for a bontecoin test script.
 
-    Individual altecoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual bontecoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
@@ -104,11 +104,11 @@ class AltecoinTestFramework():
 
         parser = optparse.OptionParser(usage="%prog [options]")
         parser.add_option("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                          help="Leave altecoinds and test.* datadir on exit or error")
+                          help="Leave bontecoinds and test.* datadir on exit or error")
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                          help="Don't stop altecoinds after the test execution")
+                          help="Don't stop bontecoinds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__))+"/../../../src"),
-                          help="Source directory containing altecoind/altecoin-cli (default: %default)")
+                          help="Source directory containing bontecoind/bontecoin-cli (default: %default)")
         parser.add_option("--cachedir", dest="cachedir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                           help="Directory for caching pregenerated datadirs")
         parser.add_option("--tmpdir", dest="tmpdir", help="Root directory for datadirs")
@@ -125,7 +125,7 @@ class AltecoinTestFramework():
         parser.add_option("--pdbonfailure", dest="pdbonfailure", default=False, action="store_true",
                           help="Attach a python debugger if test fails")
         parser.add_option("--usecli", dest="usecli", default=False, action="store_true",
-                          help="use altecoin-cli instead of RPC for all commands")
+                          help="use bontecoin-cli instead of RPC for all commands")
         self.add_options(parser)
         (self.options, self.args) = parser.parse_args()
 
@@ -180,7 +180,7 @@ class AltecoinTestFramework():
         else:
             for node in self.nodes:
                 node.cleanup_on_exit = False
-            self.log.info("Note: altecoinds were not stopped and may still be running")
+            self.log.info("Note: bontecoinds were not stopped and may still be running")
 
         if not self.options.nocleanup and not self.options.noshutdown and success != TestStatus.FAILED:
             self.log.info("Cleaning up")
@@ -256,7 +256,7 @@ class AltecoinTestFramework():
             self.nodes.append(TestNode(i, self.options.tmpdir, extra_args[i], rpchost, timewait=timewait, binary=binary[i], stderr=None, mocktime=self.mocktime, coverage_dir=self.options.coveragedir, use_cli=self.options.usecli))
 
     def start_node(self, i, *args, **kwargs):
-        """Start a altecoind"""
+        """Start a bontecoind"""
 
         node = self.nodes[i]
 
@@ -269,7 +269,7 @@ class AltecoinTestFramework():
             coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def start_nodes(self, extra_args=None, *args, **kwargs):
-        """Start multiple altecoinds"""
+        """Start multiple bontecoinds"""
 
         if extra_args is None:
             extra_args = [None] * self.num_nodes
@@ -291,12 +291,12 @@ class AltecoinTestFramework():
                 coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def stop_node(self, i):
-        """Stop a altecoind test node"""
+        """Stop a bontecoind test node"""
         self.nodes[i].stop_node()
         self.nodes[i].wait_until_stopped()
 
     def stop_nodes(self):
-        """Stop multiple altecoind test nodes"""
+        """Stop multiple bontecoind test nodes"""
         for node in self.nodes:
             # Issue RPC to stop nodes
             node.stop_node()
@@ -317,7 +317,7 @@ class AltecoinTestFramework():
                 self.start_node(i, extra_args, stderr=log_stderr, *args, **kwargs)
                 self.stop_node(i)
             except Exception as e:
-                assert 'altecoind exited' in str(e)  # node must have shutdown
+                assert 'bontecoind exited' in str(e)  # node must have shutdown
                 self.nodes[i].running = False
                 self.nodes[i].process = None
                 if expected_msg is not None:
@@ -327,9 +327,9 @@ class AltecoinTestFramework():
                         raise AssertionError("Expected error \"" + expected_msg + "\" not found in:\n" + stderr)
             else:
                 if expected_msg is None:
-                    assert_msg = "altecoind should have exited with an error"
+                    assert_msg = "bontecoind should have exited with an error"
                 else:
-                    assert_msg = "altecoind should have exited with expected error " + expected_msg
+                    assert_msg = "bontecoind should have exited with expected error " + expected_msg
                 raise AssertionError(assert_msg)
 
     def wait_for_node_exit(self, i, timeout):
@@ -386,7 +386,7 @@ class AltecoinTestFramework():
         # User can provide log level as a number or string (eg DEBUG). loglevel was caught as a string, so try to convert it to an int
         ll = int(self.options.loglevel) if self.options.loglevel.isdigit() else self.options.loglevel.upper()
         ch.setLevel(ll)
-        # Format logs the same as altecoind's debug.log with microprecision (so log files can be concatenated and sorted)
+        # Format logs the same as bontecoind's debug.log with microprecision (so log files can be concatenated and sorted)
         formatter = logging.Formatter(fmt='%(asctime)s.%(msecs)03d000 %(name)s (%(levelname)s): %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         formatter.converter = time.gmtime
         fh.setFormatter(formatter)
@@ -415,7 +415,7 @@ class AltecoinTestFramework():
                 from_dir = get_datadir_path(origin, i)
                 to_dir = get_datadir_path(destination, i)
                 shutil.copytree(from_dir, to_dir)
-                initialize_datadir(destination, i)  # Overwrite port/rpcport in altecoin.conf
+                initialize_datadir(destination, i)  # Overwrite port/rpcport in bontecoin.conf
 
         def clone_cache_from_node_1(cachedir, from_num=4):
             """ Clones cache subdir from node 1 to nodes from 'from_num' to MAX_NODES"""
@@ -430,7 +430,7 @@ class AltecoinTestFramework():
                 for subdir in ["blocks", "chainstate", "sporks", "zerocoin"]:
                     copy_and_overwrite(os.path.join(node_0_datadir, subdir),
                                     os.path.join(node_i_datadir, subdir))
-                initialize_datadir(cachedir, i)  # Overwrite port/rpcport in altecoin.conf
+                initialize_datadir(cachedir, i)  # Overwrite port/rpcport in bontecoin.conf
 
         def cachedir_valid(cachedir):
             for i in range(MAX_NODES):
@@ -477,7 +477,7 @@ class AltecoinTestFramework():
                     # Add .incomplete flagfile
                     # (removed at the end during clean_cache_subdir)
                     open(os.path.join(datadir, ".incomplete"), 'a').close()
-                args = [os.getenv("BITCOIND", "altecoind"), "-spendzeroconfchange=1", "-server", "-keypool=1",
+                args = [os.getenv("BITCOIND", "bontecoind"), "-spendzeroconfchange=1", "-server", "-keypool=1",
                         "-datadir=" + datadir, "-discover=0"]
                 self.nodes.append(
                     TestNode(i, ddir, extra_args=[], rpchost=None, timewait=None, binary=None, stderr=None,
@@ -511,7 +511,7 @@ class AltecoinTestFramework():
             # blocks are created with timestamps 1 minutes apart
             # starting from 331 minutes in the past
 
-            # Create cache directories, run altecoinds:
+            # Create cache directories, run bontecoinds:
             create_cachedir(powcachedir)
             self.log.info("Creating 'PoW-chain': 200 blocks")
             start_nodes_from_dir(powcachedir, 4)
@@ -574,14 +574,14 @@ class AltecoinTestFramework():
             #   35 rewards spendable (55 mature blocks - 20 spent rewards)
             # - Node 3 gets 50 mature blocks (pow) + 34 immmature (14 pow + 20 pos)
             #   30 rewards spendable (50 mature blocks - 20 spent rewards)
-            # - Nodes 2 and 3 mint one zerocoin for each denom (tot 6666 ALTC) on block 301/302
+            # - Nodes 2 and 3 mint one zerocoin for each denom (tot 6666 BONTE) on block 301/302
             #   8 mature zc + 8/3 rewards spendable (35/30 - 27 spent) + change 83.92
             #
             # Block 331-336 will mature last 6 pow blocks mined by node 2.
             # Then 337-350 will mature last 14 pow blocks mined by node 3.
             # Then staked blocks start maturing at height 351.
 
-            # Create cache directories, run altecoinds:
+            # Create cache directories, run bontecoinds:
             create_cachedir(poscachedir)
             self.log.info("Creating 'PoS-chain': 330 blocks")
             self.log.info("Copying 200 initial blocks from pow cache")
@@ -615,8 +615,8 @@ class AltecoinTestFramework():
                     nBlocks += 1
                     # Mint zerocoins with node-2 at block 301 and with node-3 at block 302
                     if nBlocks == 301 or nBlocks == 302:
-                        # mints 7 zerocoins, one for each denom (tot 6666 ALTC), fee = 0.01 * 8
-                        # consumes 27 utxos (tot 6750 ALTC), change = 6750 - 6666 - fee
+                        # mints 7 zerocoins, one for each denom (tot 6666 BONTE), fee = 0.01 * 8
+                        # consumes 27 utxos (tot 6750 BONTE), change = 6750 - 6666 - fee
                         res.append(self.nodes[nBlocks-299].mintzerocoin(6666))
                         self.sync_all()
                         # lock the change output (so it's not used as stake input in generate_pos)
@@ -662,7 +662,7 @@ class AltecoinTestFramework():
             initialize_datadir(self.options.tmpdir, i)
 
 
-    ### Altecoin Specific TestFramework ###
+    ### Bontecoin Specific TestFramework ###
     ###################################
     def init_dummy_key(self):
         self.DUMMY_KEY = CECKey()
@@ -677,7 +677,7 @@ class AltecoinTestFramework():
         # 62 pow + 20 pos (26 immature)
         # - Nodes 3 gets 84 blocks:
         # 64 pow + 20 pos (34 immature)
-        # - Nodes 2 and 3 have 6666 ALTC worth of zerocoins
+        # - Nodes 2 and 3 have 6666 BONTE worth of zerocoins
         zc_tot = sum(vZC_DENOMS)
         zc_fee = len(vZC_DENOMS) * 0.01
         used_utxos = (zc_tot // 250) + 1
@@ -796,11 +796,11 @@ class AltecoinTestFramework():
         block_txes = []
         for uniqueness in spendingPrevOuts:
             if is_zerocoin(uniqueness):
-                # spend zALTC
+                # spend zBONTE
                 _, serialHash, _ = spendingPrevOuts[uniqueness]
                 raw_spend = rpc_conn.createrawzerocoinspend(serialHash, "", False)
             else:
-                # spend ALTC
+                # spend BONTE
                 value_out = int(spendingPrevOuts[uniqueness][0] - DEFAULT_FEE * COIN)
                 scriptPubKey = CScript([to_pubKey, OP_CHECKSIG])
                 prevout = COutPoint()
@@ -906,7 +906,7 @@ class AltecoinTestFramework():
         # Don't add tx doublespending the coinstake input, unless fDoubleSpend=True
         for tx in vtx:
             if not fDoubleSpend:
-                # assume txes don't double spend zALTC inputs when fDoubleSpend is false. It needs to
+                # assume txes don't double spend zBONTE inputs when fDoubleSpend is false. It needs to
                 # be checked outside until a convenient tx.spends(zerocoin) is added to the framework.
                 if not isZPoS and tx.spends(prevout):
                     continue
@@ -1080,10 +1080,10 @@ class AltecoinTestFramework():
 
 ### ------------------------------------------------------
 
-class ComparisonTestFramework(AltecoinTestFramework):
+class ComparisonTestFramework(BontecoinTestFramework):
     """Test framework for doing p2p comparison testing
 
-    Sets up some altecoind binaries:
+    Sets up some bontecoind binaries:
     - 1 binary: test binary
     - 2 binaries: 1 test binary, 1 ref binary
     - n>2 binaries: 1 test binary, n-1 ref binaries"""
@@ -1094,11 +1094,11 @@ class ComparisonTestFramework(AltecoinTestFramework):
 
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BITCOIND", "altecoind"),
-                          help="altecoind binary to test")
+                          default=os.getenv("BITCOIND", "bontecoind"),
+                          help="bontecoind binary to test")
         parser.add_option("--refbinary", dest="refbinary",
-                          default=os.getenv("BITCOIND", "altecoind"),
-                          help="altecoind binary to use for reference nodes (if any)")
+                          default=os.getenv("BITCOIND", "bontecoind"),
+                          help="bontecoind binary to use for reference nodes (if any)")
 
     def setup_network(self):
         extra_args = [['-whitelist=127.0.0.1']] * self.num_nodes

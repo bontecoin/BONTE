@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef Altecoin_ZALTCMODULE_H
-#define Altecoin_ZALTCMODULE_H
+#ifndef Bontecoin_ZBONTEMODULE_H
+#define Bontecoin_ZBONTEMODULE_H
 
 #include "libzerocoin/bignum.h"
 #include "libzerocoin/Denominations.h"
@@ -81,7 +81,7 @@ public:
 
 class CValidationState;
 
-namespace ZALTCModule {
+namespace ZBONTEModule {
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
     bool parseCoinSpend(const CTxIn &in, const CTransaction& tx, const CTxOut &prevOut, PublicCoinSpend& publicCoinSpend);
@@ -99,4 +99,4 @@ namespace ZALTCModule {
 };
 
 
-#endif //Altecoin_ZALTCMODULE_H
+#endif //Bontecoin_ZBONTEMODULE_H

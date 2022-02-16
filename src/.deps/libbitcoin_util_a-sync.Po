@@ -145,7 +145,7 @@ libbitcoin_util_a-sync.o: sync.cpp /usr/include/stdc-predef.h sync.h \
  /usr/include/c++/7/backward/auto_ptr.h /usr/include/c++/7/mutex \
  /usr/include/c++/7/set /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
- util.h config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ util.h config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1135,7 +1135,7 @@ threadsafety.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

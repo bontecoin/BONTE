@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@
 #include <QPixmap>
 #include <QStandardPaths>
 #include <initializer_list>
-#include "qt/altecoin/altecoingui.h"
+#include "qt/bontecoin/bontecoingui.h"
 
 // Repair parameters
 const QString SALVAGEWALLET("-salvagewallet");
@@ -31,11 +31,11 @@ const QString RESYNC("-resync");
 extern Qt::Modifier SHORT_KEY;
 
 bool openDialog(QDialog *widget, QWidget *gui);
-void closeDialog(QDialog *widget, AltecoinGUI *gui);
+void closeDialog(QDialog *widget, BontecoinGUI *gui);
 void openDialogFullScreen(QWidget *parent, QWidget * dialog);
-bool openDialogWithOpaqueBackgroundY(QDialog *widget, AltecoinGUI *gui, double posX = 3, int posY = 5);
-bool openDialogWithOpaqueBackground(QDialog *widget, AltecoinGUI *gui, double posX = 3);
-bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, AltecoinGUI *gui);
+bool openDialogWithOpaqueBackgroundY(QDialog *widget, BontecoinGUI *gui, double posX = 3, int posY = 5);
+bool openDialogWithOpaqueBackground(QDialog *widget, BontecoinGUI *gui, double posX = 3);
+bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, BontecoinGUI *gui);
 
 //
 QPixmap encodeToQr(QString str, QString &errorStr, QColor qrColor = Qt::black);

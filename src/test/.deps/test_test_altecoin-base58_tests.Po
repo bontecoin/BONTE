@@ -1,4 +1,4 @@
-test/test_test_altecoin-base58_tests.o: test/base58_tests.cpp \
+test/test_test_bontecoin-base58_tests.o: test/base58_tests.cpp \
  /usr/include/stdc-predef.h base58.h chainparams.h chainparamsbase.h \
  /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -636,11 +636,11 @@ test/test_test_altecoin-base58_tests.o: test/base58_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1041,7 +1041,7 @@ test/test_test_altecoin-base58_tests.o: test/base58_tests.cpp \
  /usr/include/boost/variant/bad_visit.hpp \
  test/data/base58_encode_decode.json.h \
  test/data/base58_keys_invalid.json.h test/data/base58_keys_valid.json.h \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h streams.h \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h streams.h \
  util.h leveldb/include/leveldb/db.h leveldb/include/leveldb/iterator.h \
  leveldb/include/leveldb/slice.h leveldb/include/leveldb/status.h \
  leveldb/include/leveldb/options.h leveldb/include/leveldb/write_batch.h \
@@ -2800,7 +2800,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2826,7 +2826,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3768,7 +3768,7 @@ test/data/base58_keys_invalid.json.h:
 
 test/data/base58_keys_valid.json.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

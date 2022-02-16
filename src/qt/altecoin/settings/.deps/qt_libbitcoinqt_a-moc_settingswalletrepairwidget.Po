@@ -1,7 +1,7 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingswalletrepairwidget.o: \
- qt/altecoin/settings/moc_settingswalletrepairwidget.cpp \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingswalletrepairwidget.o: \
+ qt/bontecoin/settings/moc_settingswalletrepairwidget.cpp \
  /usr/include/stdc-predef.h \
- qt/altecoin/settings/settingswalletrepairwidget.h \
+ qt/bontecoin/settings/settingswalletrepairwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -254,15 +254,15 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingswalletrepairwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h
+ qt/bontecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingswalletrepairwidget.h:
+qt/bontecoin/settings/settingswalletrepairwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -866,7 +866,7 @@ qt/altecoin/settings/settingswalletrepairwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -876,4 +876,4 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +6,7 @@
 #define SETTINGSINFORMATIONWIDGET_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 #include "rpcconsole.h"
 
 namespace Ui {
@@ -18,7 +18,7 @@ class SettingsInformationWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsInformationWidget(AltecoinGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsInformationWidget(BontecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsInformationWidget();
 
     void loadClientModel() override;

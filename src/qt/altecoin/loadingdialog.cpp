@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/loadingdialog.h"
-#include "qt/altecoin/forms/ui_loadingdialog.h"
+#include "qt/bontecoin/loadingdialog.h"
+#include "qt/bontecoin/forms/ui_loadingdialog.h"
 #include <QMovie>
 
 void Worker::process(){

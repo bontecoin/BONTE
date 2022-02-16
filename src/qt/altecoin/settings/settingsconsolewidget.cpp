@@ -1,11 +1,11 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsconsolewidget.h"
-#include "qt/altecoin/settings/forms/ui_settingsconsolewidget.h"
+#include "qt/bontecoin/settings/settingsconsolewidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingsconsolewidget.h"
 #include "QGraphicsDropShadowEffect"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 #include "clientmodel.h"
 #include "guiutil.h"
@@ -36,7 +36,7 @@
 #include <QTime>
 #include <QTimer>
 #include <QStringList>
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 #include "utilitydialog.h"
 
 const int CONSOLE_HISTORY = 50;
@@ -97,7 +97,7 @@ public:
     }
 };
 
-#include "qt/altecoin/settings/moc_settingsconsolewidget.cpp"
+#include "qt/bontecoin/settings/moc_settingsconsolewidget.cpp"
 
 /**
  * Split shell command line into a list of arguments. Aims to emulate \c bash and friends.
@@ -238,7 +238,7 @@ void RPCExecutor::requestCommand(const QString& command)
     }
 }
 
-SettingsConsoleWidget::SettingsConsoleWidget(AltecoinGUI* _window, QWidget *parent) :
+SettingsConsoleWidget::SettingsConsoleWidget(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window,parent),
     ui(new Ui::SettingsConsoleWidget)
 {
@@ -413,7 +413,7 @@ void SettingsConsoleWidget::clear(){
     QString clsKey = "Ctrl-L";
 #endif
 
-    message(CMD_REPLY, (tr("Welcome to the Altecoin RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the Bontecoin RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and %1 to clear screen.").arg("<b>"+clsKey+"</b>") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.") +
                         "<br><span class=\"secwarning\"><br>" +

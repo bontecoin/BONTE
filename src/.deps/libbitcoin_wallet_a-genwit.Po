@@ -135,7 +135,7 @@ libbitcoin_wallet_a-genwit.o: genwit.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/bits/basic_ios.tcc \
  /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/istream \
  /usr/include/c++/7/bits/istream.tcc genwit.h bloom.h \
- libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
@@ -169,7 +169,7 @@ libbitcoin_wallet_a-genwit.o: genwit.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/cstring version.h random.h crypto/chacha20.h \
  /usr/include/c++/7/stdlib.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h serialize.h \
- libzerocoin/Denominations.h net.h compat.h config/altecoin-config.h \
+ libzerocoin/Denominations.h net.h compat.h config/bontecoin-config.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1019,7 +1019,7 @@ libbitcoin_wallet_a-genwit.o: genwit.cpp /usr/include/stdc-predef.h \
  streams.h utilstrencodings.h libzerocoin/Accumulator.h \
  libzerocoin/Coin.h libzerocoin/Denominations.h libzerocoin/Params.h \
  libzerocoin/bignum.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h tinyformat.h utiltime.h \
+ config/bontecoin-config.h compat.h tinyformat.h utiltime.h \
  /usr/include/boost/thread/condition_variable.hpp \
  /usr/include/boost/thread/pthread/condition_variable.hpp \
  /usr/include/boost/thread/pthread/thread_data.hpp \
@@ -1381,7 +1381,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -1505,7 +1505,7 @@ net.h:
 
 compat.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/arpa/inet.h:
 
@@ -3427,7 +3427,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

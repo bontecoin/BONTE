@@ -1,6 +1,6 @@
-qt/test/qt_test_test_altecoin_qt-test_main.o: qt/test/test_main.cpp \
- /usr/include/stdc-predef.h config/altecoin-config.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+qt/test/qt_test_test_bontecoin_qt-test_main.o: qt/test/test_main.cpp \
+ /usr/include/stdc-predef.h config/bontecoin-config.h util.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
@@ -1224,7 +1224,7 @@ qt/test/qt_test_test_altecoin_qt-test_main.o: qt/test/test_main.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
- qt/altecoin/prunnable.h allocators.h \
+ qt/bontecoin/prunnable.h allocators.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
@@ -1371,11 +1371,11 @@ qt/test/qt_test_test_altecoin_qt-test_main.o: qt/test/test_main.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4209,7 +4209,7 @@ qt/test/../askpassphrasedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

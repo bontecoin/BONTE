@@ -1,4 +1,4 @@
-test/test_test_altecoin-key_tests.o: test/key_tests.cpp \
+test/test_test_bontecoin-key_tests.o: test/key_tests.cpp \
  /usr/include/stdc-predef.h key.h allocators.h support/cleanse.h \
  /usr/include/c++/7/stdlib.h /usr/include/c++/7/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -654,11 +654,11 @@ test/test_test_altecoin-key_tests.o: test/key_tests.cpp \
  primitives/transaction.h amount.h libzerocoin/CoinSpend.h streams.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1042,7 +1042,7 @@ test/test_test_altecoin-key_tests.o: test/key_tests.cpp \
  /usr/include/boost/mpl/equal.hpp /usr/include/boost/variant/get.hpp \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
- /usr/include/boost/variant/bad_visit.hpp test/test_altecoin.h txdb.h \
+ /usr/include/boost/variant/bad_visit.hpp test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h streams.h util.h \
  leveldb/include/leveldb/db.h leveldb/include/leveldb/iterator.h \
  leveldb/include/leveldb/slice.h leveldb/include/leveldb/status.h \
@@ -2861,7 +2861,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2887,7 +2887,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3763,7 +3763,7 @@ script/script_error.h:
 
 /usr/include/boost/variant/bad_visit.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

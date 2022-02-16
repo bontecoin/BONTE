@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-lockunlock.o: qt/altecoin/lockunlock.cpp \
- /usr/include/stdc-predef.h qt/altecoin/lockunlock.h \
+qt/bontecoin/qt_libbitcoinqt_a-lockunlock.o: qt/bontecoin/lockunlock.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/lockunlock.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ qt/altecoin/qt_libbitcoinqt_a-lockunlock.o: qt/altecoin/lockunlock.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- qt/altecoin/prunnable.h allocators.h support/cleanse.h \
+ qt/bontecoin/prunnable.h allocators.h support/cleanse.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -780,11 +780,11 @@ qt/altecoin/qt_libbitcoinqt_a-lockunlock.o: qt/altecoin/lockunlock.cpp \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1336,7 +1336,7 @@ qt/altecoin/qt_libbitcoinqt_a-lockunlock.o: qt/altecoin/lockunlock.cpp \
  clientversion.h sync.h /usr/include/db_cxx.h /usr/include/db.h \
  /usr/include/inttypes.h zpiv/zpivtracker.h zpiv/zpivmodule.h \
  zpiv/zpivwallet.h zpiv/mintpool.h wallet/wallet.h \
- qt/altecoin/forms/ui_lockunlock.h \
+ qt/bontecoin/forms/ui_lockunlock.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
@@ -1387,7 +1387,7 @@ qt/altecoin/qt_libbitcoinqt_a-lockunlock.o: qt/altecoin/lockunlock.cpp \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/lockunlock.h:
+qt/bontecoin/lockunlock.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -2001,7 +2001,7 @@ qt/askpassphrasedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 
@@ -3173,7 +3173,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3197,7 +3197,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4591,7 +4591,7 @@ zpiv/mintpool.h:
 
 wallet/wallet.h:
 
-qt/altecoin/forms/ui_lockunlock.h:
+qt/bontecoin/forms/ui_lockunlock.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 

@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2015-2018 The Altecoin developers
+// Copyright (c) 2015-2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

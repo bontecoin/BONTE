@@ -76,12 +76,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Altecoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Bontecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Bontecoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Altecoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Bontecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Bontecoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -196,16 +196,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
-        <translation>Altecoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ALTCien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Bontecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BONTEs from being stolen by malware infecting your computer.</source>
+        <translation>Bontecoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella BONTEien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ALTCisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONTE&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki BONTEisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -560,8 +560,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -579,12 +579,12 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Altecoin Core.</source>
-        <translation>Tervetuloa Altecoin Ytimeen.</translation>
+        <source>Welcome to Bontecoin Core.</source>
+        <translation>Tervetuloa Bontecoin Ytimeen.</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -720,12 +720,12 @@
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Altecoin after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Altecoin kun kirjaudut sisään.</translation>
+        <source>Automatically start Bontecoin after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Bontecoin kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Altecoin on system login</source>
-        <translation>&amp;Aloita Altecoin järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Bontecoin on system login</source>
+        <translation>&amp;Aloita Bontecoin järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -744,12 +744,12 @@
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bontecoin.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Altecoin verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Bontecoin network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Bontecoin verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -849,10 +849,10 @@
     </message>
     </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -879,8 +879,8 @@
         <translation>Lopeta ohjelma</translation>
     </message>
     <message>
-        <source>Altecoin Core client</source>
-        <translation>Altecoin Ydin asiakasohjelma</translation>
+        <source>Bontecoin Core client</source>
+        <translation>Bontecoin Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Error</source>
@@ -945,8 +945,8 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
     </context>
 <context>
@@ -988,8 +988,8 @@
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Altecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Altecoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Bontecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Bontecoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1100,8 +1100,8 @@
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Tervetuloa Altecoin RPC konsoliin.</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Tervetuloa Bontecoin RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1317,8 +1317,8 @@
         <translation>TekstiNimike</translation>
     </message>
     <message>
-        <source>Welcome to the Altecoin RPC console.</source>
-        <translation>Tervetuloa Altecoin RPC konsoliin.</translation>
+        <source>Welcome to the Bontecoin RPC console.</source>
+        <translation>Tervetuloa Bontecoin RPC konsoliin.</translation>
     </message>
     </context>
 <context>
@@ -1566,8 +1566,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Altecoin Core is shutting down...</source>
-        <translation>Altecoin core sammuu...</translation>
+        <source>Bontecoin Core is shutting down...</source>
+        <translation>Bontecoin core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1588,15 +1588,15 @@
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Altecoin Core</source>
-        <translation>Altecoin Ydin</translation>
+        <source>Bontecoin Core</source>
+        <translation>Bontecoin Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1611,8 +1611,8 @@
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Altecoin Core developers</source>
-        <translation>Altecoin core kehittäjät</translation>
+        <source>The Bontecoin Core developers</source>
+        <translation>Bontecoin core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1825,7 +1825,7 @@
     </message>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -1871,8 +1871,8 @@
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Altecoin Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Bontecoin Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Bontecoin Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
- qt/altecoin/addressfilterproxymodel.cpp /usr/include/stdc-predef.h \
- qt/altecoin/addressfilterproxymodel.h \
+qt/bontecoin/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
+ qt/bontecoin/addressfilterproxymodel.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -233,7 +233,7 @@ qt/altecoin/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 

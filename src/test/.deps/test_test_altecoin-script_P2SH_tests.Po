@@ -1,4 +1,4 @@
-test/test_test_altecoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp \
+test/test_test_bontecoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp \
  /usr/include/stdc-predef.h key.h allocators.h support/cleanse.h \
  /usr/include/c++/7/stdlib.h /usr/include/c++/7/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -980,12 +980,12 @@ test/test_test_altecoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp main.h \
- config/altecoin-config.h amount.h chain.h chainparams.h \
+ config/bontecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h primitives/block.h \
  primitives/transaction.h amount.h libzerocoin/CoinSpend.h streams.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1166,7 +1166,7 @@ test/test_test_altecoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp \
  /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
  /usr/include/boost/detail/atomic_undef_macros.hpp \
  /usr/include/boost/detail/atomic_redef_macros.hpp script/script_error.h \
- script/sign.h script/standard.h test/test_altecoin.h txdb.h \
+ script/sign.h script/standard.h test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
@@ -3555,7 +3555,7 @@ threadsafety.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 
@@ -3589,7 +3589,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -4085,7 +4085,7 @@ script/sign.h:
 
 script/standard.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

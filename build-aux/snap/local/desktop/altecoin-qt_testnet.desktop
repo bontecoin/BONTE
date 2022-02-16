@@ -2,15 +2,15 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=Altecoin Core
-Comment=Altecoin Core QT test network
-GenericName=Altecoin Digital Currency QT client testnet network
-Exec=altecoin-core.qt-testnet %u
+Name=Bontecoin Core
+Comment=Bontecoin Core QT test network
+GenericName=Bontecoin Digital Currency QT client testnet network
+Exec=bontecoin-core.qt-testnet %u
 Terminal=false
 Type=Application
-Icon=${SNAP}/share/pixmaps/altecoin_testnet.png
+Icon=${SNAP}/share/pixmaps/bontecoin_testnet.png
 MimeType=x-scheme-handler/piv;
 Categories=X-Office;X-Finance;
-Keywords=internet;altecoin;zpiv;tpiv;core;wallet;qt;testnet;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Keywords=internet;bontecoin;zpiv;tpiv;core;wallet;qt;testnet;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
 Version=1.0
-Name[en_US]=altecoin-qt_testnet.desktop
+Name[en_US]=bontecoin-qt_testnet.desktop

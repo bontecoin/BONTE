@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingswalletrepairwidget.h"
-#include "qt/altecoin/settings/forms/ui_settingswalletrepairwidget.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/settings/settingswalletrepairwidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingswalletrepairwidget.h"
+#include "qt/bontecoin/qtutils.h"
 
-SettingsWalletRepairWidget::SettingsWalletRepairWidget(AltecoinGUI* _window, QWidget *parent) :
+SettingsWalletRepairWidget::SettingsWalletRepairWidget(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletRepairWidget)
 {
@@ -156,7 +156,7 @@ void SettingsWalletRepairWidget::buildParameterlist(QString arg)
     // Append repair parameter to command line.
     args.append(arg);
 
-    // Send command-line arguments to AltecoinGUI::handleRestart()
+    // Send command-line arguments to BontecoinGUI::handleRestart()
     emit handleRestart(args);
 }
 

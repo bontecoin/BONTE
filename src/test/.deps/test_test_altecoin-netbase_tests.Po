@@ -1,5 +1,5 @@
-test/test_test_altecoin-netbase_tests.o: test/netbase_tests.cpp \
- /usr/include/stdc-predef.h netbase.h config/altecoin-config.h compat.h \
+test/test_test_bontecoin-netbase_tests.o: test/netbase_tests.cpp \
+ /usr/include/stdc-predef.h netbase.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -194,7 +194,7 @@ test/test_test_altecoin-netbase_tests.o: test/netbase_tests.cpp \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h streams.h \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h streams.h \
  allocators.h support/cleanse.h /usr/include/c++/7/stdlib.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
@@ -763,7 +763,7 @@ test/test_test_altecoin-netbase_tests.o: test/netbase_tests.cpp \
  uint256.h primitives/block.h primitives/transaction.h amount.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h \
@@ -1321,7 +1321,7 @@ test/test_test_altecoin-netbase_tests.o: test/netbase_tests.cpp \
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -1821,7 +1821,7 @@ libzerocoin/SpendType.h:
 
 sporkid.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -3121,7 +3121,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

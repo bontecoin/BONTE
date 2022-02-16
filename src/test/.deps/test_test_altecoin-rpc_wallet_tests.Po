@@ -1,4 +1,4 @@
-test/test_test_altecoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
+test/test_test_bontecoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
  /usr/include/stdc-predef.h rpc/server.h amount.h serialize.h \
  /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -638,11 +638,11 @@ test/test_test_altecoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1184,7 +1184,7 @@ test/test_test_altecoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
  wallet/wallet_ismine.h script/standard.h wallet/walletdb.h wallet/db.h \
  clientversion.h sync.h /usr/include/db_cxx.h /usr/include/db.h \
  /usr/include/inttypes.h zpiv/zpivtracker.h zpiv/zpivmodule.h \
- zpiv/zpivwallet.h zpiv/mintpool.h test/test_altecoin.h txdb.h \
+ zpiv/zpivwallet.h zpiv/mintpool.h test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
@@ -2851,7 +2851,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2877,7 +2877,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4221,7 +4221,7 @@ zpiv/zpivwallet.h:
 
 zpiv/mintpool.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

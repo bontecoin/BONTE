@@ -549,7 +549,7 @@ libbitcoin_common_a-sporkdb.o: sporkdb.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h leveldbwrapper.h \
- clientversion.h config/altecoin-config.h serialize.h \
+ clientversion.h config/bontecoin-config.h serialize.h \
  /usr/include/c++/7/map /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h \
  /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
@@ -767,7 +767,7 @@ libbitcoin_common_a-sporkdb.o: sporkdb.cpp /usr/include/stdc-predef.h \
  primitives/block.h primitives/transaction.h amount.h serialize.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h allocators.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
@@ -2441,7 +2441,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 serialize.h:
 
@@ -2983,7 +2983,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

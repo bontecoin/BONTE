@@ -1,13 +1,13 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsnetworkwidget.h"
-#include "qt/altecoin/settings/forms/ui_settingsnetworkwidget.h"
+#include "qt/bontecoin/settings/settingsnetworkwidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingsnetworkwidget.h"
 #include "optionsmodel.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
-SettingsNetworkWidget::SettingsNetworkWidget(AltecoinGUI* _window, QWidget *parent) :
+SettingsNetworkWidget::SettingsNetworkWidget(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsNetworkWidget)
 {

@@ -60,8 +60,8 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     background-color: qlineargradient(y1:0, y2: 1, stop: 0 #000000, stop:0.5 #000000, stop: 1 #003b61);
 }
 
-QPushButton[cssClass="img-nav-logo-altecoin"] {
-    qproperty-icon: url("://img-nav-logo-altecoin");
+QPushButton[cssClass="img-nav-logo-bontecoin"] {
+    qproperty-icon: url("://img-nav-logo-bontecoin");
     qproperty-iconSize: 49px 60px;
 }
 

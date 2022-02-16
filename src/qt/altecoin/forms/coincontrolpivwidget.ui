@@ -157,7 +157,7 @@
            <item>
             <widget class="QLabel" name="labelTitleAmount">
              <property name="text">
-              <string>ALTC:</string>
+              <string>BONTE:</string>
              </property>
             </widget>
            </item>

@@ -1,5 +1,5 @@
 libbitcoin_common_a-protocol.o: protocol.cpp /usr/include/stdc-predef.h \
- protocol.h netbase.h config/altecoin-config.h compat.h \
+ protocol.h netbase.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -664,11 +664,11 @@ libbitcoin_common_a-protocol.o: protocol.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h tinyformat.h \
+ config/bontecoin-config.h compat.h tinyformat.h \
  /usr/include/c++/7/iostream utiltime.h \
  /usr/include/boost/filesystem/path.hpp \
  /usr/include/boost/filesystem/config.hpp \
@@ -1038,7 +1038,7 @@ protocol.h:
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -2588,7 +2588,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2616,7 +2616,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/sendmultirow.h"
-#include "qt/altecoin/forms/ui_sendmultirow.h"
+#include "qt/bontecoin/sendmultirow.h"
+#include "qt/bontecoin/forms/ui_sendmultirow.h"
 
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
 #include "guiutil.h"
 #include "bitcoinunits.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 SendMultiRow::SendMultiRow(PWidget *parent) :
     PWidget(parent),
@@ -24,7 +24,7 @@ SendMultiRow::SendMultiRow(PWidget *parent) :
     ui->lineEditAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->stackedAddress);
 
-    ui->lineEditAmount->setPlaceholderText("0.00 ALTC ");
+    ui->lineEditAmount->setPlaceholderText("0.00 BONTE ");
     initCssEditLine(ui->lineEditAmount);
     GUIUtil::setupAmountWidget(ui->lineEditAmount, this);
 

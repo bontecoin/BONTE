@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/csrow.h"
-#include "qt/altecoin/forms/ui_csrow.h"
+#include "qt/bontecoin/csrow.h"
+#include "qt/bontecoin/forms/ui_csrow.h"
 
 CSRow::CSRow(QWidget *parent) :
     QWidget(parent),

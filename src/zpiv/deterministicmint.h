@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Altecoin developers
+// Copyright (c) 2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_DETERMINISTICMINT_H
-#define Altecoin_DETERMINISTICMINT_H
+#ifndef Bontecoin_DETERMINISTICMINT_H
+#define Bontecoin_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -64,4 +64,4 @@ public:
     };
 };
 
-#endif //Altecoin_DETERMINISTICMINT_H
+#endif //Bontecoin_DETERMINISTICMINT_H

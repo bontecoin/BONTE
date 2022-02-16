@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 
 #include <QDialog>
 
-class AltecoinGUI;
+class BontecoinGUI;
 
 namespace Ui {
 class SnackBar;
@@ -18,7 +18,7 @@ class SnackBar : public QDialog
     Q_OBJECT
 
 public:
-    explicit SnackBar(AltecoinGUI* _window = nullptr, QWidget *parent = nullptr);
+    explicit SnackBar(BontecoinGUI* _window = nullptr, QWidget *parent = nullptr);
     ~SnackBar();
 
     virtual void showEvent(QShowEvent *event) override;
@@ -29,7 +29,7 @@ private slots:
     void windowResizeEvent(QResizeEvent *event);
 private:
     Ui::SnackBar *ui;
-    AltecoinGUI* window = nullptr;
+    BontecoinGUI* window = nullptr;
 };
 
 #endif // SNACKBAR_H

@@ -1,5 +1,5 @@
 libbitcoin_util_a-utiltime.o: utiltime.cpp /usr/include/stdc-predef.h \
- config/altecoin-config.h tinyformat.h /usr/include/c++/7/cassert \
+ config/bontecoin-config.h tinyformat.h /usr/include/c++/7/cassert \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -1202,7 +1202,7 @@ libbitcoin_util_a-utiltime.o: utiltime.cpp /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 tinyformat.h:
 

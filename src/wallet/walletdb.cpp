@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -901,7 +901,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet, std::vector<CWalletTx>& vWtx)
 void ThreadFlushWalletDB(const std::string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("altecoin-wallet");
+    RenameThread("bontecoin-wallet");
 
     static bool fOneThread;
     if (fOneThread)
@@ -1319,7 +1319,7 @@ bool CWalletDB::ReadCurrentSeedHash(uint256& hashSeed)
     return Read(std::string("seedhash"), hashSeed);
 }
 
-bool CWalletDB::WriteZALTCSeed(const uint256& hashSeed, const std::vector<unsigned char>& seed)
+bool CWalletDB::WriteZBONTESeed(const uint256& hashSeed, const std::vector<unsigned char>& seed)
 {
     if (!WriteCurrentSeedHash(hashSeed))
         return error("%s: failed to write current seed hash", __func__);
@@ -1327,13 +1327,13 @@ bool CWalletDB::WriteZALTCSeed(const uint256& hashSeed, const std::vector<unsign
     return Write(std::make_pair(std::string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::EraseZALTCSeed()
+bool CWalletDB::EraseZBONTESeed()
 {
     uint256 hash;
     if(!ReadCurrentSeedHash(hash)){
         return error("Failed to read a current seed hash");
     }
-    if(!WriteZALTCSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
+    if(!WriteZBONTESeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
         return error("Failed to write empty seed to wallet");
     }
     if(!WriteCurrentSeedHash(0)) {
@@ -1343,27 +1343,27 @@ bool CWalletDB::EraseZALTCSeed()
     return true;
 }
 
-bool CWalletDB::EraseZALTCSeed_deprecated()
+bool CWalletDB::EraseZBONTESeed_deprecated()
 {
     return Erase(std::string("dzs"));
 }
 
-bool CWalletDB::ReadZALTCSeed(const uint256& hashSeed, std::vector<unsigned char>& seed)
+bool CWalletDB::ReadZBONTESeed(const uint256& hashSeed, std::vector<unsigned char>& seed)
 {
     return Read(std::make_pair(std::string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadZALTCSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadZBONTESeed_deprecated(uint256& seed)
 {
     return Read(std::string("dzs"), seed);
 }
 
-bool CWalletDB::WriteZALTCCount(const uint32_t& nCount)
+bool CWalletDB::WriteZBONTECount(const uint32_t& nCount)
 {
     return Write(std::string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadZALTCCount(uint32_t& nCount)
+bool CWalletDB::ReadZBONTECount(uint32_t& nCount)
 {
     return Read(std::string("dzc"), nCount);
 }

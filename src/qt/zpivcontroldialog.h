@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2020 The Altecoin developers
+// Copyright (c) 2017-2020 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZALTCCONTROLDIALOG_H
-#define ZALTCCONTROLDIALOG_H
+#ifndef ZBONTECONTROLDIALOG_H
+#define ZBONTECONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -62,4 +62,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZALTCCONTROLDIALOG_H
+#endif // ZBONTECONTROLDIALOG_H

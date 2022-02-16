@@ -1,19 +1,19 @@
-Altecoin Core version 3.0.4 is now available from:
+Bontecoin Core version 3.0.4 is now available from:
 
-  <https://github.com/altecoin-altc/altecoin/releases>
+  <https://github.com/bontecoin-bonte/bontecoin/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/altecoin-altc/altecoin/issues>
+  <https://github.com/bontecoin-bonte/bontecoin/issues>
 
 
 Mandatory Update
 ==============
 
-Altecoin Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zALTC protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
+Bontecoin Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zBONTE protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -21,13 +21,13 @@ Users will have a grace period to update their clients before versions prior to 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Altecoin-Qt (on Mac) or altecoind/altecoin-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Bontecoin-Qt (on Mac) or bontecoind/bontecoin-qt (on Linux).
 
 
 Compatibility
 ==============
 
-Altecoin Core is extensively tested on multiple operating systems using
+Bontecoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -35,7 +35,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Altecoin Core should also work on most other Unix-like systems but is not
+Bontecoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -82,7 +82,7 @@ git merge commit are mentioned.
 - #306 `77dd55c` [Core] Don't send not-validated blocks (Mrs-X)
 - #312 `5d79bea` [Main] Update last checkpoint data (Fuzzbawls)
 - #325 `7d98ebe` Reindex zPiv blocks and correct stats. (presstab)
-- #327 `aa1235a` [Main] Don't limit zALTC spends from getting into the mempool (Fuzzbawls)
+- #327 `aa1235a` [Main] Don't limit zBONTE spends from getting into the mempool (Fuzzbawls)
 - #329 `19b38b2` Update checkpoints. (presstab)
 - #331 `b1fb710` [Consensus] Bump protocol. Activate via Spork 15. (rejectedpromise)
 
@@ -91,7 +91,7 @@ git merge commit are mentioned.
 - #316 `ed192cf` [Minting] Better filtering of zPiv serials in miner. (presstab)
 
 ### GUI
-- #309 `f560ffc` [UI] Better error message when too much inputs are used for spending zALTC (Mrs-X)
+- #309 `f560ffc` [UI] Better error message when too much inputs are used for spending zBONTE (Mrs-X)
 - #317 `b27cb72` [UI] Wallet repair option to resync from scratch (Mrs-X)
 - #323 `2b648be` [UI] Balance fix + bubble-help + usability improvements (Mrs-X)
 - #324 `8cdbb5d` disable negative confirmation numbers. (Mrs-X)
@@ -103,9 +103,9 @@ git merge commit are mentioned.
 - #298 `3580394` Reorg help to stop travis errors (Jon Spock)
 - #302 `efb648b` [Cleanup] Remove unused variables (rejectedpromise)
 - #307 `dbd801d` Remove hard-coded GIT_ARCHIVE define (Jon Spock)
-- #314 `f1c830a` Fix issue causing crash when altecoind --help was invoked (Jon Spock)
+- #314 `f1c830a` Fix issue causing crash when bontecoind --help was invoked (Jon Spock)
 - #326 `8b6a13e` Combine 2 LogPrintf statement to reduce debug.log clutter (Jon Spock)
-- #328 `a6c18c8` [Main] Altecoin not responding on user quitting app (Aaron Langford)
+- #328 `a6c18c8` [Main] Bontecoin not responding on user quitting app (Aaron Langford)
 
 
 Credits
@@ -120,4 +120,4 @@ Thanks to everyone who directly contributed to this release:
 - rejectedpromise
 - aaronlangford31
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-altc-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bontecoin-bonte-translations/).

@@ -1,17 +1,17 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/addresseswidget.h"
-#include "qt/altecoin/forms/ui_addresseswidget.h"
-#include "qt/altecoin/addresslabelrow.h"
-#include "qt/altecoin/addnewaddressdialog.h"
-#include "qt/altecoin/tooltipmenu.h"
+#include "qt/bontecoin/addresseswidget.h"
+#include "qt/bontecoin/forms/ui_addresseswidget.h"
+#include "qt/bontecoin/addresslabelrow.h"
+#include "qt/bontecoin/addnewaddressdialog.h"
+#include "qt/bontecoin/tooltipmenu.h"
 
-#include "qt/altecoin/addnewcontactdialog.h"
-#include "qt/altecoin/altecoingui.h"
+#include "qt/bontecoin/addnewcontactdialog.h"
+#include "qt/bontecoin/bontecoingui.h"
 #include "guiutil.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>
@@ -56,7 +56,7 @@ public:
 };
 
 
-AddressesWidget::AddressesWidget(AltecoinGUI* parent) :
+AddressesWidget::AddressesWidget(BontecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::AddressesWidget)
 {
@@ -113,7 +113,7 @@ AddressesWidget::AddressesWidget(AltecoinGUI* parent) :
     setCssEditLine(ui->lineEditName, true);
 
     // Address
-    ui->labelAddress->setText(tr("Enter Altecoin address"));
+    ui->labelAddress->setText(tr("Enter Bontecoin address"));
     setCssProperty(ui->labelAddress, "text-title");
     ui->lineEditAddress->setPlaceholderText("e.g. D7VFR83SQbiezrW72hjc…");
     setCssEditLine(ui->lineEditAddress, true);

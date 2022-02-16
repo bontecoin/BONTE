@@ -123,7 +123,7 @@ libbitcoin_server_a-zpivchain.o: zpivchain.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
@@ -169,7 +169,7 @@ libbitcoin_server_a-zpivchain.o: zpivchain.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/stdlib.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
  libzerocoin/ZerocoinDefines.h amount.h serialize.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1037,7 +1037,7 @@ libbitcoin_server_a-zpivchain.o: zpivchain.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp protocol.h \
  netbase.h libzerocoin/Params.h invalid.h univalue/include/univalue.h \
- main.h config/altecoin-config.h amount.h chain.h chainparams.h pow.h \
+ main.h config/bontecoin-config.h amount.h chain.h chainparams.h pow.h \
  primitives/block.h timedata.h tinyformat.h uint256.h util.h coins.h \
  compressor.h primitives/transaction.h script/script.h serialize.h \
  script/standard.h script/interpreter.h script/script_error.h \
@@ -1487,7 +1487,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -1637,7 +1637,7 @@ serialize.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3617,7 +3617,7 @@ univalue/include/univalue.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 

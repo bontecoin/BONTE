@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2018 The Altecoin developers
+// Copyright (c) 2017-2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_ACCUMULATORMAP_H
-#define Altecoin_ACCUMULATORMAP_H
+#ifndef Bontecoin_ACCUMULATORMAP_H
+#define Bontecoin_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -26,4 +26,4 @@ public:
     void Reset();
     void Reset(libzerocoin::ZerocoinParams* params2);
 };
-#endif //Altecoin_ACCUMULATORMAP_H
+#endif //Bontecoin_ACCUMULATORMAP_H

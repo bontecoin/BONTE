@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_denomgenerationdialog.o: \
- qt/altecoin/moc_denomgenerationdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/denomgenerationdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_denomgenerationdialog.o: \
+ qt/bontecoin/moc_denomgenerationdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/denomgenerationdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_denomgenerationdialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/denomgenerationdialog.h:
+qt/bontecoin/denomgenerationdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

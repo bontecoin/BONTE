@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_ADDRESSHOLDER_H
-#define Altecoin_ADDRESSHOLDER_H
+#ifndef Bontecoin_ADDRESSHOLDER_H
+#define Bontecoin_ADDRESSHOLDER_H
 
 #include <QWidget>
 #include <QColor>
-#include "qt/altecoin/myaddressrow.h"
-#include "qt/altecoin/furlistrow.h"
+#include "qt/bontecoin/myaddressrow.h"
+#include "qt/bontecoin/furlistrow.h"
 #include "guiutil.h"
 
 
@@ -38,4 +38,4 @@ public:
 };
 
 
-#endif //Altecoin_ADDRESSHOLDER_H
+#endif //Bontecoin_ADDRESSHOLDER_H

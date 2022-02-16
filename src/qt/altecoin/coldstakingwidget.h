@@ -1,18 +1,18 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef COLDSTAKINGWIDGET_H
 #define COLDSTAKINGWIDGET_H
 
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/txviewholder.h"
-#include "qt/altecoin/tooltipmenu.h"
-#include "qt/altecoin/sendmultirow.h"
-#include "qt/altecoin/coldstakingmodel.h"
-#include "qt/altecoin/contactsdropdown.h"
-#include "qt/altecoin/addressholder.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/txviewholder.h"
+#include "qt/bontecoin/tooltipmenu.h"
+#include "qt/bontecoin/sendmultirow.h"
+#include "qt/bontecoin/coldstakingmodel.h"
+#include "qt/bontecoin/contactsdropdown.h"
+#include "qt/bontecoin/addressholder.h"
 #include "transactiontablemodel.h"
 #include "addresstablemodel.h"
 #include "addressfilterproxymodel.h"
@@ -24,7 +24,7 @@
 #include <QSpacerItem>
 #include <atomic>
 
-class AltecoinGUI;
+class BontecoinGUI;
 class WalletModel;
 class CSDelegationHolder;
 
@@ -41,7 +41,7 @@ class ColdStakingWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit ColdStakingWidget(AltecoinGUI* parent);
+    explicit ColdStakingWidget(BontecoinGUI* parent);
     ~ColdStakingWidget();
 
     void loadWalletModel() override;

@@ -684,7 +684,7 @@
                 <item>
                  <widget class="QLabel" name="labelPiv">
                   <property name="text">
-                   <string>ALTC</string>
+                   <string>BONTE</string>
                   </property>
                  </widget>
                 </item>

@@ -1,5 +1,5 @@
 libbitcoin_util_a-util.o: util.cpp /usr/include/stdc-predef.h \
- config/altecoin-config.h util.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h util.h compat.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
@@ -755,7 +755,7 @@ libbitcoin_util_a-util.o: util.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/atomic/detail/type_traits/is_function.hpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  chainparamsbase.h random.h crypto/chacha20.h crypto/common.h \
- config/altecoin-config.h compat/endian.h compat/byteswap.h \
+ config/bontecoin-config.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h sync.h threadsafety.h \
  /usr/include/c++/7/condition_variable /usr/include/c++/7/chrono \
  /usr/include/c++/7/ratio /usr/include/c++/7/bits/parse_numbers.h \
@@ -1292,7 +1292,7 @@ libbitcoin_util_a-util.o: util.cpp /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 util.h:
 
@@ -3026,7 +3026,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 

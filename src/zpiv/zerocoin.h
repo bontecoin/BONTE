@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_ZEROCOIN_H
-#define Altecoin_ZEROCOIN_H
+#ifndef Bontecoin_ZEROCOIN_H
+#define Bontecoin_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -263,4 +263,4 @@ int GetWrapppedSerialInflation(libzerocoin::CoinDenomination denom);
 
 int64_t GetWrapppedSerialInflationAmount();
 
-#endif //Altecoin_ZEROCOIN_H
+#endif //Bontecoin_ZEROCOIN_H

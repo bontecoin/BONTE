@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_TEST_TEST_Altecoin_H
-#define Altecoin_TEST_TEST_Altecoin_H
+#ifndef Bontecoin_TEST_TEST_Bontecoin_H
+#define Bontecoin_TEST_TEST_Bontecoin_H
 
 #include "txdb.h"
 

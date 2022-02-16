@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-defaultdialog.o: \
- qt/altecoin/defaultdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/defaultdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-defaultdialog.o: \
+ qt/bontecoin/defaultdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/defaultdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -254,7 +254,7 @@ qt/altecoin/qt_libbitcoinqt_a-defaultdialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/forms/ui_defaultdialog.h \
+ qt/bontecoin/forms/ui_defaultdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
@@ -316,7 +316,7 @@ qt/altecoin/qt_libbitcoinqt_a-defaultdialog.o: \
  amount.h serialize.h /usr/include/assert.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -903,7 +903,7 @@ qt/altecoin/qt_libbitcoinqt_a-defaultdialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/defaultdialog.h:
+qt/bontecoin/defaultdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -1509,7 +1509,7 @@ qt/altecoin/defaultdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/forms/ui_defaultdialog.h:
+qt/bontecoin/forms/ui_defaultdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 
@@ -1651,7 +1651,7 @@ sporkid.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

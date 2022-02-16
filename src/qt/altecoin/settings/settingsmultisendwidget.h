@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,10 +7,10 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
 
-class AltecoinGUI;
+class BontecoinGUI;
 
 namespace Ui {
 class SettingsMultisendWidget;

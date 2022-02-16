@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 The Altecoin developers
+// Copyright (c) 2018-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -293,7 +293,7 @@ std::string ReindexZerocoinDB()
                                 libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                                 PublicCoinSpend publicSpend(params);
                                 CValidationState state;
-                                if (!ZALTCModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                                if (!ZBONTEModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                     return _("Failed to parse public spend");
                                 }
                                 vSpendInfo.push_back(std::make_pair(publicSpend, txid));

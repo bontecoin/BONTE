@@ -1,4 +1,4 @@
-qt/qt_libbitcoinqt_a-qrc_altecoin.o: qt/qrc_altecoin.cpp \
+qt/qt_libbitcoinqt_a-qrc_bontecoin.o: qt/qrc_bontecoin.cpp \
  /usr/include/stdc-predef.h
 
 /usr/include/stdc-predef.h:

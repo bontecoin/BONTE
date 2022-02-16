@@ -1,7 +1,7 @@
-test/test_test_altecoin-transaction_tests.o: test/transaction_tests.cpp \
+test/test_test_bontecoin-transaction_tests.o: test/transaction_tests.cpp \
  /usr/include/stdc-predef.h test/data/tx_invalid.json.h \
- test/data/tx_valid.json.h test/test_altecoin.h txdb.h leveldbwrapper.h \
- clientversion.h config/altecoin-config.h /usr/include/c++/7/string \
+ test/data/tx_valid.json.h test/test_bontecoin.h txdb.h leveldbwrapper.h \
+ clientversion.h config/bontecoin-config.h /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -764,7 +764,7 @@ test/test_test_altecoin-transaction_tests.o: test/transaction_tests.cpp \
  uint256.h primitives/block.h primitives/transaction.h amount.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h \
@@ -1183,7 +1183,7 @@ test/test_test_altecoin-transaction_tests.o: test/transaction_tests.cpp \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc clientversion.h main.h \
- script/script_error.h core_io.h test/test_altecoin.h \
+ script/script_error.h core_io.h test/test_bontecoin.h \
  /usr/include/boost/algorithm/string/classification.hpp \
  /usr/include/boost/range/value_type.hpp \
  /usr/include/boost/range/iterator.hpp \
@@ -1347,7 +1347,7 @@ test/data/tx_invalid.json.h:
 
 test/data/tx_valid.json.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -1355,7 +1355,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 
@@ -3147,7 +3147,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -4167,7 +4167,7 @@ script/script_error.h:
 
 core_io.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 /usr/include/boost/algorithm/string/classification.hpp:
 

@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -76,7 +76,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "altecoin"
+#define URI_SCHEME "bontecoin"
 
 namespace GUIUtil
 {
@@ -140,7 +140,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
     widget->setFont(bitcoinAddressFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter Altecoin address (e.g. %1)").arg("D7VFR83SQbiezrW72hjcWJtcfip5krte2Z"));
+    widget->setPlaceholderText(QObject::tr("Enter Bontecoin address (e.g. %1)").arg("D7VFR83SQbiezrW72hjcWJtcfip5krte2Z"));
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
 }
@@ -162,7 +162,7 @@ void updateWidgetTextAndCursorPosition(QLineEdit* widget, const QString& str)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no Altecoin: URI
+    // return if URI is not valid or is no Bontecoin: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -193,7 +193,7 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
             fShouldReturnFalse = false;
         } else if (i->first == "amount") {
             if (!i->second.isEmpty()) {
-                if (!BitcoinUnits::parse(BitcoinUnits::ALTC, i->second, &rv.amount)) {
+                if (!BitcoinUnits::parse(BitcoinUnits::BONTE, i->second, &rv.amount)) {
                     return false;
                 }
             }
@@ -211,9 +211,9 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert altecoin:// to altecoin:
+    // Convert bontecoin:// to bontecoin:
     //
-    //    Cannot handle this later, because altecoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because bontecoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if (uri.startsWith(URI_SCHEME "://", Qt::CaseInsensitive)) {
         uri.replace(0, std::strlen(URI_SCHEME) + 3, URI_SCHEME ":");
@@ -228,7 +228,7 @@ QString formatBitcoinURI(const SendCoinsRecipient& info)
     int paramCount = 0;
 
     if (info.amount) {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::ALTC, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BONTE, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 
@@ -397,7 +397,7 @@ bool openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open altecoin.conf with the associated application */
+    /* Open bontecoin.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
     return false;
@@ -618,12 +618,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Altecoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bontecoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Altecoin.lnk
+    // check for Bontecoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -697,7 +697,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "altecoin.desktop";
+    return GetAutostartDir() / "bontecoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -733,10 +733,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out | std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a altecoin.desktop file to the autostart directory:
+        // Write a bontecoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Altecoin\n";
+        optionFile << "Name=Bontecoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -757,7 +757,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl);
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl)
 {
-    // loop through the list of startup items and try to find the altecoin app
+    // loop through the list of startup items and try to find the bontecoin app
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(list, NULL);
     for (int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
@@ -802,7 +802,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     LSSharedFileListItemRef foundItem = findStartupItemInList(loginItems, bitcoinAppUrl);
 
     if (fAutoStart && !foundItem) {
-        // add altecoin app to startup item list
+        // add bontecoin app to startup item list
         LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, NULL, NULL, bitcoinAppUrl, NULL, NULL);
     } else if (!fAutoStart && foundItem) {
         // remove item

@@ -1,7 +1,7 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_furabstractlistitemdelegate.o: \
- qt/altecoin/moc_furabstractlistitemdelegate.cpp \
- /usr/include/stdc-predef.h qt/altecoin/furabstractlistitemdelegate.h \
- qt/altecoin/furlistrow.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_furabstractlistitemdelegate.o: \
+ qt/bontecoin/moc_furabstractlistitemdelegate.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/furabstractlistitemdelegate.h \
+ qt/bontecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -291,9 +291,9 @@ qt/altecoin/qt_libbitcoinqt_a-moc_furabstractlistitemdelegate.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

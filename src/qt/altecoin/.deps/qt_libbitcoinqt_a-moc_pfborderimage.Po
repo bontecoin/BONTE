@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_pfborderimage.o: \
- qt/altecoin/moc_pfborderimage.cpp /usr/include/stdc-predef.h \
- qt/altecoin/pfborderimage.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_pfborderimage.o: \
+ qt/bontecoin/moc_pfborderimage.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/pfborderimage.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
@@ -265,7 +265,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_pfborderimage.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/pfborderimage.h:
+qt/bontecoin/pfborderimage.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:
 

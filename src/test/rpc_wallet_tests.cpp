@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2014 The Bitcoin Core developers
-// Copyright (c) 2017-2020 The Altecoin developers
+// Copyright (c) 2017-2020 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,7 @@
 #include "base58.h"
 #include "wallet/wallet.h"
 
-#include "test/test_altecoin.h"
+#include "test/test_bontecoin.h"
 
 #include <boost/algorithm/string.hpp>
 #include <boost/test/unit_test.hpp>

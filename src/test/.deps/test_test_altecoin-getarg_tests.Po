@@ -1,5 +1,5 @@
-test/test_test_altecoin-getarg_tests.o: test/getarg_tests.cpp \
- /usr/include/stdc-predef.h util.h config/altecoin-config.h compat.h \
+test/test_test_bontecoin-getarg_tests.o: test/getarg_tests.cpp \
+ /usr/include/stdc-predef.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -714,7 +714,7 @@ test/test_test_altecoin-getarg_tests.o: test/getarg_tests.cpp \
  /usr/include/boost/core/scoped_enum.hpp \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp \
- /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_altecoin.h txdb.h \
+ /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h serialize.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h streams.h \
@@ -767,7 +767,7 @@ test/test_test_altecoin-getarg_tests.o: test/getarg_tests.cpp \
  primitives/block.h primitives/transaction.h amount.h \
  libzerocoin/CoinSpend.h streams.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h \
@@ -1368,7 +1368,7 @@ test/test_test_altecoin-getarg_tests.o: test/getarg_tests.cpp \
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -2988,7 +2988,7 @@ utiltime.h:
 
 /usr/include/boost/smart_ptr/weak_ptr.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -3168,7 +3168,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

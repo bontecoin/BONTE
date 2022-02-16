@@ -1,6 +1,6 @@
-test/test_test_altecoin-pmt_tests.o: test/pmt_tests.cpp \
+test/test_test_bontecoin-pmt_tests.o: test/pmt_tests.cpp \
  /usr/include/stdc-predef.h merkleblock.h bloom.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -642,7 +642,7 @@ test/test_test_altecoin-pmt_tests.o: test/pmt_tests.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1030,7 +1030,7 @@ test/test_test_altecoin-pmt_tests.o: test/pmt_tests.cpp \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp \
- consensus/merkle.h primitives/block.h test/test_altecoin.h txdb.h \
+ consensus/merkle.h primitives/block.h test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h streams.h util.h \
  leveldb/include/leveldb/db.h leveldb/include/leveldb/iterator.h \
  leveldb/include/leveldb/slice.h leveldb/include/leveldb/status.h \
@@ -1327,7 +1327,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2825,7 +2825,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3729,7 +3729,7 @@ consensus/merkle.h:
 
 primitives/block.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

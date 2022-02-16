@@ -1,6 +1,6 @@
 libbitcoin_server_a-net.o: net.cpp /usr/include/stdc-predef.h \
- config/altecoin-config.h net.h bloom.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h net.h bloom.h libzerocoin/bignum.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -1202,7 +1202,7 @@ libbitcoin_server_a-net.o: net.cpp /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 net.h:
 
@@ -1210,7 +1210,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

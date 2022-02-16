@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/tooltipmenu.h"
-#include "qt/altecoin/forms/ui_tooltipmenu.h"
+#include "qt/bontecoin/tooltipmenu.h"
+#include "qt/bontecoin/forms/ui_tooltipmenu.h"
 
-#include "qt/altecoin/altecoingui.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/bontecoingui.h"
+#include "qt/bontecoin/qtutils.h"
 #include <QTimer>
 
-TooltipMenu::TooltipMenu(AltecoinGUI *_window, QWidget *parent) :
+TooltipMenu::TooltipMenu(BontecoinGUI *_window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::TooltipMenu)
 {

@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_sendcustomfeedialog.o: \
- qt/altecoin/moc_sendcustomfeedialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/sendcustomfeedialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_sendcustomfeedialog.o: \
+ qt/bontecoin/moc_sendcustomfeedialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/sendcustomfeedialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -260,7 +260,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_sendcustomfeedialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/sendcustomfeedialog.h:
+qt/bontecoin/sendcustomfeedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

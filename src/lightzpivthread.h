@@ -1,10 +1,10 @@
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
 
-#ifndef Altecoin_LIGHALTCZTTHREAD_H
-#define Altecoin_LIGHALTCZTTHREAD_H
+#ifndef Bontecoin_LIGHBONTEZTTHREAD_H
+#define Bontecoin_LIGHBONTEZTTHREAD_H
 
 #include <atomic>
 #include "genwit.h"
@@ -42,7 +42,7 @@ public:
 
     bool addWitWork(CGenWit wit) {
         if (!isWorkerRunning) {
-            LogPrintf("%s not running trying to add wit work \n", "altecoin-light-thread");
+            LogPrintf("%s not running trying to add wit work \n", "bontecoin-light-thread");
             return false;
         }
         requestsQueue.push(wit);
@@ -50,21 +50,21 @@ public:
     }
 
     void StartLightZpivThread(boost::thread_group& threadGroup) {
-        LogPrintf("%s thread start\n", "altecoin-light-thread");
-        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZALTCSimplified, this));
+        LogPrintf("%s thread start\n", "bontecoin-light-thread");
+        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZBONTESimplified, this));
     }
 
     void StopLightZpivThread() {
         threadIns.interrupt();
-        LogPrintf("%s thread interrupted\n", "altecoin-light-thread");
+        LogPrintf("%s thread interrupted\n", "bontecoin-light-thread");
     }
 
 private:
 
-    void ThreadLightZALTCSimplified();
+    void ThreadLightZBONTESimplified();
 
     void rejectWork(CGenWit& wit, int blockHeight, uint32_t errorNumber);
 
 };
 
-#endif //Altecoin_LIGHALTCZTTHREAD_H
+#endif //Bontecoin_LIGHBONTEZTTHREAD_H

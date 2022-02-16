@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
- /usr/include/stdc-predef.h config/altecoin-config.h qt/optionsdialog.h \
+ /usr/include/stdc-predef.h config/bontecoin-config.h qt/optionsdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -341,7 +341,7 @@ qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h qt/guiutil.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -922,7 +922,7 @@ qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc obfuscation.h main.h \
- config/altecoin-config.h amount.h chain.h chainparams.h \
+ config/bontecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h uint256.h primitives/block.h \
  primitives/transaction.h libzerocoin/CoinSpend.h streams.h allocators.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
@@ -1393,7 +1393,7 @@ qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 qt/optionsdialog.h:
 
@@ -2197,7 +2197,7 @@ qt/guiutil.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 
@@ -3467,7 +3467,7 @@ obfuscation.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 

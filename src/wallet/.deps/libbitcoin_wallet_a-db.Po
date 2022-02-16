@@ -1,5 +1,5 @@
 wallet/libbitcoin_wallet_a-db.o: wallet/db.cpp /usr/include/stdc-predef.h \
- wallet/db.h clientversion.h config/altecoin-config.h \
+ wallet/db.h clientversion.h config/bontecoin-config.h \
  /usr/include/c++/7/string \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -751,7 +751,7 @@ wallet/libbitcoin_wallet_a-db.o: wallet/db.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h protocol.h uint256.h \
  version.h random.h crypto/chacha20.h crypto/common.h \
- config/altecoin-config.h compat/endian.h compat/byteswap.h \
+ config/bontecoin-config.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h sync.h timedata.h util.h tinyformat.h utiltime.h \
  /usr/include/boost/thread/condition_variable.hpp \
  /usr/include/boost/thread/pthread/condition_variable.hpp \
@@ -958,7 +958,7 @@ wallet/db.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/c++/7/string:
 
@@ -2716,7 +2716,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 

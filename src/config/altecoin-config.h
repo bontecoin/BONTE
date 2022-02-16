@@ -1,9 +1,9 @@
-/* src/config/altecoin-config.h.  Generated from altecoin-config.h.in by configure.  */
-/* src/config/altecoin-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/bontecoin-config.h.  Generated from bontecoin-config.h.in by configure.  */
+/* src/config/bontecoin-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef ALTC_CONFIG_H
+#ifndef BONTE_CONFIG_H
 
-#define ALTC_CONFIG_H
+#define BONTE_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -346,19 +346,19 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/altecoin-altc/altecoin/issues"
+#define PACKAGE_BUGREPORT "https://github.com/bontecoin-bonte/bontecoin/issues"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Altecoin Core"
+#define PACKAGE_NAME "Bontecoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Altecoin Core 1.0.0"
+#define PACKAGE_STRING "Bontecoin Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "altecoin"
+#define PACKAGE_TARNAME "bontecoin"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://altecoin.org/"
+#define PACKAGE_URL "https://bontecoin.org/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0.0"
@@ -433,4 +433,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //ALTC_CONFIG_H
+#endif //BONTE_CONFIG_H

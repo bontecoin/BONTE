@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_topbar.o: qt/altecoin/moc_topbar.cpp \
- /usr/include/stdc-predef.h qt/altecoin/topbar.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_topbar.o: qt/bontecoin/moc_topbar.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/topbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -252,11 +252,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_topbar.o: qt/altecoin/moc_topbar.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/bontecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/lockunlock.h qt/walletmodel.h \
+ qt/bontecoin/prunnable.h qt/bontecoin/lockunlock.h qt/walletmodel.h \
  qt/askpassphrasedialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
@@ -784,11 +784,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_topbar.o: qt/altecoin/moc_topbar.cpp \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1345,7 +1345,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_topbar.o: qt/altecoin/moc_topbar.cpp \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/topbar.h:
+qt/bontecoin/topbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -1949,7 +1949,7 @@ qt/altecoin/topbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -1959,9 +1959,9 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/lockunlock.h:
+qt/bontecoin/lockunlock.h:
 
 qt/walletmodel.h:
 
@@ -3143,7 +3143,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3167,7 +3167,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

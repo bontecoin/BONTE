@@ -10,7 +10,7 @@ forward all unrecognized arguments onto the individual test scripts.
 Functional tests are disabled on Windows by default. Use --force to run them anyway.
 
 For a description of arguments recognized by test scripts, see
-`test/functional/test_framework/test_framework.py:AltecoinTestFramework.main`.
+`test/functional/test_framework/test_framework.py:BontecoinTestFramework.main`.
 
 """
 
@@ -196,7 +196,7 @@ def main():
     logging.basicConfig(format='%(message)s', level=logging_level)
 
     # Create base test directory
-    tmpdir = "%s/altecoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    tmpdir = "%s/bontecoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     os.makedirs(tmpdir)
 
     logging.debug("Temporary test directory at %s" % tmpdir)
@@ -212,7 +212,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-        print("No functional tests to run. Wallet, utils, and altecoind must all be enabled")
+        print("No functional tests to run. Wallet, utils, and bontecoind must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -272,10 +272,10 @@ def main():
               args.keepcache)
 
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0, keep_cache=False):
-    # Warn if altecoind is already running (unix only)
+    # Warn if bontecoind is already running (unix only)
     try:
-        if subprocess.check_output(["pidof", "altecoind"]) is not None:
-            print("%sWARNING!%s There is already a altecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.check_output(["pidof", "bontecoind"]) is not None:
+            print("%sWARNING!%s There is already a bontecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -286,8 +286,8 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
 
     #Set env vars
     if "BITCOIND" not in os.environ:
-        os.environ["BITCOIND"] = build_dir + '/src/altecoind' + exeext
-        os.environ["BITCOINCLI"] = build_dir + '/src/altecoin-cli' + exeext
+        os.environ["BITCOIND"] = build_dir + '/src/bontecoind' + exeext
+        os.environ["BITCOINCLI"] = build_dir + '/src/bontecoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -404,7 +404,7 @@ class TestHandler:
         self.test_list = test_list
         self.flags = flags
         self.num_running = 0
-        # In case there is a graveyard of zombie altecoinds, we can apply a
+        # In case there is a graveyard of zombie bontecoinds, we can apply a
         # pseudorandom offset to hopefully jump over them.
         # (625 is PORT_RANGE/MAX_NODES)
         self.portseed_offset = int(time.time() * 1000) % 625
@@ -531,7 +531,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `altecoin-cli help` (`rpc_interface.txt`).
+    commands per `bontecoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

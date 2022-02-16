@@ -1,21 +1,21 @@
-Altecoin Core integration/staging repository
+Bontecoin Core integration/staging repository
 =====================================
 
 ### Coin Specs
 
 • PoW Algorithm: Quark  
-• Premine: 210000 ALTC (1%)
+• Premine: 210000 BONTE (1%)
 • PoW Blocks: 1 - 500
 • PoS Blocks: Starting from 501  
 • Block Time: 60 Seconds    
 • Maturity: 100 Confirmations 
 • Total Coin Supply: 21000000 
-• Prefix: ALTC adresses start with the letter "a"  
+• Prefix: BONTE adresses start with the letter "a"  
 • Ports: 7429 (p2p) / 7430 (rpc)
 
-• Explorer http://explorer.altecoin.cc
+• Explorer http://explorer.bontecoin.cc
 
-• Website [altecoin.cc](http://www.altecoin.cc)
+• Website [bontecoin.cc](http://www.bontecoin.cc)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
@@ -43,8 +43,8 @@ Altecoin Core integration/staging repository
   <td class=xl6517252>0.1</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>0.08 ALTC</td>
-  <td class=xl6553517252 align=right>0.02 ALTC</td>
+  <td class=xl6717252 align=right>0.08 BONTE</td>
+  <td class=xl6553517252 align=right>0.02 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>2001-98000</td>
@@ -52,8 +52,8 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>20</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>16 ALTC</td>
-  <td class=xl6817252 align=right>4 ALTC</td>
+  <td class=xl6717252 align=right>16 BONTE</td>
+  <td class=xl6817252 align=right>4 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>98001-141200</td>
@@ -61,8 +61,8 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>3</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>2.4 ALTC</td>
-  <td class=xl6817252 align=right>0.6 ALTC</td>
+  <td class=xl6717252 align=right>2.4 BONTE</td>
+  <td class=xl6817252 align=right>0.6 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>141201-227600</td>
@@ -70,8 +70,8 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>2.5</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>2 ALTC</td>
-  <td class=xl6817252 align=right>0.5 ALTC</td>
+  <td class=xl6717252 align=right>2 BONTE</td>
+  <td class=xl6817252 align=right>0.5 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>227601-357200</td>
@@ -79,8 +79,8 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>2</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>1.6 ALTC</td>
-  <td class=xl6817252 align=right>0.4 ALTC</td>
+  <td class=xl6717252 align=right>1.6 BONTE</td>
+  <td class=xl6817252 align=right>0.4 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>357201-530000</td>
@@ -88,8 +88,8 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>1.5</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>1.2 ALTC</td>
-  <td class=xl6817252 align=right>0.3 ALTC</td>
+  <td class=xl6717252 align=right>1.2 BONTE</td>
+  <td class=xl6817252 align=right>0.3 BONTE</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>530001 - MAX</td>
@@ -97,7 +97,7 @@ Altecoin Core integration/staging repository
   <td class=xl6617252>1</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>0.8 ALTC</td>
-  <td class=xl6817252 align=right>0.2 ALTC</td>
+  <td class=xl6717252 align=right>0.8 BONTE</td>
+  <td class=xl6817252 align=right>0.2 BONTE</td>
  </tr>
  </table>

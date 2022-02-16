@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_CORE_NEW_GUI_PRUNNABLE_H
-#define Altecoin_CORE_NEW_GUI_PRUNNABLE_H
+#ifndef Bontecoin_CORE_NEW_GUI_PRUNNABLE_H
+#define Bontecoin_CORE_NEW_GUI_PRUNNABLE_H
 
 class Runnable {
 public:
@@ -11,4 +11,4 @@ public:
     virtual void onError(QString error, int type) = 0;
 };
 
-#endif //Altecoin_CORE_NEW_GUI_PRUNNABLE_H
+#endif //Bontecoin_CORE_NEW_GUI_PRUNNABLE_H

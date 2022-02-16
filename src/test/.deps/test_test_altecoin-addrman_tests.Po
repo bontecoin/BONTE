@@ -1,5 +1,5 @@
-test/test_test_altecoin-addrman_tests.o: test/addrman_tests.cpp \
- /usr/include/stdc-predef.h addrman.h netbase.h config/altecoin-config.h \
+test/test_test_bontecoin-addrman_tests.o: test/addrman_tests.cpp \
+ /usr/include/stdc-predef.h addrman.h netbase.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -196,7 +196,7 @@ test/test_test_altecoin-addrman_tests.o: test/addrman_tests.cpp \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h protocol.h \
  uint256.h /usr/include/c++/7/cstring version.h random.h \
  crypto/chacha20.h /usr/include/c++/7/stdlib.h crypto/common.h \
- config/altecoin-config.h compat/endian.h compat/byteswap.h \
+ config/bontecoin-config.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h sync.h threadsafety.h \
  /usr/include/c++/7/condition_variable /usr/include/c++/7/chrono \
  /usr/include/c++/7/ratio /usr/include/c++/7/ctime \
@@ -723,7 +723,7 @@ test/test_test_altecoin-addrman_tests.o: test/addrman_tests.cpp \
  /usr/include/boost/core/scoped_enum.hpp \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp \
- /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_altecoin.h txdb.h \
+ /usr/include/boost/smart_ptr/weak_ptr.hpp test/test_bontecoin.h txdb.h \
  leveldbwrapper.h clientversion.h streams.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/once.hpp \
  /usr/include/boost/thread/pthread/once_atomic.hpp \
@@ -1325,7 +1325,7 @@ addrman.h:
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -1841,7 +1841,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat/endian.h:
 
@@ -3003,7 +3003,7 @@ utiltime.h:
 
 /usr/include/boost/smart_ptr/weak_ptr.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

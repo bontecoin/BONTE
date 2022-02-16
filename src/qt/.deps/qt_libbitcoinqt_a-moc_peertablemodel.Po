@@ -1,6 +1,6 @@
 qt/qt_libbitcoinqt_a-moc_peertablemodel.o: qt/moc_peertablemodel.cpp \
  /usr/include/stdc-predef.h qt/peertablemodel.h main.h \
- config/altecoin-config.h amount.h serialize.h \
+ config/bontecoin-config.h amount.h serialize.h \
  /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -638,7 +638,7 @@ qt/qt_libbitcoinqt_a-moc_peertablemodel.o: qt/moc_peertablemodel.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1217,7 +1217,7 @@ qt/peertablemodel.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 
@@ -2701,7 +2701,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

@@ -1,5 +1,5 @@
 crypto/crypto_libbitcoin_crypto_a-chacha20.o: crypto/chacha20.cpp \
- /usr/include/stdc-predef.h crypto/common.h config/altecoin-config.h \
+ /usr/include/stdc-predef.h crypto/common.h config/bontecoin-config.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -58,7 +58,7 @@ crypto/crypto_libbitcoin_crypto_a-chacha20.o: crypto/chacha20.cpp \
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
 

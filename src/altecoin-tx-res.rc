@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Altecoin"
-            VALUE "FileDescription",    "altecoin-tx (CLI Altecoin transaction editor utility)"
+            VALUE "CompanyName",        "Bontecoin"
+            VALUE "FileDescription",    "bontecoin-tx (CLI Bontecoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "altecoin-tx"
+            VALUE "InternalName",       "bontecoin-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "altecoin-tx.exe"
-            VALUE "ProductName",        "altecoin-tx"
+            VALUE "OriginalFilename",   "bontecoin-tx.exe"
+            VALUE "ProductName",        "bontecoin-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

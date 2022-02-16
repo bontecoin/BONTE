@@ -1,6 +1,6 @@
 [Protocol]
-exec=altecoin-qt '%u'
-protocol=altecoin
+exec=bontecoin-qt '%u'
+protocol=bontecoin
 input=none
 output=none
 helper=true

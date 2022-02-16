@@ -750,11 +750,11 @@ qt/qt_libbitcoinqt_a-zpivcontroldialog.o: qt/zpivcontroldialog.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1310,7 +1310,7 @@ qt/qt_libbitcoinqt_a-zpivcontroldialog.o: qt/zpivcontroldialog.cpp \
  /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
  /usr/include/boost/detail/atomic_undef_macros.hpp \
  /usr/include/boost/detail/atomic_redef_macros.hpp qt/walletmodel.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
  qt/paymentrequestplus.h qt/paymentrequest.pb.h \
@@ -3138,7 +3138,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3164,7 +3164,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4486,7 +4486,7 @@ qt/walletmodel.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

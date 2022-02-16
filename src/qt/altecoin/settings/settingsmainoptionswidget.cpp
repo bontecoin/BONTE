@@ -1,20 +1,20 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingsmainoptionswidget.h"
-#include "qt/altecoin/settings/forms/ui_settingsmainoptionswidget.h"
+#include "qt/bontecoin/settings/settingsmainoptionswidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingsmainoptionswidget.h"
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #endif
 
 #include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
 #include "main.h" // for MAX_SCRIPTCHECK_THREADS
 #include "netbase.h"
@@ -32,7 +32,7 @@
 #include <QTimer>
 
 
-SettingsMainOptionsWidget::SettingsMainOptionsWidget(AltecoinGUI* _window, QWidget *parent) :
+SettingsMainOptionsWidget::SettingsMainOptionsWidget(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsMainOptionsWidget)
 {
@@ -61,7 +61,7 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(AltecoinGUI* _window, QWidg
     ui->labelTitleThreads->setProperty("cssClass", "text-main-settings");
 
     // Switch
-    ui->pushSwitchStart->setText(tr("Start Altecoin on system login"));
+    ui->pushSwitchStart->setText(tr("Start Bontecoin on system login"));
     ui->pushSwitchStart->setProperty("cssClass", "btn-switch");
 
     // Combobox

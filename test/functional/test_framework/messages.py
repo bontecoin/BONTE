@@ -515,7 +515,7 @@ class CBlockHeader():
         self.calc_sha256()
         return self.sha256
 
-    # Altecoin
+    # Bontecoin
     def solve_stake(self, stakeInputs):
         target0 = uint256_from_compact(self.nBits)
         loop = True

@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2020 The Altecoin developers
+// Copyright (c) 2017-2020 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,7 +36,7 @@ ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
     ui->frame->setProperty("cssClass", "container-dialog");
 
     // Title
-    ui->labelTitle->setText(tr("Select zALTC Denominations to Spend"));
+    ui->labelTitle->setText(tr("Select zBONTE Denominations to Spend"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
 
@@ -151,9 +151,9 @@ void ZPivControlDialog::updateList()
             if(nConfirmations < Params().Zerocoin_MintRequiredConfirmations())
                 strReason = strprintf("Needs %d more confirmations", Params().Zerocoin_MintRequiredConfirmations() - nConfirmations);
             else if (model->getEncryptionStatus() == WalletModel::EncryptionStatus::Locked)
-                strReason = "Your wallet is locked. Impossible to spend zALTC.";
+                strReason = "Your wallet is locked. Impossible to spend zBONTE.";
             else if (!mint.isSeedCorrect)
-                strReason = "The zALTC seed used to mint this zALTC is not the same as currently hold in the wallet";
+                strReason = "The zBONTE seed used to mint this zBONTE is not the same as currently hold in the wallet";
             else
                 strReason = strprintf("Needs %d more mints added to network", Params().Zerocoin_RequiredAccumulation());
 

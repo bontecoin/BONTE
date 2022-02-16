@@ -1,4 +1,4 @@
-test/test_test_altecoin-random_tests.o: test/random_tests.cpp \
+test/test_test_bontecoin-random_tests.o: test/random_tests.cpp \
  /usr/include/stdc-predef.h random.h crypto/chacha20.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -49,7 +49,7 @@ test/test_test_altecoin-random_tests.o: test/random_tests.cpp \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/7/bits/std_abs.h crypto/common.h \
- config/altecoin-config.h /usr/include/string.h /usr/include/strings.h \
+ config/bontecoin-config.h /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
@@ -130,8 +130,8 @@ test/test_test_altecoin-random_tests.o: test/random_tests.cpp \
  /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- test/test_altecoin.h txdb.h leveldbwrapper.h clientversion.h \
- config/altecoin-config.h serialize.h /usr/include/c++/7/algorithm \
+ test/test_bontecoin.h txdb.h leveldbwrapper.h clientversion.h \
+ config/bontecoin-config.h serialize.h /usr/include/c++/7/algorithm \
  /usr/include/c++/7/utility /usr/include/c++/7/bits/stl_relops.h \
  /usr/include/c++/7/bits/stl_algo.h \
  /usr/include/c++/7/bits/algorithmfwd.h \
@@ -1434,7 +1434,7 @@ crypto/chacha20.h:
 
 crypto/common.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/string.h:
 
@@ -1654,7 +1654,7 @@ uint256.h:
 
 /usr/include/c++/7/bits/vector.tcc:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
@@ -1662,7 +1662,7 @@ leveldbwrapper.h:
 
 clientversion.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 serialize.h:
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,8 +28,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Altecoin (http://www.altecoin.org),
- * which enables instant payments to anyone, anywhere in the world. Altecoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Bontecoin (http://www.bontecoin.org),
+ * which enables instant payments to anyone, anywhere in the world. Bontecoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -62,18 +62,18 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/altecoin.conf are parsed in qt/altecoin.cpp's main()
+    // If Qt is used, parameters/bontecoin.conf are parsed in qt/bontecoin.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Altecoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Bontecoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  altecoind [options]                     " + _("Start Altecoin Core Daemon") + "\n";
+                        "  bontecoind [options]                     " + _("Start Bontecoin Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -109,17 +109,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "altecoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "bontecoin:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in altecoind anymore. Use the altecoin-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in bontecoind anymore. Use the bontecoin-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Altecoin server starting\n");
+            fprintf(stdout, "Bontecoin server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -161,7 +161,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect altecoind signal handlers
+    // Connect bontecoind signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

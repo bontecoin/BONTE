@@ -653,11 +653,11 @@ libbitcoin_server_a-blocksignature.o: blocksignature.cpp \
  primitives/transaction.h amount.h serialize.h libzerocoin/CoinSpend.h \
  streams.h allocators.h utilstrencodings.h libzerocoin/Accumulator.h \
  libzerocoin/Coin.h libzerocoin/Denominations.h libzerocoin/Params.h \
- libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1031,7 +1031,7 @@ libbitcoin_server_a-blocksignature.o: blocksignature.cpp \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp keystore.h main.h \
- config/altecoin-config.h amount.h chain.h chainparams.h \
+ config/bontecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h protocol.h netbase.h compat.h \
  libzerocoin/Params.h pow.h timedata.h tinyformat.h util.h coins.h \
  compressor.h primitives/transaction.h script/script.h script/standard.h \
@@ -2707,7 +2707,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2735,7 +2735,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3583,7 +3583,7 @@ keystore.h:
 
 main.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 amount.h:
 

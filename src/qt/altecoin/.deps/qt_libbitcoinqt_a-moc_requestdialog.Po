@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_requestdialog.o: \
- qt/altecoin/moc_requestdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/requestdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_requestdialog.o: \
+ qt/bontecoin/moc_requestdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/requestdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_requestdialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h qt/walletmodel.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -780,11 +780,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_requestdialog.o: \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1336,11 +1336,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_requestdialog.o: \
  clientversion.h sync.h /usr/include/db_cxx.h /usr/include/db.h \
  /usr/include/inttypes.h zpiv/zpivtracker.h zpiv/zpivmodule.h \
  zpiv/zpivwallet.h zpiv/mintpool.h wallet/wallet.h \
- qt/altecoin/snackbar.h
+ qt/bontecoin/snackbar.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/requestdialog.h:
+qt/bontecoin/requestdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -1954,7 +1954,7 @@ qt/walletmodel.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 
@@ -3126,7 +3126,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3150,7 +3150,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4544,4 +4544,4 @@ zpiv/mintpool.h:
 
 wallet/wallet.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:

@@ -1,6 +1,6 @@
 zpiv/libbitcoin_wallet_a-zpivmodule.o: zpiv/zpivmodule.cpp \
  /usr/include/stdc-predef.h zpiv/zpivmodule.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  /usr/include/c++/7/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -641,7 +641,7 @@ zpiv/libbitcoin_wallet_a-zpivmodule.o: zpiv/zpivmodule.cpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp serialize.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- libzerocoin/ZerocoinDefines.h amount.h util.h config/altecoin-config.h \
+ libzerocoin/ZerocoinDefines.h amount.h util.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -1170,7 +1170,7 @@ zpiv/zpivmodule.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2666,7 +2666,7 @@ amount.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

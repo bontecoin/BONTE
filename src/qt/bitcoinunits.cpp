@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(ALTC);
-    unitlist.append(mALTC);
-    unitlist.append(uALTC);
+    unitlist.append(BONTE);
+    unitlist.append(mBONTE);
+    unitlist.append(uBONTE);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case ALTC:
-    case mALTC:
-    case uALTC:
+    case BONTE:
+    case mBONTE:
+    case uBONTE:
         return true;
     default:
         return false;
@@ -42,12 +42,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case ALTC:
-        return QString("altecoin");
-    case mALTC:
-        return QString("maltecoin");
-    case uALTC:
-        return QString::fromUtf8("ualtecoin");
+    case BONTE:
+        return QString("bontecoin");
+    case mBONTE:
+        return QString("mbontecoin");
+    case uBONTE:
+        return QString::fromUtf8("ubontecoin");
     default:
         return QString("???");
     }
@@ -59,23 +59,23 @@ QString BitcoinUnits::name(int unit, bool isZpiv)
     if(isZpiv) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ALTC:
-            return z + QString("ALTC");
-        case mALTC:
-            return z + QString("mALTC");
-        case uALTC:
-            return z + QString::fromUtf8("μALTC");
+        case BONTE:
+            return z + QString("BONTE");
+        case mBONTE:
+            return z + QString("mBONTE");
+        case uBONTE:
+            return z + QString::fromUtf8("μBONTE");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ALTC:
-            return z + QString("tALTC");
-        case mALTC:
-            return z + QString("mtALTC");
-        case uALTC:
-            return z + QString::fromUtf8("μtALTC");
+        case BONTE:
+            return z + QString("tBONTE");
+        case mBONTE:
+            return z + QString("mtBONTE");
+        case uBONTE:
+            return z + QString::fromUtf8("μtBONTE");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ALTC:
-            return QString("ALTC");
-        case mALTC:
-            return QString("Milli-ALTC (1 / 1" THIN_SP_UTF8 "000)");
-        case uALTC:
-            return QString("Micro-ALTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case BONTE:
+            return QString("BONTE");
+        case mBONTE:
+            return QString("Milli-BONTE (1 / 1" THIN_SP_UTF8 "000)");
+        case uBONTE:
+            return QString("Micro-BONTE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ALTC:
-            return QString("TestALTCs");
-        case mALTC:
-            return QString("Milli-TestALTC (1 / 1" THIN_SP_UTF8 "000)");
-        case uALTC:
-            return QString("Micro-TestALTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case BONTE:
+            return QString("TestBONTEs");
+        case mBONTE:
+            return QString("Milli-TestBONTE (1 / 1" THIN_SP_UTF8 "000)");
+        case uBONTE:
+            return QString("Micro-TestBONTE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case ALTC:
+    case BONTE:
         return 100000000;
-    case mALTC:
+    case mBONTE:
         return 100000;
-    case uALTC:
+    case uBONTE:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case ALTC:
+    case BONTE:
         return 8;
-    case mALTC:
+    case mBONTE:
         return 5;
-    case uALTC:
+    case uBONTE:
         return 2;
     default:
         return 0;
@@ -212,7 +212,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZALTC)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBONTE)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -229,12 +229,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZALTC);
+    return result + QString(" ") + name(unit, isZBONTE);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZALTC)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBONTE)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZALTC));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZBONTE));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

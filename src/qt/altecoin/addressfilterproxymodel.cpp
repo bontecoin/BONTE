@@ -1,8 +1,8 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/addressfilterproxymodel.h"
+#include "qt/bontecoin/addressfilterproxymodel.h"
 #include <iostream>
 
 bool AddressFilterProxyModel::filterAcceptsRow(int row, const QModelIndex& parent) const

@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
-Name=Altecoin Core
-Comment=Altecoin P2P Cryptocurrency
-Exec=altecoin-qt %u
+Name=Bontecoin Core
+Comment=Bontecoin P2P Cryptocurrency
+Exec=bontecoin-qt %u
 Terminal=false
 Type=Application
-Icon=altecoin128
-MimeType=x-scheme-handler/altecoin;
+Icon=bontecoin128
+MimeType=x-scheme-handler/bontecoin;
 Categories=Office;Finance;
-StartupWMClass=Altecoin-qt
-Name[en_US]=altecoin-qt.desktop
+StartupWMClass=Bontecoin-qt
+Name[en_US]=bontecoin-qt.desktop

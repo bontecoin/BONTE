@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,10 +6,10 @@
 #define CONTACTSDROPDOWN_H
 
 #include "addresstablemodel.h"
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/contactdropdownrow.h"
-#include "qt/altecoin/furabstractlistitemdelegate.h"
-#include "qt/altecoin/addressfilterproxymodel.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/contactdropdownrow.h"
+#include "qt/bontecoin/furabstractlistitemdelegate.h"
+#include "qt/bontecoin/addressfilterproxymodel.h"
 #include <QListView>
 #include <QObject>
 #include <QWidget>

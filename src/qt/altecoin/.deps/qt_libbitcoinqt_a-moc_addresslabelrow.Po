@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_addresslabelrow.o: \
- qt/altecoin/moc_addresslabelrow.cpp /usr/include/stdc-predef.h \
- qt/altecoin/addresslabelrow.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_addresslabelrow.o: \
+ qt/bontecoin/moc_addresslabelrow.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/addresslabelrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,7 +256,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_addresslabelrow.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/addresslabelrow.h:
+qt/bontecoin/addresslabelrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

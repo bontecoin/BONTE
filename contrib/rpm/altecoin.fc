@@ -1,8 +1,8 @@
-/usr/bin/altecoin-cli		--	gen_context(system_u:object_r:altecoin_exec_t,s0)
-/usr/sbin/altecoind		--	gen_context(system_u:object_r:altecoin_exec_t,s0)
-/usr/lib(64)?/altecoin/altecoind		--	gen_context(system_u:object_r:altecoin_exec_t,s0)
+/usr/bin/bontecoin-cli		--	gen_context(system_u:object_r:bontecoin_exec_t,s0)
+/usr/sbin/bontecoind		--	gen_context(system_u:object_r:bontecoin_exec_t,s0)
+/usr/lib(64)?/bontecoin/bontecoind		--	gen_context(system_u:object_r:bontecoin_exec_t,s0)
 
-/etc/altecoin(/.*)?		gen_context(system_u:object_r:altecoin_conf_t,s0)
-/var/lib/altecoin(/.*)?		gen_context(system_u:object_r:altecoin_var_lib_t,s0)
+/etc/bontecoin(/.*)?		gen_context(system_u:object_r:bontecoin_conf_t,s0)
+/var/lib/bontecoin(/.*)?		gen_context(system_u:object_r:bontecoin_var_lib_t,s0)
 
-(/var)?/run/altecoind(/.*)?   gen_context(system_u:object_r:altecoin_var_run_t,s0)
+(/var)?/run/bontecoind(/.*)?   gen_context(system_u:object_r:bontecoin_var_run_t,s0)

@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2018 The Altecoin developers
+// Copyright (c) 2017-2018 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_UINT512_H
-#define Altecoin_UINT512_H
+#ifndef Bontecoin_UINT512_H
+#define Bontecoin_UINT512_H
 
 #include "arith_uint256.h"
 #include "uint256.h"
@@ -42,4 +42,4 @@ inline uint512 uint512S(const char* str)
     return rv;
 }
 
-#endif // Altecoin_UINT512_H
+#endif // Bontecoin_UINT512_H

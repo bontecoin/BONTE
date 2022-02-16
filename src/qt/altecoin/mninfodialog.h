@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +6,7 @@
 #define MNINFODIALOG_H
 
 #include <QDialog>
-#include "qt/altecoin/snackbar.h"
+#include "qt/bontecoin/snackbar.h"
 
 class WalletModel;
 

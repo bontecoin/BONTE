@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/settings/settingswalletoptionswidget.h"
-#include "qt/altecoin/settings/forms/ui_settingswalletoptionswidget.h"
+#include "qt/bontecoin/settings/settingswalletoptionswidget.h"
+#include "qt/bontecoin/settings/forms/ui_settingswalletoptionswidget.h"
 #include <QListView>
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/qtutils.h"
 
-SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(AltecoinGUI* _window, QWidget *parent) :
+SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(BontecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletOptionsWidget)
 {

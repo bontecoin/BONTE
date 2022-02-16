@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
- qt/altecoin/moc_receivewidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/receivewidget.h qt/altecoin/pwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
+ qt/bontecoin/moc_receivewidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/receivewidget.h qt/bontecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -257,7 +257,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/addresstablemodel.h \
+ qt/bontecoin/prunnable.h qt/addresstablemodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
@@ -266,7 +266,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
  /usr/include/c++/7/bits/refwrap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
+ qt/bontecoin/furabstractlistitemdelegate.h qt/bontecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
@@ -294,7 +294,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/altecoin/addressfilterproxymodel.h \
+ qt/bontecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -305,9 +305,9 @@ qt/altecoin/qt_libbitcoinqt_a-moc_receivewidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/receivewidget.h:
+qt/bontecoin/receivewidget.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -919,7 +919,7 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 qt/addresstablemodel.h:
 
@@ -941,9 +941,9 @@ qt/addresstablemodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -999,7 +999,7 @@ qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/altecoin/addressfilterproxymodel.h:
+qt/bontecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 

@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_snackbar.o: \
- qt/altecoin/moc_snackbar.cpp /usr/include/stdc-predef.h \
- qt/altecoin/snackbar.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_snackbar.o: \
+ qt/bontecoin/moc_snackbar.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_snackbar.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

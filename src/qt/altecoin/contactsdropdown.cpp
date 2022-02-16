@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/contactsdropdown.h"
+#include "qt/bontecoin/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/altecoin/addresslabelrow.h"
-#include "qt/altecoin/contactdropdownrow.h"
-#include "qt/altecoin/qtutils.h"
-#include "qt/altecoin/furlistrow.h"
+#include "qt/bontecoin/addresslabelrow.h"
+#include "qt/bontecoin/contactdropdownrow.h"
+#include "qt/bontecoin/qtutils.h"
+#include "qt/bontecoin/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 

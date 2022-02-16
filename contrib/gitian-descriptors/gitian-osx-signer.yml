@@ -1,5 +1,5 @@
 ---
-name: "altecoin-dmg-signer"
+name: "bontecoin-dmg-signer"
 distro: "ubuntu"
 suites:
 - "bionic"
@@ -8,10 +8,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/altecoin-altc/altecoin-detached-sigs.git"
+- "url": "https://github.com/bontecoin-bonte/bontecoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "altecoin-osx-unsigned.tar.gz"
+- "bontecoin-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -30,8 +30,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=altecoin-osx-unsigned.tar.gz
-  SIGNED=altecoin-osx-signed.dmg
+  UNSIGNED=bontecoin-osx-unsigned.tar.gz
+  SIGNED=bontecoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

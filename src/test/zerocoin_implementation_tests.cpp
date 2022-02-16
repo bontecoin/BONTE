@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@
 #include "wallet/wallet.h"
 #include "zpiv/zpivwallet.h"
 #include "zpivchain.h"
-#include "test_altecoin.h"
+#include "test_bontecoin.h"
 
 
 extern bool DecodeHexTx(CTransaction& tx, const std::string& strHexTx);
@@ -474,7 +474,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     CWalletDB walletdb(strWalletFile, "cr+");
 
     CWallet wallet(strWalletFile);
-    CzALTCWallet zWallet(wallet.strWalletFile);
+    CzBONTEWallet zWallet(wallet.strWalletFile);
     zWallet.SetMasterSeed(seedMaster);
     wallet.setZWallet(&zWallet);
 
@@ -486,7 +486,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         libzerocoin::PrivateCoin coin(Params().Zerocoin_Params(false), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZALTC(denom, coin, dMint);
+        zWallet.GenerateDeterministicZBONTE(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

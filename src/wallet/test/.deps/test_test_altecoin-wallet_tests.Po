@@ -1,4 +1,4 @@
-wallet/test/test_test_altecoin-wallet_tests.o: \
+wallet/test/test_test_bontecoin-wallet_tests.o: \
  wallet/test/wallet_tests.cpp /usr/include/stdc-predef.h wallet/wallet.h \
  addressbook.h /usr/include/c++/7/map /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/bits/stl_algobase.h \
@@ -637,11 +637,11 @@ wallet/test/test_test_altecoin-wallet_tests.o: \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1304,7 +1304,7 @@ wallet/test/test_test_altecoin-wallet_tests.o: \
  /usr/include/boost/mpl/for_each.hpp \
  /usr/include/boost/mpl/aux_/unwrap.hpp \
  /usr/include/boost/utility/value_init.hpp \
- /usr/include/boost/test/tree/global_fixture.hpp test/test_altecoin.h \
+ /usr/include/boost/test/tree/global_fixture.hpp test/test_bontecoin.h \
  txdb.h leveldbwrapper.h clientversion.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
@@ -2806,7 +2806,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -2832,7 +2832,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4418,7 +4418,7 @@ zpiv/mintpool.h:
 
 /usr/include/boost/test/tree/global_fixture.hpp:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 

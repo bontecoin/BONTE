@@ -1,11 +1,11 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef FURABSTRACTLISTITEMDELEGATE_H
 #define FURABSTRACTLISTITEMDELEGATE_H
 
-#include "qt/altecoin/furlistrow.h"
+#include "qt/bontecoin/furlistrow.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>

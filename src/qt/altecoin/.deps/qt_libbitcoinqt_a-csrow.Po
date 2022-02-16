@@ -1,5 +1,5 @@
-qt/altecoin/qt_libbitcoinqt_a-csrow.o: qt/altecoin/csrow.cpp \
- /usr/include/stdc-predef.h qt/altecoin/csrow.h \
+qt/bontecoin/qt_libbitcoinqt_a-csrow.o: qt/bontecoin/csrow.cpp \
+ /usr/include/stdc-predef.h qt/bontecoin/csrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -252,7 +252,7 @@ qt/altecoin/qt_libbitcoinqt_a-csrow.o: qt/altecoin/csrow.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/altecoin/forms/ui_csrow.h \
+ qt/bontecoin/forms/ui_csrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
@@ -312,7 +312,7 @@ qt/altecoin/qt_libbitcoinqt_a-csrow.o: qt/altecoin/csrow.cpp \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/csrow.h:
+qt/bontecoin/csrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -916,7 +916,7 @@ qt/altecoin/csrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/altecoin/forms/ui_csrow.h:
+qt/bontecoin/forms/ui_csrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 

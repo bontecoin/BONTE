@@ -2,15 +2,15 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=Altecoin Core
-Comment=Altecoin Core QT main network
-GenericName=Altecoin Digital Currency QT client main network
-Exec=altecoin-core.qt %u
+Name=Bontecoin Core
+Comment=Bontecoin Core QT main network
+GenericName=Bontecoin Digital Currency QT client main network
+Exec=bontecoin-core.qt %u
 Terminal=false
 Type=Application
-Icon=${SNAP}/share/pixmaps/altecoin.png
-MimeType=x-scheme-handler/altecoin;
+Icon=${SNAP}/share/pixmaps/bontecoin.png
+MimeType=x-scheme-handler/bontecoin;
 Categories=X-Office;X-Finance;
-Keywords=internet;altecoin;zpiv;piv;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Keywords=internet;bontecoin;zpiv;piv;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
 Version=1.0
-Name[en_US]=altecoin-qt.desktop
+Name[en_US]=bontecoin-qt.desktop

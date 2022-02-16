@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
- qt/altecoin/welcomecontentwidget.cpp /usr/include/stdc-predef.h \
- qt/altecoin/welcomecontentwidget.h \
+qt/bontecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
+ qt/bontecoin/welcomecontentwidget.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/welcomecontentwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -260,7 +260,7 @@ qt/altecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- qt/altecoin/forms/ui_welcomecontentwidget.h \
+ qt/bontecoin/forms/ui_welcomecontentwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
@@ -320,7 +320,7 @@ qt/altecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- qt/altecoin/pfborderimage.h \
+ qt/bontecoin/pfborderimage.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
@@ -341,7 +341,7 @@ qt/altecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
  serialize.h /usr/include/assert.h /usr/include/c++/7/set \
  /usr/include/c++/7/bits/stl_set.h /usr/include/c++/7/bits/stl_multiset.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
- qt/askpassphrasedialog.h qt/altecoin/prunnable.h allocators.h \
+ qt/askpassphrasedialog.h qt/bontecoin/prunnable.h allocators.h \
  support/cleanse.h /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -933,7 +933,7 @@ qt/altecoin/qt_libbitcoinqt_a-welcomecontentwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/welcomecontentwidget.h:
+qt/bontecoin/welcomecontentwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -1551,7 +1551,7 @@ qt/altecoin/welcomecontentwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h:
 
-qt/altecoin/forms/ui_welcomecontentwidget.h:
+qt/bontecoin/forms/ui_welcomecontentwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 
@@ -1673,7 +1673,7 @@ qt/altecoin/forms/ui_welcomecontentwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
-qt/altecoin/pfborderimage.h:
+qt/bontecoin/pfborderimage.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:
 
@@ -1731,7 +1731,7 @@ sporkid.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 

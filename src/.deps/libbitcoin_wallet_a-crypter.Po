@@ -984,11 +984,11 @@ libbitcoin_wallet_a-crypter.o: crypter.cpp /usr/include/stdc-predef.h \
  primitives/transaction.h amount.h serialize.h libzerocoin/CoinSpend.h \
  streams.h allocators.h utilstrencodings.h libzerocoin/Accumulator.h \
  libzerocoin/Coin.h libzerocoin/Denominations.h libzerocoin/Params.h \
- libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h \
- libzerocoin/ZerocoinDefines.h util.h config/altecoin-config.h compat.h \
+ libzerocoin/ZerocoinDefines.h util.h config/bontecoin-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -3446,7 +3446,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3474,7 +3474,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 

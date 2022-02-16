@@ -883,7 +883,7 @@ libbitcoin_server_a-torcontrol.o: torcontrol.cpp \
  /usr/include/boost/type_traits/has_trivial_constructor.hpp \
  /usr/include/boost/detail/atomic_undef_macros.hpp \
  /usr/include/boost/detail/atomic_redef_macros.hpp utilstrencodings.h \
- allocators.h support/cleanse.h netbase.h config/altecoin-config.h \
+ allocators.h support/cleanse.h netbase.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -911,7 +911,7 @@ libbitcoin_server_a-torcontrol.o: torcontrol.cpp \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h serialize.h \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h net.h \
- bloom.h libzerocoin/bignum.h config/altecoin-config.h \
+ bloom.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h /usr/include/byteswap.h uint256.h hash.h \
@@ -3224,7 +3224,7 @@ support/cleanse.h:
 
 netbase.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3306,7 +3306,7 @@ bloom.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 

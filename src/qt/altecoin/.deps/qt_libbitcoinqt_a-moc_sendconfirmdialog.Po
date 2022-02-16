@@ -1,6 +1,6 @@
-qt/altecoin/qt_libbitcoinqt_a-moc_sendconfirmdialog.o: \
- qt/altecoin/moc_sendconfirmdialog.cpp /usr/include/stdc-predef.h \
- qt/altecoin/sendconfirmdialog.h \
+qt/bontecoin/qt_libbitcoinqt_a-moc_sendconfirmdialog.o: \
+ qt/bontecoin/moc_sendconfirmdialog.cpp /usr/include/stdc-predef.h \
+ qt/bontecoin/sendconfirmdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -255,7 +255,7 @@ qt/altecoin/qt_libbitcoinqt_a-moc_sendconfirmdialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  qt/walletmodeltransaction.h qt/walletmodel.h qt/askpassphrasedialog.h \
- qt/altecoin/prunnable.h allocators.h support/cleanse.h \
+ qt/bontecoin/prunnable.h allocators.h support/cleanse.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -779,11 +779,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_sendconfirmdialog.o: \
  libzerocoin/Denominations.h libzerocoin/SpendType.h sporkid.h \
  libzerocoin/CoinSpend.h streams.h allocators.h utilstrencodings.h \
  libzerocoin/Accumulator.h libzerocoin/Coin.h libzerocoin/Denominations.h \
- libzerocoin/Params.h libzerocoin/bignum.h config/altecoin-config.h \
+ libzerocoin/Params.h libzerocoin/bignum.h config/bontecoin-config.h \
  /usr/include/x86_64-linux-gnu/gmp.h serialize.h uint256.h version.h \
  random.h crypto/chacha20.h crypto/common.h compat/endian.h \
  compat/byteswap.h libzerocoin/ZerocoinDefines.h util.h \
- config/altecoin-config.h compat.h /usr/include/arpa/inet.h \
+ config/bontecoin-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1335,11 +1335,11 @@ qt/altecoin/qt_libbitcoinqt_a-moc_sendconfirmdialog.o: \
  zpiv/zpivwallet.h zpiv/mintpool.h wallet/wallet.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
- qt/altecoin/snackbar.h
+ qt/bontecoin/snackbar.h
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/sendconfirmdialog.h:
+qt/bontecoin/sendconfirmdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -1951,7 +1951,7 @@ qt/walletmodel.h:
 
 qt/askpassphrasedialog.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
 allocators.h:
 
@@ -3123,7 +3123,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3147,7 +3147,7 @@ libzerocoin/ZerocoinDefines.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -4539,4 +4539,4 @@ wallet/wallet.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:
 
-qt/altecoin/snackbar.h:
+qt/bontecoin/snackbar.h:

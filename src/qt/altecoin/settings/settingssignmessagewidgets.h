@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,8 +6,8 @@
 #define SETTINGSSIGNMESSAGEWIDGETS_H
 
 #include <QWidget>
-#include "qt/altecoin/pwidget.h"
-#include "qt/altecoin/contactsdropdown.h"
+#include "qt/bontecoin/pwidget.h"
+#include "qt/bontecoin/contactsdropdown.h"
 
 namespace Ui {
 class SettingsSignMessageWidgets;
@@ -18,7 +18,7 @@ class SettingsSignMessageWidgets : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsSignMessageWidgets(AltecoinGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsSignMessageWidgets(BontecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsSignMessageWidgets();
 
     void setAddress_SM(const QString& address);

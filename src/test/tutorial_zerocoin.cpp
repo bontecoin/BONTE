@@ -9,7 +9,7 @@
 * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
 * @license    This project is released under the MIT license.
 **/
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 
 #include <boost/test/unit_test.hpp>
 #include <string>
@@ -24,7 +24,7 @@
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
-#include "test_altecoin.h"
+#include "test_bontecoin.h"
 
 
 #define COINS_TO_ACCUMULATE     5

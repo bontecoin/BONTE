@@ -209,7 +209,7 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>AltecoinGUI</name>
+    <name>BontecoinGUI</name>
     </context>
 <context>
     <name>PWidget</name>
@@ -349,7 +349,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>altecoin-core</name>
+    <name>bontecoin-core</name>
     </context>
 <context>
     <name>send</name>

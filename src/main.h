@@ -4,7 +4,7 @@
 // Copyright (c) 2011-2013 The PPCoin developers
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
-// Copyright (c) 2020-2021 The Altecoin developers
+// Copyright (c) 2020-2021 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/altecoin-config.h"
+#include "config/bontecoin-config.h"
 #endif
 
 #include "amount.h"
@@ -239,7 +239,7 @@ bool GetOutput(const uint256& hash, unsigned int index, CValidationState& state,
 
 // ***TODO***
 double ConvertBitsToDouble(unsigned int nBits);
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZALTCStake);
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBONTEStake);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
 bool ActivateBestChain(CValidationState& state, CBlock* pblock = NULL, bool fAlreadyChecked = false);
@@ -361,9 +361,9 @@ bool IsTransactionInChain(const uint256& txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
 bool ValidOutPoint(const COutPoint& out, int nHeight);
 void AddWrappedSerialsInflation();
-void RecalculateZALTCSpent();
-void RecalculateZALTCMinted();
-bool RecalculateALTCSupply(int nHeightStart);
+void RecalculateZBONTESpent();
+void RecalculateZBONTEMinted();
+bool RecalculateBONTESupply(int nHeightStart);
 bool ReindexAccumulators(std::list<uint256>& listMissingCheckpoints, std::string& strError);
 
 // Fake Serial attack Range

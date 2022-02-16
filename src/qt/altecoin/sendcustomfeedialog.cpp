@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/altecoin/sendcustomfeedialog.h"
-#include "qt/altecoin/forms/ui_sendcustomfeedialog.h"
-#include "qt/altecoin/qtutils.h"
+#include "qt/bontecoin/sendcustomfeedialog.h"
+#include "qt/bontecoin/forms/ui_sendcustomfeedialog.h"
+#include "qt/bontecoin/qtutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "guiutil.h"
@@ -37,7 +37,7 @@ SendCustomFeeDialog::SendCustomFeeDialog(QWidget *parent) :
 
     // Custom
     setCssProperty(ui->labelCustomFee, "label-subtitle-dialog");
-    ui->lineEditCustomFee->setPlaceholderText("0.000001 ALTC");
+    ui->lineEditCustomFee->setPlaceholderText("0.000001 BONTE");
     initCssEditLine(ui->lineEditCustomFee, true);
 
     // Buttons

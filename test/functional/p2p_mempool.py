@@ -9,10 +9,10 @@ filters are not enabled.
 """
 
 from test_framework.mininode import *
-from test_framework.test_framework import AltecoinTestFramework
+from test_framework.test_framework import BontecoinTestFramework
 from test_framework.util import *
 
-class P2PMempoolTests(AltecoinTestFramework):
+class P2PMempoolTests(BontecoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

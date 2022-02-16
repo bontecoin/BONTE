@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The Altecoin developers
+// Copyright (c) 2017-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_BLOCKSIGNATURE_H
-#define Altecoin_BLOCKSIGNATURE_H
+#ifndef Bontecoin_BLOCKSIGNATURE_H
+#define Bontecoin_BLOCKSIGNATURE_H
 
 #include "key.h"
 #include "primitives/block.h"
@@ -13,4 +13,4 @@ bool SignBlockWithKey(CBlock& block, const CKey& key);
 bool SignBlock(CBlock& block, const CKeyStore& keystore);
 bool CheckBlockSignature(const CBlock& block);
 
-#endif //Altecoin_BLOCKSIGNATURE_H
+#endif //Bontecoin_BLOCKSIGNATURE_H

@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2019 The Altecoin developers
+// Copyright (c) 2015-2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Altecoin_SERIALIZE_H
-#define Altecoin_SERIALIZE_H
+#ifndef Bontecoin_SERIALIZE_H
+#define Bontecoin_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -954,4 +954,4 @@ public:
     }
 };
 
-#endif // Altecoin_SERIALIZE_H
+#endif // Bontecoin_SERIALIZE_H

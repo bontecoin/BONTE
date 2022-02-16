@@ -1,7 +1,7 @@
-qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisendwidget.o: \
- qt/altecoin/settings/moc_settingsmultisendwidget.cpp \
+qt/bontecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisendwidget.o: \
+ qt/bontecoin/settings/moc_settingsmultisendwidget.cpp \
  /usr/include/stdc-predef.h \
- qt/altecoin/settings/settingsmultisendwidget.h \
+ qt/bontecoin/settings/settingsmultisendwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -259,13 +259,13 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisendwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
  /usr/include/c++/7/functional /usr/include/c++/7/bits/std_function.h \
- /usr/include/c++/7/bits/refwrap.h qt/altecoin/pwidget.h \
+ /usr/include/c++/7/bits/refwrap.h qt/bontecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
- qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/bontecoin/prunnable.h qt/bontecoin/furabstractlistitemdelegate.h \
+ qt/bontecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -295,7 +295,7 @@ qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmultisendwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/altecoin/settings/settingsmultisendwidget.h:
+qt/bontecoin/settings/settingsmultisendwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -913,7 +913,7 @@ qt/altecoin/settings/settingsmultisendwidget.h:
 
 /usr/include/c++/7/bits/refwrap.h:
 
-qt/altecoin/pwidget.h:
+qt/bontecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -923,11 +923,11 @@ qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/altecoin/prunnable.h:
+qt/bontecoin/prunnable.h:
 
-qt/altecoin/furabstractlistitemdelegate.h:
+qt/bontecoin/furabstractlistitemdelegate.h:
 
-qt/altecoin/furlistrow.h:
+qt/bontecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 

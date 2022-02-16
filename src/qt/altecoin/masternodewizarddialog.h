@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Altecoin developers
+// Copyright (c) 2019 The Bontecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,9 +7,9 @@
 
 #include <QDialog>
 #include "walletmodel.h"
-#include "qt/altecoin/snackbar.h"
+#include "qt/bontecoin/snackbar.h"
 #include "masternodeconfig.h"
-#include "qt/altecoin/pwidget.h"
+#include "qt/bontecoin/pwidget.h"
 
 class WalletModel;
 

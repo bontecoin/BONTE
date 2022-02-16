@@ -1,4 +1,4 @@
-test/test_test_altecoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp \
+test/test_test_bontecoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp \
  /usr/include/stdc-predef.h /usr/include/boost/test/unit_test.hpp \
  /usr/include/boost/test/test_tools.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -915,13 +915,13 @@ test/test_test_altecoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp \
  /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
  /usr/include/c++/7/bits/stl_multiset.h libzerocoin/Denominations.h \
  libzerocoin/SpendType.h sporkid.h libzerocoin/bignum.h \
- config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/bontecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h uint256.h libzerocoin/ParamGeneration.h \
  libzerocoin/Params.h libzerocoin/bignum.h libzerocoin/ZerocoinDefines.h \
  libzerocoin/Denominations.h libzerocoin/Coin.h \
- libzerocoin/Denominations.h amount.h util.h config/altecoin-config.h \
+ libzerocoin/Denominations.h amount.h util.h config/bontecoin-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -983,7 +983,7 @@ test/test_test_altecoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp \
  libzerocoin/Coin.h libzerocoin/AccumulatorProofOfKnowledge.h \
  libzerocoin/Commitment.h libzerocoin/SerialNumberSignatureOfKnowledge.h \
  /usr/include/c++/7/bitset hash.h libzerocoin/SpendType.h pubkey.h \
- libzerocoin/Accumulator.h test/test_altecoin.h txdb.h leveldbwrapper.h \
+ libzerocoin/Accumulator.h test/test_bontecoin.h txdb.h leveldbwrapper.h \
  clientversion.h streams.h util.h leveldb/include/leveldb/db.h \
  leveldb/include/leveldb/iterator.h leveldb/include/leveldb/slice.h \
  leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
@@ -3376,7 +3376,7 @@ sporkid.h:
 
 libzerocoin/bignum.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -3418,7 +3418,7 @@ amount.h:
 
 util.h:
 
-config/altecoin-config.h:
+config/bontecoin-config.h:
 
 compat.h:
 
@@ -3610,7 +3610,7 @@ pubkey.h:
 
 libzerocoin/Accumulator.h:
 
-test/test_altecoin.h:
+test/test_bontecoin.h:
 
 txdb.h:
 
