@@ -185,11 +185,11 @@ public:
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 10000000000 * COIN;
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 500;
+        nLastPOWBlock = 1000;
         nBontecoinBadBlockTime = 4070908800; // Skip nBit validation of Block 259201 per PR #915
         nBontecoinBadBlocknBits = 0x00; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = 495;
