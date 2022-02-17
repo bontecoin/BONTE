@@ -2004,22 +2004,22 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
-    if (nHeight > 530000)	return 1 * COIN;
-    if (nHeight > 357200)	return 1.5 * COIN;
-    if (nHeight > 227600)	return 2 * COIN;
-    if (nHeight > 141200)	return 2.5 * COIN;
-    if (nHeight > 98000)	return 3 * COIN;
-    if (nHeight > 2000)		return 20 * COIN;
-    if (nHeight > 1)		return 0.1 * COIN;
+    if (nHeight > 800000)	return 5000 * COIN;
+    if (nHeight > 600000)	return 4000 * COIN;
+    if (nHeight > 500000)	return 3000 * COIN;
+    if (nHeight > 400000)	return 4000 * COIN;
+    if (nHeight > 300000)	return 3000 * COIN;
+    if (nHeight > 200000)	return 2000 * COIN;
+    if (nHeight > 115000)	return 1000 * COIN;
+    if (nHeight > 100000)	return 500 * COIN;
+    if (nHeight > 1000)		return 250 * COIN;
+    if (nHeight > 1)		return 1 * COIN;
     if (nHeight !=1)		return 1 * COIN;
     // Premine
-    return 210000 * COIN; // Premine 1% from Maximum Supply
+    return 100000000 * COIN; // Premine
 
     // Check if we reached the coin max supply.
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-
-    if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
-        nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
 
     if (nMoneySupply >= Params().MaxMoneyOut())
         nSubsidy = 0;
@@ -2029,7 +2029,7 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBONTEStake)
 {
-    return GetBlockValue(nHeight) * 0.80;
+    return GetBlockValue(nHeight) * 0.70;
 }
 
 bool IsInitialBlockDownload()
