@@ -259,9 +259,9 @@ public:
 		vSeeds.push_back(CDNSSeedData("seed3.bontecoin.com", "seed3.bontecoin.com"));
 		vSeeds.push_back(CDNSSeedData("seed4.bontecoin.com", "seed4.bontecoin.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53);
-        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 33);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25); // B
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53); // N
+        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 65); // T
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 28);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x4c)(0x20)(0x5e)(0x29).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x4c)(0x86)(0xb9)(0x7b).convert_to_container<std::vector<unsigned char> >();
