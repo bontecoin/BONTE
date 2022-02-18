@@ -2,44 +2,44 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/altecoin-qt
+bin_PROGRAMS += qt/bontecoin-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# altecoin qt core #
+# bontecoin qt core #
 QT_TS = \
-  qt/locale/altecoin_bg.ts \
-  qt/locale/altecoin_ca.ts \
-  qt/locale/altecoin_cs.ts \
-  qt/locale/altecoin_da.ts \
-  qt/locale/altecoin_de.ts \
-  qt/locale/altecoin_en.ts \
-  qt/locale/altecoin_en_GB.ts \
-  qt/locale/altecoin_en_US.ts \
-  qt/locale/altecoin_eo.ts \
-  qt/locale/altecoin_es.ts \
-  qt/locale/altecoin_es_ES.ts \
-  qt/locale/altecoin_fi.ts \
-  qt/locale/altecoin_fr_FR.ts \
-  qt/locale/altecoin_hi_IN.ts \
-  qt/locale/altecoin_hr.ts \
-  qt/locale/altecoin_hr_HR.ts \
-  qt/locale/altecoin_it.ts \
-  qt/locale/altecoin_ja.ts \
-  qt/locale/altecoin_ko_KR.ts \
-  qt/locale/altecoin_lt_LT.ts \
-  qt/locale/altecoin_nl.ts \
-  qt/locale/altecoin_pl.ts \
-  qt/locale/altecoin_pt.ts \
-  qt/locale/altecoin_pt_BR.ts \
-  qt/locale/altecoin_ro_RO.ts \
-  qt/locale/altecoin_ru.ts \
-  qt/locale/altecoin_sk.ts \
-  qt/locale/altecoin_sv.ts \
-  qt/locale/altecoin_tr.ts \
-  qt/locale/altecoin_uk.ts \
-  qt/locale/altecoin_vi.ts \
-  qt/locale/altecoin_zh_CN.ts \
-  qt/locale/altecoin_zh_TW.ts
+  qt/locale/bontecoin_bg.ts \
+  qt/locale/bontecoin_ca.ts \
+  qt/locale/bontecoin_cs.ts \
+  qt/locale/bontecoin_da.ts \
+  qt/locale/bontecoin_de.ts \
+  qt/locale/bontecoin_en.ts \
+  qt/locale/bontecoin_en_GB.ts \
+  qt/locale/bontecoin_en_US.ts \
+  qt/locale/bontecoin_eo.ts \
+  qt/locale/bontecoin_es.ts \
+  qt/locale/bontecoin_es_ES.ts \
+  qt/locale/bontecoin_fi.ts \
+  qt/locale/bontecoin_fr_FR.ts \
+  qt/locale/bontecoin_hi_IN.ts \
+  qt/locale/bontecoin_hr.ts \
+  qt/locale/bontecoin_hr_HR.ts \
+  qt/locale/bontecoin_it.ts \
+  qt/locale/bontecoin_ja.ts \
+  qt/locale/bontecoin_ko_KR.ts \
+  qt/locale/bontecoin_lt_LT.ts \
+  qt/locale/bontecoin_nl.ts \
+  qt/locale/bontecoin_pl.ts \
+  qt/locale/bontecoin_pt.ts \
+  qt/locale/bontecoin_pt_BR.ts \
+  qt/locale/bontecoin_ro_RO.ts \
+  qt/locale/bontecoin_ru.ts \
+  qt/locale/bontecoin_sk.ts \
+  qt/locale/bontecoin_sv.ts \
+  qt/locale/bontecoin_tr.ts \
+  qt/locale/bontecoin_uk.ts \
+  qt/locale/bontecoin_vi.ts \
+  qt/locale/bontecoin_zh_CN.ts \
+  qt/locale/bontecoin_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -53,58 +53,58 @@ QT_FORMS_UI = \
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/altecoin/forms/loadingdialog.ui \
+  qt/bontecoin/forms/loadingdialog.ui \
   qt/forms/zpivcontroldialog.ui \
-  qt/altecoin/forms/snackbar.ui \
-  qt/altecoin/forms/navmenuwidget.ui \
-  qt/altecoin/forms/lockunlock.ui \
-  qt/altecoin/forms/expandablebutton.ui \
-  qt/altecoin/forms/receivedialog.ui \
-  qt/altecoin/forms/walletpassworddialog.ui \
-  qt/altecoin/forms/topbar.ui \
-  qt/altecoin/forms/txrow.ui \
-  qt/altecoin/forms/dashboardwidget.ui \
-  qt/altecoin/forms/coincontrolpivwidget.ui \
-  qt/altecoin/forms/addresslabelrow.ui \
-  qt/altecoin/forms/contactdropdownrow.ui \
-  qt/altecoin/forms/mninfodialog.ui \
-  qt/altecoin/forms/optionbutton.ui \
-  qt/altecoin/forms/masternodewizarddialog.ui \
-  qt/altecoin/forms/mnrow.ui \
-  qt/altecoin/forms/masternodeswidget.ui \
-  qt/altecoin/forms/myaddressrow.ui \
-  qt/altecoin/forms/csrow.ui \
-  qt/altecoin/forms/sendchangeaddressdialog.ui \
-  qt/altecoin/forms/sendconfirmdialog.ui \
-  qt/altecoin/forms/sendcustomfeedialog.ui \
-  qt/altecoin/forms/sendchangeaddressdialog.ui \
-  qt/altecoin/forms/sendmultirow.ui \
-  qt/altecoin/forms/send.ui \
-  qt/altecoin/forms/addnewaddressdialog.ui \
-  qt/altecoin/forms/addnewcontactdialog.ui \
-  qt/altecoin/forms/requestdialog.ui \
-  qt/altecoin/forms/receivewidget.ui \
-  qt/altecoin/forms/tooltipmenu.ui \
-  qt/altecoin/forms/addresseswidget.ui \
-  qt/altecoin/forms/defaultdialog.ui \
-  qt/altecoin/forms/denomgenerationdialog.ui \
-  qt/altecoin/forms/privacywidget.ui \
-  qt/altecoin/forms/coldstakingwidget.ui \
-  qt/altecoin/settings/forms/settingsbackupwallet.ui \
-  qt/altecoin/settings/forms/settingsbittoolwidget.ui \
-  qt/altecoin/settings/forms/settingsconsolewidget.ui \
-  qt/altecoin/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/altecoin/settings/forms/settingsfaqwidget.ui \
-  qt/altecoin/settings/forms/settingsinformationwidget.ui \
-  qt/altecoin/settings/forms/settingsmainoptionswidget.ui \
-  qt/altecoin/settings/forms/settingsmultisenddialog.ui \
-  qt/altecoin/settings/forms/settingsmultisendwidget.ui \
-  qt/altecoin/settings/forms/settingssignmessagewidgets.ui \
-  qt/altecoin/settings/forms/settingswalletoptionswidget.ui \
-  qt/altecoin/settings/forms/settingswalletrepairwidget.ui \
-  qt/altecoin/settings/forms/settingswidget.ui \
-  qt/altecoin/forms/welcomecontentwidget.ui \
-  qt/altecoin/forms/splash.ui
+  qt/bontecoin/forms/snackbar.ui \
+  qt/bontecoin/forms/navmenuwidget.ui \
+  qt/bontecoin/forms/lockunlock.ui \
+  qt/bontecoin/forms/expandablebutton.ui \
+  qt/bontecoin/forms/receivedialog.ui \
+  qt/bontecoin/forms/walletpassworddialog.ui \
+  qt/bontecoin/forms/topbar.ui \
+  qt/bontecoin/forms/txrow.ui \
+  qt/bontecoin/forms/dashboardwidget.ui \
+  qt/bontecoin/forms/coincontrolpivwidget.ui \
+  qt/bontecoin/forms/addresslabelrow.ui \
+  qt/bontecoin/forms/contactdropdownrow.ui \
+  qt/bontecoin/forms/mninfodialog.ui \
+  qt/bontecoin/forms/optionbutton.ui \
+  qt/bontecoin/forms/masternodewizarddialog.ui \
+  qt/bontecoin/forms/mnrow.ui \
+  qt/bontecoin/forms/masternodeswidget.ui \
+  qt/bontecoin/forms/myaddressrow.ui \
+  qt/bontecoin/forms/csrow.ui \
+  qt/bontecoin/forms/sendchangeaddressdialog.ui \
+  qt/bontecoin/forms/sendconfirmdialog.ui \
+  qt/bontecoin/forms/sendcustomfeedialog.ui \
+  qt/bontecoin/forms/sendchangeaddressdialog.ui \
+  qt/bontecoin/forms/sendmultirow.ui \
+  qt/bontecoin/forms/send.ui \
+  qt/bontecoin/forms/addnewaddressdialog.ui \
+  qt/bontecoin/forms/addnewcontactdialog.ui \
+  qt/bontecoin/forms/requestdialog.ui \
+  qt/bontecoin/forms/receivewidget.ui \
+  qt/bontecoin/forms/tooltipmenu.ui \
+  qt/bontecoin/forms/addresseswidget.ui \
+  qt/bontecoin/forms/defaultdialog.ui \
+  qt/bontecoin/forms/denomgenerationdialog.ui \
+  qt/bontecoin/forms/privacywidget.ui \
+  qt/bontecoin/forms/coldstakingwidget.ui \
+  qt/bontecoin/settings/forms/settingsbackupwallet.ui \
+  qt/bontecoin/settings/forms/settingsbittoolwidget.ui \
+  qt/bontecoin/settings/forms/settingsconsolewidget.ui \
+  qt/bontecoin/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/bontecoin/settings/forms/settingsfaqwidget.ui \
+  qt/bontecoin/settings/forms/settingsinformationwidget.ui \
+  qt/bontecoin/settings/forms/settingsmainoptionswidget.ui \
+  qt/bontecoin/settings/forms/settingsmultisenddialog.ui \
+  qt/bontecoin/settings/forms/settingsmultisendwidget.ui \
+  qt/bontecoin/settings/forms/settingssignmessagewidgets.ui \
+  qt/bontecoin/settings/forms/settingswalletoptionswidget.ui \
+  qt/bontecoin/settings/forms/settingswalletrepairwidget.ui \
+  qt/bontecoin/settings/forms/settingswidget.ui \
+  qt/bontecoin/forms/welcomecontentwidget.ui \
+  qt/bontecoin/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -113,7 +113,7 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/altecoin/moc_altecoingui.cpp \
+  qt/bontecoin/moc_bontecoingui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
@@ -144,80 +144,80 @@ QT_MOC_CPP = \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
-  qt/altecoin/moc_loadingdialog.cpp \
+  qt/bontecoin/moc_loadingdialog.cpp \
   qt/moc_zpivcontroldialog.cpp \
-  qt/altecoin/moc_pwidget.cpp \
-  qt/altecoin/moc_snackbar.cpp \
-  qt/altecoin/moc_navmenuwidget.cpp \
-  qt/altecoin/moc_lockunlock.cpp \
-  qt/altecoin/moc_expandablebutton.cpp \
-  qt/altecoin/moc_furabstractlistitemdelegate.cpp \
-  qt/altecoin/moc_receivedialog.cpp \
-  qt/altecoin/moc_walletpassworddialog.cpp \
-  qt/altecoin/moc_pfborderimage.cpp \
-  qt/altecoin/moc_topbar.cpp \
-  qt/altecoin/moc_txrow.cpp \
-  qt/altecoin/moc_dashboardwidget.cpp \
-  qt/altecoin/moc_coincontrolpivwidget.cpp \
-  qt/altecoin/moc_addresslabelrow.cpp \
-  qt/altecoin/moc_contactdropdownrow.cpp \
-  qt/altecoin/moc_mninfodialog.cpp \
-  qt/altecoin/moc_optionbutton.cpp \
-  qt/altecoin/moc_coldstakingmodel.cpp \
-  qt/altecoin/moc_mnmodel.cpp \
-  qt/altecoin/moc_masternodewizarddialog.cpp \
-  qt/altecoin/moc_mnrow.cpp \
-  qt/altecoin/moc_masternodeswidget.cpp \
-  qt/altecoin/moc_myaddressrow.cpp \
-  qt/altecoin/moc_csrow.cpp \
-  qt/altecoin/moc_contactsdropdown.cpp \
-  qt/altecoin/moc_sendchangeaddressdialog.cpp \
-  qt/altecoin/moc_sendconfirmdialog.cpp \
-  qt/altecoin/moc_sendcustomfeedialog.cpp \
-  qt/altecoin/moc_sendchangeaddressdialog.cpp \
-  qt/altecoin/moc_sendmultirow.cpp \
-  qt/altecoin/moc_send.cpp \
-  qt/altecoin/moc_addnewaddressdialog.cpp \
-  qt/altecoin/moc_addnewcontactdialog.cpp \
-  qt/altecoin/moc_requestdialog.cpp \
-  qt/altecoin/moc_receivewidget.cpp \
-  qt/altecoin/moc_tooltipmenu.cpp \
-  qt/altecoin/moc_addresseswidget.cpp \
-  qt/altecoin/moc_defaultdialog.cpp \
-  qt/altecoin/moc_denomgenerationdialog.cpp \
-  qt/altecoin/moc_privacywidget.cpp \
-  qt/altecoin/moc_coldstakingwidget.cpp \
-  qt/altecoin/settings/moc_settingsbackupwallet.cpp \
-  qt/altecoin/settings/moc_settingsbittoolwidget.cpp \
-  qt/altecoin/settings/moc_settingsconsolewidget.cpp \
-  qt/altecoin/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/altecoin/settings/moc_settingsfaqwidget.cpp \
-  qt/altecoin/settings/moc_settingsinformationwidget.cpp \
-  qt/altecoin/settings/moc_settingsmainoptionswidget.cpp \
-  qt/altecoin/settings/moc_settingsmultisenddialog.cpp \
-  qt/altecoin/settings/moc_settingsmultisendwidget.cpp \
-  qt/altecoin/settings/moc_settingssignmessagewidgets.cpp \
-  qt/altecoin/settings/moc_settingswalletoptionswidget.cpp \
-  qt/altecoin/settings/moc_settingswalletrepairwidget.cpp \
-  qt/altecoin/settings/moc_settingswidget.cpp \
-  qt/altecoin/moc_welcomecontentwidget.cpp \
-  qt/altecoin/moc_splash.cpp
+  qt/bontecoin/moc_pwidget.cpp \
+  qt/bontecoin/moc_snackbar.cpp \
+  qt/bontecoin/moc_navmenuwidget.cpp \
+  qt/bontecoin/moc_lockunlock.cpp \
+  qt/bontecoin/moc_expandablebutton.cpp \
+  qt/bontecoin/moc_furabstractlistitemdelegate.cpp \
+  qt/bontecoin/moc_receivedialog.cpp \
+  qt/bontecoin/moc_walletpassworddialog.cpp \
+  qt/bontecoin/moc_pfborderimage.cpp \
+  qt/bontecoin/moc_topbar.cpp \
+  qt/bontecoin/moc_txrow.cpp \
+  qt/bontecoin/moc_dashboardwidget.cpp \
+  qt/bontecoin/moc_coincontrolpivwidget.cpp \
+  qt/bontecoin/moc_addresslabelrow.cpp \
+  qt/bontecoin/moc_contactdropdownrow.cpp \
+  qt/bontecoin/moc_mninfodialog.cpp \
+  qt/bontecoin/moc_optionbutton.cpp \
+  qt/bontecoin/moc_coldstakingmodel.cpp \
+  qt/bontecoin/moc_mnmodel.cpp \
+  qt/bontecoin/moc_masternodewizarddialog.cpp \
+  qt/bontecoin/moc_mnrow.cpp \
+  qt/bontecoin/moc_masternodeswidget.cpp \
+  qt/bontecoin/moc_myaddressrow.cpp \
+  qt/bontecoin/moc_csrow.cpp \
+  qt/bontecoin/moc_contactsdropdown.cpp \
+  qt/bontecoin/moc_sendchangeaddressdialog.cpp \
+  qt/bontecoin/moc_sendconfirmdialog.cpp \
+  qt/bontecoin/moc_sendcustomfeedialog.cpp \
+  qt/bontecoin/moc_sendchangeaddressdialog.cpp \
+  qt/bontecoin/moc_sendmultirow.cpp \
+  qt/bontecoin/moc_send.cpp \
+  qt/bontecoin/moc_addnewaddressdialog.cpp \
+  qt/bontecoin/moc_addnewcontactdialog.cpp \
+  qt/bontecoin/moc_requestdialog.cpp \
+  qt/bontecoin/moc_receivewidget.cpp \
+  qt/bontecoin/moc_tooltipmenu.cpp \
+  qt/bontecoin/moc_addresseswidget.cpp \
+  qt/bontecoin/moc_defaultdialog.cpp \
+  qt/bontecoin/moc_denomgenerationdialog.cpp \
+  qt/bontecoin/moc_privacywidget.cpp \
+  qt/bontecoin/moc_coldstakingwidget.cpp \
+  qt/bontecoin/settings/moc_settingsbackupwallet.cpp \
+  qt/bontecoin/settings/moc_settingsbittoolwidget.cpp \
+  qt/bontecoin/settings/moc_settingsconsolewidget.cpp \
+  qt/bontecoin/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/bontecoin/settings/moc_settingsfaqwidget.cpp \
+  qt/bontecoin/settings/moc_settingsinformationwidget.cpp \
+  qt/bontecoin/settings/moc_settingsmainoptionswidget.cpp \
+  qt/bontecoin/settings/moc_settingsmultisenddialog.cpp \
+  qt/bontecoin/settings/moc_settingsmultisendwidget.cpp \
+  qt/bontecoin/settings/moc_settingssignmessagewidgets.cpp \
+  qt/bontecoin/settings/moc_settingswalletoptionswidget.cpp \
+  qt/bontecoin/settings/moc_settingswalletrepairwidget.cpp \
+  qt/bontecoin/settings/moc_settingswidget.cpp \
+  qt/bontecoin/moc_welcomecontentwidget.cpp \
+  qt/bontecoin/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/altecoin.moc \
+  qt/bontecoin.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/rpcconsole.moc \
-  qt/altecoin/settings/moc_settingsconsolewidget.cpp
+  qt/bontecoin/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_altecoin.cpp
-QT_QRC = qt/altecoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_altecoin_locale.cpp
-QT_QRC_LOCALE = qt/altecoin_locale.qrc
+QT_QRC_CPP = qt/qrc_bontecoin.cpp
+QT_QRC = qt/bontecoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_bontecoin_locale.cpp
+QT_QRC_LOCALE = qt/bontecoin_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -230,7 +230,7 @@ BITCOIN_QT_H = \
   qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/altecoin/altecoingui.h \
+  qt/bontecoin/bontecoingui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
@@ -267,72 +267,72 @@ BITCOIN_QT_H = \
   qt/utilitydialog.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/altecoin/prunnable.h \
-  qt/altecoin/pfborderimage.h \
-  qt/altecoin/loadingdialog.h \
+  qt/bontecoin/prunnable.h \
+  qt/bontecoin/pfborderimage.h \
+  qt/bontecoin/loadingdialog.h \
   qt/winshutdownmonitor.h \
   qt/zpivcontroldialog.h \
-  qt/altecoin/pwidget.h \
-  qt/altecoin/guitransactionsutils.h \
-  qt/altecoin/snackbar.h \
-  qt/altecoin/navmenuwidget.h \
-  qt/altecoin/lockunlock.h \
-  qt/altecoin/receivedialog.h \
-  qt/altecoin/furlistrow.h \
-  qt/altecoin/furabstractlistitemdelegate.h \
-  qt/altecoin/txviewholder.h \
-  qt/altecoin/qtutils.h \
-  qt/altecoin/expandablebutton.h \
-  qt/altecoin/walletpassworddialog.h \
-  qt/altecoin/topbar.h \
-  qt/altecoin/txrow.h \
-  qt/altecoin/addressholder.h \
-  qt/altecoin/addressfilterproxymodel.h \
-  qt/altecoin/dashboardwidget.h \
-  qt/altecoin/coincontrolpivwidget.h \
-  qt/altecoin/addresslabelrow.h \
-  qt/altecoin/contactdropdownrow.h \
-  qt/altecoin/mninfodialog.h \
-  qt/altecoin/optionbutton.h \
-  qt/altecoin/coldstakingmodel.h \
-  qt/altecoin/mnmodel.h \
-  qt/altecoin/masternodewizarddialog.h \
-  qt/altecoin/mnrow.h \
-  qt/altecoin/masternodeswidget.h \
-  qt/altecoin/myaddressrow.h \
-  qt/altecoin/csrow.h \
-  qt/altecoin/contactsdropdown.h \
-  qt/altecoin/sendchangeaddressdialog.h \
-  qt/altecoin/sendconfirmdialog.h \
-  qt/altecoin/sendcustomfeedialog.h \
-  qt/altecoin/sendchangeaddressdialog.h \
-  qt/altecoin/sendmultirow.h \
-  qt/altecoin/send.h \
-  qt/altecoin/addnewaddressdialog.h \
-  qt/altecoin/addnewcontactdialog.h \
-  qt/altecoin/requestdialog.h \
-  qt/altecoin/receivewidget.h \
-  qt/altecoin/tooltipmenu.h \
-  qt/altecoin/addresseswidget.h \
-  qt/altecoin/defaultdialog.h \
-  qt/altecoin/denomgenerationdialog.h \
-  qt/altecoin/privacywidget.h \
-  qt/altecoin/coldstakingwidget.h \
-  qt/altecoin/settings/settingsbackupwallet.h \
-  qt/altecoin/settings/settingsbittoolwidget.h \
-  qt/altecoin/settings/settingsconsolewidget.h \
-  qt/altecoin/settings/settingsdisplayoptionswidget.h \
-  qt/altecoin/settings/settingsfaqwidget.h \
-  qt/altecoin/settings/settingsinformationwidget.h \
-  qt/altecoin/settings/settingsmainoptionswidget.h \
-  qt/altecoin/settings/settingsmultisenddialog.h \
-  qt/altecoin/settings/settingsmultisendwidget.h \
-  qt/altecoin/settings/settingssignmessagewidgets.h \
-  qt/altecoin/settings/settingswalletoptionswidget.h \
-  qt/altecoin/settings/settingswalletrepairwidget.h \
-  qt/altecoin/settings/settingswidget.h \
-  qt/altecoin/welcomecontentwidget.h \
-  qt/altecoin/splash.h
+  qt/bontecoin/pwidget.h \
+  qt/bontecoin/guitransactionsutils.h \
+  qt/bontecoin/snackbar.h \
+  qt/bontecoin/navmenuwidget.h \
+  qt/bontecoin/lockunlock.h \
+  qt/bontecoin/receivedialog.h \
+  qt/bontecoin/furlistrow.h \
+  qt/bontecoin/furabstractlistitemdelegate.h \
+  qt/bontecoin/txviewholder.h \
+  qt/bontecoin/qtutils.h \
+  qt/bontecoin/expandablebutton.h \
+  qt/bontecoin/walletpassworddialog.h \
+  qt/bontecoin/topbar.h \
+  qt/bontecoin/txrow.h \
+  qt/bontecoin/addressholder.h \
+  qt/bontecoin/addressfilterproxymodel.h \
+  qt/bontecoin/dashboardwidget.h \
+  qt/bontecoin/coincontrolpivwidget.h \
+  qt/bontecoin/addresslabelrow.h \
+  qt/bontecoin/contactdropdownrow.h \
+  qt/bontecoin/mninfodialog.h \
+  qt/bontecoin/optionbutton.h \
+  qt/bontecoin/coldstakingmodel.h \
+  qt/bontecoin/mnmodel.h \
+  qt/bontecoin/masternodewizarddialog.h \
+  qt/bontecoin/mnrow.h \
+  qt/bontecoin/masternodeswidget.h \
+  qt/bontecoin/myaddressrow.h \
+  qt/bontecoin/csrow.h \
+  qt/bontecoin/contactsdropdown.h \
+  qt/bontecoin/sendchangeaddressdialog.h \
+  qt/bontecoin/sendconfirmdialog.h \
+  qt/bontecoin/sendcustomfeedialog.h \
+  qt/bontecoin/sendchangeaddressdialog.h \
+  qt/bontecoin/sendmultirow.h \
+  qt/bontecoin/send.h \
+  qt/bontecoin/addnewaddressdialog.h \
+  qt/bontecoin/addnewcontactdialog.h \
+  qt/bontecoin/requestdialog.h \
+  qt/bontecoin/receivewidget.h \
+  qt/bontecoin/tooltipmenu.h \
+  qt/bontecoin/addresseswidget.h \
+  qt/bontecoin/defaultdialog.h \
+  qt/bontecoin/denomgenerationdialog.h \
+  qt/bontecoin/privacywidget.h \
+  qt/bontecoin/coldstakingwidget.h \
+  qt/bontecoin/settings/settingsbackupwallet.h \
+  qt/bontecoin/settings/settingsbittoolwidget.h \
+  qt/bontecoin/settings/settingsconsolewidget.h \
+  qt/bontecoin/settings/settingsdisplayoptionswidget.h \
+  qt/bontecoin/settings/settingsfaqwidget.h \
+  qt/bontecoin/settings/settingsinformationwidget.h \
+  qt/bontecoin/settings/settingsmainoptionswidget.h \
+  qt/bontecoin/settings/settingsmultisenddialog.h \
+  qt/bontecoin/settings/settingsmultisendwidget.h \
+  qt/bontecoin/settings/settingssignmessagewidgets.h \
+  qt/bontecoin/settings/settingswalletoptionswidget.h \
+  qt/bontecoin/settings/settingswalletrepairwidget.h \
+  qt/bontecoin/settings/settingswidget.h \
+  qt/bontecoin/welcomecontentwidget.h \
+  qt/bontecoin/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -398,218 +398,212 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_altecoin.png \
-  qt/res/icons/unit_maltecoin.png \
-  qt/res/icons/unit_ualtecoin.png \
-  qt/res/icons/unit_taltecoin.png \
-  qt/res/icons/unit_tmaltecoin.png \
-  qt/res/icons/unit_tualtecoin.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/altecoin/res/img/bg-dashboard-banner.png \
-  qt/altecoin/res/img/bg-multi-number-dark.svg \
-  qt/altecoin/res/img/ic-check-locked.svg \
-  qt/altecoin/res/img/ic-nav-address.svg \
-  qt/altecoin/res/img/ic-update.svg \
-  qt/altecoin/res/img/bg-multi-number.svg \
-  qt/altecoin/res/img/ic-check-mint-off.svg \
-  qt/altecoin/res/img/ic-nav-cold-staking.svg \
-  qt/altecoin/res/img/ic-nav-cold-staking-active.svg \
-  qt/altecoin/res/img/ic-nav-dashboard-active.svg \
-  qt/altecoin/res/img/ic-wallet-status-locked.svg \
-  qt/altecoin/res/img/bg-splash.svg \
-  qt/altecoin/res/img/bg-splash.png \
-  qt/altecoin/res/img/ic-check-mint.svg \
-  qt/altecoin/res/img/ic-nav-dashboard-hover.svg \
-  qt/altecoin/res/img/ic-wallet-status-staking.svg \
-  qt/altecoin/res/img/ic-check-peers-off.svg \
-  qt/altecoin/res/img/ic-nav-dashboard.svg \
-  qt/altecoin/res/img/ic-wallet-status-unlocked.svg \
-  qt/altecoin/res/img/ic-check-peers.svg \
-  qt/altecoin/res/img/ic-nav-master-active.svg \
-  qt/altecoin/res/img/ic-watch-password-white.svg \
-  qt/altecoin/res/img/bg-welcome-container.jpg \
-  qt/altecoin/res/img/bg-welcome-container.png \
-  qt/altecoin/res/img/bg-welcome-container.svg \
-  qt/altecoin/res/img/bg-welcome-container@2x.png \
-  qt/altecoin/res/img/bg-welcome-container@3x.png \
-  qt/altecoin/res/img/ic-check-staking-off.svg \
-  qt/altecoin/res/img/ic-nav-master-hover.svg \
-  qt/altecoin/res/img/ic-watch-password.svg \
-  qt/altecoin/res/img/bg-welcome.jpg \
-  qt/altecoin/res/img/bg-welcome.svg \
-  qt/altecoin/res/img/bg-welcome@2x.jpg \
-  qt/altecoin/res/img/bg-welcome@3x.jpg \
-  qt/altecoin/res/img/bg-welcome.png \
-  qt/altecoin/res/img/ic-check-staking.svg \
-  qt/altecoin/res/img/ic-nav-master.svg \
-  qt/altecoin/res/img/img-dashboard-banner.jpg \
-  qt/altecoin/res/img/btn-radio-active.svg \
-  qt/altecoin/res/img/ic-check-sync-off.svg \
-  qt/altecoin/res/img/ic-nav-privacy-active.svg \
-  qt/altecoin/res/img/img-empty-contacts.svg \
-  qt/altecoin/res/img/btn-radio-off.svg \
-  qt/altecoin/res/img/ic-check-sync.png \
-  qt/altecoin/res/img/ic-nav-privacy-hover.svg \
-  qt/altecoin/res/img/img-empty-dark-contacts.svg \
-  qt/altecoin/res/img/ic-contact-arrow-down.svg \
-  qt/altecoin/res/img/ic-contact-arrow-down-white.svg \
-  qt/altecoin/res/img/ic-check-sync.svg \
-  qt/altecoin/res/img/ic-check-faq.svg \
-  qt/altecoin/res/img/ic-nav-privacy.svg \
-  qt/altecoin/res/img/img-empty-dark-error.svg \
-  qt/altecoin/res/img/ic-add-label.svg \
-  qt/altecoin/res/img/ic-pending.svg \
-  qt/altecoin/res/img/ic-check-theme-dark.svg \
-  qt/altecoin/res/img/ic-nav-receive-active.svg \
-  qt/altecoin/res/img/img-empty-dark-masternode.svg \
-  qt/altecoin/res/img/ic-add-liliac.svg \
-  qt/altecoin/res/img/ic-check-theme-light.svg \
-  qt/altecoin/res/img/ic-nav-receive-hover.svg \
-  qt/altecoin/res/img/img-empty-dark-multisend.svg \
-  qt/altecoin/res/img/ic-add-purple.svg \
-  qt/altecoin/res/img/ic-check-white.svg \
-  qt/altecoin/res/img/ic-nav-receive.svg \
-  qt/altecoin/res/img/img-empty-dark-peers.svg \
-  qt/altecoin/res/img/ic-add.svg \
-  qt/altecoin/res/img/ic-check.svg \
-  qt/altecoin/res/img/ic-nav-send-active.svg \
-  qt/altecoin/res/img/img-empty-dark-staking-off.svg \
-  qt/altecoin/res/img/img-empty-dark-staking-on.svg \
-  qt/altecoin/res/img/ic-address-book-grey.svg \
-  qt/altecoin/res/img/ic-chevron-left.svg \
-  qt/altecoin/res/img/ic-nav-send-hover.svg \
-  qt/altecoin/res/img/img-empty-dark-transactions.svg \
-  qt/altecoin/res/img/ic-address-book-white.svg \
-  qt/altecoin/res/img/ic-chevron-right.svg \
-  qt/altecoin/res/img/ic-nav-send.svg \
-  qt/altecoin/res/img/img-empty-error.svg \
-  qt/altecoin/res/img/ic-address-book.svg \
-  qt/altecoin/res/img/ic-clear-liliac.svg \
-  qt/altecoin/res/img/ic-nav-settings-active.svg \
-  qt/altecoin/res/img/img-empty-masternode.svg \
-  qt/altecoin/res/img/ic-address-send-white.svg \
-  qt/altecoin/res/img/ic-clear-purple.svg \
-  qt/altecoin/res/img/ic-nav-settings-hover.svg \
-  qt/altecoin/res/img/img-empty-multisend.svg \
-  qt/altecoin/res/img/ic-address-send.svg \
-  qt/altecoin/res/img/ic-close-white.svg \
-  qt/altecoin/res/img/ic-nav-settings.svg \
-  qt/altecoin/res/img/img-empty-peers.svg \
-  qt/altecoin/res/img/img-empty-privacy.svg \
-  qt/altecoin/res/img/img-empty-privacy-dark.svg \
-  qt/altecoin/res/img/ic-arrow-drop-down-white.svg \
-  qt/altecoin/res/img/ic-close.svg \
-  qt/altecoin/res/img/ic-radio-liliac-on.svg \
-  qt/altecoin/res/img/img-empty-staking-off.svg \
-  qt/altecoin/res/img/ic-arrow-drop-down.svg \
-  qt/altecoin/res/img/ic-coin-piv.svg \
-  qt/altecoin/res/img/ic-receive-off.svg \
-  qt/altecoin/res/img/img-empty-staking-on.svg \
-  qt/altecoin/res/img/ic-arrow-drop-up-white.svg \
-  qt/altecoin/res/img/ic-coin-zpiv.png \
-  qt/altecoin/res/img/ic-receive-on.svg \
-  qt/altecoin/res/img/img-empty-transactions.svg \
-  qt/altecoin/res/img/ic-arrow-drop-up.svg \
-  qt/altecoin/res/img/ic-coin-zpiv.svg \
-  qt/altecoin/res/img/ic-received.svg \
-  qt/altecoin/res/img/img-logo-altecoin.png \
-  qt/altecoin/res/img/ic-arrow-drop-white-down.svg \
-  qt/altecoin/res/img/ic-combo-box.svg \
-  qt/altecoin/res/img/ic-send.svg \
-  qt/altecoin/res/img/img-logo-altecoin@2x.png \
-  qt/altecoin/res/img/ic-arrow-purple-down.svg \
-  qt/altecoin/res/img/ic-connect.svg \
-  qt/altecoin/res/img/ic-submenu-lock.svg \
-  qt/altecoin/res/img/img-logo-altecoin@3x.png \
-  qt/altecoin/res/img/img-logo-altecoin.svg \
-  qt/altecoin/res/img/ic-arrow-right-white.svg \
-  qt/altecoin/res/img/ic-arrow-left-white.svg \
-  qt/altecoin/res/img/ic-arrow-left.svg \
-  qt/altecoin/res/img/ic-copy-liliac.svg \
-  qt/altecoin/res/img/ic-submenu-staking.svg \
-  qt/altecoin/res/img/img-nav-logo-altecoin.png \
-  qt/altecoin/res/img/ic-arrow-right.svg \
-  qt/altecoin/res/img/ic-copy.svg \
-  qt/altecoin/res/img/ic-copy-big.svg \
-  qt/altecoin/res/img/ic-copy-big-white.svg \
-  qt/altecoin/res/img/ic-submenu-unlock.svg \
-  qt/altecoin/res/img/img-nav-logo.png \
-  qt/altecoin/res/img/ic-arrow-white-left.svg \
-  qt/altecoin/res/img/ic-exit.svg \
-  qt/altecoin/res/img/ic-switch-liliac-on.svg \
-  qt/altecoin/res/img/img-nav-logo.svg \
-  qt/altecoin/res/img/ic-arrow-white-right.svg \
-  qt/altecoin/res/img/ic-expand.svg \
-  qt/altecoin/res/img/ic-switch-off.svg \
-  qt/altecoin/res/img/img-qr-test-big.png \
-  qt/altecoin/res/img/ic-check-active.svg \
-  qt/altecoin/res/img/ic-folder.svg \
-  qt/altecoin/res/img/ic-switch-on.svg \
-  qt/altecoin/res/img/img-qr-test.png \
-  qt/altecoin/res/img/ic-check-box.svg \
-  qt/altecoin/res/img/ic-check-box-dark-active.svg \
-  qt/altecoin/res/img/ic-check-box-indeterminate.svg \
-  qt/altecoin/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/altecoin/res/img/ic-label-liliac.svg \
-  qt/altecoin/res/img/ic-transaction-warning.svg \
-  qt/altecoin/res/img/ic-transaction-mint.svg \
-  qt/altecoin/res/img/ic-transaction-mint-inactive.svg \
-  qt/altecoin/res/img/ic-check-cold-staking.svg \
-  qt/altecoin/res/img/ic-check-cold-staking-off.svg \
-  qt/altecoin/res/img/ic-check-cold-staking-enabled.svg \
-  qt/altecoin/res/img/dark/ic-transaction-cs-contract.svg \
-  qt/altecoin/res/img/dark/ic-transaction-cs-contract-inactive.svg \
-  qt/altecoin/res/img/img-qr.svg \
-  qt/altecoin/res/img/ic-check-connect-off.svg \
-  qt/altecoin/res/img/ic-label.svg \
-  qt/altecoin/res/img/ic-transaction-received.svg \
-  qt/altecoin/res/img/dark/ic-transaction-received.svg \
-  qt/altecoin/res/img/dark/ic-transaction-warning.svg \
-  qt/altecoin/res/img/dark/ic-transaction-mint.svg \
-  qt/altecoin/res/img/dark/ic-transaction-mint-inactive.svg \
-  qt/altecoin/res/img/ic-transaction-received-inactive.svg \
-  qt/altecoin/res/img/dark/ic-transaction-received-inactive.svg \
-  qt/altecoin/res/img/img-welcome-step1.png \
-  qt/altecoin/res/img/ic-check-connect.svg \
-  qt/altecoin/res/img/ic-menu-hover.svg \
-  qt/altecoin/res/img/ic-transaction-sent.svg \
-  qt/altecoin/res/img/ic-transaction-sent-inactive.svg \
-  qt/altecoin/res/img/dark/ic-transaction-sent.svg \
-  qt/altecoin/res/img/dark/ic-transaction-sent-inactive.svg \
-  qt/altecoin/res/img/img-welcome-step2.png \
-  qt/altecoin/res/img/ic-check-dark.svg \
-  qt/altecoin/res/img/ic-mint.svg \
-  qt/altecoin/res/img/ic-transaction-staked.svg \
-  qt/altecoin/res/img/ic-transaction-staked-inactive.svg \
-  qt/altecoin/res/img/dark/ic-transaction-staked.svg \
-  qt/altecoin/res/img/dark/ic-transaction-staked-inactive.svg \
-  qt/altecoin/res/img/img-welcome-step3.png \
-  qt/altecoin/res/img/ic-check-liliac-on.svg \
-  qt/altecoin/res/img/ic-nav-address-active.svg \
-  qt/altecoin/res/img/ic-unlock-staking.svg \
-  qt/altecoin/res/img/img-welcome-step4.png \
-  qt/altecoin/res/img/ic-check-locked-off.svg \
-  qt/altecoin/res/img/ic-nav-address-hover.svg \
-  qt/altecoin/res/img/ic-update-liliac.svg \
-  qt/altecoin/res/img/ic-arrow-drop-down-purple.svg \
-  qt/altecoin/res/img/ic-arrow-drop-up-purple.svg \
-  qt/altecoin/res/img/ic-check-liliac-indeterminate.svg \
-  qt/altecoin/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/altecoin/res/img/ic-transaction-stake-delegated.svg \
-  qt/altecoin/res/img/ic-transaction-stake-delegated-inactive.svg \
-  qt/altecoin/res/img/ic-transaction-stake-hot.svg \
-  qt/altecoin/res/img/ic-transaction-stake-hot-inactive.svg \
-  qt/altecoin/res/img/dark/ic-transaction-stake-hot.svg \
-  qt/altecoin/res/img/dark/ic-transaction-stake-hot-inactive.svg \
-  qt/altecoin/res/img/dark/ic-transaction-stake-delegated.svg \
-  qt/altecoin/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
-  qt/altecoin/res/img/ic-transaction-cs-contract.svg \
-  qt/altecoin/res/img/ic-transaction-cs-contract-inactive.svg \
-  qt/altecoin/res/img/ic-check-box-indeterminate.svg \
-  qt/altecoin/res/img/ani-loading-dark.gif \
-  qt/altecoin/res/img/ani-loading.gif
+  qt/bontecoin/res/img/bg-dashboard-banner.png \
+  qt/bontecoin/res/img/bg-multi-number-dark.svg \
+  qt/bontecoin/res/img/ic-check-locked.svg \
+  qt/bontecoin/res/img/ic-nav-address.svg \
+  qt/bontecoin/res/img/ic-update.svg \
+  qt/bontecoin/res/img/bg-multi-number.svg \
+  qt/bontecoin/res/img/ic-check-mint-off.svg \
+  qt/bontecoin/res/img/ic-nav-cold-staking.svg \
+  qt/bontecoin/res/img/ic-nav-cold-staking-active.svg \
+  qt/bontecoin/res/img/ic-nav-dashboard-active.svg \
+  qt/bontecoin/res/img/ic-wallet-status-locked.svg \
+  qt/bontecoin/res/img/bg-splash.svg \
+  qt/bontecoin/res/img/bg-splash.png \
+  qt/bontecoin/res/img/ic-check-mint.svg \
+  qt/bontecoin/res/img/ic-nav-dashboard-hover.svg \
+  qt/bontecoin/res/img/ic-wallet-status-staking.svg \
+  qt/bontecoin/res/img/ic-check-peers-off.svg \
+  qt/bontecoin/res/img/ic-nav-dashboard.svg \
+  qt/bontecoin/res/img/ic-wallet-status-unlocked.svg \
+  qt/bontecoin/res/img/ic-check-peers.svg \
+  qt/bontecoin/res/img/ic-nav-master-active.svg \
+  qt/bontecoin/res/img/ic-watch-password-white.svg \
+  qt/bontecoin/res/img/bg-welcome-container.jpg \
+  qt/bontecoin/res/img/bg-welcome-container.png \
+  qt/bontecoin/res/img/bg-welcome-container.svg \
+  qt/bontecoin/res/img/bg-welcome-container@2x.png \
+  qt/bontecoin/res/img/bg-welcome-container@3x.png \
+  qt/bontecoin/res/img/ic-check-staking-off.svg \
+  qt/bontecoin/res/img/ic-nav-master-hover.svg \
+  qt/bontecoin/res/img/ic-watch-password.svg \
+  qt/bontecoin/res/img/bg-welcome.jpg \
+  qt/bontecoin/res/img/bg-welcome.svg \
+  qt/bontecoin/res/img/bg-welcome@2x.jpg \
+  qt/bontecoin/res/img/bg-welcome@3x.jpg \
+  qt/bontecoin/res/img/bg-welcome.png \
+  qt/bontecoin/res/img/ic-check-staking.svg \
+  qt/bontecoin/res/img/ic-nav-master.svg \
+  qt/bontecoin/res/img/img-dashboard-banner.jpg \
+  qt/bontecoin/res/img/btn-radio-active.svg \
+  qt/bontecoin/res/img/ic-check-sync-off.svg \
+  qt/bontecoin/res/img/ic-nav-privacy-active.svg \
+  qt/bontecoin/res/img/img-empty-contacts.svg \
+  qt/bontecoin/res/img/btn-radio-off.svg \
+  qt/bontecoin/res/img/ic-check-sync.png \
+  qt/bontecoin/res/img/ic-nav-privacy-hover.svg \
+  qt/bontecoin/res/img/img-empty-dark-contacts.svg \
+  qt/bontecoin/res/img/ic-contact-arrow-down.svg \
+  qt/bontecoin/res/img/ic-contact-arrow-down-white.svg \
+  qt/bontecoin/res/img/ic-check-sync.svg \
+  qt/bontecoin/res/img/ic-check-faq.svg \
+  qt/bontecoin/res/img/ic-nav-privacy.svg \
+  qt/bontecoin/res/img/img-empty-dark-error.svg \
+  qt/bontecoin/res/img/ic-add-label.svg \
+  qt/bontecoin/res/img/ic-pending.svg \
+  qt/bontecoin/res/img/ic-check-theme-dark.svg \
+  qt/bontecoin/res/img/ic-nav-receive-active.svg \
+  qt/bontecoin/res/img/img-empty-dark-masternode.svg \
+  qt/bontecoin/res/img/ic-add-liliac.svg \
+  qt/bontecoin/res/img/ic-check-theme-light.svg \
+  qt/bontecoin/res/img/ic-nav-receive-hover.svg \
+  qt/bontecoin/res/img/img-empty-dark-multisend.svg \
+  qt/bontecoin/res/img/ic-add-purple.svg \
+  qt/bontecoin/res/img/ic-check-white.svg \
+  qt/bontecoin/res/img/ic-nav-receive.svg \
+  qt/bontecoin/res/img/img-empty-dark-peers.svg \
+  qt/bontecoin/res/img/ic-add.svg \
+  qt/bontecoin/res/img/ic-check.svg \
+  qt/bontecoin/res/img/ic-nav-send-active.svg \
+  qt/bontecoin/res/img/img-empty-dark-staking-off.svg \
+  qt/bontecoin/res/img/img-empty-dark-staking-on.svg \
+  qt/bontecoin/res/img/ic-address-book-grey.svg \
+  qt/bontecoin/res/img/ic-chevron-left.svg \
+  qt/bontecoin/res/img/ic-nav-send-hover.svg \
+  qt/bontecoin/res/img/img-empty-dark-transactions.svg \
+  qt/bontecoin/res/img/ic-address-book-white.svg \
+  qt/bontecoin/res/img/ic-chevron-right.svg \
+  qt/bontecoin/res/img/ic-nav-send.svg \
+  qt/bontecoin/res/img/img-empty-error.svg \
+  qt/bontecoin/res/img/ic-address-book.svg \
+  qt/bontecoin/res/img/ic-clear-liliac.svg \
+  qt/bontecoin/res/img/ic-nav-settings-active.svg \
+  qt/bontecoin/res/img/img-empty-masternode.svg \
+  qt/bontecoin/res/img/ic-address-send-white.svg \
+  qt/bontecoin/res/img/ic-clear-purple.svg \
+  qt/bontecoin/res/img/ic-nav-settings-hover.svg \
+  qt/bontecoin/res/img/img-empty-multisend.svg \
+  qt/bontecoin/res/img/ic-address-send.svg \
+  qt/bontecoin/res/img/ic-close-white.svg \
+  qt/bontecoin/res/img/ic-nav-settings.svg \
+  qt/bontecoin/res/img/img-empty-peers.svg \
+  qt/bontecoin/res/img/img-empty-privacy.svg \
+  qt/bontecoin/res/img/img-empty-privacy-dark.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-down-white.svg \
+  qt/bontecoin/res/img/ic-close.svg \
+  qt/bontecoin/res/img/ic-radio-liliac-on.svg \
+  qt/bontecoin/res/img/img-empty-staking-off.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-down.svg \
+  qt/bontecoin/res/img/ic-coin-piv.svg \
+  qt/bontecoin/res/img/ic-receive-off.svg \
+  qt/bontecoin/res/img/img-empty-staking-on.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-up-white.svg \
+  qt/bontecoin/res/img/ic-coin-zpiv.png \
+  qt/bontecoin/res/img/ic-receive-on.svg \
+  qt/bontecoin/res/img/img-empty-transactions.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-up.svg \
+  qt/bontecoin/res/img/ic-coin-zpiv.svg \
+  qt/bontecoin/res/img/ic-received.svg \
+  qt/bontecoin/res/img/img-logo-bontecoin.png \
+  qt/bontecoin/res/img/ic-arrow-drop-white-down.svg \
+  qt/bontecoin/res/img/ic-combo-box.svg \
+  qt/bontecoin/res/img/ic-send.svg \
+  qt/bontecoin/res/img/img-logo-bontecoin@2x.png \
+  qt/bontecoin/res/img/ic-arrow-purple-down.svg \
+  qt/bontecoin/res/img/ic-connect.svg \
+  qt/bontecoin/res/img/ic-submenu-lock.svg \
+  qt/bontecoin/res/img/img-logo-bontecoin@3x.png \
+  qt/bontecoin/res/img/img-logo-bontecoin.svg \
+  qt/bontecoin/res/img/ic-arrow-right-white.svg \
+  qt/bontecoin/res/img/ic-arrow-left-white.svg \
+  qt/bontecoin/res/img/ic-arrow-left.svg \
+  qt/bontecoin/res/img/ic-copy-liliac.svg \
+  qt/bontecoin/res/img/ic-submenu-staking.svg \
+  qt/bontecoin/res/img/img-nav-logo-bontecoin.png \
+  qt/bontecoin/res/img/ic-arrow-right.svg \
+  qt/bontecoin/res/img/ic-copy.svg \
+  qt/bontecoin/res/img/ic-copy-big.svg \
+  qt/bontecoin/res/img/ic-copy-big-white.svg \
+  qt/bontecoin/res/img/ic-submenu-unlock.svg \
+  qt/bontecoin/res/img/img-nav-logo.png \
+  qt/bontecoin/res/img/ic-arrow-white-left.svg \
+  qt/bontecoin/res/img/ic-exit.svg \
+  qt/bontecoin/res/img/ic-switch-liliac-on.svg \
+  qt/bontecoin/res/img/img-nav-logo.svg \
+  qt/bontecoin/res/img/ic-arrow-white-right.svg \
+  qt/bontecoin/res/img/ic-expand.svg \
+  qt/bontecoin/res/img/ic-switch-off.svg \
+  qt/bontecoin/res/img/img-qr-test-big.png \
+  qt/bontecoin/res/img/ic-check-active.svg \
+  qt/bontecoin/res/img/ic-folder.svg \
+  qt/bontecoin/res/img/ic-switch-on.svg \
+  qt/bontecoin/res/img/img-qr-test.png \
+  qt/bontecoin/res/img/ic-check-box.svg \
+  qt/bontecoin/res/img/ic-check-box-dark-active.svg \
+  qt/bontecoin/res/img/ic-check-box-indeterminate.svg \
+  qt/bontecoin/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/bontecoin/res/img/ic-label-liliac.svg \
+  qt/bontecoin/res/img/ic-transaction-warning.svg \
+  qt/bontecoin/res/img/ic-transaction-mint.svg \
+  qt/bontecoin/res/img/ic-transaction-mint-inactive.svg \
+  qt/bontecoin/res/img/ic-check-cold-staking.svg \
+  qt/bontecoin/res/img/ic-check-cold-staking-off.svg \
+  qt/bontecoin/res/img/ic-check-cold-staking-enabled.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/bontecoin/res/img/img-qr.svg \
+  qt/bontecoin/res/img/ic-check-connect-off.svg \
+  qt/bontecoin/res/img/ic-label.svg \
+  qt/bontecoin/res/img/ic-transaction-received.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-received.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-warning.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-mint.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/bontecoin/res/img/ic-transaction-received-inactive.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/bontecoin/res/img/img-welcome-step1.png \
+  qt/bontecoin/res/img/ic-check-connect.svg \
+  qt/bontecoin/res/img/ic-menu-hover.svg \
+  qt/bontecoin/res/img/ic-transaction-sent.svg \
+  qt/bontecoin/res/img/ic-transaction-sent-inactive.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-sent.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/bontecoin/res/img/img-welcome-step2.png \
+  qt/bontecoin/res/img/ic-check-dark.svg \
+  qt/bontecoin/res/img/ic-mint.svg \
+  qt/bontecoin/res/img/ic-transaction-staked.svg \
+  qt/bontecoin/res/img/ic-transaction-staked-inactive.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-staked.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/bontecoin/res/img/img-welcome-step3.png \
+  qt/bontecoin/res/img/ic-check-liliac-on.svg \
+  qt/bontecoin/res/img/ic-nav-address-active.svg \
+  qt/bontecoin/res/img/ic-unlock-staking.svg \
+  qt/bontecoin/res/img/img-welcome-step4.png \
+  qt/bontecoin/res/img/ic-check-locked-off.svg \
+  qt/bontecoin/res/img/ic-nav-address-hover.svg \
+  qt/bontecoin/res/img/ic-update-liliac.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-down-purple.svg \
+  qt/bontecoin/res/img/ic-arrow-drop-up-purple.svg \
+  qt/bontecoin/res/img/ic-check-liliac-indeterminate.svg \
+  qt/bontecoin/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/bontecoin/res/img/ic-transaction-stake-delegated.svg \
+  qt/bontecoin/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/bontecoin/res/img/ic-transaction-stake-hot.svg \
+  qt/bontecoin/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/bontecoin/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/bontecoin/res/img/ic-transaction-cs-contract.svg \
+  qt/bontecoin/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/bontecoin/res/img/ic-check-box-indeterminate.svg \
+  qt/bontecoin/res/img/ani-loading-dark.gif \
+  qt/bontecoin/res/img/ani-loading.gif
 
 
 
@@ -617,7 +611,7 @@ BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/altecoin/altecoingui.cpp \
+  qt/bontecoin/bontecoingui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
@@ -659,68 +653,68 @@ BITCOIN_QT_WALLET_CPP = \
   qt/transactiontablemodel.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/altecoin/loadingdialog.cpp \
+  qt/bontecoin/loadingdialog.cpp \
   qt/zpivcontroldialog.cpp \
-  qt/altecoin/pwidget.cpp \
-  qt/altecoin/guitransactionsutils.cpp \
-  qt/altecoin/snackbar.cpp \
-  qt/altecoin/navmenuwidget.cpp \
-  qt/altecoin/lockunlock.cpp \
-  qt/altecoin/receivedialog.cpp \
-  qt/altecoin/furabstractlistitemdelegate.cpp \
-  qt/altecoin/txviewholder.cpp \
-  qt/altecoin/qtutils.cpp \
-  qt/altecoin/expandablebutton.cpp \
-  qt/altecoin/walletpassworddialog.cpp \
-  qt/altecoin/topbar.cpp \
-  qt/altecoin/txrow.cpp \
-  qt/altecoin/addressholder.cpp \
-  qt/altecoin/addressfilterproxymodel.cpp \
-  qt/altecoin/dashboardwidget.cpp \
-  qt/altecoin/coincontrolpivwidget.cpp \
-  qt/altecoin/addresslabelrow.cpp \
-  qt/altecoin/contactdropdownrow.cpp \
-  qt/altecoin/contactsdropdown.cpp \
-  qt/altecoin/optionbutton.cpp \
-  qt/altecoin/mninfodialog.cpp \
-  qt/altecoin/coldstakingmodel.cpp \
-  qt/altecoin/mnmodel.cpp \
-  qt/altecoin/masternodewizarddialog.cpp \
-  qt/altecoin/mnrow.cpp \
-  qt/altecoin/masternodeswidget.cpp \
-  qt/altecoin/myaddressrow.cpp \
-  qt/altecoin/csrow.cpp \
-  qt/altecoin/sendchangeaddressdialog.cpp \
-  qt/altecoin/sendconfirmdialog.cpp \
-  qt/altecoin/sendcustomfeedialog.cpp \
-  qt/altecoin/sendchangeaddressdialog.cpp \
-  qt/altecoin/sendmultirow.cpp \
-  qt/altecoin/send.cpp \
-  qt/altecoin/addnewaddressdialog.cpp \
-  qt/altecoin/addnewcontactdialog.cpp \
-  qt/altecoin/requestdialog.cpp \
-  qt/altecoin/receivewidget.cpp \
-  qt/altecoin/tooltipmenu.cpp \
-  qt/altecoin/addresseswidget.cpp \
-  qt/altecoin/defaultdialog.cpp \
-  qt/altecoin/denomgenerationdialog.cpp \
-  qt/altecoin/privacywidget.cpp \
-  qt/altecoin/coldstakingwidget.cpp \
-  qt/altecoin/settings/settingsbackupwallet.cpp \
-  qt/altecoin/settings/settingsbittoolwidget.cpp \
-  qt/altecoin/settings/settingsconsolewidget.cpp \
-  qt/altecoin/settings/settingsdisplayoptionswidget.cpp \
-  qt/altecoin/settings/settingsfaqwidget.cpp \
-  qt/altecoin/settings/settingsinformationwidget.cpp \
-  qt/altecoin/settings/settingsmainoptionswidget.cpp \
-  qt/altecoin/settings/settingsmultisenddialog.cpp \
-  qt/altecoin/settings/settingsmultisendwidget.cpp \
-  qt/altecoin/settings/settingssignmessagewidgets.cpp \
-  qt/altecoin/settings/settingswalletoptionswidget.cpp \
-  qt/altecoin/settings/settingswalletrepairwidget.cpp \
-  qt/altecoin/settings/settingswidget.cpp \
-  qt/altecoin/welcomecontentwidget.cpp \
-  qt/altecoin/splash.cpp
+  qt/bontecoin/pwidget.cpp \
+  qt/bontecoin/guitransactionsutils.cpp \
+  qt/bontecoin/snackbar.cpp \
+  qt/bontecoin/navmenuwidget.cpp \
+  qt/bontecoin/lockunlock.cpp \
+  qt/bontecoin/receivedialog.cpp \
+  qt/bontecoin/furabstractlistitemdelegate.cpp \
+  qt/bontecoin/txviewholder.cpp \
+  qt/bontecoin/qtutils.cpp \
+  qt/bontecoin/expandablebutton.cpp \
+  qt/bontecoin/walletpassworddialog.cpp \
+  qt/bontecoin/topbar.cpp \
+  qt/bontecoin/txrow.cpp \
+  qt/bontecoin/addressholder.cpp \
+  qt/bontecoin/addressfilterproxymodel.cpp \
+  qt/bontecoin/dashboardwidget.cpp \
+  qt/bontecoin/coincontrolpivwidget.cpp \
+  qt/bontecoin/addresslabelrow.cpp \
+  qt/bontecoin/contactdropdownrow.cpp \
+  qt/bontecoin/contactsdropdown.cpp \
+  qt/bontecoin/optionbutton.cpp \
+  qt/bontecoin/mninfodialog.cpp \
+  qt/bontecoin/coldstakingmodel.cpp \
+  qt/bontecoin/mnmodel.cpp \
+  qt/bontecoin/masternodewizarddialog.cpp \
+  qt/bontecoin/mnrow.cpp \
+  qt/bontecoin/masternodeswidget.cpp \
+  qt/bontecoin/myaddressrow.cpp \
+  qt/bontecoin/csrow.cpp \
+  qt/bontecoin/sendchangeaddressdialog.cpp \
+  qt/bontecoin/sendconfirmdialog.cpp \
+  qt/bontecoin/sendcustomfeedialog.cpp \
+  qt/bontecoin/sendchangeaddressdialog.cpp \
+  qt/bontecoin/sendmultirow.cpp \
+  qt/bontecoin/send.cpp \
+  qt/bontecoin/addnewaddressdialog.cpp \
+  qt/bontecoin/addnewcontactdialog.cpp \
+  qt/bontecoin/requestdialog.cpp \
+  qt/bontecoin/receivewidget.cpp \
+  qt/bontecoin/tooltipmenu.cpp \
+  qt/bontecoin/addresseswidget.cpp \
+  qt/bontecoin/defaultdialog.cpp \
+  qt/bontecoin/denomgenerationdialog.cpp \
+  qt/bontecoin/privacywidget.cpp \
+  qt/bontecoin/coldstakingwidget.cpp \
+  qt/bontecoin/settings/settingsbackupwallet.cpp \
+  qt/bontecoin/settings/settingsbittoolwidget.cpp \
+  qt/bontecoin/settings/settingsconsolewidget.cpp \
+  qt/bontecoin/settings/settingsdisplayoptionswidget.cpp \
+  qt/bontecoin/settings/settingsfaqwidget.cpp \
+  qt/bontecoin/settings/settingsinformationwidget.cpp \
+  qt/bontecoin/settings/settingsmainoptionswidget.cpp \
+  qt/bontecoin/settings/settingsmultisenddialog.cpp \
+  qt/bontecoin/settings/settingsmultisendwidget.cpp \
+  qt/bontecoin/settings/settingssignmessagewidgets.cpp \
+  qt/bontecoin/settings/settingswalletoptionswidget.cpp \
+  qt/bontecoin/settings/settingswalletrepairwidget.cpp \
+  qt/bontecoin/settings/settingswidget.cpp \
+  qt/bontecoin/welcomecontentwidget.cpp \
+  qt/bontecoin/splash.cpp
 
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
@@ -736,7 +730,7 @@ RES_IMAGES = \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png \
-  qt/res/images/altecoin_logo_horizontal.png \
+  qt/res/images/bontecoin_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
   qt/res/images/downArrow_small.png \
@@ -748,12 +742,12 @@ RES_IMAGES = \
 
 RES_CSS = \
   qt/res/css/default.css \
-  qt/altecoin/res/css/style_dark.css \
-  qt/altecoin/res/css/style_light.css
+  qt/bontecoin/res/css/style_dark.css \
+  qt/bontecoin/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/altecoin-qt-res.rc
+BITCOIN_RC = qt/res/bontecoin-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -775,71 +769,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_altecoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_bontecoin_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# altecoin-qt binary #
-qt_altecoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# bontecoin-qt binary #
+qt_bontecoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
-qt_altecoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_bontecoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_altecoin_qt_SOURCES = qt/altecoin.cpp
+qt_bontecoin_qt_SOURCES = qt/bontecoin.cpp
 if TARGET_DARWIN
-  qt_altecoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_bontecoin_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_altecoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_bontecoin_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_altecoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_bontecoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_altecoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_bontecoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_altecoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_bontecoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_altecoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_bontecoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_altecoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_altecoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_bontecoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_bontecoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/altecoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/bontecoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/altecoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/altecoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/bontecoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/bontecoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/altecoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/bontecoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name altecoin_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bontecoin_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name altecoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bontecoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_altecoin_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bontecoin_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-altecoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_altecoin_qt_OBJECTS) qt/altecoin-qt$(EXEEXT) $(LIBBITCOINQT)
+bontecoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bontecoin_qt_OBJECTS) qt/bontecoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-altecoin_qt : qt/altecoin-qt$(EXEEXT)
+bontecoin_qt : qt/bontecoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
