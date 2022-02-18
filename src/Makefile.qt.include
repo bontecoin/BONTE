@@ -398,12 +398,6 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_bontecoin.png \
-  qt/res/icons/unit_mbontecoin.png \
-  qt/res/icons/unit_ubontecoin.png \
-  qt/res/icons/unit_tbontecoin.png \
-  qt/res/icons/unit_tmbontecoin.png \
-  qt/res/icons/unit_tubontecoin.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \

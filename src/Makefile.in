@@ -796,12 +796,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/ic-transaction-mint.svg \
 	qt/res/icons/ic-transaction-sent.svg \
 	qt/res/icons/ic-transaction-staked.svg \
-	qt/res/icons/unit_bontecoin.png \
-	qt/res/icons/unit_mbontecoin.png \
-	qt/res/icons/unit_ubontecoin.png \
-	qt/res/icons/unit_tbontecoin.png \
-	qt/res/icons/unit_tmbontecoin.png \
-	qt/res/icons/unit_tubontecoin.png qt/res/icons/yesvote.png \
+	qt/res/icons/yesvote.png \
 	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
 	qt/bontecoin/res/img/bg-dashboard-banner.png \
 	qt/bontecoin/res/img/bg-multi-number-dark.svg \
@@ -3218,12 +3213,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-mint.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-sent.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-staked.svg \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_bontecoin.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_mbontecoin.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_ubontecoin.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tbontecoin.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tmbontecoin.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tubontecoin.png \
 @ENABLE_QT_TRUE@  qt/res/icons/yesvote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/novote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/abstainvote.png \
