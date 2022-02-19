@@ -10,5 +10,5 @@
 * Prefix: BONTE adresses start with the letter "B"
 * Ports: 3094 (p2p) / 3095 (rpc)
 
-* Explorer http://explorer.bontecoin.com
-* Website [bontecoin.com](http://www.bontecoin.com)
+Explorer https://explorer.bontecoin.com
+Website [bontecoin.com](https://www.bontecoin.com)
