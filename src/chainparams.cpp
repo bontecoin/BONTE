@@ -73,13 +73,26 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000b51468f2b68f159f58712ed6a2550a655514dffedab2aed45f8d761ed82"));  //launch
+    (1, uint256("0x00000b51468f2b68f159f58712ed6a2550a655514dffedab2aed45f8d761ed82"))
+    (100, uint256("0x0000009bad2f61e7dfff878263e127fe55cbf436a2ae284af583aeaefd3954c6"))
+	(500, uint256("0x000000332d65fec03195bed54fe13dc14344081fbf8ea5da7da226aef238a417"))
+	(1000, uint256("0x0000000bc1317a5573d15a41fbd4a0ac417892b2b9fc8626cd4bca596a9b0fcf"))
+	(2500, uint256("0x6e7e7f5d6b0b23cc7fe36e32f9ab16a38ea6a71d452c01c8e5ac74f90bd7c319"))
+	(5000, uint256("0xce71c6415b2b5559de79f73039368b703da0937410be5d9dd0e0a7694b3d9623"))
+	(10000, uint256("0x8cca1f65b9745e95a6bb4ee62a12723039ce6bb5f01ef2b9d437506ad658cc51"))
+	(15000, uint256("0x0e454d2c340d8ad775e8b54871c3fa9d2dfed52733ca80adcd93a6f3036d6ffe"))
+	(20000, uint256("0x985c169c5a9085ce15ed29014673eb31ca5a8ae59590cd219c18a328c165c489"))
+	(25000, uint256("0xdc86f6a3e2514d713a747dba17d60e12fd26901274c7df93d424803ca126a8f1"))
+	(30000, uint256("0xcf62b801484590cc87abb4d1704f1e87f7985be90151aa66d123580b83d21739"))
+	(35000, uint256("0x8b8b7d47fdf6924a8129645924aeb75fcacadfaab67c2dbca76470171b35863a"))
+	(40000, uint256("0xab8e83e0c9d5b3568c22b845bc32173e101f78eaffefe6c66887ab94c3a41a9f"))
+	(45000, uint256("0x3c2ba337eb3df4b7e7d267a1c3c87228e332a7ec44356a01b1015f10bb4ed687"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1645169983, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1647970680, // * UNIX timestamp of last checkpoint block
+    89987,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    250        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
