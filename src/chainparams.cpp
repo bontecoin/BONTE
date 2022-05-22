@@ -264,13 +264,14 @@ public:
         assert(hashGenesisBlock == uint256("0x00000933581fe391490eaab7021e88991a8069b2d00a4f4a61088c7cd2e960e7"));
         assert(genesis.hashMerkleRoot == uint256("0xf8fe3e488c74373230951b4e1c1203f4ecf0f66316d8cef8c65d3847a476c138"));
 
-		vFixedSeeds.clear();
-		vSeeds.clear();
-
-        vSeeds.push_back(CDNSSeedData("seed1.bontecoin.com", "seed1.bontecoin.com"));
-		vSeeds.push_back(CDNSSeedData("seed2.bontecoin.com", "seed2.bontecoin.com"));
-		vSeeds.push_back(CDNSSeedData("seed3.bontecoin.com", "seed3.bontecoin.com"));
-		vSeeds.push_back(CDNSSeedData("seed4.bontecoin.com", "seed4.bontecoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed1", "seed1.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed2", "seed2.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed3", "seed3.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed4", "seed4.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed5", "seed5.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed6", "seed6.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed7", "seed7.bontecoin.com"));
+	vSeeds.push_back(CDNSSeedData("seed8", "seed8.bontecoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25); // B
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53); // N
